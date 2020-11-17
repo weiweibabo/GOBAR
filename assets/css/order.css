@@ -1,0 +1,67 @@
+body{
+    background-color: #141f2b;
+}
+
+header{
+    height: 100px;
+    background: #002A4C;
+    z-index: 10;
+}
+
+.container-fluid{
+    width: 75%;
+}
+
+/*  */
+.progress-area{
+    justify-content: center;
+}
+
+.progress-line{
+    background-color: transparent;
+    margin: 37px;
+}
+.progress-line p{
+    
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    
+    
+}
+.glass svg{
+    transform: translateX(5px);
+}
+.yellow svg{
+    transform: translate(10px,-35px);
+}
+
+/*  */
+
+.title-40M{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 47px;
+}
+
+.title-30{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/*  */
+.order-form{
+    flex-direction: column;
+}
+
+.input-area{
+    margin: 25px;
+}
+
+/*  */
+.golden-line svg{
+    transform: translate(-100px,-280px);
+}
+
