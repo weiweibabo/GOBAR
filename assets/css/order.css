@@ -1,0 +1,106 @@
+body {
+  background-color: #141f2b;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  height: 150px;
+  background: #002a4c;
+  z-index: 10;
+}
+
+.container-fluid {
+  width: 75%;
+}
+
+/*  */
+.progress-area {
+  justify-content: center;
+}
+
+.progress-line {
+  background-color: transparent;
+  margin: 37px;
+}
+.progress-line p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+}
+.glass {
+  outline: 1px solid red;
+  justify-content: center;
+}
+
+.glass img {
+  
+  right: 0;
+}
+
+/*  */
+
+.title-40M {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 47px;
+}
+
+.title-30 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.calendar {
+    
+    height: 305px;
+    width: 530px;
+    background: #aaa;
+}
+
+/* form area */
+.order-form {
+  flex-direction: column;
+}
+
+.input-area {
+  margin: 50px;
+}
+.input-area2 {
+  margin: 0px 0 0px 0;
+}
+
+.input-area input,
+select {
+  width: 400px;
+  height: 50px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.input-area label {
+  color: #ff5172;
+}
+
+.text-area {
+  margin-left: 75px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.next-btn {
+  margin-left: 75px;
+  margin-top: 65px;
+  color: #fff;
+  background-color: #ff8d00;
+  border-radius: 12px;
+  width: 365px;
+  height: 35px;
+}
+
+/*  */
+.golden-line svg {
+  transform: translate(-100px, -280px);
+}
