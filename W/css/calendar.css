@@ -1,0 +1,76 @@
+.calendar {
+  width: 450px;
+  height: 350px;
+  background: #537793;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.body-list ul, .body-month ul {
+  width: 100%;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.body-month ul {
+    display: flex;
+}
+
+.body-list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-month ul li {
+    width: 14.28%;
+    height: 36px;
+    line-height: 36px;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.body-list ul .date-init {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14.28%;
+    height: 36px;
+    line-height: 36px;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.lightgrey {
+  color: #fff; 
+}
+.darkgrey {
+  color: rgba(255, 255, 255, 0.2); 
+}
+.green {
+  color: #fff; 
+}
+.greenbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ffb352;
+    background: #ffb352; /*浅绿色背景*/
+}
+
+.title i{
+    color: #fff;
+    
+}
