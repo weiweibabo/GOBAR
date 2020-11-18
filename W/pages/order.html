@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../assets/css/order.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/order.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Order</title>
@@ -14,42 +14,42 @@
     <header>
 
     </header>
-    <div class="container-fluid px-0">
-        <div class="progress-area row w-100">
-            <div class="progress-line">
-                <p>確認中</p>
+    <div class="container-fluid ">
+        <div>
+            <div class="progress-area">
+                <div class="progress-line">
+                    <p>確認中</p>
+                </div>
+                <div class="progress-line">
+                    <p>付款中</p>
+                </div>
+                <div class="progress-line">
+                    <p>已完成</p>
+                </div>
             </div>
-            <div class="progress-line">
-                <p>結帳中</p>
-            </div>
-            <div class="progress-line">
-                <p>處理中</p>
-            </div>
-            <div class="progress-line">
-                <p>訂單完成</p>
+        
+            <div class="glass ">
+                <img src="../img/progress-line3.png" alt="">
             </div>
         </div>
-        <div class="glass w-100">
-            <img src="../../assets/img/Group 803.png" alt="">
-        </div>
+        
 
         
-            <div>
-                <div class="title-40M">
-                    <p>我要訂位</p>
-                </div>
-                <div class="title-30">
-                    <p>安慰劑  Placebo Taipei</p>
-                </div>
-            </div>
-        <div class="row">        
-                <div class="calendar">
+        <div class="title-40M">
+            <p>我要訂位</p>
+        </div>
+        <div class="title-30">
+            <p>安慰劑  Placebo Taipei</p>
+        </div>
 
-                </div>
+        <div class="d-flex justify-content-between">        
+            <div class="calendar">
+
+            </div>
             
             <div>
                 <form action="" class="order-form">
-                    <div class="input-area">
+                    <div class="input-area mt-0 mb-4">
                         <div>
                             <label for="">*為必填</label>
                         </div>
@@ -69,7 +69,7 @@
                         </select>
                         
                     </div>
-                    <div class="input-area">
+                    <div class="input-area mt-0">
                         <div>
                             <label for="">線上訂位限定10人，超過10人請來電預約</label>
                         </div>
@@ -100,11 +100,11 @@
                 
             </div> 
             
-            <div>
-                <form action="" class="text-area">
+            <div class="">
+                <form action="" class="text-area mt-1">
                     <label for="">備註:</label>
                     <br>
-                    <textarea name="" id="" cols="35" rows="12"></textarea>
+                    <textarea name="" id="" cols="32" rows="11"></textarea>
                 </form>
                 <button class="next-btn">下一步</button>
             </div>
@@ -114,7 +114,7 @@
 
 
     
-    <div  class="golden-line">
+    <!-- <div  class="golden-line">
         <svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 1026.141 827.013">
             <g id="Group_422" data-name="Group 422" transform="translate(0.448 -2740.783)" opacity="0.5">
                 <path id="Path_82" data-name="Path 82" d="M-1108.288,763.939s-88.127-45.93-166.812,62.632-262.282,102.3-262.282,102.3-215.072-5.219-216.121,211.906,30.425,498.971-379.785,370.574" transform="translate(2133.288 2006.151)" fill="none" stroke="#f90" stroke-width="1"/>
@@ -124,6 +124,6 @@
                 <path id="Path_86" data-name="Path 86" d="M-1108.288,763.939s-88.127-45.93-166.812,62.632-262.282,102.3-262.282,102.3-215.072-5.219-216.121,211.906,30.425,498.971-379.785,370.574" transform="translate(2133.288 1988)" fill="none" stroke="#f90" stroke-width="3"/>
                 </g>
         </svg>
-    </div>
+    </div> -->
 </body>
 </html>

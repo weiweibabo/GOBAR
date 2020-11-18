@@ -21,7 +21,7 @@ header {
 
 .progress-line {
   background-color: transparent;
-  margin: 37px;
+  margin: 38px;
 }
 .progress-line p {
   color: #fff;
@@ -29,10 +29,10 @@ header {
   line-height: 30px;
 }
 .glass {
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
 }
+
 
 /*  */
 
@@ -80,19 +80,19 @@ select {
 }
 
 .text-area {
-  margin-left: 75px;
+  /* margin-left: 55px; */
   color: #fff;
   font-size: 20px;
   font-weight: 300;
 }
 
 .next-btn {
-  margin-left: 75px;
+  /* margin-left: 55px; */
   margin-top: 65px;
   color: #fff;
   background-color: #ff8d00;
   border-radius: 12px;
-  width: 365px;
+  width: 333px;
   height: 35px;
 }
 
