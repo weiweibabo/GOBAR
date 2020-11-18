@@ -15,6 +15,7 @@ header {
 
 /*  */
 .progress-area {
+  display: flex;
   justify-content: center;
 }
 
@@ -29,12 +30,8 @@ header {
 }
 .glass {
   outline: 1px solid red;
+  display: flex;
   justify-content: center;
-}
-
-.glass img {
-  
-  right: 0;
 }
 
 /*  */
@@ -52,10 +49,9 @@ header {
 }
 
 .calendar {
-    
-    height: 305px;
-    width: 530px;
-    background: #aaa;
+  height: 305px;
+  width: 530px;
+  background: #aaa;
 }
 
 /* form area */
