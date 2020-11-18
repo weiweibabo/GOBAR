@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/css/order.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Order</title>
 </head>
 
@@ -14,7 +15,7 @@
 
     </header>
     <div class="container-fluid px-0">
-        <div class="progress-area row">
+        <div class="progress-area row w-100">
             <div class="progress-line">
                 <p>確認中</p>
             </div>
@@ -28,39 +29,109 @@
                 <p>訂單完成</p>
             </div>
         </div>
+        <div class="glass w-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="453.282" height="48.317" viewBox="0 0 453.282 48.317">
+                    <g id="Group_803" data-name="Group 803" transform="translate(-713.75 -225.432)">
+                    <rect id="Rectangle_1131" data-name="Rectangle 1131" width="85" height="5" transform="translate(764 246)" fill="#d9d9d9"/>
+                    <rect id="Rectangle_1132" data-name="Rectangle 1132" width="85" height="5" transform="translate(898 246)" fill="#d9d9d9"/>
+                    <rect id="Rectangle_1133" data-name="Rectangle 1133" width="85" height="5" transform="translate(1032 246)" fill="#d9d9d9"/>
+                    <path id="Path_84" data-name="Path 84" d="M191.088,590a24.389,24.389,0,0,1-30.394,0,24.391,24.391,0,1,0,30.394,0Z" transform="translate(563.5 -360.969)" fill="none" stroke="#d9d9d9" stroke-miterlimit="10" stroke-width="2.5"/>
+                    <g id="Group_424" data-name="Group 424" transform="translate(697.5 -362.969)">
+                        <path id="Path_84-2" data-name="Path 84" d="M191.088,590a24.389,24.389,0,0,1-30.394,0,24.391,24.391,0,1,0,30.394,0Z" fill="none" stroke="#d9d9d9" stroke-miterlimit="10" stroke-width="2.5"/>
+                        <path id="Path_88" data-name="Path 88" d="M399,653" transform="translate(-204.38 -52.024)" fill="#7d1d57" stroke="#d9d9d9" stroke-width="1"/>
+                    </g>
+                    <g id="Group_425" data-name="Group 425" transform="translate(831.5 -362.969)">
+                        <path id="Path_84-3" data-name="Path 84" d="M191.088,590a24.389,24.389,0,0,1-30.394,0,24.391,24.391,0,1,0,30.394,0Z" fill="none" stroke="#d9d9d9" stroke-miterlimit="10" stroke-width="2.5"/>
+                        <path id="Path_88-2" data-name="Path 88" d="M399,653" transform="translate(-204.38 -52.024)" fill="#7d1d57" stroke="#d9d9d9" stroke-width="1"/>
+                    </g>
+                    <g id="Group_426" data-name="Group 426" transform="translate(965.5 -362.969)">
+                        <path id="Path_84-4" data-name="Path 84" d="M191.088,590a24.389,24.389,0,0,1-30.394,0,24.391,24.391,0,1,0,30.394,0Z" fill="none" stroke="#d9d9d9" stroke-miterlimit="10" stroke-width="2.5"/>
+                        <path id="Path_88-3" data-name="Path 88" d="M399,653" transform="translate(-204.38 -52.024)" fill="#7d1d57"/>
+                    </g>
+                    </g>
+                </svg>
+                
+        </div>
+
         <div class="row">
             <div>
-                <div class="title-40M">
-                    <p>我要訂位</p>
+                <div class="">
+                    <div class="title-40M">
+                        <p>我要訂位</p>
+                    </div>
                 </div>
+
                 <div class="title-30">
                     <p>安慰劑  Placebo Taipei</p>
+                </div>
+                
+                <div class="calendar">
+
                 </div>
             </div>
             <div>
                 <form action="" class="order-form">
                     <div class="input-area">
-                        <input type="text" size="35"placeholder="*訂位人數">
+                        <div>
+                            <label for="">*為必填</label>
+                        </div>
+                        
+                        <select>
+                            <option>*訂位人數</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                        
                     </div>
                     <div class="input-area">
-                        <input type="text">
+                        <div>
+                            <label for="">線上訂位限定10人，超過10人請來電預約</label>
+                        </div>
+                        <select>
+                            <option>*預約時段</option>
+                            <option>20:00</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                            <option>22:30</option>
+                            <option>23:00</option>
+                            <option>23:30</option>
+                            
+                        </select>
                     </div>
                     <div class="input-area">
-                        <input type="text">
+                        <input type="text" value="*訂位姓名">
                     </div>
                     <div class="input-area">
-                        <input type="text">
+                        <input type="text" value="*連絡電話">
                     </div>
                     <div class="input-area">
-                        <input type="text">
+                        <input type="text" value="*電子信箱">
                     </div>
                     
                 </form>
+                
+            </div> 
+            
+            <div>
+                <form action="" class="text-area">
+                    <label for="">備註:</label>
+                    <br>
+                    <textarea name="" id="" cols="35" rows="12"></textarea>
+                </form>
+                <button class="next-btn">下一步</button>
             </div>
-            
-
-            
         </div>
+
     </div>
 
 

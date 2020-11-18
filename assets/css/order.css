@@ -1,9 +1,10 @@
 body{
     background-color: #141f2b;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 header{
-    height: 100px;
+    height: 150px;
     background: #002A4C;
     z-index: 10;
 }
@@ -29,8 +30,8 @@ header{
     
     
 }
-.glass svg{
-    transform: translateX(5px);
+.glass {
+    vertical-align:middle; 
 }
 .yellow svg{
     transform: translate(10px,-35px);
@@ -50,14 +51,54 @@ header{
     font-size: 30px;
 }
 
+.calendar{
+    height: 305px;
+    width: 530px;
+    background:#aaa;
+}
 
-/*  */
+
+/* form area */
 .order-form{
     flex-direction: column;
 }
 
 .input-area{
-    margin: 25px;
+    margin: 50px;
+}
+.input-area2{
+    margin: 0px 0 0px 0 ;
+}
+
+.input-area input,select{
+width: 400px;
+height: 50px;
+color: #000;
+font-size: 20px;
+font-weight: 300;
+}
+
+
+.input-area label{
+    color: #FF5172;
+}
+
+.text-area{
+    margin-left: 75px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.next-btn{
+    margin-left: 75px;
+    margin-top: 65px;
+    color: #fff;
+    background-color: #FF8D00;
+    border-radius: 12px;
+    width: 365px;
+    height: 35px;
+
 }
 
 /*  */
