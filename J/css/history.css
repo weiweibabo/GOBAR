@@ -1,0 +1,89 @@
+* {
+  outline: 1px solid red;
+}
+
+main {
+  background-color: #141f2b;
+}
+
+#order {
+  background-color: #141f2b;
+  height: 1145px;
+}
+
+.navbar {
+  height: 150px;
+  background-color: #002a4c;
+}
+
+.footer {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+.topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-left: 130px;
+  margin-top: 100px;
+}
+
+.topname p {
+  width: 350px;
+  border-bottom: 5px solid orange;
+}
+
+.card1 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+}
+
+.date {
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.date-text {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.name {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 5rem;
+}
+
+.name h1 {
+  font-size: 30px;
+}
+
+.answer {
+  color: white;
+}
+
+.textbox1 p {
+  color: #ff8d00;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.textbox2 {
+  background-color: #ff8d00;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.textbox2 p {
+  color: white;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
