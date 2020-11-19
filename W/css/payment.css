@@ -1,7 +1,6 @@
 body{
     background-color: #141f2b;
     font-family: "Noto Sans TC", sans-serif;
-    overflow: hidden;
     /* outline: 1px solid red; */
 }
 
@@ -88,7 +87,7 @@ header {
   .golden-line2 {
     position: absolute;
     z-index: -1;
-    transform: translate(1070px, 560px);
+    transform: translate(1055px, 620px);
   }
   
   
