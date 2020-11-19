@@ -1,12 +1,12 @@
 /* * {
   outline: red solid 1px;
 } */
-body {
+
+section {
   background-color: #002a4c;
 }
-
 .container-fluid {
-  width: 1440px;
+  width: 75% !important;
 }
 .carousel .d-block {
   height: 1080px;
@@ -45,4 +45,36 @@ body {
   font-size: 20px;
   color: white;
   padding-left: 20px;
+}
+.news {
+  border-bottom: rgba(35, 108, 166, 0.6) 2px solid;
+}
+.news-title h2 {
+  font-size: 80px;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.share {
+  margin-top: 110px;
+  margin-left: 530px;
+}
+.news-content-title h4 {
+  font-size: 30px;
+  color: #ffd700;
+}
+.news-content-title p {
+  font-size: 20px;
+  color: white;
+}
+.new-content {
+  margin-top: 100px;
+}
+.go-news p {
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+}
+.go-news {
+  margin-bottom: 20px;
 }
