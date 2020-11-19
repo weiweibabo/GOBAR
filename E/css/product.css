@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: red solid 1px;
-}
+} */
 body {
   background-color: #002a4c;
 }
@@ -24,7 +24,25 @@ body {
   z-index: 3;
   font-size: 70px;
   color: white;
+  padding-left: 20px;
 }
 .star {
   padding-top: 50px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.address h2 {
+  font-size: 40px;
+  color: white;
+  padding-left: 20px;
+}
+.address p {
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+}
+.business-hour p {
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
 }
