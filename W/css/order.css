@@ -1,19 +1,22 @@
-body {
+body{
   background-color: #141f2b;
   font-family: "Noto Sans TC", sans-serif;
+  overflow: hidden;
+  /* outline: 1px solid red; */
 }
 
 header {
   height: 150px;
   background: #002a4c;
-  z-index: 10;
+  z-index: 20;
 }
 
 .container-fluid {
   width: 75%;
+  position: relative;
 }
 
-/*  */
+/* 進度條 */
 .progress-area {
   display: flex;
   justify-content: center;
@@ -21,7 +24,7 @@ header {
 
 .progress-line {
   background-color: transparent;
-  margin: 37px;
+  margin: 38px;
 }
 .progress-line p {
   color: #fff;
@@ -29,12 +32,11 @@ header {
   line-height: 30px;
 }
 .glass {
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
 }
 
-/*  */
+/* calendar area */
 
 .title-40M {
   color: #fff;
@@ -48,11 +50,9 @@ header {
   font-size: 30px;
 }
 
-.calendar {
-  height: 305px;
-  width: 530px;
-  background: #aaa;
-}
+/* .calendar-area {
+  
+} */
 
 /* form area */
 .order-form {
@@ -80,23 +80,43 @@ select {
 }
 
 .text-area {
-  margin-left: 75px;
+  /* margin-left: 55px; */
   color: #fff;
   font-size: 20px;
   font-weight: 300;
 }
 
+.label-text label {
+  padding-left: 105px;
+}
+
 .next-btn {
-  margin-left: 75px;
-  margin-top: 65px;
+  /* margin-left: 55px; */
+  margin-top: 60px;
   color: #fff;
   background-color: #ff8d00;
   border-radius: 12px;
-  width: 365px;
+  width: 333px;
   height: 35px;
 }
 
 /*  */
-.golden-line svg {
-  transform: translate(-100px, -280px);
+
+.golden-line1 {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-300px, -70px);
+}
+.golden-line2 {
+  position: absolute;
+  z-index: -1;
+  transform: translate(1070px, 560px);
+}
+
+
+/* footer-area */
+footer {
+  margin-top: 150px;
+  height: 205px;
+  background: #002a4c;
 }

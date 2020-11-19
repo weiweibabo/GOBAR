@@ -1,0 +1,101 @@
+body{
+    background-color: #141f2b;
+    font-family: "Noto Sans TC", sans-serif;
+    overflow: hidden;
+    /* outline: 1px solid red; */
+}
+
+header {
+    height: 150px;
+    background: #002a4c;
+    z-index: 20;
+}
+
+.container-fluid {
+    width: 75%;
+    position: relative;
+}
+
+  /* 進度條 */
+  .progress-area {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-line {
+    background-color: transparent;
+    margin: 38px;
+  }
+  .progress-line p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .glass {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* calendar area */
+  
+  .title-40M {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 47px;
+  }
+  
+  .title-30 {
+    color: #fff;
+    font-size: 30px;
+  }
+
+ 
+  
+  /*  */
+
+  .order-info{
+    background-color: #aaa;
+    height: 180px;
+  }
+
+  /* card-area */
+
+.card-type{
+    color: #fff;    
+}
+
+.card-type div{
+    margin: 10px 26px;
+}
+
+.confirm-btn{
+    color: #fff;
+    background-color: #FF8D00;
+    height: 35px;
+    width: 130px;
+    border-radius: 12px;
+    margin-right: 45px;
+}
+  
+  /*  */
+  
+  .golden-line1 {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-300px, -70px);
+  }
+  .golden-line2 {
+    position: absolute;
+    z-index: -1;
+    transform: translate(1070px, 560px);
+  }
+  
+  
+  /* footer-area */
+  footer {
+    margin-top: 150px;
+    height: 205px;
+    background: #002a4c;
+  }
+  
