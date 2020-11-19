@@ -1,6 +1,8 @@
-body {
+body{
   background-color: #141f2b;
   font-family: "Noto Sans TC", sans-serif;
+  overflow: hidden;
+  /* outline: 1px solid red; */
 }
 
 header {
@@ -48,9 +50,9 @@ header {
   font-size: 30px;
 }
 
-.calendar-area {
+/* .calendar-area {
   
-}
+} */
 
 /* form area */
 .order-form {
@@ -100,12 +102,19 @@ select {
 
 /*  */
 
-.golden-line {
+.golden-line1 {
   position: absolute;
   z-index: -1;
   transform: translate(-300px, -70px);
 }
+.golden-line2 {
+  position: absolute;
+  z-index: -1;
+  transform: translate(1070px, 560px);
+}
 
+
+/* footer-area */
 footer {
   margin-top: 150px;
   height: 205px;
