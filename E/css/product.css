@@ -1,0 +1,30 @@
+* {
+  outline: red solid 1px;
+}
+body {
+  background-color: #002a4c;
+}
+
+.container-fluid {
+  width: 1440px;
+}
+.carousel .d-block {
+  height: 1080px;
+}
+
+.information-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 230px;
+  top: 850px;
+  z-index: 1;
+}
+.store-name {
+  top: 800px;
+  position: absolute;
+  z-index: 3;
+  font-size: 70px;
+  color: white;
+}
+.star {
+  padding-top: 50px;
+}
