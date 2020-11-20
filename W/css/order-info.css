@@ -63,7 +63,7 @@ header {
 
 .text-infom {
   margin: auto;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 .title {
@@ -89,10 +89,37 @@ img {
   margin-top: 30px;
 }
 
-.qrcode img{
+/* QRCODE modal */
+
+.qurcode-btn{
+  background-image: url(../img/Qrcode.png);
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 140px;
   margin-top: 100px;
-  width: 70%;
-  
+}
+
+.modal-content{
+  background-color:#141f2b;
+  height: 600px;
+}
+
+.modal-footer,.modal-header{
+  display: flex;
+  justify-content: center;
+}
+.close{
+  text-shadow: none;
+  opacity:1;
+}
+.close span{
+  color: #ff8d00;
+}
+
+#qrcode-size{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 .cancel-btn {
@@ -103,6 +130,7 @@ img {
   height: 35px;
   margin-top: 230px;
   width: 70%;
+  border: none;
 }
 
 
@@ -111,8 +139,23 @@ img {
   position: absolute;
   background-color: rgba(0,0,0,0.7);
   height: 730px;
-  z-index: -1;
-  padding-top:100px ;
+  /* z-index: -1; */
+  margin-top:200px ;
+}
+
+.space{
+  height: 730px;
+}
+
+.dots1{
+  position: absolute;
+  transform: translate(-80px,340px);
+
+}
+.dots2{
+  position: absolute;
+  transform: translate(1070px,-75px);
+
 }
 
 /* footer-area */
@@ -120,4 +163,5 @@ footer {
   margin-top: 150px;
   height: 205px;
   background: #002a4c;
+  /* position: fixed; */
 }
