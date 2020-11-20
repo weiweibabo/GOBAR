@@ -4,6 +4,8 @@
 
 main {
   background-color: #141f2b;
+  background-image: url(../png/goldline.png);
+  background-repeat: no-repeat;
 }
 
 #order {
@@ -25,13 +27,13 @@ main {
   font-size: 30px;
   color: white;
   text-align: center;
-  padding-left: 130px;
   margin-top: 100px;
 }
 
 .topname p {
   width: 350px;
   border-bottom: 5px solid orange;
+  margin: 0 auto;
 }
 
 .card1 {
