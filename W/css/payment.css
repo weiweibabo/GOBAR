@@ -1,7 +1,11 @@
 body{
-    background-color: #141f2b;
+    color:#fff;
     font-family: "Noto Sans TC", sans-serif;
-    /* outline: 1px solid red; */
+    background-image:url(../img/golden-line1.png),url(../img/golden-line2.png);
+    background-color:#141f2b;
+    background-repeat: no-repeat;
+    width: 100%;
+    
 }
 
 header {
@@ -26,7 +30,6 @@ header {
     margin: 38px;
   }
   .progress-line p {
-    color: #fff;
     font-size: 20px;
     line-height: 30px;
   }
@@ -35,31 +38,65 @@ header {
     justify-content: center;
   }
   
-  /* calendar area */
+  /* text */
   
   .title-40M {
-    color: #fff;
+
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 47px;
   }
   
   .title-30 {
-    color: #fff;
     font-size: 30px;
   }
 
- 
-  
-  /*  */
+  .text-20B{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .text-20{
+    font-size: 20px;
 
+  }
+  
+  /* infomation */
+  .area-box{
+    margin-top: 20px;
+  }
   .order-info{
-    background-color: #aaa;
+    background-color: rgba(0,0,0,0.7);
     height: 180px;
   }
 
-  /* card-area */
+  .date{
+    text-align: center;
+  }
 
+  .bar-pic img{
+    width: 100%;
+  }
+
+  .info-text p{
+    margin-bottom: 2px;
+  }
+
+  .edit-btn{
+    color: #FF8D00;
+    background-color: transparent;
+    border:2px solid #FF8D00;
+    height: 35px;
+    width: 80%;
+    border-radius: 12px;
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+
+  /* card-area */
+.cardd{
+  margin-left: 35px;
+}
 .card-type{
     color: #fff;    
 }
@@ -81,9 +118,11 @@ header {
   /*  */
   
   .golden-line1 {
-    position: absolute;
-    z-index: -1;
-    transform: translate(-300px, -70px);
+    background-image: url(../img/golden-line1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+  
   }
   .golden-line2 {
     position: absolute;

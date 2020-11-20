@@ -81,7 +81,7 @@ input {
     height: 38px;
     position: absolute;
     right: 6px;
-    top: calc(50% - 17px);
+    top: 39px;
     width: 60px;
 }
 
@@ -248,9 +248,6 @@ input {
     fill: #EAEAEA;
 }
 
-#cardback .st12 {
-    font-family: 'Rock Salt', cursive;
-}
 
 #cardback .st13 {
     font-size: 37.769px;
