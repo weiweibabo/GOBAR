@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>favorite</title>
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/favorite.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -16,18 +16,9 @@
     </header>
 
     <div id="Member-Centre" class="container-fluid position-relative">
-        <svg class="gold-line" xmlns="http://www.w3.org/2000/svg" width="938.788" height="783.773" viewBox="0 0 938.788 783.773">
-            <g id="Group_698" data-name="Group 698" transform="matrix(0.996, 0.087, -0.087, 0.996, 301.18, -2730.315)" opacity="0.5">
-              <path id="Path_82" data-name="Path 82" d="M-1254.15,762.566s-75.586-39.394-143.073,53.719-224.958,87.742-224.958,87.742-184.466-4.477-185.366,181.751,26.1,427.965-325.74,317.84" transform="translate(2133.288 2003.568)" fill="none" stroke="#f90" stroke-width="1"/>
-              <path id="Path_84" data-name="Path 84" d="M-1254.15,762.566s-75.586-39.394-143.073,53.719-224.958,87.742-224.958,87.742-184.466-4.477-185.366,181.751,26.1,427.965-325.74,317.84" transform="translate(2133.288 2010.894)" fill="none" stroke="#f90" stroke-width="2"/>
-              <path id="Path_85" data-name="Path 85" d="M-1254.15,762.566s-75.586-39.394-143.073,53.719-224.958,87.742-224.958,87.742-184.466-4.477-185.366,181.751,26.1,427.965-325.74,317.84" transform="translate(2133.288 2017.762)" fill="none" stroke="#f90" stroke-width="3"/>
-              <path id="Path_83" data-name="Path 83" d="M-1254.15,762.566s-75.586-39.394-143.073,53.719-224.958,87.742-224.958,87.742-184.466-4.477-185.366,181.751,26.1,427.965-325.74,317.84" transform="translate(2133.288 1997.158)" fill="none" stroke="#f90" stroke-width="2"/>
-              <path id="Path_86" data-name="Path 86" d="M-1254.15,762.566s-75.586-39.394-143.073,53.719-224.958,87.742-224.958,87.742-184.466-4.477-185.366,181.751,26.1,427.965-325.74,317.84" transform="translate(2133.288 1988)" fill="none" stroke="#f90" stroke-width="3"/>
-            </g>
-          </svg>
         <div class="row">
             <div class="top-area d-flex">
-                <div class="photo">
+                <div class="photo col-2 px-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
                         <g id="Group_628" data-name="Group 628" transform="translate(-241 -243)">
                           <g id="Group_620" data-name="Group 620" transform="translate(41)">
@@ -45,18 +36,18 @@
                       </svg>
                 </div>
 
-                <div class="name">
+                <div class="name col-2 px-0">
                     <p class="nametop">王曉明</p>
                     <p class="namebottom">訂單累計10筆</p>
                     <p class="namebottom">年度累計3筆</p>
                 </div>
 
-                <div class="name2">
+                <div class="name2 co-2 px-0">
                     <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100">
                     <p>年度會員</p>
                 </div>
 
-                <div class="black-area">
+                <div class="black-area col-4 px-0">
                     <div class="black-text">
                             <h1>白金會員最新優惠</h1>
                         <div class="black-text2">
@@ -71,15 +62,31 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="out col-2 px-0 d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 28 28">
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect width="28" height="28" fill="none"/>
+                          </clipPath>
+                        </defs>
+                        <g id="Export" clip-path="url(#clip-path)">
+                          <rect id="Rectangle_570" data-name="Rectangle 570" width="30" height="30" fill="none"/>
+                          <path id="Path_151" data-name="Path 151" d="M2.687,2.687v20.6H15.525v2.687H0V0H15.524V2.687ZM14.629,21.5l-2.09-2.09,4.777-4.777H6.27V11.643H17.614L12.539,6.867l2.09-2.09,8.061,8.061Z" transform="translate(2)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    <p>登出</p>
+                </div>
             </div>
-            <div class="aboutme">
+
+            <div class="aboutme1">
                 <p>關於我</p>
             </div>
-            <div class="aboutme">
+            <div class="aboutme2">
                 <p>信用評價</p>
             </div>
 
-            <div class="bottom-area">
+            <div class="bottom-area col-12">
                 <div class="left-area">
                     <div class="bottom-text d-flex">
                         <div class="bottom-word">
@@ -87,6 +94,13 @@
                     </div>
                     <div class="text">
                         <p>asd@gmail.com</p>
+                    </div>
+                    <div class="change d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23">
+                            <path id="Path_110" data-name="Path 110" d="M11.721,4.423l-8.183,8.4L0,23l10.173-3.317L18.356,11.5ZM22.115,3.76,19.24.885a2.681,2.681,0,0,0-3.981,0L12.827,3.317l6.635,6.856,2.654-2.654A2.8,2.8,0,0,0,23,5.529,2.73,2.73,0,0,0,22.115,3.76Z" fill="#fff"/>
+                          </svg>
+                          
+                        <p>修改</p>
                     </div>
                 </div>
                 <div class="bottom-text d-flex">
@@ -119,18 +133,12 @@
         </div>
         
     </div>
-
-      <svg class="gold-line2" xmlns="http://www.w3.org/2000/svg" width="829.214" height="1001.192" viewBox="0 0 829.214 1001.192">
-        <g id="Group_697" data-name="Group 697" transform="matrix(0.087, -0.996, 0.996, 0.087, 1.574, 935.509)" opacity="0.5">
-          <path id="Path_243" data-name="Path 243" d="M0,10.093S240.983-62.86,308.032,183.5s248.8,264.906,248.8,264.906,291.3-10.422,380.7,251.713" transform="translate(0 27.613)" fill="none" stroke="#e58c21" stroke-width="1"/>
-          <path id="Path_244" data-name="Path 244" d="M0,10.093S240.983-62.86,308.032,183.5s248.8,264.906,248.8,264.906,291.3-10.422,380.7,251.713" transform="translate(0 40.315)" fill="none" stroke="#e58c21" stroke-width="2"/>
-          <path id="Path_245" data-name="Path 245" d="M0,10.093S240.983-62.86,308.032,183.5s248.8,264.906,248.8,264.906,291.3-10.422,380.7,251.713" transform="translate(0 11.045)" fill="none" stroke="#e58c21" stroke-width="2"/>
-          <path id="Path_247" data-name="Path 247" d="M0,10.093S240.983-62.86,308.032,183.5s248.8,264.906,248.8,264.906,291.3-10.422,380.7,251.713" transform="translate(0 48.046)" fill="none" stroke="#e58c21" stroke-width="3"/>
-          <path id="Path_246" data-name="Path 246" d="M0,10.093S240.983-62.86,308.032,183.5s248.8,264.906,248.8,264.906,291.3-10.422,380.7,251.713" transform="translate(0 0)" fill="none" stroke="#e58c21" stroke-width="3"/>
-        </g>
-      </svg>
       
     <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
 </body>
 </html>
