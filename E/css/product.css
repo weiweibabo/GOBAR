@@ -10,7 +10,14 @@ section {
   background-attachment: fixed;
 }
 section.line1 {
-  background-image: url(../img/line.png);
+  background-image: url(../img/line01.png);
+  background-attachment: fixed;
+}
+/* 線沒辦法穿過去 */
+
+section.line2 {
+  background-image: url(../img/line01.png);
+
   background-attachment: fixed;
 }
 
@@ -223,6 +230,7 @@ Img {
   font-size: 20px;
   color: white;
   width: 450px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .drinks-intro--name {
   background-color: #f48e09;
