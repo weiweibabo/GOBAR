@@ -1,9 +1,13 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 main {
   background-color: #141f2b;
+}
+
+.goldline {
+  position: absolute;
 }
 
 #order {
@@ -75,7 +79,7 @@ main {
 
 .bottom-text {
   color: #e58c21;
-  padding-top: 20px;
+  padding-top: 30px;
   width: 100px;
   margin-left: 278px;
 }
