@@ -18,6 +18,10 @@ let myYear = myDate.getFullYear();
 let myMonth = myDate.getMonth();
 const myDay = myDate.getDate();
 
+const days = document.querySelector('#days');
+const liInit = document.getElementsByClassName('li-init');
+const disableClick = document.getElementsByClassName('disable-click');
+
 // 获取某年某月第一天是星期几
 function dayStart(month, year) {
   const tmpDate = new Date(year, month, 1);
@@ -67,11 +71,11 @@ function refreshDate() {
       || myYear < myDate.getFullYear()
       || (myYear === myDate.getFullYear() && myMonth < myDate.getMonth())
     ) {
-      myclass = " class='lightgrey'"; // 在今天之前的日期，以淺灰色字體顯示
+      myclass = " class='lightgrey li-init disable-click'"; // 在今天之前的日期，以淺灰色字體顯示
     } else if (iplus1 === myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth()) {
-      myclass = " class='white orangebox'"; // 當天日期以橘色背景顯示
+      myclass = " class='white orangebox li-init'"; // 當天日期以橘色背景顯示
     } else {
-      myclass = " class='white'"; // 在今天之後的日期，以白色字體顯示
+      myclass = " class='white li-init'"; // 在今天之後的日期，以白色字體顯示
     }
 
     // 日期自動換行
@@ -80,28 +84,50 @@ function refreshDate() {
             </div>`;
   }
 
+  // 選到的日期會有橘色背景
+  days.addEventListener('click', (e) => {
+    for (let i = 0; i < liInit.length; i++) {
+      if ((e.target.innerText === liInit[i].innerHTML
+          && myYear === myDate.getFullYear()
+          && myMonth === myDate.getMonth()
+          && e.target.innerText >= myDay)
+          || (e.target.innerText === liInit[i].innerHTML
+            && myYear >= myDate.getFullYear()
+            && myMonth > myDate.getMonth()
+            && e.target.innerText)
+          || (e.target.innerText === liInit[i].innerHTML
+            && myYear > myDate.getFullYear()
+            && myMonth <= myDate.getMonth()
+            && e.target.innerText)) {
+        liInit[i].classList.add('orangebox');
+      } else {
+        liInit[i].classList.remove('orangebox');
+      }
+    }
+
+    // 方框內日期顯示
+    if ((myYear === myDate.getFullYear()
+        && myMonth === myDate.getMonth()
+        && e.target.innerText < myDay)
+        || myYear < myDate.getFullYear()
+        || (myYear === myDate.getFullYear() && myMonth < myDate.getMonth())
+    ) {
+      dat.innerHTML = '';
+    } else {
+      dat.innerHTML = e.target.innerText;
+    }
+  });
+
   holder.innerHTML = str; // 设置日期显示
   ctitle.innerHTML = monthName[myMonth]; // 设置英文月份显示
   cyear.innerHTML = myYear; // 设置年份显示
   // 方框內日期顯示
-  dat.innerHTML = myDay;
   mon.innerHTML = monthName[myMonth];
+  dat.innerHTML = myDay;
   years.innerHTML = myYear;
 }
 
 refreshDate(); // 執行該函数
-
-// // 選擇年分
-// const yearInput = document.getElementById('year-input');
-// yearInput.addEventListener('change', (e) => {
-//   if (e.target.value !== undefined) {
-//     myYear = e.target.value;
-//   } else {
-//     myYear = myDate.getFullYear();
-//   }
-
-//   refreshDate();
-// });
 
 // 0=1月,1=2月...
 prev.onclick = (e) => {
@@ -112,6 +138,7 @@ prev.onclick = (e) => {
     myMonth = 11;
   }
   refreshDate();
+  dat.innerHTML = '';
 };
 next.onclick = (e) => {
   e.preventDefault();
@@ -121,4 +148,5 @@ next.onclick = (e) => {
     myMonth = 0;
   }
   refreshDate();
+  dat.innerHTML = '';
 };

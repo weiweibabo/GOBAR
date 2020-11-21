@@ -2,8 +2,9 @@ body {
   background-color: #141f2b;
   font-family: "Noto Sans TC", sans-serif;
   background-image: url(../img/golden-line3.png);
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: 0 30%;
   color: #fff;
 }
 
@@ -58,7 +59,6 @@ header {
 .info-area {
   justify-content: center;
   position: relative;
-  
 }
 
 .text-infom {
@@ -69,7 +69,7 @@ header {
 .title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 70px;
 }
 
@@ -81,7 +81,6 @@ img {
   text-align: start;
 }
 
-
 .info {
   display: flex;
   flex-direction: column;
@@ -91,7 +90,7 @@ img {
 
 /* QRCODE modal */
 
-.qurcode-btn{
+.qurcode-btn {
   background-image: url(../img/Qrcode.png);
   background-repeat: no-repeat;
   width: 80%;
@@ -99,24 +98,31 @@ img {
   margin-top: 100px;
 }
 
-.modal-content{
-  background-color:#141f2b;
+.modal-content {
+  background-color: #141f2b;
   height: 600px;
+  border-radius: 10px;
 }
 
-.modal-footer,.modal-header{
+.modal-title {
+  padding-left: 140px;
+}
+
+.modal-footer,
+.modal-header {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-.close{
+.close {
   text-shadow: none;
-  opacity:1;
+  opacity: 1;
 }
-.close span{
+.close span {
   color: #ff8d00;
 }
 
-#qrcode-size{
+#qrcode-size {
   display: flex;
   justify-content: center;
   margin-top: 12px;
@@ -131,31 +137,29 @@ img {
   margin-top: 230px;
   width: 70%;
   border: none;
+  margin-left: 10px;
 }
-
 
 /*  */
-.black-bg{
+.black-bg {
   position: absolute;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 730px;
   /* z-index: -1; */
-  margin-top:200px ;
+  margin-top: 200px;
 }
 
-.space{
+.space {
   height: 730px;
 }
 
-.dots1{
+.dots1 {
   position: absolute;
-  transform: translate(-80px,340px);
-
+  transform: translate(-80px, 340px);
 }
-.dots2{
+.dots2 {
   position: absolute;
-  transform: translate(1070px,-75px);
-
+  transform: translate(1070px, -75px);
 }
 
 /* footer-area */
