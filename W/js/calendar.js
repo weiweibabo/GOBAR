@@ -1,86 +1,124 @@
-var month_olympic = [31,29,31,30,31,30,31,31,30,31,30,31];
-var month_normal = [31,28,31,30,31,30,31,31,30,31,30,31];
-var month_name = ["January","Febrary","March","April","May","June","July","Auguest","September","October","November","December"];
+/* eslint-disable no-plusplus */
+const monthOlympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const monthNormal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const monthName = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
-var holder = document.getElementById("days");
-var prev = document.getElementById("prev");
-var next = document.getElementById("next");
-var ctitle = document.getElementById("calendar-title");
-var cyear = document.getElementById("calendar-year");
+const holder = document.getElementById('days');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const ctitle = document.getElementById('calendar-title');
+const cyear = document.getElementById('calendar-year');
 
-var my_date = new Date();
-var my_year = my_date.getFullYear();
-var my_month = my_date.getMonth();
-var my_day = my_date.getDate();
+const years = document.getElementById('years');
+const mon = document.getElementById('mon');
+const dat = document.getElementById('dat');
 
-//获取某年某月第一天是星期几
+const myDate = new Date();
+let myYear = myDate.getFullYear();
+let myMonth = myDate.getMonth();
+const myDay = myDate.getDate();
+
+// 获取某年某月第一天是星期几
 function dayStart(month, year) {
-	var tmpDate = new Date(year, month, 1);
-	return (tmpDate.getDay());
+  const tmpDate = new Date(year, month, 1);
+  return tmpDate.getDay();
 }
 
-//计算某年是不是闰年，通过求年份除以4的余数即可
+// 计算某年是不是闰年，通过求年份除以4的余数即可
 function daysMonth(month, year) {
-	var tmp = year%4===0&&year%100!==0||year%400===0;
-	if (tmp) {
-		return (month_olympic[month]);
-	} else {
-		return (month_normal[month]);
-	}
+  const tmp = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  if (tmp) {
+    return monthOlympic[month];
+  }
+  return monthNormal[month];
 }
 
-function refreshDate(){
-	var str = "";
-	var totalDay = daysMonth(my_month, my_year); //获取该月总天数
-	var firstDay = dayStart(my_month, my_year); //获取该月第一天是星期几
-	var myclass;
-	for(var i=1; i<firstDay; i++){ 
-		str += "<li></li>"; //为起始日之前的日期创建空白节点
-	}
-	for(var i=1; i<=totalDay; i++){
-		if((i<my_day && my_year==my_date.getFullYear() && my_month==my_date.getMonth()) || my_year<my_date.getFullYear() || ( my_year==my_date.getFullYear() && my_month<my_date.getMonth())){ 
-			myclass = " class='lightgrey'"; //当该日期在今天之前时，以浅灰色字体显示
-		}else if (i==my_day && my_year==my_date.getFullYear() && my_month==my_date.getMonth()){
-			myclass = " class='green greenbox'"; //当天日期以绿色背景突出显示
-		}else{
-			myclass = " class='darkgrey'"; //当该日期在今天之后时，以深灰字体显示
-		}
-		str += "<div class='date-init'><li "+myclass+">"+i+"</li></div>"; //创建日期节点
-	}
-	holder.innerHTML = str; //设置日期显示
-	ctitle.innerHTML = month_name[my_month]; //设置英文月份显示
-	cyear.innerHTML = my_year; //设置年份显示
-}
-refreshDate(); //执行该函数
+function refreshDate() {
+  let str = ' ';
 
-// 選擇年分
-let yearInput = document.getElementById('year-input')
-yearInput.addEventListener('change', (e)=> {
-    if(e.target.value !== undefined) {
-        my_year = e.target.value
-    }else {
-        my_year = my_date.getFullYear();
+  // 計算該月總天數
+  const totalDay = daysMonth(myMonth, myYear);
+
+  // 計算該月第一天是星期幾  // 0=星期日 1-6=星期一到六
+  const firstDay = dayStart(myMonth, myYear);
+
+  let myclass; // =undefine
+
+  // date array init
+  const dateArr = [];
+
+  // first day
+  for (let i = 0; i < totalDay + firstDay; i++) {
+    if (firstDay === 0) {
+      dateArr.push(i + 1);
+    } else if (i < firstDay) {
+      dateArr.push('');
+    } else {
+      dateArr.push(i - firstDay + 1);
+    }
+  }
+
+  for (let i = 0; i < dateArr.length; i++) {
+    // i+1 是因為日期從1號開始
+    const iplus1 = i + 1;
+
+    if (
+      (iplus1 < myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth())
+      || myYear < myDate.getFullYear()
+      || (myYear === myDate.getFullYear() && myMonth < myDate.getMonth())
+    ) {
+      myclass = " class='lightgrey'"; // 在今天之前的日期，以淺灰色字體顯示
+    } else if (iplus1 === myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth()) {
+      myclass = " class='white orangebox'"; // 當天日期以橘色背景顯示
+    } else {
+      myclass = " class='white'"; // 在今天之後的日期，以白色字體顯示
     }
 
-    refreshDate()
-})
+    // 日期自動換行
+    str += `<div class="date-init">
+              <li${myclass}>${dateArr[i]}</li>
+            </div>`;
+  }
 
+  holder.innerHTML = str; // 设置日期显示
+  ctitle.innerHTML = monthName[myMonth]; // 设置英文月份显示
+  cyear.innerHTML = myYear; // 设置年份显示
+  // 方框內日期顯示
+  dat.innerHTML = myDay;
+  mon.innerHTML = monthName[myMonth];
+  years.innerHTML = myYear;
+}
 
-prev.onclick = function(e){
-	e.preventDefault();
-	my_month--;
-	if(my_month<0){
-		my_year--;
-		my_month = 11;
-	}
-	refreshDate();
-}
-next.onclick = function(e){
-	e.preventDefault();
-	my_month++;
-	if(my_month>11){
-		my_year++;
-		my_month = 0;
-	}
-	refreshDate();
-}
+refreshDate(); // 執行該函数
+
+// // 選擇年分
+// const yearInput = document.getElementById('year-input');
+// yearInput.addEventListener('change', (e) => {
+//   if (e.target.value !== undefined) {
+//     myYear = e.target.value;
+//   } else {
+//     myYear = myDate.getFullYear();
+//   }
+
+//   refreshDate();
+// });
+
+// 0=1月,1=2月...
+prev.onclick = (e) => {
+  e.preventDefault();
+  myMonth--;
+  if (myMonth < 0) {
+    myYear--;
+    myMonth = 11;
+  }
+  refreshDate();
+};
+next.onclick = (e) => {
+  e.preventDefault();
+  myMonth++;
+  if (myMonth > 11) {
+    myYear++;
+    myMonth = 0;
+  }
+  refreshDate();
+};
