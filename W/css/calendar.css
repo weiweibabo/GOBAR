@@ -1,8 +1,9 @@
 .calendar {
-  width: 450px;
+  width: 100%;
   height: 350px;
   background: #537793;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .title {
@@ -16,7 +17,7 @@
   width: 100%;
   font-family: arial;
   font-weight: bold;
-  font-size: 14px;
+  /* font-size: 14px; */
   padding-left: 0;
 }
 
@@ -59,6 +60,7 @@
 .green {
   color: #fff; 
 }
+
 .greenbox {
     display: flex;
     align-items: center;
