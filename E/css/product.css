@@ -9,7 +9,7 @@ section {
   background-color: #002a4c;
   background-attachment: fixed;
 }
-section.line {
+section.line1 {
   background-image: url(../img/line.png);
   background-attachment: fixed;
 }
@@ -207,5 +207,24 @@ Img {
   left: 450px;
   bottom: 200px;
 }
+.col-6 {
+  width: 450px;
+}
+.intro h3 {
+  color: white;
+  margin-bottom: 50px;
+}
 
-.col-6--
+.drinks-intro--picture {
+  height: 650px;
+  width: 450px;
+}
+.drinks-intro--words {
+  font-size: 20px;
+  color: white;
+  width: 450px;
+}
+.drinks-intro--name {
+  background-color: #f48e09;
+  text-align: center;
+}
