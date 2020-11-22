@@ -3,6 +3,7 @@
 } */
 body {
   background-color: #002a4c;
+  font-family: ;
 }
 
 section {
@@ -214,12 +215,13 @@ Img {
   left: 450px;
   bottom: 200px;
 }
-.col-6 {
+/* .col-6 {
   width: 450px;
-}
+} */
 .intro h3 {
   color: white;
   margin-bottom: 50px;
+  padding-top: 80px;
 }
 
 .drinks-intro--picture {
@@ -235,4 +237,26 @@ Img {
 .drinks-intro--name {
   background-color: #f48e09;
   text-align: center;
+}
+.food-intro-pic01 {
+  width: 530px;
+  height: 580px;
+}
+.food-intro-pic02 {
+  height: 250px;
+  width: 100px;
+}
+
+.food-intro-pic03 {
+  width: 200px;
+  height: 300px;
+  right: 555px;
+  top: 280px;
+  width: 100%;
+}
+.food-intro-word {
+  bottom: 0px;
+  color: white;
+  font-weight: 300;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }

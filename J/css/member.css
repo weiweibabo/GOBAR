@@ -4,6 +4,8 @@
 
 main {
   background-color: #141f2b;
+  background-image: url(../png/goldline.png);
+  background-image: cover;
 }
 
 .goldline {
@@ -38,11 +40,16 @@ main {
   margin: 0 auto;
 }
 
+.card-area {
+  margin: 0 auto;
+}
+
 .card1 {
   height: 150px;
   background-color: #022a4c;
   align-items: center;
   width: 378px;
+  margin: 0 auto;
 }
 
 .card1 h2 {
@@ -52,11 +59,15 @@ main {
 
 .card1 p {
   color: white;
-  padding: 10px 0 0 10px;
+  margin-left: 10px;
 }
 
 .card2 {
   margin: 0 auto;
+}
+
+.card2 img {
+  margin-left: 51px;
 }
 
 .svg {
@@ -68,13 +79,19 @@ main {
   color: white;
 }
 
+.cardmoney img {
+  margin-left: 10px;
+}
+
 .cardmoney p {
   color: white;
   font-size: 20px;
+  margin-top: 15px;
 }
 
 .cardmoney h1 {
   color: white;
+  margin-right: 10px;
 }
 
 .bottom-text {
