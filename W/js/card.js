@@ -8,7 +8,6 @@ window.onload = function () {
   const ccsingle = document.getElementById('ccsingle');
 
   const cctype = null;
-
   // Mask the Credit Card Number Input
   const cardnumber_mask = new IMask(cardnumber, {
     mask: [
@@ -123,22 +122,6 @@ window.onload = function () {
         break;
     }
   });
-
-  // Generate random card number from list of known test numbers
-  const randomCard = function () {
-    const testCards = [
-      '4000056655665556',
-      '5200828282828210',
-      '371449635398431',
-      '6011000990139424',
-      '30569309025904',
-      '3566002020360505',
-      '6200000000000005',
-      '6759649826438453',
-    ];
-    const randomNumber = Math.floor(Math.random() * testCards.length);
-    cardnumber_mask.unmaskedValue = testCards[randomNumber];
-  };
 
   // CREDIT CARD IMAGE JS
   document.querySelector('.preload').classList.remove('preload');
