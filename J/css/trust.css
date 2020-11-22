@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   background-color: #141f2b;
@@ -24,9 +24,13 @@ body {
 
 .top-area {
   width: 1440px;
-  height: 400px;
+  height: 325px;
   margin: 0 auto;
   margin-top: 70px;
+}
+
+.name2 img {
+  margin-left: 50px;
 }
 
 .name2 p {
@@ -75,7 +79,6 @@ body {
   width: 1440px;
   height: 400px;
   margin: 0 auto;
-  padding: 1rem 0;
   border-top: 2px solid white;
 }
 
@@ -139,6 +142,54 @@ body {
 .change svg {
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.left-area p {
+  color: white;
+  font-size: 30px;
+  margin-top: 1rem;
+}
+
+.date svg {
+  padding: 0 20px;
+}
+
+.date-svg p {
+  color: white;
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+
+.date img {
+  padding: 20px;
+}
+
+.card1 {
+  height: 190px;
+  background-color: #000;
+  justify-items: center;
+  opacity: 0.8;
+  padding: 12px 0;
+}
+
+.card-text {
+  color: white;
+  padding: 0 60px;
+  width: 500px;
+}
+
+.card-text p {
+  color: white;
+}
+
+.titleh1 {
+  font-size: 15px;
+}
+
+.title-erro {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 /* --------------------------- footer */
