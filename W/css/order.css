@@ -73,29 +73,13 @@ header {
   }
 }
 
-.line {
-  background-color: #ffd700;
-  transform: translate(-270px, 21px);
-  width: 0%;
-  height: 5px;
-  position: absolute;
-  display: inline-block;
-  animation-name: MoveToRight; /*動畫名稱，需與 keyframe 名稱對應*/
-  animation-duration: 3s; /*動畫持續時間，單位為秒*/
-  animation-delay: 3s; /*動畫延遲開始時間*/
-  animation-fill-mode: forwards;
-}
+/* text */
 
-@keyframes MoveToRight {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 6%;
-  }
+.title-20B {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
-
-/* calendar area */
 
 .title-40M {
   color: #fff;
@@ -113,7 +97,8 @@ header {
 .order-form {
   flex-direction: column;
 }
-.order-form p {
+.order-form p,
+option {
   color: #000;
 }
 

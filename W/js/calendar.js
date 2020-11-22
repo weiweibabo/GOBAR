@@ -2,6 +2,15 @@
 const monthOlympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const monthNormal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const monthName = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+const weekArr = [
+  { key: 'Sun', value: 'SUNDAY' },
+  { key: 'Mon', value: 'MONDAY' },
+  { key: 'Tue', value: 'TUESDAY' },
+  { key: 'Wed', value: 'WEDNESDAY' },
+  { key: 'Thu', value: 'THURSDAY' },
+  { key: 'Fri', value: 'FRIDAY' },
+  { key: 'Sat', value: 'SATURDAY' },
+];
 
 const holder = document.getElementById('days');
 const prev = document.getElementById('prev');
@@ -12,6 +21,8 @@ const cyear = document.getElementById('calendar-year');
 const years = document.getElementById('years');
 const mon = document.getElementById('mon');
 const dat = document.getElementById('dat');
+const bigDate = document.getElementById('big-date');
+const weekdays = document.getElementById('weekdays');
 
 const myDate = new Date();
 let myYear = myDate.getFullYear();
@@ -20,7 +31,6 @@ const myDay = myDate.getDate();
 
 const days = document.querySelector('#days');
 const liInit = document.getElementsByClassName('li-init');
-const disableClick = document.getElementsByClassName('disable-click');
 
 // 获取某年某月第一天是星期几
 function dayStart(month, year) {
@@ -84,6 +94,18 @@ function refreshDate() {
             </div>`;
   }
 
+  // 日期初始化
+  let weekText = '';
+  const weekInit = new Date(myYear, myMonth, myDay);
+  weekText = String(weekInit).substr(0, 3);
+  // console.log(String(weekInit));
+
+  for (let i = 0; i < weekArr.length; i++) {
+    if (weekText === weekArr[i].key) {
+      weekdays.innerHTML = weekArr[i].value;
+    }
+  }
+
   // 選到的日期會有橘色背景
   days.addEventListener('click', (e) => {
     for (let i = 0; i < liInit.length; i++) {
@@ -105,6 +127,16 @@ function refreshDate() {
       }
     }
 
+    const selectedWeek = new Date(myYear, myMonth, e.target.innerText);
+    weekText = String(selectedWeek).substr(0, 3);
+
+    // 判斷選中的日期是星期幾
+    for (let i = 0; i < weekArr.length; i++) {
+      if (weekText === weekArr[i].key) {
+        weekdays.innerHTML = weekArr[i].value;
+      }
+    }
+
     // 方框內日期顯示
     if ((myYear === myDate.getFullYear()
         && myMonth === myDate.getMonth()
@@ -113,8 +145,11 @@ function refreshDate() {
         || (myYear === myDate.getFullYear() && myMonth < myDate.getMonth())
     ) {
       dat.innerHTML = '';
+      bigDate.innerHTML = '';
+      weekdays.innerHTML = '';
     } else {
       dat.innerHTML = e.target.innerText;
+      bigDate.innerHTML = e.target.innerText;
     }
   });
 
@@ -125,6 +160,8 @@ function refreshDate() {
   mon.innerHTML = monthName[myMonth];
   dat.innerHTML = myDay;
   years.innerHTML = myYear;
+  // 橘色內的巨大日期
+  bigDate.innerHTML = myDay;
 }
 
 refreshDate(); // 執行該函数
@@ -139,6 +176,8 @@ prev.onclick = (e) => {
   }
   refreshDate();
   dat.innerHTML = '';
+  weekdays.innerHTML = '';
+  bigDate.innerHTML = '';
 };
 next.onclick = (e) => {
   e.preventDefault();
@@ -149,4 +188,6 @@ next.onclick = (e) => {
   }
   refreshDate();
   dat.innerHTML = '';
+  weekdays.innerHTML = '';
+  bigDate.innerHTML = '';
 };
