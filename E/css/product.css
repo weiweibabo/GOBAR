@@ -258,5 +258,35 @@ Img {
   bottom: 0px;
   color: white;
   font-weight: 300;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+.comment-pic {
+  margin-top: 20px;
+}
+
+.comment-name {
+  color: white;
+  left: 150px;
+  margin-top: 20px;
+}
+.comment-time {
+  color: white;
+  left: 350px;
+  margin-top: 20px;
+}
+
+.comment-star {
+  left: 950px;
+  margin-top: 20px;
+}
+
+.comment-content {
+  color: white;
+  left: 150px;
+  top: 30px;
+  width: 84%;
+  margin-top: 20px;
+}
+.comment {
+  background-color: rgba(0, 0, 0, 0.7);
 }
