@@ -7,10 +7,17 @@
   height: 20px;
 }
 
+.line {
+  border-bottom: 0.5px solid white;
+  width: 80px;
+  margin: 30px auto;
+}
+
 .modal-content {
   width: 460px;
   height: 790px;
   background-color: #002a4c;
+  margin: 0 auto;
 }
 
 #exampleModalLabel {
@@ -35,6 +42,10 @@
 
 .icon {
   justify-content: space-around;
+}
+
+.icon svg {
+  margin: 0 30px;
 }
 
 .sign-text p {
@@ -106,4 +117,8 @@
   width: 23rem;
   height: 30px;
   margin: 1rem auto;
+}
+
+.input-group input {
+  border-bottom: 1px solid white;
 }

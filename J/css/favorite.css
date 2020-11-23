@@ -1,16 +1,26 @@
 /* * {
-    outline: 1px solid red;
-  } */
+  outline: 1px solid red;
+} */
 
 body {
   background-color: #141f2b;
+  z-index: 1;
 }
 
 #Member-Centre {
   background-color: #141f2b;
-  width: 1440px;
-  height: 934px;
-  position: relative;
+  width: 75%;
+  height: 1000px;
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goldline {
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
 }
 
 /* ----------------------------navbar */
@@ -29,6 +39,10 @@ body {
   margin-top: 70px;
 }
 
+.name2 img {
+  margin-left: 50px;
+}
+
 .name2 p {
   color: white;
   font-size: 20px;
@@ -36,6 +50,7 @@ body {
   width: 120px;
   text-align: center;
   width: 200px;
+  margin-top: 10px;
 }
 
 .name2svg {
@@ -143,7 +158,7 @@ body {
 
 /* --------------------------- footer */
 
-footer {
+.foot {
   height: 205px;
   background-color: #002a4c;
 }
