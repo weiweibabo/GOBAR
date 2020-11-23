@@ -12,7 +12,8 @@ header {
 }
 
 .container-fluid {
-  width: 75%;
+  width: 100%;
+  max-width: 1440px;
   position: relative;
 }
 
@@ -31,6 +32,13 @@ header {
   font-size: 20px;
   line-height: 30px;
 }
+
+.glass-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .glass {
   display: flex;
   justify-content: center;
@@ -40,7 +48,7 @@ header {
 .animate-position {
   position: absolute;
   top: 20px;
-  left: 38.8%;
+  left: 2px;
   width: 47px;
   height: 27px;
   border-radius: 0 0 27px 27px;
@@ -96,6 +104,7 @@ header {
 /* form area */
 .order-form {
   flex-direction: column;
+  margin-right: 48px;
 }
 .order-form p,
 option {
@@ -147,6 +156,8 @@ option {
 
 .text-area textarea {
   border-radius: 5px;
+  color: #000;
+  font-weight: 300;
 }
 
 .label-text label {
@@ -160,7 +171,7 @@ option {
   color: #fff;
   background-color: #ff8d00;
   border-radius: 12px;
-  width: 100%;
+  width: 90%;
   height: 35px;
   border: none;
 }
@@ -168,8 +179,6 @@ option {
 .next-btn2 {
   margin-top: 17px;
 }
-
-/* input驗證 */
 
 /* 金線 */
 
@@ -220,7 +229,7 @@ footer {
   background: #002a4c;
 }
 
-/*  */
+/* RWD */
 
 @media (min-width: 768px) {
   .phone {
@@ -241,8 +250,12 @@ footer {
     height: 190px;
   }
 
+  .phone-shop {
+    font-size: 24px;
+  }
+
   .progress-line {
-    margin: 10px;
+    margin: 35px 40px 20px 10px;
   }
   .progress-line p {
     color: #fff;
@@ -250,9 +263,40 @@ footer {
     line-height: 30px;
   }
 
+  .phone-from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .order-form {
+    margin-right: 0px;
+  }
+
+  .input-area2 {
+    margin: 50px 0;
+  }
+
+  .label-text label {
+    padding-left: 0px;
+    font-size: 14px;
+  }
+
+  .from-text {
+    font-size: 16px;
+  }
+
+  .inputbox {
+    font-size: 16px;
+  }
+
+  .next-btn {
+    width: 87%;
+  }
+
   .err {
     color: #ff5172;
     position: absolute;
-    transform: translate(180px, 12px);
+    transform: translate(235px, 12px);
   }
 }

@@ -11,8 +11,10 @@ header {
 }
 
 .container-fluid {
-  width: 75%;
+  width: 100%;
+  max-width: 1440px;
   position: relative;
+  margin: auto;
 }
 
 /* 進度條 */
@@ -29,42 +31,71 @@ header {
   font-size: 20px;
   line-height: 30px;
 }
+.glass-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .glass {
   display: flex;
   justify-content: center;
   position: relative;
 }
-.glass img {
-  position: relative;
-}
-
-.fix-yellow1 {
-  display: inline-block;
-  background-color: #ffd700;
-  width: 47px;
-  height: 27px;
-  border-radius: 0 0 27px 27px;
-  position: absolute;
-  transform: translate(527px, -28px);
-}
-.fix-yellow2 {
-  display: inline-block;
-  background-color: #ffd700;
-  width: 47px;
-  height: 27px;
-  border-radius: 0 0 27px 27px;
-  position: absolute;
-  transform: translate(660.8px, -30px);
-}
 
 .animate-position {
   position: absolute;
-  top: 19px;
-  left: 58.13%;
+  top: 18px;
+  left: 270.59px;
   width: 47px;
   height: 27px;
   border-radius: 0 0 27px 27px;
   overflow: hidden;
+}
+.animate-position1 {
+  position: absolute;
+  top: 21px;
+  left: 184px;
+  width: 84px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position2 {
+  position: absolute;
+  top: 20px;
+  left: 2.3px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position3 {
+  position: absolute;
+  top: 18px;
+  left: 136px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position4 {
+  position: absolute;
+  top: 20px;
+  left: 51.3px;
+  width: 83px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+
+.fix-yellow {
+  display: inline-block;
+  background-color: #ffd700;
+  width: 47px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  position: absolute;
 }
 
 .top {
@@ -73,7 +104,6 @@ header {
   width: 47px;
   height: 0px;
   border-radius: 0 0 27px 27px;
-
   animation-name: MoveUp; /*動畫名稱，需與 keyframe 名稱對應*/
   animation-duration: 3s; /*動畫持續時間，單位為秒*/
   animation-delay: 3s; /*動畫延遲開始時間*/
@@ -95,8 +125,7 @@ header {
 
 .fix-line {
   background-color: #ffd700;
-  transform: translate(575px, -26.5px);
-  width: 6.1%;
+  width: 85px;
   height: 5px;
   position: absolute;
   display: inline-block;
@@ -104,8 +133,7 @@ header {
 
 .line {
   background-color: #ffd700;
-  transform: translate(-134px, 21px);
-  width: 0%;
+  width: 0px;
   height: 5px;
   position: absolute;
   display: inline-block;
@@ -120,7 +148,7 @@ header {
     width: 0%;
   }
   to {
-    width: 6.1%;
+    width: 100%;
   }
 }
 

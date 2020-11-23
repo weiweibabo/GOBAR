@@ -11,8 +11,10 @@ header {
 }
 
 .container-fluid {
-  width: 75%;
+  width: 100%;
+  max-width: 1440px;
   position: relative;
+  margin: auto;
 }
 
 /* 進度條 */
@@ -29,13 +31,45 @@ header {
   font-size: 20px;
   line-height: 30px;
 }
+
+.glass-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .glass {
   display: flex;
   justify-content: center;
   position: relative;
 }
-.glass img {
-  position: relative;
+
+.animate-position {
+  position: absolute;
+  top: 20px;
+  left: 136.59px;
+  width: 47px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position1 {
+  position: absolute;
+  top: 20px;
+  left: 49px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position2 {
+  position: absolute;
+  top: 20px;
+  left: 2.3px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
 }
 
 .fix-yellow {
@@ -45,17 +79,6 @@ header {
   height: 27px;
   border-radius: 0 0 27px 27px;
   position: absolute;
-  transform: translate(541.7px, -28px);
-}
-
-.animate-position {
-  position: absolute;
-  top: 20px;
-  left: 48.355%;
-  width: 47px;
-  height: 25px;
-  border-radius: 0 0 25px 25px;
-  overflow: hidden;
 }
 
 .top {
@@ -86,8 +109,7 @@ header {
 
 .line {
   background-color: #ffd700;
-  transform: translate(-268px, 21px);
-  width: 0%;
+  width: 0px;
   height: 5px;
   position: absolute;
   display: inline-block;
@@ -102,7 +124,7 @@ header {
     width: 0%;
   }
   to {
-    width: 6%;
+    width: 100%;
   }
 }
 

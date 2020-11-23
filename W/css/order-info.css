@@ -15,7 +15,9 @@ header {
 }
 
 .container-fluid {
-  width: 75%;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,7 +61,8 @@ header {
 .info-area {
   justify-content: center;
   position: relative;
-  margin-top: 48px;
+  padding: 0 1.5rem;
+  margin: 3rem 0;
 }
 
 .text-infom {
@@ -186,23 +189,20 @@ header {
 
 /* 裝飾點點 */
 .black-bg {
-  position: absolute;
+  position: relative;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 730px;
-  margin-top: 200px;
-}
-
-.space {
   height: 730px;
 }
 
 .dots1 {
   position: absolute;
-  transform: translate(-89px, 340px);
+  bottom: -55px;
+  left: -55px;
 }
 .dots2 {
   position: absolute;
-  transform: translate(1232px, -75px);
+  top: -55px;
+  right: -55px;
 }
 
 /* footer-area */
