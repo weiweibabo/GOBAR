@@ -90,6 +90,8 @@ main {
 
 .answer {
   color: white;
+  display: flex;
+  padding: 200px 0 0 0;
 }
 
 .textbox1 p {
@@ -98,12 +100,17 @@ main {
   width: 100px;
   text-align: center;
   border-radius: 10px;
+  height: 30px;
+  margin: 0 20px;
 }
 
 .textbox2 {
   background-color: #ff8d00;
   width: 100px;
   border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  margin-left: 100px;
 }
 
 .textbox2 p {

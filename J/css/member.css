@@ -4,8 +4,10 @@
 
 main {
   background-color: #141f2b;
-  background-image: url(../png/goldline.png);
+  background-image: url(../png/收藏店家-1.png);
   background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .goldline {
@@ -28,6 +30,13 @@ main {
 }
 
 .topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 {
   font-size: 30px;
   color: white;
   text-align: center;
@@ -98,7 +107,7 @@ main {
   color: #e58c21;
   padding-top: 30px;
   width: 100px;
-  margin-left: 278px;
+  margin-left: 330px;
 }
 
 .bottom-text p {
