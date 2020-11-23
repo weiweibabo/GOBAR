@@ -124,3 +124,10 @@
   pointer-events: none;
   cursor: default;
 }
+
+.gobar {
+  margin-top: 48px;
+}
+/* .gobar2 {
+  margin-top: 300px;
+} */

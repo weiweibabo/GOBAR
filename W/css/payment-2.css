@@ -45,7 +45,7 @@ header {
   height: 27px;
   border-radius: 0 0 27px 27px;
   position: absolute;
-  transform: translate(533px, -28px);
+  transform: translate(527px, -28px);
 }
 .fix-yellow2 {
   display: inline-block;
@@ -54,13 +54,13 @@ header {
   height: 27px;
   border-radius: 0 0 27px 27px;
   position: absolute;
-  transform: translate(666.5px, -30px);
+  transform: translate(660.8px, -30px);
 }
 
 .animate-position {
   position: absolute;
   top: 19px;
-  left: 58.03%;
+  left: 58.13%;
   width: 47px;
   height: 27px;
   border-radius: 0 0 27px 27px;
@@ -95,7 +95,7 @@ header {
 
 .fix-line {
   background-color: #ffd700;
-  transform: translate(580px, -26.5px);
+  transform: translate(575px, -26.5px);
   width: 6.1%;
   height: 5px;
   position: absolute;
@@ -104,7 +104,7 @@ header {
 
 .line {
   background-color: #ffd700;
-  transform: translate(-136px, 21px);
+  transform: translate(-134px, 21px);
   width: 0%;
   height: 5px;
   position: absolute;
@@ -224,7 +224,7 @@ header {
 }
 .golden-line2 {
   position: absolute;
-  transform: translate(1340px, 500px);
+  transform: translate(1331px, 500px);
   background: url(../img/golden-line2.png);
   background-repeat: no-repeat;
   width: 30%;
@@ -239,8 +239,24 @@ footer {
   background: #002a4c;
 }
 
+/*  */
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .web {
     display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  footer {
+    height: 190px;
   }
 }

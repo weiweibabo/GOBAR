@@ -26,8 +26,8 @@
   <body>
     <header></header>
 
-    <div class="golden-line1"></div>
-    <div class="golden-line2"></div>
+    <div class="web golden-line1"></div>
+    <div class="web golden-line2"></div>
 
     <div class="container-fluid">
       <div>
@@ -58,15 +58,15 @@
       </div>
 
       <div class="title-40M row">
-        <p class="col-xl-2">我要訂位</p>
+        <p class="col-xl-2 col-12">我要訂位</p>
       </div>
 
       <div class="row justify-content-between">
-        <div class="col-xl-5">
+        <div class="col-xl-5 col-12">
           <div class="title-30">
             <p>安慰劑 Placebo Taipei</p>
           </div>
-          <div class="calendar-area">
+          <div class="calendar-area web">
             <div class="row justify-content-center">
               <div class="date-display d-flex">
                 <span class="mr-3">YEAR</span>
@@ -85,7 +85,7 @@
               <div class="orange-area">
                 <p id="big-date"></p>
                 <p id="weekdays"></p>
-                <p class="title-20B mt-5">GOBAR<br />CALENDAR</p>
+                <p id="gobar" class="gobar title-20B">GOBAR<br />CALENDAR</p>
               </div>
 
               <div class="calendar">
@@ -120,7 +120,7 @@
           </div>
         </div>
 
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-12">
           <form action="" class="order-form">
             <div class="mt-0">
               <div class="label-text">
@@ -130,7 +130,7 @@
                 <div class="from-text">
                   <p>*訂位人數 <span>|</span></p>
                 </div>
-                <select class="inputbox">
+                <select id="persons" class="inputbox">
                   <option>請選擇</option>
                   <option>1 位</option>
                   <option>2 位</option>
@@ -155,7 +155,7 @@
                 <div class="from-text">
                   <p>*預約時段 <span>|</span></p>
                 </div>
-                <select class="inputbox">
+                <select id="time" class="inputbox">
                   <option>請選擇</option>
                   <option>20:00</option>
                   <option>20:30</option>
@@ -172,30 +172,55 @@
               <div class="from-text">
                 <p>*訂位姓名 <span>|</span></p>
               </div>
-              <input class="inputbox" type="text" />
+              <input
+                id="name"
+                class="inputbox"
+                type="text"
+                autocomplete="off"
+              />
+              <div id="err1" class="err"></div>
             </div>
+
             <div class="input-area2">
               <div class="from-text">
                 <p>*連絡電話 <span>|</span></p>
               </div>
-              <input class="inputbox" type="text" />
+              <input
+                id="phone"
+                class="inputbox"
+                type="tel"
+                maxlength="10"
+                autocomplete="off"
+                oninput="value=value.replace(/[^\d]/g,'')"
+                required
+              />
+              <div id="err2" class="err"></div>
             </div>
             <div class="input-area2">
               <div class="from-text">
                 <p>*電子信箱 <span>|</span></p>
               </div>
-              <input class="inputbox" type="email" />
+              <input
+                id="email"
+                class="inputbox"
+                type="email"
+                autocomplete="off"
+              />
+              <div id="err3" class="err"></div>
             </div>
           </form>
         </div>
 
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-12">
           <form action="" class="text-area mt-1">
             <label for="">備註:</label>
             <br />
-            <textarea name="" id="" cols="32" rows="11"></textarea>
+            <textarea name="" id="" cols="30" rows="11"></textarea>
           </form>
-          <button class="next-btn">下一步</button>
+
+          <p id="errormsg"></p>
+
+          <button id="send" class="next-btn">下一步</button>
         </div>
       </div>
     </div>

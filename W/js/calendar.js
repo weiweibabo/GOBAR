@@ -23,6 +23,7 @@ const mon = document.getElementById('mon');
 const dat = document.getElementById('dat');
 const bigDate = document.getElementById('big-date');
 const weekdays = document.getElementById('weekdays');
+const gobar = document.getElementById('gobar');
 
 const myDate = new Date();
 let myYear = myDate.getFullYear();
@@ -191,3 +192,8 @@ next.onclick = (e) => {
   weekdays.innerHTML = '';
   bigDate.innerHTML = '';
 };
+
+// if (dat.innerHTML === '') {
+//   gobar.classList.remove('gobar');
+//   gobar.classList.add('gobar2');
+// }

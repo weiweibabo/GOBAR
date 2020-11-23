@@ -40,7 +40,7 @@ header {
 .animate-position {
   position: absolute;
   top: 20px;
-  left: 38.845%;
+  left: 38.8%;
   width: 47px;
   height: 27px;
   border-radius: 0 0 27px 27px;
@@ -106,8 +106,9 @@ option {
   display: flex;
   background-color: #fff;
   height: 50px;
-  margin: 50px;
+  margin: 50px 0 50px 50px;
   border-radius: 5px;
+  position: relative;
 }
 
 .inputbox {
@@ -138,10 +139,6 @@ option {
   color: #537793;
 }
 
-.input-area2 label {
-  color: #ff5172;
-}
-
 .text-area {
   color: #fff;
   font-size: 20px;
@@ -159,7 +156,7 @@ option {
 
 .next-btn {
   /* margin-left: 55px; */
-  margin-top: 70px;
+  margin-top: 50px;
   color: #fff;
   background-color: #ff8d00;
   border-radius: 12px;
@@ -167,6 +164,12 @@ option {
   height: 35px;
   border: none;
 }
+
+.next-btn2 {
+  margin-top: 17px;
+}
+
+/* input驗證 */
 
 /* 金線 */
 
@@ -182,7 +185,7 @@ option {
 }
 .golden-line2 {
   position: absolute;
-  transform: translate(1342px, 600px);
+  transform: translate(1330px, 600px);
   background: url(../img/golden-line2.png);
   background-repeat: no-repeat;
   width: 30%;
@@ -190,9 +193,66 @@ option {
   z-index: -1;
 }
 
+/* 錯誤訊息 */
+.err {
+  color: #ff5172;
+  position: absolute;
+  transform: translate(330px, 12px);
+}
+.err i {
+  color: #ff5172;
+}
+
+#errormsg {
+  color: #ff5172;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
+
 /* footer-area */
 footer {
   margin-top: 150px;
   height: 205px;
   background: #002a4c;
+}
+
+/*  */
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  footer {
+    height: 190px;
+  }
+
+  .progress-line {
+    margin: 10px;
+  }
+  .progress-line p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .err {
+    color: #ff5172;
+    position: absolute;
+    transform: translate(180px, 12px);
+  }
 }
