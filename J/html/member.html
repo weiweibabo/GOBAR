@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/member.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../media/phone-mamber.css">
 <body>
 
     <header>
@@ -16,14 +17,13 @@
     <main>
 
         <div class="container-fluid" style="width:75%">
-
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-6 col-xl-6">
                     <div class="topname">
                         <p>收藏店家</p>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6 col-xl-6">
                     <div class="topname1">
                         <p>歷史紀錄</p>
                     </div>
@@ -97,68 +97,73 @@
 
     <script>
 
-        const slider = document.querySelector('.card2');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-    
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-            cancelMomentumTracking();
-        });
-        
-        
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-        
-        
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-            beginMomentumTracking();
-        });
-        
-        
-        slider.addEventListener('mousemove', (e) => {
-            if(!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 3; //scroll-fast
-            var prevScrollLeft = slider.scrollLeft;
-            slider.scrollLeft = scrollLeft - walk;
-            velX = slider.scrollLeft - prevScrollLeft;
-        });
-        
-        // Momentum 
-        
-        var velX = 0;
-        var momentumID;
-        
-        slider.addEventListener('wheel', (e) => {
-            cancelMomentumTracking();
-        });  
-        
-        function beginMomentumTracking(){
-            cancelMomentumTracking();
+    const slide = (card2) => {
+    const slider = document.querySelector(`.${card2}`);
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        cancelMomentumTracking();
+    });
+
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        beginMomentumTracking();
+    });
+
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        let prevScrollLeft = slider.scrollLeft;
+        slider.scrollLeft = scrollLeft - walk;
+        velX = slider.scrollLeft - prevScrollLeft;
+    });
+
+// Momentum
+
+    let velX = 0;
+    let momentumID;
+
+    slider.addEventListener('wheel', (e) => {
+        cancelMomentumTracking();
+    });
+
+    function beginMomentumTracking(){
+        cancelMomentumTracking();
+        momentumID = requestAnimationFrame(momentumLoop);
+    }
+    function cancelMomentumTracking(){
+        cancelAnimationFrame(momentumID);
+    }
+    function momentumLoop(){
+        slider.scrollLeft += velX;
+        velX *= 0.95;
+        if (Math.abs(velX) > 0.5){
             momentumID = requestAnimationFrame(momentumLoop);
         }
-        function cancelMomentumTracking(){
-            cancelAnimationFrame(momentumID);
-        }
-        function momentumLoop(){
-            slider.scrollLeft += velX;
-            velX *= 0.95; 
-            if (Math.abs(velX) > 0.5){
-            momentumID = requestAnimationFrame(momentumLoop);
-            }
-        }
-            
-        </script>
+    }
+}
+slide('card2');
+slide('card2-2');
+// slide('items-3');
+
+    </script>
 
 </body>
 </html>

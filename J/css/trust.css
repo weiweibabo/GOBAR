@@ -8,9 +8,18 @@ body {
 
 #Member-Centre {
   background-color: #141f2b;
-  height: 990px;
-  position: relative;
   width: 75%;
+  height: 1000px;
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goldline {
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
 }
 
 /* ----------------------------navbar */
@@ -132,7 +141,7 @@ body {
   font-weight: bold;
   border-bottom: 5px solid #ff8d00;
   width: 200px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .change {
