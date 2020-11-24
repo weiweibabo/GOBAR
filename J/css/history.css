@@ -8,6 +8,10 @@ main {
   background-repeat: no-repeat;
 }
 
+.mainblock {
+  width: 75%;
+}
+
 #order {
   background-color: #141f2b;
   height: 1145px;

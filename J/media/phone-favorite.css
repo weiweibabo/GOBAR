@@ -1,0 +1,26 @@
+@media screen and (max-width: 414px) {
+  .aboutme1 {
+    font-size: 20px;
+  }
+
+  .aboutme2 {
+    font-size: 20px;
+  }
+
+  .bottom-word p {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .change {
+    margin-left: 0;
+  }
+
+  .bottom-text {
+    padding: 0;
+  }
+}
