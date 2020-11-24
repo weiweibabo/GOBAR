@@ -9,8 +9,6 @@ body {
   background: url(../img/line04.png);
   background-size: cover;
   background-repeat: no-repeat;
-  transform: translate(300px, 150px);
-  transform: scaleY(-1);
   width: 100%;
   height: 1300px;
   z-index: -1;
@@ -18,12 +16,8 @@ body {
 .dropdown {
   width: 160px;
   height: 50px;
-  bottom: 1230px;
-}
-
-.dropdown02 {
-  left: 200px;
-  bottom: 1230px;
+  margin-right: 80px;
+  margin-bottom: 30px;
 }
 
 .dropdown-btn {
@@ -50,16 +44,28 @@ body {
   background-color: #fe8d00;
 }
 
+.btn-secondary:hover {
+  background-color: rgba(255, 179, 82);
+}
+
 .dropdown-menu:hover > a:after {
   border-left-color: #fff;
 }
 
+.col-3 {
+  background-attachment: fixed;
+}
+
 .search {
   height: 120px;
-  width: 350px;
+  width: 400px;
   background-color: #fe8d00;
-  bottom: 1050px;
   color: white;
+  margin-bottom: 20px;
+}
+.search-all {
+  overflow-y: hidden;
+  overflow: auto;
 }
 .name {
   margin-left: 10px;
@@ -75,12 +81,11 @@ body {
   margin-right: 20px;
 }
 
-.price {
-  left: 240px;
-  bottom: 0px;
+.google-api {
+  width: 150%;
+  position: fixed;
+  height: 150%;
 }
-
-.like {
-  top: 5px;
-  left: 300px;
+.container {
+  position: fixed;
 }
