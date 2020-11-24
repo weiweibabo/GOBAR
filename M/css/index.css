@@ -138,7 +138,7 @@ select {
 select option {
   border: 1px solid red;
   color: #e8b816;
-  background: url(./img/scelectdown.svg) no-repeat center;
+  background: url(../img/scelectdown.svg) no-repeat center;
 }
 button {
   width: 100%;
@@ -321,7 +321,7 @@ main {
   right: 14%;
   top: 50%;
   transform: translateX(-50%);
-  background-image: url(./img/rightbutton.svg);
+  background-image: url(../img/rightbutton.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -332,7 +332,7 @@ main {
   left: 14%;
   top: 50%;
   transform: translateX(-50%);
-  background-image: url(./img/liftbutton.svg);
+  background-image: url(../img/liftbutton.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
