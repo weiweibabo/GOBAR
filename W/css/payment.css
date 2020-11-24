@@ -10,6 +10,10 @@ header {
   z-index: 20;
 }
 
+button:focus {
+  outline: transparent;
+}
+
 .container-fluid {
   width: 100%;
   max-width: 1440px;
