@@ -15,6 +15,7 @@ header {
   width: 100%;
   max-width: 1440px;
   position: relative;
+  margin: auto;
 }
 
 /* 進度條 */
@@ -158,6 +159,7 @@ option {
   border-radius: 5px;
   color: #000;
   font-weight: 300;
+  width: 100%;
 }
 
 .label-text label {
@@ -171,7 +173,7 @@ option {
   color: #fff;
   background-color: #ff8d00;
   border-radius: 12px;
-  width: 90%;
+  width: 100%;
   height: 35px;
   border: none;
 }
@@ -206,7 +208,8 @@ option {
 .err {
   color: #ff5172;
   position: absolute;
-  transform: translate(330px, 12px);
+  top: 12.5px;
+  right: 10px;
 }
 .err i {
   color: #ff5172;
@@ -250,17 +253,21 @@ footer {
     height: 190px;
   }
 
-  .phone-shop {
-    font-size: 24px;
-  }
-
   .progress-line {
-    margin: 35px 40px 20px 10px;
+    margin: 35px 40px 20px 40px;
   }
   .progress-line p {
     color: #fff;
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .conent-area {
+    justify-content: center;
+  }
+
+  .phone-shop {
+    font-size: 24px;
   }
 
   .phone-from {
@@ -291,12 +298,6 @@ footer {
   }
 
   .next-btn {
-    width: 87%;
-  }
-
-  .err {
-    color: #ff5172;
-    position: absolute;
-    transform: translate(235px, 12px);
+    width: 100%;
   }
 }

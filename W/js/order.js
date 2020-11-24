@@ -1,4 +1,5 @@
 // error message
+const selectDate = document.getElementById('select-date');
 const persons = document.getElementById('persons');
 const time = document.getElementById('time');
 const name = document.getElementById('name');
@@ -11,7 +12,8 @@ const err2 = document.getElementById('err2');
 const err3 = document.getElementById('err3');
 send.addEventListener('click', () => {
   if (
-    persons.value === '請選擇'
+    selectDate.value === ''
+      || persons.value === '請選擇'
       || time.value === '請選擇'
       || name.value === ''
       || phone.value === ''

@@ -176,6 +176,12 @@ header {
   font: weight 700;
 }
 
+/*  */
+
+.leftarea {
+  justify-content: center;
+}
+
 /* 付款成功打勾勾 */
 
 .success-area {
@@ -237,6 +243,13 @@ header {
     opacity: 1;
   }
 }
+/*  */
+.shop-info {
+  /* padding-bottom: 48px; */
+}
+.order-info {
+  margin-top: 48px;
+}
 
 /* 金線 */
 
@@ -286,5 +299,61 @@ footer {
 
   footer {
     height: 190px;
+  }
+
+  .progress-line {
+    margin: 35px 40px 20px 40px;
+  }
+  .progress-line p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .leftarea {
+  }
+
+  .success-text1 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .success-text2 {
+    font-size: 16px;
+  }
+
+  .shop-name {
+    font-size: 24px;
+  }
+
+  .address,
+  .phone-number {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .shop-info {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .order-info p {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }

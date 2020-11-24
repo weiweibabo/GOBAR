@@ -287,3 +287,14 @@ input {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
+/*  */
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+
+  .card-area {
+    width: 90%;
+  }
+}
