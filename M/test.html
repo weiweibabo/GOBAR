@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .option {
+            /*用div的樣式代替select的樣式*/
+            margin: 100px;
+            width: 140px;
+            height: 40px;
+            /*border-radius: 5px;*/
+            /*盒子陰影修飾作用,自己隨意*/
+            /* box-shadow: 0 0 5px #ccc;*/
+            border: 1px solid #cccccc;
+            position: relative;
+        }
+
+        .option select {
+            /*清除select的邊框樣式*/
+            border: none;
+            /*清除select聚焦時候的邊框顏色*/
+            outline: none;
+            /*將select的寬高等於div的寬高*/
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            /*隱藏select的下拉圖標*/
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /*通過padding-left的值讓文字居中*/
+            padding-left: 20px;
+        }
+
+        /*使用偽類給select添加自己想用的圖標*/
+        .option:after {
+            content: "";
+            width: 14px;
+            height: 8px;
+            background: url(../assets/arrow-down.png) no-repeat center;
+            /*通過定位將圖標放在合適的位置*/
+            position: absolute;
+            right: 20px;
+            top: 41%;
+            /*給自定義的圖標實現點擊下來功能*/
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="option">
+        <select name="">
+            <option value=" ">篩選實驗類型</option>
+            <option value="實驗1">實驗1</option>
+            <option value="實驗2">實驗2</option>
+        </select>
+    </div>
+</body>
+
+</html>
