@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #141F2B;
+        }
+
+        .glass {
+            width: 100px;
+            height: 200px;
+            position: relative;
+
+
+            margin: 20px auto 0;
+        }
+
+        .glass .neck {
+            width: 100px;
+            height: 100px;
+            transform: translateY(-50px) rotateX(85deg);
+
+
+        }
+
+        .glass .water {
+
+            width: 100px;
+            height: 150px;
+            position: relative;
+            top: -50px;
+        }
+
+        .glass .water .bubble {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .glass .water .bubble:nth-child(1) {
+            top: 80%;
+            left: 20%;
+            animation: bubble 2s ease-in-out 1.6s infinite;
+        }
+
+        .glass .water .bubble:nth-child(2) {
+            top: 80%;
+            left: 30%;
+            animation: bubble 2s ease-in-out .4s infinite;
+        }
+
+        .glass .water .bubble:nth-child(3) {
+            top: 80%;
+            left: 40%;
+            animation: bubble 2s ease-in-out 0s infinite;
+        }
+
+        .glass .water .bubble:nth-child(4) {
+            top: 80%;
+            left: 50%;
+            animation: bubble 2s ease-in-out .8s infinite;
+        }
+
+        .glass .water .bubble:nth-child(5) {
+            top: 80%;
+            left: 60%;
+            animation: bubble 2s ease-in-out 1.2s infinite;
+        }
+
+
+        @keyframes bubble {
+            0% {
+                opacity: 0;
+                transform: scale(0.1, 0.1);
+                top: 80%;
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1, 1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0.4, 0.4);
+                top: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass">
+        <div class="neck"></div>
+        <div class="water">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+</body>
+
+</html>
