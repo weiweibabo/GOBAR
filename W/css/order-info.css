@@ -61,7 +61,7 @@ header {
 .info-area {
   justify-content: center;
   position: relative;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
   margin: 3rem 0;
 }
 
@@ -246,18 +246,18 @@ footer {
 
   .phone-title {
     font-size: 30px;
-
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-  .phone-remind-text {
+  .remind-text {
     font-size: 12px;
     color: #ff5172;
+    margin-bottom: 0px;
   }
 
   .black-bg {
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 60px;
+    margin-top: 0px;
   }
 
   .info-area {
@@ -266,6 +266,10 @@ footer {
 
   .shop-info {
     margin-left: 0px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .shop-name {
@@ -276,23 +280,41 @@ footer {
     font-size: 14px;
   }
 
+  .phone-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .small-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .info p {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 5px;
   }
 
+  .text-infom {
+    margin: 0;
+  }
+
   .qrcode {
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .qurcode-btn {
     background-image: url(../img/Qrcode.png);
     background-repeat: no-repeat;
-    width: 80%;
+    width: 140px;
     height: 140px;
     margin-top: 30px;
-    background-position: 47px 0;
   }
 
   .qr-text {
@@ -301,6 +323,8 @@ footer {
 
   .cancel-btn {
     margin-top: 20px;
-    width: 40%;
+    height: 35px;
+    width: 100%;
+    margin-left: 0px;
   }
 }
