@@ -112,7 +112,7 @@ h1 {
   border: none;
   color: white;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 300;
   padding-left: 15px;
 }
 ::placeholder {
@@ -121,9 +121,6 @@ h1 {
   font-weight: 300;
 }
 select {
-  /* appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none; */
   width: 100%;
   height: 60px;
   background-color: rgba(255, 255, 255, 0);
@@ -137,7 +134,7 @@ select {
 }
 select option {
   border: 1px solid red;
-  color: #e8b816;
+  color: black;
   background: url(../img/scelectdown.svg) no-repeat center;
 }
 button {
@@ -150,6 +147,9 @@ button {
   margin-top: 35px;
   font-size: 30px;
   font-weight: 300;
+}
+button:focus {
+  outline: transparent;
 }
 .scrowdown {
   width: 62px;
@@ -324,6 +324,7 @@ main {
   background-image: url(../img/rightbutton.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .rightbutton {
   width: 50px;
@@ -335,6 +336,7 @@ main {
   background-image: url(../img/liftbutton.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .drinksetion {
@@ -507,7 +509,7 @@ main {
 .newsactive {
   width: 100%;
   height: 1080px;
-  background-image: url(/img/activbg.png);
+  background-image: url(../img/activbg.png);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -574,6 +576,7 @@ h4 {
   color: #fd8d00;
   border-bottom: 1px solid #fd8d00;
   right: 0;
+  cursor: pointer;
 }
 .handleft {
   width: 35%;
