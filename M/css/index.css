@@ -26,9 +26,6 @@ button {
   bottom: -40%;
   left: 150px;
 }
-/* .leaf1:hover {
-  animation: move 1s infinite;
-} */
 .leaf2 {
   width: 40%;
   position: absolute;
@@ -213,9 +210,6 @@ button {
   opacity: 90%;
 }
 
-.serachbox {
-  width: 30%;
-}
 .container-fluid {
   width: 75%;
   padding: 0px;
@@ -244,7 +238,6 @@ h1 {
 }
 .bird {
   width: 60%;
-  height: 350px;
   position: absolute;
 }
 .bird img {
@@ -274,7 +267,6 @@ h1 {
 }
 .magnifier {
   width: 10%;
-  height: 35px;
   margin: auto 15px;
 }
 .magnifier img {
@@ -308,10 +300,8 @@ select {
   padding-left: 15px;
   margin-top: 40px;
 }
-select option {
-  border: 1px solid red;
+option {
   color: black;
-  background: url(../img/scelectdown.svg) no-repeat center;
 }
 button {
   width: 100%;
@@ -330,8 +320,8 @@ button:focus {
 .scrowdown {
   width: 62px;
   margin: 0 auto;
-  bottom: 30px;
   padding-bottom: 30px;
+  z-index: 4;
 }
 .bar {
   width: 100%;
@@ -576,17 +566,17 @@ main {
   padding: 0;
 }
 .cupname {
-  margin: 30px 0;
-  padding-right: 180px;
+  margin: 30px 0px 0 50px;
   opacity: 0;
   transition: 1s;
   transition-delay: 0.5s;
+  text-align: left;
 }
 .cupcontain {
   font-size: 20px;
   font-weight: 300;
   color: white;
-  padding: 0 55px;
+  padding: 0 50px;
   line-height: 35px;
   opacity: 0;
   transition: 1s;
@@ -598,7 +588,7 @@ main {
   border: 1px solid #fd8d00;
   color: white;
   text-align: center;
-  margin: 100px 0px 0px 55px;
+  margin: 60px 0px 0px 55px;
   padding: 8px 0;
   font-size: 20px;
   font-weight: 400;
@@ -815,6 +805,83 @@ h5 {
 }
 
 @media (max-width: 767px) {
+  .headbigpictur {
+    height: 821px;
+  }
+  .leaf1 {
+    display: none;
+  }
+  .leaf2 {
+    width: 70%;
+    bottom: 40%;
+    left: -80px;
+  }
+  .leaf3 {
+    width: 75%;
+    bottom: -15%;
+    left: -30px;
+    opacity: 0.8;
+  }
+  .leaf4 {
+    bottom: 20%;
+    left: -20px;
+  }
+  .leaf5 {
+    width: 50%;
+    top: -10%;
+    left: 220px;
+  }
+  .leaf6 {
+    width: 65%;
+    top: 10%;
+    left: -20%;
+  }
+  .leaf7 {
+    width: 60%;
+    top: -8%;
+    left: 10%;
+  }
+  .leaf8 {
+    width: 60%;
+    bottom: 30%;
+    left: 60%;
+  }
+  .leaf9 {
+    width: 65%;
+    left: 45%;
+  }
+  .leaf10 {
+    width: 70%;
+    left: 55%;
+  }
+  .leaf11 {
+    display: none;
+  }
+  .leaf12 {
+    display: none;
+  }
+  .leaf13 {
+    width: 50%;
+    bottom: 20%;
+    right: -30%;
+  }
+  .leaf14 {
+    width: 60%;
+    opacity: 0.6;
+  }
+  .leaf15 {
+    width: 60%;
+    bottom: 45%;
+    right: -5%;
+  }
+
+  .headerrow {
+    margin-top: 20px;
+  }
+  .slogonbox {
+    height: 190px;
+    position: relative;
+  }
   h1 {
     width: 100%;
     font-size: 30px;
@@ -826,8 +893,155 @@ h5 {
   }
   .bird {
     width: 60%;
-    height: 200px;
     position: absolute;
     top: 100px;
+    left: 70px;
+  }
+  .searchbox {
+    height: 390px;
+  }
+  .searchform {
+    height: 360px;
+    margin: 30px auto;
+  }
+  .keywordbox {
+    height: 40px;
+  }
+  .input1 {
+    height: 40px;
+    padding-left: 15px;
+    padding-bottom: 12px;
+  }
+  ::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  select {
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  button {
+    height: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .scrowdown {
+    width: 40px;
+    margin: 0 auto;
+    bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .bar {
+    height: 820px;
+  }
+  .space {
+    height: 700px;
+    background-size: cover;
+    top: 80px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .store {
+    top: 10%;
+  }
+  .click {
+    display: none;
+  }
+  .barsetion {
+    margin-top: 45px;
+    padding: 0 30px;
+  }
+  .titlesolid {
+    width: 70%;
+    height: 80px;
+    border-radius: 70px;
+  }
+  .bartitle {
+    margin-top: 15px;
+  }
+  #carousel {
+    height: 500px;
+    top: 43%;
+  }
+  .buttons {
+    display: none;
+  }
+  .drinkbox {
+    margin: 150px 0;
+    padding: 0px;
+    display: none;
+  }
+  .drinkrow {
+    top: 15px;
+  }
+  .drinkbetween {
+    width: 0%;
+  }
+  .drinktitlesolid {
+    width: 100%;
+    height: 125px;
+  }
+  .cup {
+    top: 90px;
+    width: 100%;
+    position: absolute;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .drink1 {
+    top: 180px;
+  }
+  .drink1contain {
+    top: 500px;
+  }
+  .drink1contain {
+    top: 420px;
+    height: 500px;
+  }
+  .cupname {
+    margin: 30px 20px 0;
+    padding-right: 0px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.5s;
+    line-height: 45px;
+  }
+  .cupcontain {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 20px;
+    line-height: 35px;
+  }
+  .readmore {
+    width: 150px;
+    margin: 30px 0px 0px 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .readmore::after {
+    left: 110px;
+    width: 100px;
+  }
+  .readmore1 {
+    top: -37px;
+    left: 250px;
+    width: 10px;
+    height: 10px;
+    background-color: #fd8d00;
+    border-radius: 50%;
+  }
+
+  .by1 {
+    top: 1100px;
+  }
+  .copy {
+    top: 1350px;
+    left: 0;
   }
 }
