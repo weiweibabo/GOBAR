@@ -210,15 +210,9 @@ button {
   width: 85%;
   padding-top: 50px;
   margin: 0 auto;
-  opacity: 70%;
+  opacity: 90%;
 }
-.taipeicity h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 17rem;
-  line-height: 200px;
-  letter-spacing: 30px;
-  color: rgba(255, 255, 255, 0.8);
-}
+
 .serachbox {
   width: 30%;
 }
@@ -820,4 +814,20 @@ h5 {
   text-align: justify;
 }
 
-/* 文章分享的輪播 */
+@media (max-width: 767px) {
+  h1 {
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    top: 0px;
+    left: 10px;
+    -webkit-text-stroke: 1px #ff8d00;
+  }
+  .bird {
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+  }
+}
