@@ -97,4 +97,15 @@
     left: 20px;
     z-index: 1;
   }
+
+  .img-ink img {
+    width: 150px;
+    height: 150px;
+    left: 5px;
+  }
+
+  .noshowtext p {
+    font-size: 30px;
+    top: 70px;
+  }
 }

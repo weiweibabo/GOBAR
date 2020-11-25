@@ -1,4 +1,9 @@
 @media screen and (max-width: 414px) {
+  .container-fluid {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
   .navbar {
     height: 75px;
   }
@@ -36,5 +41,8 @@
 
   .card-area {
     padding-top: 50px !important;
+    overflow-y: hidden;
+    overflow: scroll;
+    flex-direction: column;
   }
 }
