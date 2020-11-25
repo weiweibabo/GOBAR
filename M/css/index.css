@@ -14,16 +14,198 @@ button {
 .headbigpictur {
   width: 100%;
   height: 1000px;
-  background-image: url(../img/indexheadpictur.jpg);
+  background: linear-gradient(rgb(0, 16, 59), rgb(0, 0, 26));
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
 }
-.headbigpictur img {
+.leaf1 {
+  width: 40%;
+  position: absolute;
+  bottom: -40%;
+  left: 150px;
+}
+/* .leaf1:hover {
+  animation: move 1s infinite;
+} */
+.leaf2 {
+  width: 40%;
+  position: absolute;
+  bottom: -5%;
+  left: -210px;
+}
+
+.leaf3 {
+  width: 35%;
+  position: absolute;
+  bottom: -35%;
+  left: 600px;
+  opacity: 0.8;
+}
+.leaf4 {
+  width: 30%;
+  position: absolute;
+  bottom: 15%;
+  left: -120px;
+}
+.leaf5 {
+  width: 30%;
+  position: absolute;
+  top: -20%;
+  left: 20px;
+}
+.leaf6 {
+  width: 35%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  opacity: 0.6;
+}
+.leaf7 {
+  width: 30%;
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  opacity: 0.9;
+}
+.leaf8 {
+  width: 30%;
+  position: absolute;
+  bottom: 20%;
+  left: 45%;
+  opacity: 0.8;
+}
+.leaf9 {
+  width: 15%;
+  position: absolute;
+  bottom: -15%;
+  left: 60%;
+}
+.leaf10 {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.leaf11 {
+  width: 40%;
+  position: absolute;
+  bottom: -5%;
+  right: -5%;
+}
+.leaf12 {
+  width: 20%;
+  position: absolute;
+  bottom: 20%;
+  right: -5%;
+}
+.leaf13 {
+  width: 40%;
+  position: absolute;
+  bottom: 35%;
+  right: -20%;
+}
+.leaf14 {
+  width: 40%;
+  position: absolute;
+  bottom: 60%;
+  right: -5%;
+}
+.leaf15 {
+  width: 20%;
+  position: absolute;
+  bottom: 45%;
+  right: 20%;
+}
+
+.leaf1:hover,
+.leaf2:hover,
+.leaf3:hover,
+.leaf4:hover,
+.leaf5:hover,
+.leaf6:hover,
+.leaf7:hover,
+.leaf8:hover,
+.leaf9:hover,
+.leaf10:hover,
+.leaf11:hover,
+.leaf12:hover,
+.leaf13:hover,
+.leaf14:hover,
+.leaf15:hover {
+  animation: move 1s infinite;
+}
+
+.leafs img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wine1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: rotate(5deg);
+}
+.wine2 {
+  width: 80px;
+  height: 150px;
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  transform: rotate(-5deg);
+}
+.wine3 {
+  width: 80px;
+  height: 150px;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: rotate(9deg);
+}
+
+.wine1 img,
+.wine2 img,
+.wine3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+}
+.wine1 img:hover,
+.wine2 img:hover,
+.wine3 img:hover {
+  opacity: 1;
+}
+
 .taipeicity {
   width: 85%;
   padding-top: 50px;
@@ -61,7 +243,7 @@ h1 {
   color: white;
   font-weight: 500;
   position: absolute;
-  top: 250px;
+  top: 300px;
   left: 100px;
   -webkit-text-stroke: 2px #ff8d00;
   text-shadow: 0 0 20px #ff9300;
@@ -404,6 +586,7 @@ main {
   padding-right: 180px;
   opacity: 0;
   transition: 1s;
+  transition-delay: 0.5s;
 }
 .cupcontain {
   font-size: 20px;
@@ -413,6 +596,7 @@ main {
   line-height: 35px;
   opacity: 0;
   transition: 1s;
+  transition-delay: 1s;
 }
 .readmore {
   width: 250px;
@@ -579,20 +763,22 @@ h4 {
   cursor: pointer;
 }
 .handleft {
-  width: 35%;
+  width: 30%;
   position: absolute;
   left: -10%;
-  top: 570%;
+  top: 610%;
   transform: rotate(30deg);
   transition: 2s;
+  transition-delay: 0.5s;
 }
 .handright {
-  width: 25%;
+  width: 20%;
   position: absolute;
   right: -2%;
-  top: 570%;
+  top: 610%;
   transform: rotate(-30deg);
   transition: 2s;
+  transition-delay: 0.5s;
 }
 .blog {
   margin: 50px 0;
