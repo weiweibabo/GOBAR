@@ -7,6 +7,10 @@ window.onload = function () {
   const ccicon = document.getElementById('ccicon');
   const ccsingle = document.getElementById('ccsingle');
 
+  // 檢查
+  const confirmBtn = document.getElementById('confirm-btn');
+  const errormsg = document.getElementById('errormsg');
+
   const cctype = null;
   // Mask the Credit Card Number Input
   const cardnumber_mask = new IMask(cardnumber, {
@@ -183,5 +187,19 @@ window.onload = function () {
 
   securitycode.addEventListener('focus', () => {
     document.querySelector('.creditcard').classList.add('flipped');
+  });
+
+  // 檢查input是否填寫
+  confirmBtn.addEventListener('click', () => {
+    if (
+      cardnumber.value === ''
+  || name.value === ''
+  || expirationdate.value === ''
+  || securitycode.value === ''
+    ) {
+      errormsg.innerHTML = '<i class="fas fa-exclamation-circle"></i>資料填寫不完整';
+    } else {
+      errormsg.innerHTML = '';
+    }
   });
 };

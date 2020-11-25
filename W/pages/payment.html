@@ -15,6 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
     <title>Payment</title>
@@ -495,7 +501,8 @@
             </div>
           </div>
           <div class="confirm mt-5 d-flex justify-content-end">
-            <button class="confirm-btn col-4">確認付款</button>
+            <p id="errormsg"></p>
+            <button id="confirm-btn" class="confirm-btn col-4">確認付款</button>
           </div>
         </div>
       </div>
@@ -504,5 +511,6 @@
     <footer></footer>
 
     <script src="../js/card.js"></script>
+    <!-- <script src="../js/payment.js"></script> -->
   </body>
 </html>

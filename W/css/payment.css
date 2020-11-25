@@ -219,6 +219,16 @@ button:focus {
   border: none;
 }
 
+#errormsg {
+  padding-right: 20px;
+  color: #ff5172;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
 /* 金線 */
 
 .golden-line1 {
