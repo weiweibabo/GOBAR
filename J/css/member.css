@@ -49,16 +49,12 @@ main {
   margin: 0 auto;
 }
 
-.card-area {
-  margin: 0 auto;
-}
-
 .card1 {
   height: 150px;
   background-color: #022a4c;
   align-items: center;
   width: 378px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .card1 h2 {
@@ -72,11 +68,7 @@ main {
 }
 
 .card2 {
-  margin: 0 auto;
-}
-
-.card2 img {
-  margin-left: 51px;
+  margin-left: 1rem;
 }
 
 .svg {
@@ -107,7 +99,7 @@ main {
   color: #e58c21;
   padding-top: 30px;
   width: 100px;
-  margin-left: 330px;
+  margin-left: 270px;
 }
 
 .bottom-text p {
@@ -116,4 +108,9 @@ main {
   border-radius: 10px;
   text-align: center;
   font-size: 20px;
+}
+
+.card-area {
+  overflow-x: hidden;
+  overflow: scroll;
 }

@@ -13,7 +13,6 @@
 
   .date-text {
     font-size: 20px;
-    padding-left: 10px;
   }
 
   .photo {
@@ -25,41 +24,13 @@
     width: 120px;
   }
 
-  .topname1 {
-    margin-top: 40px;
-  }
-
-  .topname {
-    margin: 40px 0;
-  }
-
-  .topname1 p {
-    font-size: 20px;
-    width: 120px;
-  }
-
   .card1 {
     height: 169px;
     position: relative;
   }
 
   .card2 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card3 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card4 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card-area {
-    padding: 10px 0 !important;
+    padding: 20px 0 !important;
   }
 
   .name h1 {
@@ -71,7 +42,7 @@
   .name {
     width: 100% !important;
     margin-bottom: 60px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .name p {
@@ -88,13 +59,12 @@
   .date svg {
     width: 82px;
     height: 82px;
-    margin-left: 5px;
   }
 
   .answer {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 1px;
     z-index: 1;
   }
 }

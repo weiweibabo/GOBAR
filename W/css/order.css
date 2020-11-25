@@ -11,6 +11,55 @@ header {
   z-index: 20;
 }
 
+button:focus {
+  outline: transparent;
+}
+
+/*取消訂位 modal */
+
+.modal-content2 {
+  height: 400px;
+  width: 500px;
+  border: 10px solid #ff5172;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal-body2 img {
+  margin-top: 45px;
+}
+
+.modal-body2 p {
+  color: #ff5172;
+  margin-top: 10px;
+}
+
+.modal-body2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agree-btn {
+  color: #fff;
+  background-color: #ff5172;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  margin: 10px 15px;
+}
+
+.disagree-btn {
+  color: #ff5172;
+  background-color: #fff;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: 2px solid #ff5172;
+  margin: 10px 15px;
+}
+
 .container-fluid {
   width: 100%;
   max-width: 1440px;

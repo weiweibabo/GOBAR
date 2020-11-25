@@ -2,6 +2,7 @@ body {
   background-color: #141f2b;
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
+  position: relative;
 }
 
 header {
@@ -181,6 +182,14 @@ header {
 .leftarea {
   justify-content: center;
 }
+.info {
+  margin-left: 50px;
+}
+
+.shop-info {
+  /* margin-left: 360px; */
+  padding-left: 0px;
+}
 
 /* 付款成功打勾勾 */
 
@@ -244,9 +253,7 @@ header {
   }
 }
 /*  */
-.shop-info {
-  /* padding-bottom: 48px; */
-}
+
 .order-info {
   margin-top: 48px;
 }
@@ -255,7 +262,8 @@ header {
 
 .golden-line1 {
   position: absolute;
-  transform: translate(-120px, -130px);
+  top: 0;
+  left: -50px;
   background: url(../img/golden-line1.png);
   background-size: 51%;
   background-repeat: no-repeat;
@@ -265,11 +273,12 @@ header {
 }
 .golden-line2 {
   position: absolute;
-  transform: translate(1331px, 500px);
+  top: 725px;
+  left: 1310px;
   background: url(../img/golden-line2.png);
   background-repeat: no-repeat;
-  width: 30%;
-  height: 52%;
+  width: 31%;
+  height: 50%;
   z-index: -1;
 }
 
@@ -339,6 +348,8 @@ footer {
   }
 
   .shop-info {
+    margin-left: 0px;
+
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;

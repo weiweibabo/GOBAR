@@ -55,28 +55,30 @@ main {
 
 .card1 {
   height: 282px;
-  background-color: #000;
   align-items: center;
   margin-bottom: 30px;
+  background-color: rgb(0, 0, 0);
+  -webkit-filter: brightness(0.5);
 }
 
 .card2 {
   height: 282px;
-  background-color: #000;
+  background-color: rgba(10, 10, 10, 0.932);
   align-items: center;
   margin-bottom: 30px;
 }
 
 .card3 {
   height: 282px;
-  background-color: #000;
   align-items: center;
   margin-bottom: 30px;
+  background-color: rgb(0, 0, 0);
+  -webkit-filter: brightness(0.5);
 }
 
 .card4 {
   height: 282px;
-  background-color: #000;
+  background-color: rgba(10, 10, 10, 0.932);
   align-items: center;
   margin-bottom: 30px;
 }
@@ -149,4 +151,23 @@ main {
 .card-area {
   overflow-y: hidden;
   overflow: scroll;
+}
+
+.img-ink img {
+  position: absolute;
+  bottom: 1px;
+  right: 200px;
+}
+
+.noshowtext p {
+  color: #ff5172;
+  font-size: 50px;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-18deg);
+  position: absolute;
+  top: 95px;
+  right: 230px;
 }

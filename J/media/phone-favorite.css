@@ -1,4 +1,29 @@
 @media screen and (max-width: 414px) {
+  #Member-Centre {
+    height: 1000px;
+  }
+
+  .top-area {
+    height: 600px;
+  }
+
+  .black-area {
+    width: 620px;
+    height: 100px;
+  }
+  .name p {
+    width: 8rem;
+  }
+
+  .photo {
+    height: 200px;
+    width: 100px;
+  }
+
+  .photo svg {
+    margin-left: 80px;
+  }
+
   .aboutme1 {
     font-size: 20px;
   }
