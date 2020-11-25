@@ -116,10 +116,6 @@ header {
   border-radius: 10px;
 }
 
-.modal-title {
-  /* padding-left: 140px; */
-}
-
 .modal-footer,
 .modal-header {
   display: flex;
@@ -235,6 +231,7 @@ footer {
 
   footer {
     height: 190px;
+    margin-top: 240px;
   }
 
   .title {
