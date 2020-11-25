@@ -6,24 +6,25 @@ body {
   background-attachment: fixed;
 }
 section.line01 {
-  background: url("../img/line01.png");
+  background-image: url(../img/line01.png), url(../img/line04.png);
+  background-position: right, top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 section.line02 {
-  background: url("../img/line02.png");
+  background-image: url("../img/line01.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 section.line03 {
-  background: url("../img/line01.png");
-
+  background-image: url("../img/line03.png");
+  background-position: top 40% left 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 section.line04 {
-  background: url("../img/line04.png");
+  background-image: url("../img/line04.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,6 +50,12 @@ section.line04 {
   color: white;
   padding-left: 20px;
 }
+.medal {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
 .star {
   padding-top: 50px;
   padding-left: 20px;
@@ -136,7 +143,7 @@ section.line04 {
 .col-item--weight1 {
   width: 400px;
   top: 150px;
-  right: 15px;
+  right: 5px;
   height: 555px;
 }
 
@@ -254,9 +261,9 @@ Img {
 }
 
 .food-intro-pic03 {
-  width: 100%;
+  width: 150px;
   height: 300px;
-  right: 705px;
+  right: 698px;
   top: 280px;
   width: 100%;
   overflow: hidden;
