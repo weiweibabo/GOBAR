@@ -59,6 +59,11 @@
   padding-bottom: 11px;
 }
 
+.navslogn {
+  width: 30%;
+  padding: 50px 0 0 20px;
+}
+
 .navbar-toggler {
   float: right;
   border: none;
@@ -355,13 +360,17 @@ button {
   }
 
   .navbar-brand {
-    padding: 0;
+    padding: 16px;
   }
   .navbar-brand img {
     margin: 0 auto;
     height: 46px;
     padding-bottom: 0px;
   }
+  .navslogn {
+    display: none;
+  }
+
   .navbar-toggler {
     padding: 0 0 0 30px;
     width: auto;

@@ -58,6 +58,10 @@
   transition: all 0.3s ease-out;
   padding-bottom: 11px;
 }
+.navslogn {
+  width: 30%;
+  padding: 50px 0 0 20px;
+}
 
 .navbar-toggler {
   float: right;
@@ -345,6 +349,7 @@ button {
   }
   .container-fluid {
     width: 100%;
+    height: 80px;
     padding: 0;
   }
   .navbar {
@@ -355,12 +360,15 @@ button {
   }
 
   .navbar-brand {
-    padding: 0;
+    padding: 16px;
   }
   .navbar-brand img {
     margin: 0 auto;
     height: 46px;
     padding-bottom: 0px;
+  }
+  .navslogn {
+    display: none;
   }
   .navbar-toggler {
     padding: 0 0 0 30px;

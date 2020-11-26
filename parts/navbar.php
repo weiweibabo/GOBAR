@@ -12,6 +12,8 @@
                         <img src="<?= WEB_ROOT ?>img/search.svg" alt="">
                     </li>
                     <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt=""></a>
+                    <div class="navslogn"><img src="<?= WEB_ROOT ?>img/navslogn.svg" alt=""></div>
+
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
