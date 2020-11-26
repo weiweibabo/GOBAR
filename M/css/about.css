@@ -4,7 +4,7 @@
   background-color: #002a4c;
 }
 .container-fluid {
-  width: 1440px;
+  width: 75%;
   padding: 0;
 }
 .aboutrow {
@@ -33,10 +33,22 @@
   padding: 0;
 }
 .aboutitem il {
-  border-right: solid 1px white;
   width: 200px;
   padding: 8px 0px 0 57px;
 }
+.contact {
+  border-right: solid 1px white;
+}
+.abgobar {
+  border-right: solid 1px white;
+}
+.cooper {
+  border-right: solid 1px white;
+}
+.server {
+  border-right: solid 1px white;
+}
+
 .community {
   width: 220px;
   margin: 20px 0 0;
