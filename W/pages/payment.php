@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="http://localhost/GOBAR/node_modules/bootstrap/dist/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="../css/payment.css" />
-    <link rel="stylesheet" href="../css/card.css" />
+<?php $title = '付款頁' ?>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+<?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
-    <title>Payment</title>
-  </head>
+<link rel="stylesheet" href="../css/payment.css" />
+<link rel="stylesheet" href="../css/card.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+
+<?php include __DIR__ . '/../../parts/scripts.php'; ?>
+<?php include __DIR__ . '/../../parts/navbar.php'; ?>
+    
+
+
 
   <body>
     <header></header>
@@ -511,6 +498,6 @@
     <footer></footer>
 
     <script src="../js/card.js"></script>
-    <!-- <script src="../js/payment.js"></script> -->
+    
   </body>
 </html>

@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="http://localhost/GOBAR/node_modules/bootstrap/dist/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="../css/order-info.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Order-info</title>
-  </head>
+
+<?php $title = '訂位資訊頁' ?>
+
+<?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php include __DIR__ . '/../../parts/html-head.php'; ?>
+
+<link rel="stylesheet" href="../css/order-info.css" />
+
+<?php include __DIR__ . '/../../parts/scripts.php'; ?>
+<?php include __DIR__ . '/../../parts/navbar.php'; ?>
+
+   
+    
+ 
   <body>
     <header></header>
 
@@ -202,7 +199,7 @@
 
     <footer></footer>
 
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
@@ -212,7 +209,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
     <script>

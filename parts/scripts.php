@@ -1,2 +1,4 @@
-<script src="<?= WEB_ROOT ?>lib/jquery-3.5.1.js"></script>
-<script src="<?= WEB_ROOT ?>bootstrap/js/bootstrap.bundle.js"></script>
+<script src="<?= WEB_ROOT ?>node_modules/jquery/dist/jquery.js"></script>
+<script src="<?= WEB_ROOT ?>node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="<?= WEB_ROOT ?>node_modules/bootstrap/js/dist/popover.js"></script>
+
