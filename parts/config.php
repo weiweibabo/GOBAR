@@ -9,7 +9,7 @@ if(! isset($_SESSION)){
 }
 
 $db_host = 'localhost';  //主機 =127.0.0.1
-$db_name = 'gobar-test';    //資料庫
+$db_name = 'gobar';    //資料庫
 $db_user = 'weiwei';    //用戶
 $db_pass = '860312';    //密碼
 
