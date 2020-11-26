@@ -676,7 +676,7 @@ main {
 /* 這裡是最新活動 */
 .newsactive {
   width: 100%;
-  height: 1080px;
+  height: 1000px;
   background-image: url(../img/activbg.png);
   background-attachment: fixed;
   background-position: center center;
@@ -746,23 +746,38 @@ h4 {
   right: 0;
   cursor: pointer;
 }
+.blogsetion {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
 .handleft {
   width: 30%;
   position: absolute;
   left: -10%;
-  top: 610%;
+  top: 5%;
   transform: rotate(30deg);
   transition: 2s;
   transition-delay: 0.5s;
 }
+.handleft img {
+  object-fit: cover;
+}
 .handright {
-  width: 20%;
+  width: 23%;
   position: absolute;
   right: -2%;
-  top: 610%;
+  top: 5%;
   transform: rotate(-30deg);
   transition: 2s;
   transition-delay: 0.5s;
+}
+.blogg {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
 }
 .blog {
   margin: 50px 0;
@@ -771,8 +786,15 @@ h4 {
   width: 25%;
   margin: 70px auto 50px;
 }
-.blogpc {
+.wrap {
   width: 100%;
+  height: 550px;
+  position: absolute;
+  left: 0%;
+  transition: 1s;
+}
+.blogpc {
+  width: 449px;
   height: 250px;
   border-radius: 10px 10px 0 0;
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.9);
@@ -786,7 +808,7 @@ h4 {
   border-radius: 10px 10px 0 0;
 }
 .bligcontain {
-  width: 100%;
+  width: 449px;
   border-radius: 0px 0px 10px 10px;
   height: 200px;
   background-color: white;
@@ -802,6 +824,32 @@ h5 {
   font-weight: 300;
   padding: 15px;
   text-align: justify;
+}
+.blogbtl {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 820px;
+  right: 0;
+  border-radius: 0;
+}
+.blogbtl img {
+  height: 70%;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+.blogbtr {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 820px;
+  right: 80px;
+  border-radius: 0;
+}
+.blogbtr img {
+  height: 70%;
+  margin-bottom: 5px;
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -971,6 +1019,9 @@ h5 {
   .buttons {
     display: none;
   }
+  .drinksetion {
+    height: 1850px;
+  }
   .drinkbox {
     margin: 150px 0;
     padding: 0px;
@@ -1014,7 +1065,7 @@ h5 {
   }
   .cupcontain {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 100;
     padding: 0 20px;
     line-height: 35px;
   }
@@ -1038,10 +1089,101 @@ h5 {
   }
 
   .by1 {
-    top: 1100px;
+    top: 1000px;
   }
   .copy {
-    top: 1350px;
+    top: 1250px;
     left: 0;
+  }
+  .newsactive {
+    height: 1200px;
+  }
+  .newscontainer {
+    width: 100%;
+  }
+  .activeline {
+    height: 10px;
+    border: 3px solid #f2c447;
+  }
+  .newsrow {
+    margin: 50px 0;
+  }
+  .activepcf {
+    padding: 0px;
+  }
+  .activerow {
+    display: none;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .activecintain {
+    width: 75%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .blogsetion {
+    height: 900px;
+  }
+  .blogg {
+    margin-top: 100px;
+    height: 900px;
+  }
+  .handleft {
+    width: 45%;
+    top: 3%;
+  }
+  .handright {
+    width: 35%;
+    position: absolute;
+    right: -2%;
+    top: 3%;
+    transform: rotate(-30deg);
+    transition: 2s;
+    transition-delay: 0.5s;
+  }
+  .blogtitle {
+    width: 65%;
+    margin: 70px auto 20px;
+  }
+  .wrap {
+    width: 110%;
+    left: -350px;
+  }
+  .blogpc {
+    width: 300px;
+    height: 180px;
+  }
+  .bligcontain {
+    width: 300px;
+    height: 180px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  .blogbtl {
+    width: 30px;
+    height: 30px;
+    top: 620px;
+  }
+  .blogbtl img {
+    margin-bottom: 7px;
+  }
+  .blogbtr {
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    top: 620px;
+  }
+  .blogbtr img {
+    margin-bottom: 7px;
   }
 }
