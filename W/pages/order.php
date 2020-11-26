@@ -9,7 +9,7 @@
   
 
     <?php include __DIR__ . '/../../parts/navbar.php'; ?>
-    <!-- <header></header> -->
+    <header></header>
          
     <!-- 自動跳出是否同意規範視窗 -->
     <!-- Modal -->
@@ -171,7 +171,7 @@
             </div>
             <div class="mt-0">
               <div class="label-text">
-                <label for="">線上訂位限定10人，超過10人請來電預約 </label>
+                <label for="">線上訂位限10人以內，超過10人請來電 </label>
               </div>
               <div class="input-area2 mt-0">
                 <div class="from-text">

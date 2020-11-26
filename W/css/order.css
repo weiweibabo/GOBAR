@@ -114,7 +114,7 @@ button:focus {
 
   animation-name: MoveUp; /*動畫名稱，需與 keyframe 名稱對應*/
   animation-duration: 3s; /*動畫持續時間，單位為秒*/
-  animation-delay: 1s; /*動畫延遲開始時間*/
+  animation-delay: 3s; /*動畫延遲開始時間*/
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
