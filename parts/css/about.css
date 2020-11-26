@@ -1,0 +1,81 @@
+.about {
+  width: 100%;
+  height: 135px;
+  background-color: #002a4c;
+}
+.container-fluid {
+  width: 1440px;
+  padding: 0;
+}
+.aboutrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footerlogo {
+  width: 220px;
+  height: 100px;
+  padding-top: 20px;
+}
+.footerlogo img {
+  height: 77px;
+}
+.aboutitem {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 0;
+  padding: 0;
+}
+.aboutitem il {
+  border-right: solid 1px white;
+  width: 200px;
+  padding: 8px 0px 0 57px;
+}
+.community {
+  width: 220px;
+  margin: 20px 0 0;
+  display: flex;
+}
+.community il {
+  width: 73px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.community il img {
+  height: 25px;
+}
+.copyright {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #658eaf;
+  text-align: center;
+}
+.ban {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+.banrow {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px 100px 0;
+}
+.banimg img {
+  padding-top: 5px;
+  width: 58px;
+}
