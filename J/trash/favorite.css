@@ -9,9 +9,7 @@ body {
 
 #Member-Centre {
   background-color: #141f2b;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 75%;
   height: 1000px;
   background-image: url(../png/會員中心.png);
   background-repeat: no-repeat;
@@ -35,8 +33,9 @@ body {
 /* ------------------------- top area */
 
 .top-area {
-  width: 100%;
-  margin-bottom: 170px;
+  width: 1440px;
+  height: 400px;
+  margin: 0 auto;
   margin-top: 70px;
 }
 
@@ -73,8 +72,7 @@ body {
 }
 
 .out {
-  margin-left: 8rem;
-  display: flex;
+  margin-left: 9rem;
 }
 
 .out p {
@@ -108,10 +106,10 @@ body {
 }
 
 .text {
-  color: white;
+  color: #141f2b;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
-  width: 500px;
+  width: 300px;
 }
 
 .black-area {
@@ -154,7 +152,7 @@ body {
 .change {
   color: white;
   font-size: 30px;
-  margin-left: 41rem;
+  margin-left: 44rem;
 }
 
 .change svg {
@@ -169,67 +167,29 @@ body {
   background-color: #002a4c;
 }
 
-/* ---------------------------- RWD */
+/* -------------------------------RWD */
 
-@media (min-width: 415px) {
-  .phone {
-    display: none;
-  }
-}
-
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) {
   /* #Member-Centre {
     height: 1000px;
   } */
 
-  .web {
-    display: none;
-  }
-
-  .big-area {
-    margin: auto;
-  }
-
   .top-area {
+    width: 300px;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 30px;
   }
 
-  .black-area {
-    background-color: black;
-    /* width: 500px;
-    height: 185px; */
-    display: flex;
-    margin-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .user {
-    text-align: center;
-  }
-
-  .name2 {
-    justify-content: center;
-  }
-
-  .name2 img {
-    width: 50px;
-    margin-left: 0;
-  }
-
-  .name2 p {
-    width: 90px;
+  .name p {
+    width: 8rem;
   }
 
   .photo {
-    text-align: center;
+    height: 200px;
+    width: 100px;
+  }
+
+  .photo svg {
+    margin-left: 80px;
   }
 
   .aboutme1 {
@@ -238,11 +198,10 @@ body {
 
   .aboutme2 {
     font-size: 20px;
-    margin-left: 10px;
   }
 
   .bottom-word p {
-    width: 70px;
+    width: 200px;
     font-size: 16px;
   }
 
@@ -251,35 +210,10 @@ body {
   }
 
   .change {
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   .bottom-text {
     padding: 0;
-  }
-
-  .out {
-    margin-left: 230px;
-    padding-top: 10px;
-  }
-
-  .out p {
-    font-size: 20px;
-  }
-
-  .out svg {
-    width: 20px;
-    margin: 0;
-  }
-
-  .change p {
-    width: 50px;
-    font-size: 20px;
-  }
-
-  .change svg {
-    margin: 0;
-    margin-right: 5px;
-    width: 20px;
   }
 }
