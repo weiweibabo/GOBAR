@@ -4,12 +4,8 @@
 
 main {
   background-color: #141f2b;
-  background-image: url(../png/我的訂單.png);
+  background-image: url(../png/goldline.png);
   background-repeat: no-repeat;
-}
-
-.mainblock {
-  width: 75%;
 }
 
 #order {
@@ -38,65 +34,47 @@ main {
   width: 350px;
   border-bottom: 5px solid orange;
   margin: 0 auto;
-  font-weight: bold;
-}
-
-.topname1 {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.topname1 p {
-  width: 350px;
-  margin: 0 auto;
 }
 
 .card1 {
   height: 282px;
+  background-color: #000;
   align-items: center;
-  margin-bottom: 30px;
-  background-color: rgb(0, 0, 0);
-  -webkit-filter: brightness(0.5);
+  opacity: 0.8;
 }
 
 .card2 {
   height: 282px;
-  background-color: rgba(10, 10, 10, 0.932);
+  background-color: #000;
   align-items: center;
-  margin-bottom: 30px;
+  -webkit-filter: brightness(0.1);
 }
 
-.card3 {
-  height: 282px;
-  align-items: center;
-  margin-bottom: 30px;
-  background-color: rgb(0, 0, 0);
-  -webkit-filter: brightness(0.5);
-}
-
-.card4 {
-  height: 282px;
-  background-color: rgba(10, 10, 10, 0.932);
-  align-items: center;
-  margin-bottom: 30px;
+.noshow {
+  color: #ff5172;
+  position: absolute;
+  top: 7rem;
+  left: 30rem;
+  z-index: 1;
+  font-size: 100px;
+  border: 3px solid #ff5172;
+  padding: 0 5rem;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-5deg);
 }
 
 .date {
-  padding-left: 30px;
+  padding-right: 30px;
   margin-left: 20px;
-}
-
-.date svg {
-  margin-left: 30px;
 }
 
 .date-text {
   color: white;
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
-  padding-left: 45px;
 }
 
 .name {
@@ -108,11 +86,6 @@ main {
 
 .name h1 {
   font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.name p {
-  margin-bottom: 10px;
 }
 
 .answer {
@@ -148,29 +121,7 @@ main {
   border-radius: 10px;
 }
 
-.card-area {
-  overflow-y: hidden;
-  overflow: scroll;
-}
-
-.img-ink img {
-  position: absolute;
-  bottom: 1px;
-  right: 200px;
-}
-
-.noshowtext p {
-  color: #ff5172;
-  font-size: 50px;
-  -moz-transform: rotate(-2deg);
-  -webkit-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  transform: rotate(-18deg);
-  position: absolute;
-  top: 95px;
-  right: 230px;
-}
+/* ---------------------RWD */
 
 @media screen and (max-width: 414px) {
   main {
@@ -187,7 +138,6 @@ main {
 
   .date-text {
     font-size: 20px;
-    padding-left: 10px;
   }
 
   .photo {
@@ -199,41 +149,13 @@ main {
     width: 120px;
   }
 
-  .topname1 {
-    margin-top: 40px;
-  }
-
-  .topname {
-    margin: 40px 0;
-  }
-
-  .topname1 p {
-    font-size: 20px;
-    width: 120px;
-  }
-
   .card1 {
     height: 169px;
     position: relative;
   }
 
   .card2 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card3 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card4 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card-area {
-    padding: 10px 0 !important;
+    padding: 20px 0 !important;
   }
 
   .name h1 {
@@ -245,7 +167,7 @@ main {
   .name {
     width: 100% !important;
     margin-bottom: 60px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .name p {
@@ -262,28 +184,12 @@ main {
   .date svg {
     width: 82px;
     height: 82px;
-    margin-left: 5px;
   }
 
   .answer {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 1px;
     z-index: 1;
-  }
-
-  .img-ink img {
-    width: 150px;
-    height: 150px;
-    left: 5px;
-  }
-
-  .noshowtext p {
-    font-size: 30px;
-    top: 70px;
-  }
-
-  .textbox2 {
-    margin-left: 125px;
   }
 }

@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 body {
   background-color: #141f2b;
@@ -91,8 +91,6 @@ body {
 .bottom-area {
   width: 1440px;
   height: 400px;
-  margin: 0 auto;
-  padding: 1rem 0;
   border-top: 2px solid white;
 }
 
@@ -104,7 +102,7 @@ body {
   color: white;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
-  width: 120px;
+  width: 200px;
 }
 
 .text {
@@ -115,9 +113,21 @@ body {
 }
 
 .black-area {
-  background-color: black;
-  width: 500px;
-  height: 185px;
+  background-color: rgba(10, 10, 10, 0.932);
+  width: 640px;
+  height: 190px;
+  margin: 0 auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.black-area svg {
+  opacity: 0.5;
+}
+
+.black-area img {
+  opacity: 0.5;
 }
 
 .black-text h1 {
@@ -139,7 +149,6 @@ body {
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
-  border-bottom: 5px solid #ff8d00;
   margin-right: 3rem;
   padding: 0 3rem;
 }
@@ -149,6 +158,9 @@ body {
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
+  border-bottom: 5px solid #ff8d00;
+  width: 180px;
+  padding-left: 25px;
 }
 
 .change {
@@ -160,6 +172,55 @@ body {
 .change svg {
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.star p {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.b-left-area {
+  margin-top: 20px;
+}
+
+.b-left-text h2 {
+  color: red;
+  padding-left: 80px;
+}
+
+.black-text {
+  color: white;
+}
+
+.black-text p {
+  color: white;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.black-text h2 {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.error {
+  position: absolute;
+  bottom: 0.1px;
+  right: 50px;
+}
+
+.errorp p {
+  position: absolute;
+  bottom: 55px;
+  right: 60px;
+  font-size: 40px;
+  color: #ff5172;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-18deg);
 }
 
 /* --------------------------- footer */
@@ -179,7 +240,7 @@ body {
 
 @media (max-width: 414px) {
   /* #Member-Centre {
-    height: 1000px;
+    height: 1100px;
   } */
 
   .web {
@@ -197,7 +258,7 @@ body {
   }
 
   .black-area {
-    background-color: black;
+    background-color: rgba(10, 10, 10, 0.932);
     /* width: 500px;
     height: 185px; */
     display: flex;
@@ -239,6 +300,8 @@ body {
   .aboutme2 {
     font-size: 20px;
     margin-left: 10px;
+    width: 120px;
+    padding-left: 18px;
   }
 
   .bottom-word p {
@@ -281,5 +344,58 @@ body {
     margin: 0;
     margin-right: 5px;
     width: 20px;
+  }
+
+  .bottom-area {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .foot {
+    margin-top: 500px;
+  }
+
+  .black-area svg {
+    display: none;
+  }
+
+  .black-area img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .black-area {
+    width: 400px;
+    height: 150px;
+    padding: 0;
+  }
+
+  .star p {
+    color: white;
+    text-align: center;
+  }
+
+  .star {
+    text-align: center;
+  }
+
+  .black-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .black-text p {
+    margin-bottom: 10px;
+  }
+
+  .error img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .errorp p {
+    position: absolute;
+    font-size: 30px;
+    bottom: 35px;
+    right: 55px;
   }
 }
