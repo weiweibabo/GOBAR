@@ -38,8 +38,9 @@ body {
 }
 .aboutitem il {
   width: 15%;
-  padding: 8px 0px 0 0px;
+  padding: 8px 40px 0 0px;
   text-align: center;
+  cursor: pointer;
 }
 .contact {
   border-right: solid 1px white;
@@ -65,6 +66,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 }
 .community il img {
   height: 25px;

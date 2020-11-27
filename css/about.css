@@ -1,10 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
 .about {
   width: 100%;
   height: 135px;
   background-color: #002a4c;
 }
 .container-fluid {
-  width: 1440px;
+  width: 75%;
   padding: 0;
 }
 .aboutrow {
@@ -13,7 +17,7 @@
   justify-content: space-between;
 }
 .footerlogo {
-  width: 220px;
+  width: 10%;
   height: 100px;
   padding-top: 20px;
 }
@@ -25,7 +29,7 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
-  width: 1000px;
+  width: 80%;
   height: 50px;
   display: flex;
   justify-content: space-around;
@@ -33,10 +37,24 @@
   padding: 0;
 }
 .aboutitem il {
-  border-right: solid 1px white;
-  width: 200px;
-  padding: 8px 0px 0 57px;
+  width: 15%;
+  padding: 8px 40px 0 0px;
+  text-align: center;
+  cursor: pointer;
 }
+.contact {
+  border-right: solid 1px white;
+}
+.abgobar {
+  border-right: solid 1px white;
+}
+.cooper {
+  border-right: solid 1px white;
+}
+.server {
+  border-right: solid 1px white;
+}
+
 .community {
   width: 220px;
   margin: 20px 0 0;
@@ -48,6 +66,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 }
 .community il img {
   height: 25px;
@@ -78,4 +97,59 @@ h3 {
 .banimg img {
   padding-top: 5px;
   width: 58px;
+}
+
+@media (max-width: 767px) {
+  .about {
+    height: 150px;
+  }
+  .aboutrow {
+    flex-direction: column-reverse;
+  }
+  .footerlogo {
+    display: none;
+  }
+  .aboutitem {
+    font-size: 16px;
+    font-weight: 100;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    /* justify-content: space-between; */
+    /* align-content: flex-start; */
+  }
+  .aboutitem il {
+    width: 80px;
+    border: none;
+    padding: 5px 0;
+  }
+  .contact {
+    text-align: left;
+  }
+  .cooper {
+    text-align: right;
+  }
+  .community {
+    margin: 5px auto 0;
+  }
+  .community il {
+    justify-content: center;
+  }
+  .copyright {
+    font-size: 12px;
+    line-height: 5;
+  }
+  .ban {
+    height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 9px 0 0;
+  }
+  .banimg img {
+    width: 30px;
+    margin: 0 15px 0;
+  }
 }
