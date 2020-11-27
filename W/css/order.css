@@ -65,6 +65,7 @@ button:focus {
   max-width: 1440px;
   position: relative;
   margin: auto;
+  margin-bottom: 55px;
 }
 
 /* 進度條 */
@@ -272,11 +273,6 @@ option {
 
 #errormsg i {
   color: #ff5172;
-}
-
-/* footer-area */
-.content-area {
-  margin-bottom: 55px;
 }
 
 /* RWD */
