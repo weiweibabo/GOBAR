@@ -249,7 +249,8 @@
       </div>
     </div>
 
-    <footer></footer>
+    
+   
 
     <script src="../js/calendar.js"></script>
     <script src="../js/order.js"></script>
@@ -260,4 +261,5 @@
       });
     </script>
   </body>
+  <?php include __DIR__ . '/../../parts/about.php'; ?>
 </html>
