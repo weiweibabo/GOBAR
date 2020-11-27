@@ -2,7 +2,7 @@
 
 <body>
     <div class="about">
-        <div class="container-fluid">
+        <div class="aboutbox">
             <div class="aboutrow">
                 <div class="footerlogo">
                     <img src="./img/logowhite.svg" alt="">
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="ban">
-        <div class="container-fluid">
+        <div class="aboutbox">
             <div class="banrow">
                 <h3>禁止酒駕</h3>
                 <div class="banimg">

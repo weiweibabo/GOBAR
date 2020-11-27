@@ -562,25 +562,25 @@
 
     $(".blogbtr").click(function () {
 
-      $('.wrap').css('left', '33.5%');
+      $('.wrap').css('left', '+=60%');
     })
     $(".blogbtl").click(function () {
       console.log('hi');
-      $('.wrap').css('left', '-33.5%');
+      $('.wrap').css('left', '-=60%');
     })
-    $(".blogbtr").on('click', function () {
-      let windowSize = $(this).width();
-      if (windowSize < 767) {
-        $('.wrap').css('left', '-700px');
-        console.log('hi');
-      }
-    });
-    $(".blogbtl").on('click', function () {
-      let windowSize = $(this).width();
-      if (windowSize < 767) {
-        $('.wrap').css('left', '50px');
-      }
-    });
+    // $(".blogbtr").on('click', function () {
+    //   let windowSize = $(this).width();
+    //   if (windowSize < 767) {
+    //     $('.wrap').css('left', '-700px');
+    //     console.log('hi');
+    //   }
+    // });
+    // $(".blogbtl").on('click', function () {
+    //   let windowSize = $(this).width();
+    //   if (windowSize < 767) {
+    //     $('.wrap').css('left', '50px');
+    //   }
+    // });
 
   </script>
 
