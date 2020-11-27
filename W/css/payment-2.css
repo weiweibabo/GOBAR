@@ -16,6 +16,7 @@ header {
   max-width: 1440px;
   position: relative;
   margin: auto;
+  margin-bottom: 55px;
 }
 
 /* 進度條 */
@@ -278,7 +279,7 @@ header {
   background: url(../img/golden-line2.png);
   background-repeat: no-repeat;
   width: 31%;
-  height: 50%;
+  height: 40%;
   z-index: -1;
 }
 

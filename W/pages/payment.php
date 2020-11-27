@@ -495,9 +495,9 @@
       </div>
     </div>
 
-    <footer></footer>
 
     <script src="../js/card.js"></script>
     
   </body>
+  <?php include __DIR__ . '/../../parts/about.php'; ?>
 </html>

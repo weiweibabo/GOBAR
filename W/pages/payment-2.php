@@ -137,9 +137,8 @@
           <p class="successful text-30L">(將於10秒內自動跳轉至訂位資訊頁)</p>
         </div>
       </div>
-      <!--  -->
-    </div>
-
-    <footer></footer>
+      
+    </div>  
   </body>
+  <?php include __DIR__ . '/../../parts/about.php'; ?>
 </html>
