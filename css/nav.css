@@ -4,7 +4,8 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.container-fluid {
+.navbox {
+  margin: 0 auto;
   width: 75%;
   padding: 25px 0 14px;
   font-family: "Noto Sans TC", sans-serif;
@@ -291,10 +292,14 @@ body.dark .navbar-light .navbar-toggler-icon:before {
 body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
-.searcharea {
+.navsearcharea {
   padding: 0px;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
-.searchform {
+.navsearchform {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
@@ -303,9 +308,9 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 input,
 select,
 button {
-  outline: none;
+  outline: transparent;
 }
-.input1 {
+.navinput1 {
   background-color: rgba(47, 28, 28, 0);
   border: 2px solid orange;
   padding-left: 15px;
@@ -316,7 +321,7 @@ button {
   font-size: 20px;
   font-weight: 100;
 }
-select {
+.navarea {
   width: 150px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -328,7 +333,7 @@ select {
 option {
   color: black;
 }
-button {
+.navsearchbutton {
   border-radius: 12px;
   border: none;
   background-color: #ff8d00;
@@ -351,7 +356,7 @@ button {
   .navigation-wrap {
     height: 80px;
   }
-  .container-fluid {
+  .navbox {
     width: 100%;
     padding: 0;
   }
@@ -411,21 +416,21 @@ button {
   .slide {
     height: 400px;
   }
-  .searchform {
+  .navsearchform {
     height: 400px;
     background-color: #236ca6;
     display: flex;
     flex-direction: column;
     padding: 0 30px;
   }
-  input,
-  select {
+  .navinput1,
+  .navarea {
     width: 100%;
   }
-  .keywordbox {
+  .navkeywordbox {
     margin-top: 30px;
   }
-  .searchbutton {
+  .navsearchbutton {
     margin-bottom: 30px;
     width: 100%;
     height: 35px;

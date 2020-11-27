@@ -4,7 +4,7 @@
 <body class="hero-anime">
 
     <div class="navigation-wrap  start-header start-style" style="background-color: #002A4C;">
-        <div class="container-fluid">
+        <div class="navbox">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
@@ -48,12 +48,12 @@
             </div>
         </div>
         <div class="slide">
-            <div class="container-fluid searcharea">
-                <div class="searchform">
-                    <div class="keywordbox">
-                        <input class="input1" type="text" placeholder="輸入關鍵字">
+            <div class="navsearcharea">
+                <div class="navsearchform">
+                    <div class="navkeywordbox">
+                        <input class="navinput1" type="text" placeholder="輸入關鍵字">
                     </div>
-                    <select class="area" name="" id="">
+                    <select class="navarea" name="" id="">
                         <option value="">選擇地區</option>
                         <option value="">萬華區</option>
                         <option value="">中正區</option>
@@ -68,7 +68,7 @@
                         <option value="">北投區</option>
                         <option value="">文山區</option>
                     </select>
-                    <select class="area" name="" id="">
+                    <select class="navarea" name="" id="">
                         <option value="">調酒類別</option>
                         <option value="">萬華區</option>
                         <option value="">中正區</option>
@@ -76,7 +76,7 @@
                         <option value="">信義區</option>
                         <option value="">南港區</option>
                     </select>
-                    <select class="area" name="" id="">
+                    <select class="navarea" name="" id="">
                         <option value="">酒吧風格</option>
                         <option value="">萬華區</option>
                         <option value="">中正區</option>
@@ -84,7 +84,7 @@
                         <option value="">信義區</option>
                         <option value="">南港區</option>
                     </select>
-                    <button class="searchbutton">搜尋酒吧</button>
+                    <button class="navsearchbutton">搜尋酒吧</button>
                 </div>
             </div>
         </div>
