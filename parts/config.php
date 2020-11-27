@@ -10,8 +10,8 @@ if(! isset($_SESSION)){
 
 $db_host = 'localhost';  //主機 =127.0.0.1
 $db_name = 'gobar';    //資料庫
-$db_user = 'weiwei';    //用戶
-$db_pass = '860312';    //密碼
+$db_user = 'root';    //用戶
+$db_pass = '';    //密碼
 
 $dsn = "mysql:host={$db_host};dbname={$db_name};charset=utf8";  //一定要用雙引號 key=valuue;
 
