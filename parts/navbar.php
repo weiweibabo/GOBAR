@@ -99,7 +99,7 @@
 
 
 
-
+<script src="<?= WEB_ROOT ?>node_modules/bootstrap/js/dist/popover.js"></script>
 
 <script>
     // tsai
