@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?= WEB_ROOT ?>css/nav.css">
+<link rel="icon" href="<?= WEB_ROOT ?>img/favicon.png">
 
 <body class="hero-anime">
 
@@ -96,7 +97,7 @@
 
 
 
-<script src="<?= WEB_ROOT ?>node_modules/bootstrap/js/dist/popover.js"></script>
+    <script src="<?= WEB_ROOT ?>node_modules/bootstrap/js/dist/popover.js"></script>
 
     <script>
         // tsai
