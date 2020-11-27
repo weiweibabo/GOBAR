@@ -275,10 +275,8 @@ option {
 }
 
 /* footer-area */
-footer {
-  margin-top: 150px;
-  height: 205px;
-  background: #002a4c;
+.content-area {
+  margin-bottom: 55px;
 }
 
 /* RWD */
