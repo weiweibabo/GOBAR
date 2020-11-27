@@ -4,5 +4,4 @@
 <?php include __DIR__ . '/../parts/navbar.php'; ?>
 <div style="height: 1000px;"></div>
 <?php include __DIR__ . '/../parts/about.php'; ?>
-
 <?php include __DIR__ . '/../parts/html-foot.php'; ?>

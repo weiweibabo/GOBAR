@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="<?= WEB_ROOT ?>css/index.css">
 
 <body>
+    <div class="boost"></div>
     <div class="headbigpictur">
         <div class="leafs">
             <div class="leaf10"><img src="../M/img/leaf/leaf7-1.png" alt=""></div>
@@ -257,8 +258,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5>可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
+                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
                         </h5>
                     </div>
                 </div>
@@ -266,8 +267,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc2.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>偶爾來點高級體驗，台北星級飯店酒吧推薦</h3>
-                        <h5>
+                        <h3 class="titleh3">偶爾來點高級體驗，台北星級飯店酒吧推薦</h3>
+                        <h5 class="ph5">
                             想來場最優雅的調酒體驗，非星級飯店酒吧莫屬。想徹底感受飯店酒吧的厲害之處，建議順便住上一晚，喝得盡.....
                         </h5>
                     </div>
@@ -277,8 +278,8 @@
                         <img src="./img/blogpc/blogpc3.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>好喝好拍好厲害，11家實力派視覺系酒吧推薦</h3>
-                        <h5>不只好喝，無論調酒或空間，看起來夠美夠好拍，已是人氣酒吧的基本配備。我們強烈推薦這11家精選台北酒吧，進門喝個幾杯打點卡....
+                        <h3 class="titleh3">好喝好拍好厲害，11家實力派視覺系酒吧推薦</h3>
+                        <h5 class="ph5">不只好喝，無論調酒或空間，看起來夠美夠好拍，已是人氣酒吧的基本配備。我們強烈推薦這11家精選台北酒吧，進門喝個幾杯打點卡....
                         </h5>
                     </div>
                 </div>
@@ -286,8 +287,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5>可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
+                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
                         </h5>
                     </div>
                 </div>
@@ -295,8 +296,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5>可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
+                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
                         </h5>
                     </div>
                 </div>
@@ -304,8 +305,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5>可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
+                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
                         </h5>
                     </div>
                 </div>
@@ -313,8 +314,8 @@
                     <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3>今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5>可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
+                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
                         </h5>
                     </div>
                 </div>

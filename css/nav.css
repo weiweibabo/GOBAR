@@ -4,20 +4,11 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.navbox {
-  margin: 0 auto;
-  width: 75%;
-  padding: 25px 0 14px;
-  font-family: "Noto Sans TC", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .start-header {
   opacity: 1;
   transform: translateY(0);
   padding: 20px 0;
-  box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -33,6 +24,13 @@
   height: 99px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+.navbox {
+  margin: 0 auto;
+  width: 75%;
+  padding: 25px 0 14px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .navigation-wrap {
@@ -59,7 +57,6 @@
   transition: all 0.3s ease-out;
   padding-bottom: 11px;
 }
-
 .navslogn {
   width: 30%;
   padding: 50px 0 0 20px;
@@ -197,7 +194,6 @@
   display: none;
   background-color: #236ca6;
 }
-
 .dropdown-menu {
   padding: 10px !important;
   margin: 0;
@@ -292,15 +288,12 @@ body.dark .navbar-light .navbar-toggler-icon:before {
 body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
-.navsearcharea {
-  padding: 0px;
+.searcharea {
   width: 75%;
-  height: 100%;
   margin: 0 auto;
-  border: 1px solid red;
+  padding: 30px 0;
 }
 .navsearchform {
-  padding: 30px 0;
   display: flex;
   justify-content: space-between;
   transition: 2s;
@@ -316,12 +309,12 @@ button {
   padding-left: 15px;
   color: white;
 }
-::placeholder {
+.navinput1::placeholder {
   color: white;
   font-size: 20px;
   font-weight: 100;
 }
-.navarea {
+.navselect {
   width: 150px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -329,9 +322,6 @@ button {
   color: white;
   font-size: 20px;
   font-weight: 100;
-}
-option {
-  color: black;
 }
 .navsearchbutton {
   border-radius: 12px;
@@ -341,6 +331,7 @@ option {
   width: 150px;
   font-size: 20px;
   font-weight: 400;
+  padding-bottom: 3px;
 }
 .small {
   display: none;
@@ -350,9 +341,6 @@ option {
     ================================================== */
 
 @media (max-width: 767px) {
-  h1 {
-    font-size: 38px;
-  }
   .navigation-wrap {
     height: 80px;
   }
@@ -378,10 +366,10 @@ option {
   .navslogn {
     display: none;
   }
-
   .navbar-toggler {
     padding: 0 0 0 30px;
     width: auto;
+    margin-top: 0;
   }
   .nav-item:after {
     display: none;
@@ -416,6 +404,9 @@ option {
   .slide {
     height: 400px;
   }
+  .searcharea {
+    padding: 0;
+  }
   .navsearchform {
     height: 400px;
     background-color: #236ca6;
@@ -424,7 +415,7 @@ option {
     padding: 0 30px;
   }
   .navinput1,
-  .navarea {
+  .navselect {
     width: 100%;
   }
   .navkeywordbox {
