@@ -16,18 +16,21 @@ section.line02 {
   background-image: url("../img/line01.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 section.line03 {
   background-image: url("../img/line03.png");
   background-position: top 40% left 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 section.line04 {
   background-image: url("../img/line04.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .container-fluid {
@@ -482,4 +485,61 @@ Img {
     width: 100%;
     margin: 0 0 2rem 0;
   }
+}
+
+.sp {
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+  cursor: pointer;
+  width: 60px;
+  height: 200px;
+  background-color: #ff8d00;
+  border-radius: 30px 0 0 30px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.form-wrapper {
+  display: none;
+  height: 300px;
+  padding-top: 10px;
+  background-color: #ff8d00;
+  border-radius: 10px 0 0 30px;
+}
+
+.sp h2 {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  margin-top: 10px;
+}
+
+.sp-click svg {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sp-time svg {
+  margin-left: 10px;
+}
+
+.sp-time p {
+  margin-left: 15px;
+}
+
+.sp-like svg {
+  margin-left: 15px;
+}
+
+.sp-like p {
+  margin-left: 15px;
+}
+
+.sp-up svg {
+  margin-left: 15px;
+}
+
+.sp-up p {
+  margin-left: 15px;
 }
