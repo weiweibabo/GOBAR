@@ -468,28 +468,9 @@ Img {
   font-weight: 300;
 }
 
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
-
 .sp {
   position: fixed;
-  bottom: 100px;
+  top: 100px;
   right: 0px;
   cursor: pointer;
   width: 60px;
@@ -542,4 +523,971 @@ Img {
 
 .sp-up p {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  section {
+    background-image: none;
+  }
+  .sp {
+    display: none;
+  }
+
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  .store-name p {
+    font-size: 20px;
+  }
+  .store-name {
+    top: 180px;
+    direction: flex;
+    width: 400px;
+  }
+  .medal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 150px;
+  }
+  .star {
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+  }
+  .star svg {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .information-bar {
+    height: 100px;
+    top: 200px;
+    position: relative;
+  }
+  .address h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+  }
+  .address p {
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+  }
+  .d-flex {
+    flex-direction: column;
+    margin: 0 auto;
+    top: 0;
+  }
+  .business-hour p {
+    font-size: 10px;
+    margin-top: 5px;
+    direction: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
+  }
+  .business-hour {
+    position: absolute;
+    top: 40px;
+  }
+  .news-title h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .news-content-title h4 {
+    font-size: 16px;
+  }
+  .news-content-title p {
+    font-size: 10px;
+  }
+
+  .share {
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    right: 60px;
+  }
+  .share svg {
+    width: 50px;
+  }
+  .go-news p {
+    font-size: 8px;
+  }
+  .water-fall-word {
+    display: none;
+  }
+  .water-fall h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+  }
+  .col-item--height2 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+  .col-item--height3 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 250px;
+    font-size: 10px;
+  }
+  .col-item--height3 p {
+    padding: 5px;
+  }
+  .col-item--height3 h3 {
+    font-size: 20px;
+  }
+  .col-item--height3 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .col-item--weight1 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 500px;
+  }
+  .col-item--weight2 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 750px;
+  }
+  .col-item--weight3 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1000px;
+  }
+  .col-item--height4 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1250px;
+  }
+  .col-item--height4 p {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .col-item--height4 h3 {
+    font-size: 20px;
+  }
+  .col-item--height4 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .line01 {
+    background-image: none;
+    margin-bottom: 500px;
+  }
+  .front {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+  }
+  .inner h1 {
+    font-size: 20px;
+  }
+  .inner p {
+    font-size: 10px;
+  }
+  .intro h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .food-intro-pic01 {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+  .food-intro-pic02 img {
+    width: 250px;
+    height: 250px;
+  }
+  .food-intro-pic02 {
+    font-size: 10px;
+  }
+  .comment-pic {
+    height: 250px;
+  }
+  .comment-pic img {
+    width: 50px;
+    height: 50px;
+  }
+  .comment-name {
+    top: 0;
+    left: 0;
+    margin-left: 100px;
+  }
+  .comment-name h6 {
+    font-size: 10px;
+  }
+  .comment-time {
+    left: 0;
+    top: 0;
+    margin-left: 200px;
+  }
+  .comment-time h6 {
+    font-size: 10px;
+  }
+  .comment-content {
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  .comment-content p {
+    font-size: 8px;
+  }
+  .comment-star svg {
+    width: 50px;
+  }
+  .comment-star {
+    left: 0;
+    top: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  .col {
+    width: calc(33.333333% - 2rem);
+  }
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  section {
+    background-image: none;
+  }
+  .sp {
+    display: none;
+  }
+
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  .store-name p {
+    font-size: 20px;
+  }
+  .store-name {
+    top: 180px;
+    direction: flex;
+    width: 400px;
+  }
+  .medal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 150px;
+  }
+  .star {
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+  }
+  .star svg {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .information-bar {
+    height: 100px;
+    top: 200px;
+    position: relative;
+  }
+  .address h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+  }
+  .address p {
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+  }
+  .d-flex {
+    flex-direction: column;
+    margin: 0 auto;
+    top: 0;
+  }
+  .business-hour p {
+    font-size: 10px;
+    margin-top: 5px;
+    direction: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
+  }
+  .business-hour {
+    position: absolute;
+    top: 40px;
+  }
+  .news-title h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .news-content-title h4 {
+    font-size: 16px;
+  }
+  .news-content-title p {
+    font-size: 10px;
+  }
+
+  .share {
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    right: 60px;
+  }
+  .share svg {
+    width: 50px;
+  }
+  .go-news p {
+    font-size: 8px;
+  }
+  .water-fall-word {
+    display: none;
+  }
+  .water-fall h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+  }
+  .col-item--height2 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+  .col-item--height3 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 250px;
+    font-size: 10px;
+  }
+  .col-item--height3 p {
+    padding: 5px;
+  }
+  .col-item--height3 h3 {
+    font-size: 20px;
+  }
+  .col-item--height3 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .col-item--weight1 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 500px;
+  }
+  .col-item--weight2 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 750px;
+  }
+  .col-item--weight3 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1000px;
+  }
+  .col-item--height4 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1250px;
+  }
+  .col-item--height4 p {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .col-item--height4 h3 {
+    font-size: 20px;
+  }
+  .col-item--height4 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .line01 {
+    background-image: none;
+    margin-bottom: 500px;
+  }
+  .front {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+  }
+  .inner h1 {
+    font-size: 20px;
+  }
+  .inner p {
+    font-size: 10px;
+  }
+  .intro h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .food-intro-pic01 {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+  .food-intro-pic02 img {
+    width: 250px;
+    height: 250px;
+  }
+  .food-intro-pic02 {
+    font-size: 10px;
+  }
+  .comment-pic {
+    height: 250px;
+  }
+  .comment-pic img {
+    width: 50px;
+    height: 50px;
+  }
+  .comment-name {
+    top: 0;
+    left: 0;
+    margin-left: 100px;
+  }
+  .comment-name h6 {
+    font-size: 10px;
+  }
+  .comment-time {
+    left: 0;
+    top: 0;
+    margin-left: 200px;
+  }
+  .comment-time h6 {
+    font-size: 10px;
+  }
+  .comment-content {
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  .comment-content p {
+    font-size: 8px;
+  }
+  .comment-star svg {
+    width: 50px;
+  }
+  .comment-star {
+    left: 0;
+    top: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .col {
+    width: calc(50% - 2rem);
+  }
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  section {
+    background-image: none;
+  }
+  .sp {
+    display: none;
+  }
+
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  .store-name p {
+    font-size: 20px;
+  }
+  .store-name {
+    top: 180px;
+    direction: flex;
+    width: 400px;
+  }
+  .medal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 150px;
+  }
+  .star {
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+  }
+  .star svg {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .information-bar {
+    height: 100px;
+    top: 200px;
+    position: relative;
+  }
+  .address h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+  }
+  .address p {
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+  }
+  .d-flex {
+    flex-direction: column;
+    margin: 0 auto;
+    top: 0;
+  }
+  .business-hour p {
+    font-size: 10px;
+    margin-top: 5px;
+    direction: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
+  }
+  .business-hour {
+    position: absolute;
+    top: 40px;
+  }
+  .news-title h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .news-content-title h4 {
+    font-size: 16px;
+  }
+  .news-content-title p {
+    font-size: 10px;
+  }
+
+  .share {
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    right: 60px;
+  }
+  .share svg {
+    width: 50px;
+  }
+  .go-news p {
+    font-size: 8px;
+  }
+  .water-fall-word {
+    display: none;
+  }
+  .water-fall h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+  }
+  .col-item--height2 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+  .col-item--height3 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 250px;
+    font-size: 10px;
+  }
+  .col-item--height3 p {
+    padding: 5px;
+  }
+  .col-item--height3 h3 {
+    font-size: 20px;
+  }
+  .col-item--height3 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .col-item--weight1 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 500px;
+  }
+  .col-item--weight2 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 750px;
+  }
+  .col-item--weight3 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1000px;
+  }
+  .col-item--height4 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1250px;
+  }
+  .col-item--height4 p {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .col-item--height4 h3 {
+    font-size: 20px;
+  }
+  .col-item--height4 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .line01 {
+    background-image: none;
+    margin-bottom: 500px;
+  }
+  .front {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+  }
+  .inner h1 {
+    font-size: 20px;
+  }
+  .inner p {
+    font-size: 10px;
+  }
+  .intro h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .food-intro-pic01 {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+  .food-intro-pic02 img {
+    width: 250px;
+    height: 250px;
+  }
+  .food-intro-pic02 {
+    font-size: 10px;
+  }
+  .comment-pic {
+    height: 250px;
+  }
+  .comment-pic img {
+    width: 50px;
+    height: 50px;
+  }
+  .comment-name {
+    top: 0;
+    left: 0;
+    margin-left: 100px;
+  }
+  .comment-name h6 {
+    font-size: 10px;
+  }
+  .comment-time {
+    left: 0;
+    top: 0;
+    margin-left: 200px;
+  }
+  .comment-time h6 {
+    font-size: 10px;
+  }
+  .comment-content {
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  .comment-content p {
+    font-size: 8px;
+  }
+  .comment-star svg {
+    width: 50px;
+  }
+  .comment-star {
+    left: 0;
+    top: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .col {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  section {
+    background-image: none;
+  }
+  .sp {
+    display: none;
+  }
+
+  .carousel .d-block {
+    height: 300px !important;
+  }
+  .store-name p {
+    font-size: 20px;
+  }
+  .store-name {
+    top: 180px;
+    direction: flex;
+    width: 400px;
+  }
+  .medal {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    left: 150px;
+  }
+  .star {
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+  }
+  .star svg {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .information-bar {
+    height: 100px;
+    top: 200px;
+    position: relative;
+  }
+  .address h2 {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+  }
+  .address p {
+    font-size: 10px;
+    position: absolute;
+    top: 30px;
+  }
+  .d-flex {
+    flex-direction: column;
+    margin: 0 auto;
+    top: 0;
+  }
+  .business-hour p {
+    font-size: 10px;
+    margin-top: 5px;
+    direction: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
+  }
+  .business-hour {
+    position: absolute;
+    top: 40px;
+  }
+  .news-title h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .news-content-title h4 {
+    font-size: 16px;
+  }
+  .news-content-title p {
+    font-size: 10px;
+  }
+
+  .share {
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    right: 60px;
+  }
+  .share svg {
+    width: 50px;
+  }
+  .go-news p {
+    font-size: 8px;
+  }
+  .water-fall-word {
+    display: none;
+  }
+  .water-fall h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+  }
+  .col-item--height2 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+  .col-item--height3 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 250px;
+    font-size: 10px;
+  }
+  .col-item--height3 p {
+    padding: 5px;
+  }
+  .col-item--height3 h3 {
+    font-size: 20px;
+  }
+  .col-item--height3 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .col-item--weight1 {
+    width: 250px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    margin-top: 500px;
+  }
+  .col-item--weight2 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 750px;
+  }
+  .col-item--weight3 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1000px;
+  }
+  .col-item--height4 {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    margin-top: 1250px;
+  }
+  .col-item--height4 p {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .col-item--height4 h3 {
+    font-size: 20px;
+  }
+  .col-item--height4 h4 {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+  .line01 {
+    background-image: none;
+    margin-bottom: 500px;
+  }
+  .front {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+  }
+  .inner h1 {
+    font-size: 20px;
+  }
+  .inner p {
+    font-size: 10px;
+  }
+  .intro h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 50px;
+  }
+  .food-intro-pic01 {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+  .food-intro-pic02 img {
+    width: 250px;
+    height: 250px;
+  }
+  .food-intro-pic02 {
+    font-size: 10px;
+  }
+  .comment-pic {
+    height: 250px;
+  }
+  .comment-pic img {
+    width: 50px;
+    height: 50px;
+  }
+  .comment-name {
+    top: 0;
+    left: 0;
+    margin-left: 100px;
+  }
+  .comment-name h6 {
+    font-size: 10px;
+  }
+  .comment-time {
+    left: 0;
+    top: 0;
+    margin-left: 200px;
+  }
+  .comment-time h6 {
+    font-size: 10px;
+  }
+  .comment-content {
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  .comment-content p {
+    font-size: 8px;
+  }
+  .comment-star svg {
+    width: 50px;
+  }
+  .comment-star {
+    left: 0;
+    top: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
 }
