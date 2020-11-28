@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= WEB_ROOT ?>css/nav.css">
+<link rel="stylesheet" href="<?= WEB_ROOT ?>css/navbar.css">
 <link rel="icon" href="<?= WEB_ROOT ?>img/favicon.png">
 
 <body class="hero-anime">
@@ -8,10 +8,10 @@
         <div class="col-xl-12 col-12 ">
           <nav class="navbar navbar-expand-md navbar-light">
             <li class="nav-item search small pl-4 pl-md-0 ml-0 ml-md-4">
-              <img src="./img/search.svg" alt="" />
+              <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
             </li>
-            <a class="navbar-brand" href="" target="_blank"><img src="./img/logowhite.svg" alt="" /></a>
-            <div class="navslogn"><img src="./img/navslogn.svg" alt=""></div>
+            <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
+            <div class="navslogn"><img src="<?= WEB_ROOT ?>img/navslogn.svg" alt=""></div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,21 +20,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
                 <li class="nav-item search pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="./img/search.svg" alt="" />
-                  <a class="nav-link" href="#">收尋酒吧</a>
+                  <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
+                  <a class="nav-link" href="#">搜尋酒吧</a>
                 </li>
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="./img/favorites.svg" alt="" />
+                  <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">我的收藏</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="./img/Clock-right.svg" alt="" />
+                  <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
                   <a class="nav-link" href="#">我的訂單</a>
                 </li>
                 <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="./img/member.svg" alt="" />
+                  <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
                   <a class="nav-link" href="#">登入/註冊</a>
                 </li>
               </ul>
