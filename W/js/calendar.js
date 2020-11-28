@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
 const monthOlympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const monthNormal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-const monthName = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+const monthName = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 const weekArr = [
   { key: 'Sun', value: 'SUNDAY' },
   { key: 'Mon', value: 'MONDAY' },
