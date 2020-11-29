@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   background-color: #141f2b;
@@ -144,7 +144,7 @@ body {
   font-size: 16px;
 }
 
-.aboutme1 {
+.aboutme1 p {
   color: white;
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
@@ -161,6 +161,11 @@ body {
   border-bottom: 5px solid #ff8d00;
   width: 180px;
   padding-left: 25px;
+}
+
+.aboutme2 a {
+  color: white;
+  text-decoration: none;
 }
 
 .change {
@@ -293,7 +298,7 @@ body {
     text-align: center;
   }
 
-  .aboutme1 {
+  .aboutme1 p {
     font-size: 20px;
   }
 
@@ -302,6 +307,10 @@ body {
     margin-left: 10px;
     width: 120px;
     padding-left: 18px;
+  }
+
+  .aboutme2 p {
+    font-size: 20px !important;
   }
 
   .bottom-word p {

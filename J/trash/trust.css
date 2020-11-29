@@ -4,14 +4,11 @@
 
 body {
   background-color: #141f2b;
-  z-index: 1;
 }
 
 #Member-Centre {
   background-color: #141f2b;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 75%;
   height: 1000px;
   background-image: url(../png/會員中心.png);
   background-repeat: no-repeat;
@@ -35,8 +32,9 @@ body {
 /* ------------------------- top area */
 
 .top-area {
-  width: 100%;
-  margin-bottom: 170px;
+  width: 1440px;
+  height: 325px;
+  margin: 0 auto;
   margin-top: 70px;
 }
 
@@ -51,7 +49,6 @@ body {
   width: 120px;
   text-align: center;
   width: 200px;
-  margin-top: 10px;
 }
 
 .name2svg {
@@ -73,8 +70,7 @@ body {
 }
 
 .out {
-  margin-left: 8rem;
-  display: flex;
+  margin-left: 190px;
 }
 
 .out p {
@@ -90,14 +86,9 @@ body {
 
 .bottom-area {
   width: 1440px;
-  height: 400px;
+  height: 537px;
   margin: 0 auto;
-  padding: 1rem 0;
   border-top: 2px solid white;
-}
-
-.bottom-text {
-  align-items: center;
 }
 
 .bottom-word {
@@ -130,7 +121,7 @@ body {
 
 .black-text2 p {
   color: white;
-  margin-left: 20px;
+  margin: 0 50px 10px;
   font-size: 16px;
 }
 
@@ -139,30 +130,24 @@ body {
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
-  border-bottom: 5px solid #ff8d00;
   margin-right: 3rem;
   padding: 0 3rem;
 }
 
-.aboutme1 a {
-  text-decoration: none;
-}
-
-.aboutme2 p {
+.aboutme2 {
   color: white;
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
-}
-
-.aboutme2 a {
-  text-decoration: none;
+  border-bottom: 5px solid #ff8d00;
+  width: 200px;
+  padding-left: 40px;
 }
 
 .change {
   color: white;
   font-size: 30px;
-  margin-left: 41rem;
+  margin-left: 45rem;
 }
 
 .change svg {
@@ -170,124 +155,87 @@ body {
   margin-right: 10px;
 }
 
+.left-area p {
+  color: white;
+  font-size: 30px;
+  margin-top: 1rem;
+}
+
+.left-area {
+  margin-top: 15px;
+}
+
+.date svg {
+  padding: 20px 20px 30px 20px;
+}
+
+.date-svg p {
+  color: white;
+  margin-bottom: 0;
+  padding-left: 32px;
+  font-size: 20px;
+}
+
+.date img {
+  padding: 20px;
+}
+
+.card1 {
+  height: 190px;
+  background-color: #000;
+  justify-content: center;
+  padding: 12px 0;
+  margin-bottom: 30px;
+  -webkit-filter: brightness(0.5);
+}
+
+.card-text {
+  color: white;
+  padding: 0 30px;
+}
+
+.badface {
+  width: 60px;
+  padding-top: 80px;
+}
+
+.card-text p {
+  color: white;
+}
+
+.titleh1 {
+  font-size: 15px;
+}
+
+.title-erro {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.error {
+  color: #ff5172;
+  position: absolute;
+  font-size: 60px;
+  top: 50px;
+  left: 120px;
+  border: 3px solid #ff5172;
+  border-radius: 10px;
+  padding: 0 10px;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-5deg);
+}
+
+.error p {
+  margin: 0 20px;
+}
+
 /* --------------------------- footer */
 
-.foot {
+footer {
   height: 205px;
   background-color: #002a4c;
-}
-
-/* ---------------------------- RWD */
-
-@media (min-width: 415px) {
-  .phone {
-    display: none;
-  }
-}
-
-@media (max-width: 414px) {
-  /* #Member-Centre {
-    height: 1000px;
-  } */
-
-  .web {
-    display: none;
-  }
-
-  .big-area {
-    margin: auto;
-  }
-
-  .top-area {
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-
-  .black-area {
-    background-color: black;
-    /* width: 500px;
-    height: 185px; */
-    display: flex;
-    margin-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .user {
-    text-align: center;
-  }
-
-  .name2 {
-    justify-content: center;
-  }
-
-  .name2 img {
-    width: 50px;
-    margin-left: 0;
-  }
-
-  .name2 p {
-    width: 90px;
-  }
-
-  .photo {
-    text-align: center;
-  }
-
-  .aboutme1 {
-    font-size: 20px;
-  }
-
-  .aboutme2 {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-
-  .bottom-word p {
-    width: 70px;
-    font-size: 16px;
-  }
-
-  .text p {
-    font-size: 16px;
-  }
-
-  .change {
-    margin-left: 20px;
-  }
-
-  .bottom-text {
-    padding: 0;
-  }
-
-  .out {
-    margin-left: 230px;
-    padding-top: 10px;
-  }
-
-  .out p {
-    font-size: 20px;
-  }
-
-  .out svg {
-    width: 20px;
-    margin: 0;
-  }
-
-  .change p {
-    width: 50px;
-    font-size: 20px;
-  }
-
-  .change svg {
-    margin: 0;
-    margin-right: 5px;
-    width: 20px;
-  }
 }
