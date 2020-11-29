@@ -28,7 +28,7 @@
 
 <body>
     <div class="golden-line d-flex">
-        <div class="col-3">
+        <div class="col-xl-3 col-sm-6">
             <div class="dropdown-all d-flex ">
                 <div class="dropdown ">
                     <button class="dropdown-btn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -762,7 +762,7 @@
             </div>
         </div>
 
-        <div class="col-9 ">
+        <div class="col-xl-9 col-sm-12 ">
             <div id="app" class="container">
                 <div id="map" class="google-api embed-responsive embed-responsive-16by9"></div>
 
@@ -787,6 +787,7 @@
             icon: '',
             map: map
         });
+        $('search').mouseenter().addClass("search-pic");
     </script>
 
     <script async defer

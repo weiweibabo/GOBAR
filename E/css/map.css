@@ -63,6 +63,11 @@ body {
   color: white;
   margin-bottom: 20px;
 }
+.search-pic {
+  height: 200px;
+  width: 400px;
+  background-image: url(../img/Attic01.jpg);
+}
 .search-all {
   overflow-y: hidden;
   overflow: auto;
@@ -88,4 +93,30 @@ body {
 }
 .container {
   position: fixed;
+}
+@media screen and (max-width: 414px) {
+  .golden-line {
+    background-image: none;
+    position: relative;
+  }
+  .google-api {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
+  .dropdown {
+    width: 80px;
+    height: 25px;
+  }
+  .dropdown-menu {
+    width: 80px;
+    height: 25px;
+  }
+  .dropdown-btn {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .search {
+  }
 }
