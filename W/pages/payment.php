@@ -1,4 +1,4 @@
-<?php $title = '付款頁' ?>
+
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
@@ -101,7 +101,7 @@
                     id="FRIDAY"
                     transform="translate(659 904)"
                     fill="#fff"
-                    font-size="39"
+                    font-size="35"
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >

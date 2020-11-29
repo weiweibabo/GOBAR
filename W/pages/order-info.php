@@ -1,5 +1,4 @@
 
-<?php $title = '訂位資訊頁' ?>
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
@@ -74,25 +73,25 @@
                     fill="#ff8d00"
                   />
                   <text
-                    id="_18"
-                    data-name="18"
+                    id="_20"
+                    data-name="20"
                     transform="translate(673 1016)"
                     fill="#ff8d00"
                     font-size="93"
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">18</tspan>
+                    <tspan x="0" y="0">20</tspan>
                   </text>
                   <text
                     id="FRIDAY"
-                    transform="translate(659 904)"
+                    transform="translate(683 904)"
                     fill="#fff"
                     font-size="39"
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">FRIDAY</tspan>
+                    <tspan x="0" y="0">SUN</tspan>
                   </text>
                 </g>
               </svg>

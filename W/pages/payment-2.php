@@ -1,4 +1,4 @@
-<?php $title = '付款成功頁' ?>
+
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>

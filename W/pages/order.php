@@ -1,5 +1,4 @@
     
-    <?php $title = '訂位頁' ?>
 
     <?php include __DIR__ . '/../../parts/config.php'; ?>
     <?php include __DIR__ . '/../../parts/html-head.php'; ?>
@@ -131,7 +130,7 @@
         </div>
 
         <div class="phone-from col-xl-4 col-10">
-          <form action="" class="order-form">
+          <form action="" class="order-form" id="from1">
             <div class="mt-0">
               <!--     phone 日曆    -->
               <div class="phone label-text">
@@ -181,14 +180,14 @@
                 </div>
                 <select id="time" class="inputbox">
                   <option>請選擇</option>
-                  <option>20:00</option>
-                  <option>20:30</option>
-                  <option>21:00</option>
-                  <option>21:30</option>
-                  <option>22:00</option>
-                  <option>22:30</option>
-                  <option>23:00</option>
-                  <option>23:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                  <option value="22:00">22:00</option>
+                  <option value="22:30">22:30</option>
+                  <option value="23:00">23:00</option>
+                  <option value="23:30">23:30</option>
                 </select>
               </div>
             </div>
@@ -239,12 +238,12 @@
           <form action="" class="text-area mt-1">
             <label for="">備註:</label>
             <br />
-            <textarea name="" id="" rows="11"></textarea>
+            <textarea name="" id="remarks" rows="11"></textarea>
           </form>
 
           <p id="errormsg"></p>
 
-          <button id="send" class="next-btn">下一步</button>
+          <button type="submit" id="send" class="next-btn">下一步</button>
         </div>
       </div>
     </div>
@@ -259,6 +258,27 @@
       $(document).ready(function () {
         $("#myModal").modal("show");
       });
+
+     
+     const remarks = $('#remarks');
+
+     let ymd = `${years.innerHTML}-${mon.innerHTML}-${dat.innerHTML}`
+
+        $('#send').click(function(e) {
+            e.preventDefault();
+            $.post('order-api.php',
+            { date: ymd,
+              time:time.value,
+              people:persons.value,
+              name:name.value,
+              mobile:phonenumber.value,
+              email:email.value,
+              remarks:remarks.val(),
+            }, function(response) {
+                console.log(response);
+            })
+        });
+    
     </script>
   </body>
   <?php include __DIR__ . '/../../parts/about.php'; ?>

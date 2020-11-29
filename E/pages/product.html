@@ -12,9 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src=../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
@@ -24,7 +22,6 @@
     <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../js/product.js">
-    <link rel="stylesheet" href="../css/product_rwd.css">
 </head>
 
 <body>
@@ -33,8 +30,8 @@
         <div class=" store">
             <div class="store-name d-flex">
                 <p>Attic Trade co.</p>
-                <div class="medal">
-                    <img src="../../J/Gobar-svg-png/PNG/gold.png" alt="">
+                <div class="medal d-flex">
+                    <img src="../../J/Gobar-svg-png/PNG/黃金.png" alt="">
                 </div>
             </div>
             <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-ride="carousel">
@@ -124,20 +121,20 @@
                     </div>
                 </div>
                 <div class="news-content d-flex">
-                    <div class="news-content-one col-4">
+                    <div class="news-content-one col-sm-4 col-xl-4">
                         <div class="news-content-title">
                             <h4>絕佳氣氛</h4>
                             <p>那些電影裡的古巴情歌，被20世紀早期的偉大樂團蒙上了如夢似幻般的畫境，一點都不現實。如果你熱愛調酒，也喜歡聽老派情歌，更享受著不切實際的夢。那你絕不能錯過。</p>
                         </div>
                     </div>
-                    <div class="news-content-one col-4">
+                    <div class="news-content-one col-sm-4 col-xl-4">
                         <div class="news-content-title">
                             <h4>質感裝潢</h4>
                             <p>如同大航海時代的東印度公司，沉穩的木質空間內，妝點老闆收藏的黑膠、老音響、擴大機等物件，根於殖民時代的復古情調，讓酒客們像是意外闖入定格在十七世紀的時空旅人。
                             </p>
                         </div>
                     </div>
-                    <div class="news-content-one col-4">
+                    <div class="news-content-one col-sm-4 col-xl-4">
                         <div class="news-content-title">
                             <h4>特色酒品</h4>
                             <p>主打高端精緻的殖民風格客製化調酒，除了old school以在地精釀酒品與石材外極度創新，讓人喝的到微醺還喝的到靈魂。就好比在擁抱微風的感受，觸感和煦，也很順口。
@@ -612,32 +609,38 @@
 
         <h2>CLICK</h2>
         <div class="form-wrapper">
-            <div class="sp-time">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
-                    <g id="Clock" transform="translate(0 28.099) rotate(-60)">
-                        <path id="Path_13" data-name="Path 13"
-                            d="M4.867,4.867A14.728,14.728,0,0,1,16.223,0,14.728,14.728,0,0,1,27.579,4.867a14.728,14.728,0,0,1,4.867,11.356,14.728,14.728,0,0,1-4.867,11.356,14.728,14.728,0,0,1-11.356,4.867A14.728,14.728,0,0,1,4.867,27.579C1.893,24.335,0,20.82,0,16.223A14.728,14.728,0,0,1,4.867,4.867ZM23.524,23.524l1.893-1.893-6.76-6.76L16.223,4.056h-2.7V16.223a2.455,2.455,0,0,0,.811,1.893.944.944,0,0,0,.541.27Z"
-                            transform="translate(0)" fill="#fff" />
-                    </g>
-                </svg>
-                <p>訂位</p>
-            </div>
-            <div class="sp-like">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31.516" height="27.811" viewBox="0 0 31.516 27.811">
-                    <path id="Heart"
-                        d="M29.022,2.544a8.468,8.468,0,0,0-12.053,0L15.783,3.73,14.6,2.544A8.523,8.523,0,0,0,2.544,14.6L15.783,27.836,29.022,14.6a8.468,8.468,0,0,0,0-12.053"
-                        transform="translate(-0.025 -0.025)" fill="#fff" fill-rule="evenodd" />
-                </svg>
-                <p>收藏</p>
-            </div>
-            <div class="sp-up">
-                <svg xmlns="http://www.w3.org/2000/svg" width="27.868" height="27.868" viewBox="0 0 27.868 27.868">
-                    <path id="Path_10" data-name="Path 10"
-                        d="M13.934,0,11.4,2.533l9.591,9.591H0v3.619H20.992L11.4,25.335l2.533,2.533L27.868,13.934Z"
-                        transform="translate(0 27.868) rotate(-90)" fill="#fff" />
-                </svg>
-                <p>往上</p>
-            </div>
+            <a href="">
+                <div class="sp-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
+                        <g id="Clock" transform="translate(0 28.099) rotate(-60)">
+                            <path id="Path_13" data-name="Path 13"
+                                d="M4.867,4.867A14.728,14.728,0,0,1,16.223,0,14.728,14.728,0,0,1,27.579,4.867a14.728,14.728,0,0,1,4.867,11.356,14.728,14.728,0,0,1-4.867,11.356,14.728,14.728,0,0,1-11.356,4.867A14.728,14.728,0,0,1,4.867,27.579C1.893,24.335,0,20.82,0,16.223A14.728,14.728,0,0,1,4.867,4.867ZM23.524,23.524l1.893-1.893-6.76-6.76L16.223,4.056h-2.7V16.223a2.455,2.455,0,0,0,.811,1.893.944.944,0,0,0,.541.27Z"
+                                transform="translate(0)" fill="#fff" />
+                        </g>
+                    </svg>
+                    <p>訂位</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="sp-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.516" height="27.811" viewBox="0 0 31.516 27.811">
+                        <path id="Heart"
+                            d="M29.022,2.544a8.468,8.468,0,0,0-12.053,0L15.783,3.73,14.6,2.544A8.523,8.523,0,0,0,2.544,14.6L15.783,27.836,29.022,14.6a8.468,8.468,0,0,0,0-12.053"
+                            transform="translate(-0.025 -0.025)" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                    <p>收藏</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="sp-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27.868" height="27.868" viewBox="0 0 27.868 27.868">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M13.934,0,11.4,2.533l9.591,9.591H0v3.619H20.992L11.4,25.335l2.533,2.533L27.868,13.934Z"
+                            transform="translate(0 27.868) rotate(-90)" fill="#fff" />
+                    </svg>
+                    <p>往上</p>
+                </div>
+            </a>
         </div>
     </div>
 
