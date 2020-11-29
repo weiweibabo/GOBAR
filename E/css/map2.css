@@ -1,0 +1,164 @@
+/* * {
+  outline: red solid 1px;
+} */
+body {
+  background-color: #141f2b;
+  background-attachment: fixed;
+}
+.golden-line {
+  background: url(../img/line04.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1300px;
+  /* z-index: -1; */
+}
+.dropdown {
+  width: 160px;
+  height: 50px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+
+.dropdown-btn {
+  height: 50px;
+  width: 160px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.dropdown-menu {
+  height: 80px;
+  width: 150px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 179, 82, 0.8);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #fe8d00;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 179, 82);
+}
+
+.dropdown-menu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.col-3 {
+  background-attachment: fixed;
+}
+
+.search {
+  height: 120px;
+  width: 400px;
+  background-color: #fe8d00;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.search:hover {
+  height: 400px;
+}
+
+.search:hover .pic {
+  display: block !important;
+  width: 400px;
+}
+
+.pic img {
+  background-color: #fe8d00;
+  width: 100%;
+}
+
+.pic {
+  display: none;
+}
+/* .search-pic {
+  height: 200px;
+  width: 400px;
+  background-image: url(../img/Attic01.jpg);
+} */
+.search-all {
+  overflow-y: hidden;
+  overflow: auto;
+}
+.name {
+  margin-left: 10px;
+}
+.address {
+  margin-left: 10px;
+}
+.star {
+  margin-left: 10px;
+}
+.star svg {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.google-api {
+  width: 150%;
+  position: fixed;
+  height: 150%;
+}
+.container {
+  position: fixed;
+}
+@media screen and (max-width: 420px) {
+  .golden-line {
+    background-image: none;
+    position: relative;
+  }
+  .left {
+    margin-left: 40px;
+  }
+  .google-api {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .dropdown {
+    width: 80px;
+    height: 25px;
+    margin-right: 125px;
+  }
+  .dropdown-menu {
+    width: 80px;
+    height: 25px;
+  }
+  .dropdown-btn {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .search {
+    width: 300px;
+    height: 100px;
+    font-size: 10px;
+  }
+  .search h2 {
+    font-size: 20px;
+  }
+  .like svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .price h2 {
+    font-size: 20px;
+  }
+  .price {
+    margin-right: 10px;
+  }
+}
