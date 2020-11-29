@@ -72,7 +72,7 @@
       <div class="row conent-area">
         <div class="col-xl-5 col-10">
           <div class="phone-shop title-30">
-            <p><?php $barName ?>安慰劑 Placebo Taipei</p>
+            <p>安慰劑 Placebo Taipei</p>
           </div>
 
           <!--    web 日曆    -->
@@ -243,7 +243,9 @@
 
           <p id="errormsg"></p>
 
+          
           <button type="submit" id="send" class="next-btn">下一步</button>
+          
         </div>
       </div>
     </div>
@@ -261,13 +263,14 @@
 
      
      const remarks = $('#remarks');
-
-     let ymd = `${years.innerHTML}-${mon.innerHTML}-${dat.innerHTML}`
-
         $('#send').click(function(e) {
             e.preventDefault();
+
+            let ymd = `${years.innerHTML}-${mon.innerHTML}-${dat.innerHTML}`
+
             $.post('order-api.php',
             { date: ymd,
+              weekdays:weekdays.innerHTML,
               time:time.value,
               people:persons.value,
               name:name.value,

@@ -5,6 +5,9 @@ require __DIR__ . '/../../parts/config.php';
 if(! isset($_SESSION)){
     session_start();
 }
+// if(! isset($_SESSION['admin'])){
+//     header('Open:.php');exit;
+// }
 
 $output = [
     'success' => false,
@@ -17,11 +20,12 @@ if (empty($_POST['date'])) {
     exit;
 }
 
-$sql = "INSERT INTO `orders`(`date`, `time`, `people`, `name`, `mobile`, `email`, `remarks`) VALUES (?,?,?,?,?,?,?)";
+$sql = "INSERT INTO `orders`(`date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email`, `remarks`) VALUES (?,?,?,?,?,?,?,?)";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
     $_POST['date'],
+    $_POST['weekdays'],
     $_POST['time'],
     $_POST['people'],
     $_POST['name'],

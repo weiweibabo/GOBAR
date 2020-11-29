@@ -1,6 +1,16 @@
 
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+
+<?php 
+        
+      $sql = sprintf("SELECT `date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $stmt = $pdo->query($sql);
+      $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      
+      // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+?>
+
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/payment-2.css" />
@@ -99,12 +109,16 @@
             <p class="phone-number text-20">電話 : 02 8732 2345</p>
           </div>
           <div class="order-info text-30L">
-            <p>訂位日期 : 2020/12/18</p>
-            <p>訂位時段 : 20 : 00</p>
-            <p>訂位人數 : 8 位</p>
-            <p>訂位姓名 : 王曉明 先生</p>
-            <p>連絡電話 : 0912345678</p>
-            <p>電子信箱 : aaa@gmail.com</p>
+            <p>訂位日期 :
+              <?= substr($orders[0]["date"], 0, 4) ,
+              '/',substr($orders[0]["date"],5 ,2 ),
+              '/',substr($orders[0]["date"],8 ,2 )?>
+            </p>
+            <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+            <p>訂位人數 :  <?= $orders[0]["people"] ?> 位</p>
+            <p>訂位姓名 :  <?= $orders[0]["name"] ?> 先生/小姐</p>
+            <p>連絡電話 :  <?= $orders[0]["mobile"] ?></p>
+            <p>電子信箱 : <?= $orders[0]["email"] ?></p>
           </div>
         </div>
         <!-- web 勾勾 -->

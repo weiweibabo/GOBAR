@@ -1,6 +1,16 @@
 
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+
+<?php 
+        
+      $sql = sprintf("SELECT `date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $stmt = $pdo->query($sql);
+      $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      
+      // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+?>
+
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/order-info.css" />
@@ -42,7 +52,9 @@
           </div>
           <div class="col-xl-4 col-10 text-infom">
             <div class="small-calendar">
-              <p class="web text-40B ml-4">2020/12</p>
+              <p class="web text-40B ml-4">
+                <?= substr($orders[0]["date"], 0, 4) ,'/',substr($orders[0]["date"],5 ,2 )?>
+              </p>
 
               <svg
                 class="web"
@@ -81,28 +93,32 @@
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">20</tspan>
+                    <tspan x="0" y="0"><?=substr($orders[0]["date"], 8, 2)?></tspan>
                   </text>
                   <text
                     id="FRIDAY"
-                    transform="translate(683 904)"
+                    transform="translate(684 904)"
                     fill="#fff"
-                    font-size="39"
+                    font-size="42"
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">SUN</tspan>
+                    <tspan x="0" y="0"><?=substr($orders[0]["weekdays"],0,3)?></tspan>
                   </text>
                 </g>
               </svg>
 
               <div class="text-30L info">
-                <p class="phone text-40B">訂位日期 : 2020/12/18</p>
-                <p>訂位時段 : 20 : 00</p>
-                <p>訂位人數 : 8 位</p>
-                <p>訂位姓名 : 王曉明 先生</p>
-                <p>連絡電話 : 0912345678</p>
-                <p>電子信箱 : aaa@gmail.com</p>
+                <p class="phone text-40B">訂位日期 : 
+                <?= substr($orders[0]["date"], 0, 4) ,
+                    '/',substr($orders[0]["date"],5 ,2 ),
+                    '/',substr($orders[0]["date"],8 ,2 )?>
+                </p>
+                <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+                <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
+                <p>訂位姓名 : <?= $orders[0]["name"] ?> 先生/小姐</p>
+                <p>連絡電話 : <?= $orders[0]["mobile"] ?></p>
+                <p>電子信箱 : <?= $orders[0]["email"] ?></p>
               </div>
             </div>
           </div>

@@ -1,6 +1,15 @@
 
 
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+    <?php 
+        
+      $sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $stmt = $pdo->query($sql);
+      $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      
+        // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+    ?>
+
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/payment.css" />
@@ -55,10 +64,13 @@
         <p class="web">訂金付款</p>
       </div>
       <div class="row justify-content-center">
+
+      
+
         <div class="order-info col-xl-8 col-12">
           <div class="row area-box">
             <div class="date ml-4 col-xl-2 col-4">
-              <p class="text-20B">2020/12</p>
+              <p class="text-20B"><?= substr($orders[0]["date"], 0, 4) ,'/',substr($orders[0]["date"],5 ,2 )?></p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
@@ -95,17 +107,17 @@
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">18</tspan>
+                    <tspan x="0" y="0"><?=substr($orders[0]["date"], 8, 2)?></tspan>
                   </text>
                   <text
                     id="FRIDAY"
-                    transform="translate(659 904)"
+                    transform="translate(684 904)"
                     fill="#fff"
-                    font-size="35"
+                    font-size="42"
                     font-family="NotoSansTC-Bold, Noto Sans TC"
                     font-weight="700"
                   >
-                    <tspan x="0" y="0">FRIDAY</tspan>
+                    <tspan x="0" y="0"><?=substr($orders[0]["weekdays"],0,3)?></tspan>
                   </text>
                 </g>
               </svg>
@@ -116,9 +128,9 @@
             <div class="info col-xl-4 col-10">
               <p class="shop-name text-20">安慰劑 Placebo Taipei</p>
               <div class="info-text">
-                <p class="text-20">訂位時段 : 20 : 00</p>
-                <p class="text-20">訂位人數 : 8 位</p>
-                <p class="text-20">預付訂金 : 800 元</p>
+                <p class="text-20">訂位時段 : <?= $orders[0]["time"] ?></p>
+                <p class="text-20">訂位人數 :  <?= $orders[0]["people"] ?> 位</p>
+                <p class="text-20">預付訂金 : <?= $orders[0]["people"] *100 ?> 元</p>
               </div>
             </div>
 
@@ -128,6 +140,7 @@
           </div>
         </div>
       </div>
+     
 
       <div class="row justify-content-center mt-5">
         <div class="cardd col-xl-4 col-11">
@@ -497,6 +510,7 @@
 
 
     <script src="../js/card.js"></script>
+    
     
   </body>
   <?php include __DIR__ . '/../../parts/about.php'; ?>

@@ -197,6 +197,7 @@ button:focus {
 }
 .card-type {
   color: #fff;
+  margin-top: 20px;
 }
 
 .accept {
