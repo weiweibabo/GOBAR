@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<?php include __DIR__ . '/../parts/config.php'; ?>
+<?php include __DIR__ . '/../parts/html-head.php'; ?>
+<?php include __DIR__ . '/../parts/scripts.php'; ?>
+<?php include __DIR__ . '/../parts/navbar.php'; ?>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
@@ -21,22 +17,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+    <script src="https://masonry.desandro.com/masonry.pkgd.js"></script> -->
     <link rel="stylesheet" href="./css/companypag.css">
     <link rel="stylesheet" href="../js/product.js">
     <link rel="stylesheet" href="../css/product_rwd.css">
-</head>
 
-<body>
+    <body>
     <div class="companypagbox"></div>
     <section>
         <div class=" store">
             <div class="store-name d-flex">
-                <input class="inputstore-name" placeholder="輸入店家名稱"></input>
+                <input class="inputstore-name" placeholder="✎輸入店家名稱"></input>
             </div>
             <div class="titlepc">
                 <input type="file" class="inputbigpc">
-                <img src="/img/addimg.svg" alt="...">
+                <img src="<?= WEB_ROOT?>img/addimg.svg" alt="...">
                 </input>
             </div>
             <div class="information-bar position-absolute d-block w-100">
@@ -65,12 +60,11 @@
                     </div>
                     <div class="d-flex">
                         <div class="address">
-                            <h2>台北市信義區基隆路二段12號3樓</h2>
-                            <p>(02)2720-1150</p>
+                            <input class="inputaddress" placeholder="✎輸入店家地址"></input>
+                            <input class="inputphon" placeholder="✎輸入店家電話"></input>
                         </div>
                         <div class="business-hour">
-                            <p>每周一公休</p>
-                            <p>20:00-02:00</p>
+                        <input class="inputhour" placeholder="✎輸入營業時間"></input>
                         </div>
                     </div>
                 </div>
@@ -83,7 +77,7 @@
             <div class="news">
                 <div class="news-title-wrap d-flex">
                     <div class="news-title">
-                        <h2>都會夜晚 浮生若夢</h2>
+                        <input class="inputnews-title" placeholder="為自己店家下個浪漫的標題"></input>
                     </div>
                     <div class="share">
                         <a href="#"><svg id="Group_706" data-name="Group 706" xmlns="http://www.w3.org/2000/svg"
@@ -108,29 +102,12 @@
                     </div>
                 </div>
                 <div class="news-content d-flex">
-                    <div class="news-content-one col-4">
+                    
                         <div class="news-content-title">
-                            <h4>絕佳氣氛</h4>
-                            <p>那些電影裡的古巴情歌，被20世紀早期的偉大樂團蒙上了如夢似幻般的畫境，一點都不現實。如果你熱愛調酒，也喜歡聽老派情歌，更享受著不切實際的夢。那你絕不能錯過。</p>
+                            <input class="features" placeholder="寫下店家特點"></input>
+                            <input class="featurescontain" placeholder="詳述店家特點"></input>
                         </div>
-                    </div>
-                    <div class="news-content-one col-4">
-                        <div class="news-content-title">
-                            <h4>質感裝潢</h4>
-                            <p>如同大航海時代的東印度公司，沉穩的木質空間內，妝點老闆收藏的黑膠、老音響、擴大機等物件，根於殖民時代的復古情調，讓酒客們像是意外闖入定格在十七世紀的時空旅人。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="news-content-one col-4">
-                        <div class="news-content-title">
-                            <h4>特色酒品</h4>
-                            <p>主打高端精緻的殖民風格客製化調酒，除了old school以在地精釀酒品與石材外極度創新，讓人喝的到微醺還喝的到靈魂。就好比在擁抱微風的感受，觸感和煦，也很順口。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="go-news">
-                    <p>Go Bar 特報</p>
+                    
                 </div>
             </div>
         </div>
@@ -637,4 +614,8 @@
     </script>
 </body>
 
+
+
+
+<?php include __DIR__ . '/../parts/about.php'; ?>
 </html>
