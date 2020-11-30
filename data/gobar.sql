@@ -2,8 +2,8 @@
 -- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
--- 主機： localhost
--- 產生時間： 2020 年 11 月 28 日 11:41
+-- 主機： 127.0.0.1
+-- 產生時間： 2020-11-30 07:52:29
 -- 伺服器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.3.23
 
@@ -75,14 +75,17 @@ INSERT INTO `member` (`sid`, `name`, `email`, `phone`, `password`, `birthday`, `
 
 CREATE TABLE `orders` (
   `sid` int(11) NOT NULL,
+  `shop` varchar(255) NOT NULL,
+  `shop_ddress` varchar(255) NOT NULL,
+  `shop_phone` varchar(255) NOT NULL,
   `date` date NOT NULL,
+  `weekdays` text NOT NULL,
   `time` time NOT NULL,
   `people` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `mobile` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `remarks` varchar(255) NOT NULL,
-  `deposit` int(11) NOT NULL
+  `remarks` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
