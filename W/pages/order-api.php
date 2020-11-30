@@ -1,13 +1,15 @@
 <?php 
 
+
 require __DIR__ . '/../../parts/config.php';
 
 if(! isset($_SESSION)){
     session_start();
+    
 }
-if(! isset($_SESSION['admin'])){
-    header('Loation:payment.php');exit;
-}
+
+     
+
 
 $output = [
     'success' => false,

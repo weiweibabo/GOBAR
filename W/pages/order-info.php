@@ -97,7 +97,7 @@
                   </text>
                   <text
                     id="FRIDAY"
-                    transform="translate(684 904)"
+                    transform="translate(680 904)"
                     fill="#fff"
                     font-size="42"
                     font-family="NotoSansTC-Bold, Noto Sans TC"

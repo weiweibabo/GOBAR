@@ -10,7 +10,7 @@ const send = document.getElementById('send');
 const err1 = document.getElementById('err1');
 const err2 = document.getElementById('err2');
 const err3 = document.getElementById('err3');
-
+const email_re = /([\w\-]+\@[\w\-]+\.[\w\-]+)/;
 send.addEventListener('click', () => {
   const { userAgent } = navigator;
 
@@ -60,7 +60,7 @@ send.addEventListener('click', () => {
   } else {
     err2.innerHTML = '';
   }
-  if (email.value === '') {
+  if (email.value === '' || !email_re.test(email.value)) {
     err3.innerHTML = 'Error <i class="fas fa-exclamation-circle"></i>';
   } else {
     err3.innerHTML = '';
