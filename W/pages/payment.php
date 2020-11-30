@@ -135,7 +135,7 @@
             </div>
 
             <div class="edit col-xl-2 col-6">
-              <button class="edit-btn">修改訂位</button>
+              <button id="edit-btn" class="edit-btn">修改訂位</button>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@
                         id="svgname"
                         class="st2 st5 st6"
                       >
-                        JOANNA CHEN
+                        KEVIN CHOU
                       </text>
                       <text
                         transform="matrix(1 0 0 1 54.1074 389.8793)"
@@ -445,7 +445,7 @@
                         id="svgnameback"
                         class="st12 st13"
                       >
-                        Joanna Chen
+                        Kevin Chou
                       </text>
                     </g>
                   </svg>
@@ -478,7 +478,7 @@
             </div>
             <div class="field-container">
               <label for="name">持卡人姓名</label>
-              <input id="name" maxlength="20" type="text" />
+              <input id="name" maxlength="20" type="text" autocomplete="off" />
             </div>
             <div class="field-container">
               <label for="expirationdate">有效年月 (mm/yy)</label>
