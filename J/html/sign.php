@@ -16,7 +16,7 @@
       <g id="Group_699" data-name="Group 699" transform="translate(-6210 11879.999)">
         <g id="Group_392" data-name="Group 392" transform="translate(6242.096 -11880.197)">
           <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="9.5" cy="9" rx="9.5" ry="9" transform="translate(3.904 0.198)" fill="#000" />
-          <rect id="Rectangle_24" data-name="Rectangle 24" width="27" height="15" rx="7.5" transform="translate(-0.096 22.198)" fill="#000" />
+          <rect id="Rectangle_24" data-name="Rectangle_24" width="27" height="15" rx="7.5" transform="translate(-0.096 22.198)" fill="#000" />
         </g>
         <g id="Group_396" data-name="Group 396" transform="translate(6203 -11872)">
           <text id="登入_註冊" data-name="登入/註冊" transform="translate(7 65)" fill="#000" font-size="20" font-family="NotoSansTC-Regular, Noto Sans TC" letter-spacing="0.03em">
@@ -27,8 +27,6 @@
     </svg>
   </button>
 
-
-
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -36,31 +34,40 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">
             <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="106" viewBox="0 0 120.992 106.866">
+
               <defs>
                 <clipPath id="clip-path">
                   <rect id="Rectangle_1593" data-name="Rectangle 1593" width="120.992" height="106.866" fill="none" />
                 </clipPath>
               </defs>
+
               <g id="Group_600" data-name="Group 600" clip-path="url(#clip-path)">
                 <path id="Path_382" data-name="Path 382" d="M0,93.81V90.441q0-5.322,2.8-8.31a10.076,10.076,0,0,1,7.734-2.986,10.719,10.719,0,0,1,7.926,2.986q2.1,2.108,2.106,6.318H15.583q0-4.554-4.862-4.557a5.08,5.08,0,0,0-2.47.556,4.278,4.278,0,0,0-1.513,1.283,5.739,5.739,0,0,0-.765,2.143,16.567,16.567,0,0,0-.306,2.374q-.039.958-.039,2.566t.019,2.163q.02.555.116,1.8a6.729,6.729,0,0,0,.3,1.78q.212.536.613,1.378A2.565,2.565,0,0,0,7.7,101.122a6.492,6.492,0,0,0,3.562,1,4.825,4.825,0,0,0,4.709-2.834V97.448H12.673V93h7.849v8.233a8.429,8.429,0,0,1-3.751,4.212,11.85,11.85,0,0,1-5.821,1.417q-5.781,0-8.366-3.236T0,93.81" fill="#fff" />
                 <path id="Path_383" data-name="Path 383" d="M46.062,91.743V93.81q0,6.855-2.585,9.955t-8.289,3.1q-5.706,0-8.252-3.1T24.39,93.695v-1.99q0-6.357,2.585-9.458t8.194-3.1q5.609,0,8.251,3.14t2.642,9.458M40.74,93.695V92.279a15.389,15.389,0,0,0-.919-5.858q-1.073-2.529-4.595-2.529-3.561,0-4.633,2.529a15.439,15.439,0,0,0-.88,5.858v1.416q0,4.939,1.378,6.662A4.239,4.239,0,0,0,32.68,101.6a5.678,5.678,0,0,0,2.527.517,5.746,5.746,0,0,0,2.508-.5,4.471,4.471,0,0,0,1.608-1.227,5.122,5.122,0,0,0,.881-1.914,17.815,17.815,0,0,0,.536-4.786" fill="#ff8d00" />
                 <path id="Path_384" data-name="Path 384" d="M70.489,98.788a7.1,7.1,0,0,1-7.772,7.848H59.04q-4.518,0-6.413-1.569t-1.9-5.438V79.375H62.257q3.9,0,5.878,1.953a7.417,7.417,0,0,1,1.971,5.513,5.849,5.849,0,0,1-1.053,3.523,6.329,6.329,0,0,1-2.316,2.067q3.751,1.763,3.752,6.357m-8.653-8.769a2.948,2.948,0,0,0,0-5.9H56.055v5.9Zm3.331,8.5a4.871,4.871,0,0,0-.651-2.775,2.646,2.646,0,0,0-2.335-.939H56.055v4.288a2.619,2.619,0,0,0,.784,2.183,4.247,4.247,0,0,0,2.585.613h2.757q2.985,0,2.986-3.37" fill="#fff" />
-                <path id="Path_385" data-name="Path 385" d="M96.6,106.635H91.05l-1.531-4.709H80.367l-1.493,4.709H73.322l8.731-24.963a4.239,4.239,0,0,1,1.282-1.8,2.959,2.959,0,0,1,1.742-.5,2.774,2.774,0,0,1,1.666.459,3.881,3.881,0,0,1,1.129,1.838Zm-8.308-9.188-3.217-10.8-3.369,10.8Z" fill="#ff8d00" />
+                <path id="Path_385" data-name="Path 385" d="M96.6,106.635H91.05l-1.531-4.709H80.367l-1.493,4.709H73.322l8.731-24.963a4.239,4.239,0,0,1,1.282-1.8,2.959,2.959,0,0,1,1.742-.5,2.774,2.774,0,0,1,1.666.459,3.881,3.881,0,0,1,1.129,1.838Zm-8.308-9.188-3.217-10.8-3.369,10.8Z" fill="#ff8
+                
+                
+                d00" />
                 <path id="Path_386" data-name="Path 386" d="M120.992,106.636h-6.164l-5.322-10.108h-3.829v10.108h-5.322v-21.4a6.048,6.048,0,0,1,1.416-4.46q1.416-1.4,4.748-1.4h4.518a8.343,8.343,0,0,1,8.845,8.73,7.981,7.981,0,0,1-1.436,4.766,7.446,7.446,0,0,1-3.541,2.777Zm-7.524-15.717a4.094,4.094,0,0,0,1.092-2.91,3.843,3.843,0,0,0-1.054-2.815,3.767,3.767,0,0,0-2.813-1.072H108.05a2.115,2.115,0,0,0-2.373,2.412v5.553h5.016a3.634,3.634,0,0,0,2.775-1.168" fill="#fff" />
                 <path id="Path_387" data-name="Path 387" d="M68.069,36.18A24.279,24.279,0,1,1,43.791,11.9,24.278,24.278,0,0,1,68.069,36.18" fill="#ff8d00" />
                 <path id="Path_388" data-name="Path 388" d="M76.934,0A35.935,35.935,0,0,0,60.38,4.027a36.193,36.193,0,1,0-1.484,65V60.247a29.806,29.806,0,1,1,7.514,4.139A36.122,36.122,0,0,0,79.97,36.18V33.144H56.6a3.036,3.036,0,0,0,0,6.072H73.746A30.083,30.083,0,0,1,61.828,60.248v8.783A36.17,36.17,0,1,0,76.934,0M40.755,36.18a36.12,36.12,0,0,0,13.556,28.2,30.1,30.1,0,1,1,.008-56.414A36.126,36.126,0,0,0,40.755,36.18" fill="#fff" />
               </g>
+
             </svg>
           </h5>
         </div>
+
         <div class="modal-sign">
           <h3>會員登入</h3>
         </div>
+
         <div class="sign-text d-flex">
           <div class="line"></div>
           <p>用以下用以下帳號登入</p>
           <div class="line"></div>
         </div>
+
         <div class="icon d-flex">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51">
             <g id="FB" transform="translate(-987 -357)">
@@ -74,6 +81,7 @@
             </g>
           </svg>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51" viewBox="0 0 51 51">
+
             <defs>
               <linearGradient id="linear-gradient" x1="0.089" y1="0.11" x2="0.945" y2="1" gradientUnits="objectBoundingBox">
                 <stop offset="0" stop-color="#6f88ff" />
@@ -81,6 +89,7 @@
                 <stop offset="1" stop-color="#ffdc80" />
               </linearGradient>
             </defs>
+
             <g id="IG" transform="translate(-1085 -357)">
               <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1085 357)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1">
                 <circle cx="25.5" cy="25.5" r="25.5" stroke="none" />
@@ -101,6 +110,7 @@
             </g>
           </svg>
         </div>
+
         <div class="sign-text d-flex">
           <div class="line"></div>
           <p>用GoBar帳號登入</p>
