@@ -25,19 +25,12 @@ body {
   height: 1000px;
 }
 
-/* ----------------------------navbar */
-
-.navbar {
-  height: 150px;
-  background-color: #002a4c;
-}
-
 /* ------------------------- top area */
 
 .top-area {
   width: 100%;
   margin-bottom: 170px;
-  margin-top: 70px;
+  margin-top: 200px;
 }
 
 .name2 img {
@@ -245,6 +238,11 @@ body {
   }
 
   .aboutme2 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .aboutme2 p {
     font-size: 20px;
     margin-left: 10px;
   }

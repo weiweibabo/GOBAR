@@ -17,7 +17,7 @@ main {
   height: 1145px;
 }
 
-.navbar {
+.navbar1 {
   height: 150px;
   background-color: #002a4c;
 }
@@ -51,6 +51,8 @@ main {
 .topname1 p {
   width: 350px;
   margin: 0 auto;
+  text-decoration: none;
+  color: white;
 }
 
 .card1 {
