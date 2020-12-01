@@ -693,6 +693,9 @@ Img {
     background-image: none;
     margin-bottom: 500px;
   }
+  .container.front {
+    padding-left: 15px;
+  }
   .front {
     width: 250px;
     height: 250px;
@@ -731,6 +734,8 @@ Img {
     width: 250px;
     height: 250px;
     font-size: 10px;
+    top: 0;
+    left: 0;
   }
   .comment-pic {
     height: 250px;
@@ -1322,7 +1327,6 @@ Img {
   .d-flex {
     flex-direction: column;
     margin: 0 auto;
-    top: 0;
   }
   .business-hour p {
     font-size: 10px;
