@@ -479,37 +479,48 @@
   </section>
 
   <script type="text/javascript">
-    let map;
-
     function initMap() {
       map = new google.maps.Map(document.getElementById("map"), {
         center: {
-          lat: 25.03376872939005,
-          lng: 121.5586708995365
+          lat: 25.0332560350277,
+          lng: 121.54363972016898,
         },
         zoom: 18,
       });
       eqfeed_callback(jsonData)
     }
-    let jsonData = [
-            { "coordinates": [25.03325497600624, 121.54298245152613] },
-            { "coordinates": [25.033575768393753, 121.54398559766761] },
-            { "coordinates": [25.033218528659557, 121.54454621428782] },
-            { "coordinates": [25.034236798873355, 121.54350283501232] },
-            { "coordinates": [25.03364986243063, 121.54486096965724] }
-        ];
+    let jsonData = [{
+        "coordinates": [25.03325497600624, 121.54298245152613]
+      },
+      {
+        "coordinates": [25.033575768393753, 121.54398559766761]
+      },
+      {
+        "coordinates": [25.033218528659557, 121.54454621428782]
+      },
+      {
+        "coordinates": [25.034236798873355, 121.54350283501232]
+      },
+      {
+        "coordinates": [25.03364986243063, 121.54486096965724]
+      }
+    ];
 
-        const eqfeed_callback = function (results) {
-            for (let i = 0; i < results.length; i++) {
-                const coords = results[i].coordinates;
-                const latLng = new google.maps.LatLng(coords[0], coords[1]);
-                new google.maps.Marker({
-                    position: latLng,
-                    
-                    map: map,
-                });
-            }
-        };
+    const eqfeed_callback = function(results) {
+      for (let i = 0; i < results.length; i++) {
+        const coords = results[i].coordinates;
+        const latLng = new google.maps.LatLng(coords[0], coords[1]);
+        new google.maps.Marker({
+          position: latLng,
+          icon: {
+            url: '../../J/Gobar-svg-png/SVG/map-bar.svg',
+            scaledSize: new google.maps.Size(50, 60)
+          },
+          animation: google.maps.Animation.BOUNCE,
+          map: map,
+        });
+      }
+    };
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWsl0DRqMvWAZzlfqJyoNJYS6AjaFBU8&callback=initMap"></script>
