@@ -9,6 +9,8 @@
 
 <body>
 
+  <div class="header"></div>
+
   <div class="goldline">
     <div id="Member-Centre" class="container-fluid position-relative">
       <div class="big-area row col-12">

@@ -18,6 +18,8 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 
+    <div class="header"></div>
+
     <main>
         <div class="mainblock container-fluid w-75">
             <div class="row">
@@ -48,11 +50,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
                                     <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
-<<<<<<< HEAD
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="25" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-=======
-                                <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
->>>>>>> 97ee0eb73cf6f53576ce8f5cbae797b4b7cd731f
                                     <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>

@@ -7,6 +7,10 @@ body {
   z-index: 1;
 }
 
+.header {
+  height: 120px;
+}
+
 #Member-Centre {
   background-color: #141f2b;
   width: 100%;
@@ -240,6 +244,10 @@ body {
   /* #Member-Centre {
     height: 1100px;
   } */
+
+  .header {
+    height: 80px;
+  }
 
   .web {
     display: none;
