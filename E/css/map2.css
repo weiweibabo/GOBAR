@@ -116,6 +116,7 @@ body {
   .golden-line {
     background-image: none;
     position: relative;
+    flex-direction: column;
   }
   .left {
     margin-left: 40px;
@@ -160,5 +161,14 @@ body {
   }
   .price {
     margin-right: 10px;
+  }
+
+  #app {
+    position: static;
+  }
+  .right {
+    order: -1;
+    left: 0;
+    right: 0;
   }
 }
