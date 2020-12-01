@@ -29,8 +29,8 @@
                 <input class="inputstore-name" placeholder="✎輸入店家名稱"></input>
             </div>
             <form class="titlepc" action="" method="post" enctype="multipart/form-data" onclick="field.click()">
-                <input type="file" class="inputbigpc" name="avatar" accept="image/*"></input>
-                <img id="inputbigimg" src="<?= WEB_ROOT ?>img/addimg.svg" alt="...">
+                <input type="file" class="inputbigpc" name="avatar" accept="image/*" onchange="previewFile()"></input>
+                <img id="inputbigimg" src="<?= WEB_ROOT ?>img/addimg.svg" alt="Image preview...">
 
             </form>
             <div class="information-bar position-absolute d-block w-100">
@@ -316,10 +316,14 @@
             });
         });
 
+
+
         const field = document.querySelector('input[name=avatar]');
 
         field.addEventListener('change', function() {
             const fd = new FormData(document.titlepc);
+
+
         });
     </script>
 </body>
