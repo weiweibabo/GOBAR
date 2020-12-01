@@ -793,11 +793,11 @@ h4 {
   width: 25%;
   margin: 70px auto 50px;
 }
-.wrap {
+.blogwrap {
   width: 100%;
   height: 550px;
   position: absolute;
-  left: 0%;
+  left: -166%;
   transition: 1s;
 }
 .blogpc {
@@ -832,35 +832,38 @@ h4 {
   padding: 15px;
   text-align: justify;
 }
+.buttonclop {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .blogbtl {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 820px;
-  right: 0;
-  border-radius: 0;
-  background-color: #fd8d00;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffb352;
   border: transparent;
 }
-.blogbtl img {
-  height: 70%;
-  margin-bottom: 5px;
-  object-fit: cover;
+
+.blogbtm {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffb352;
+  margin: 0 30px;
+  border: transparent;
 }
+
 .blogbtr {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 820px;
-  right: 80px;
-  border-radius: 0;
-  background-color: #fd8d00;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffb352;
   border: transparent;
-}
-.blogbtr img {
-  height: 70%;
-  margin-bottom: 5px;
-  object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -1158,9 +1161,9 @@ h4 {
     width: 65%;
     margin: 70px auto 20px;
   }
-  .wrap {
+  .blogwrap {
     width: 110%;
-    left: -350px;
+    left: -115%;
   }
   .blogpc {
     width: 300px;
@@ -1180,21 +1183,13 @@ h4 {
     font-weight: 100;
     padding: 10px;
   }
-  .blogbtl {
-    width: 30px;
-    height: 30px;
-    top: 650px;
+  .buttonclop {
+    bottom: 200px;
   }
-  .blogbtl img {
-    margin-bottom: 7px;
-  }
+  .blogbtl,
+  .blogbtm,
   .blogbtr {
-    width: 30px;
-    height: 30px;
-    right: 60px;
-    top: 650px;
-  }
-  .blogbtr img {
-    margin-bottom: 7px;
+    width: 10px;
+    height: 10px;
   }
 }

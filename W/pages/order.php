@@ -16,7 +16,7 @@
     <!-- Modal -->
     <div
       class="qrcode-modal modal fade"
-      id="myModal"
+      id="myModal222"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
@@ -155,7 +155,7 @@
                 <div class="from-text">
                   <p>*訂位人數 <span>|</span></p>
                 </div>
-                <select id="persons" class="inputbox">
+                <select id="persons" class="inputbox" >
                   <option>請選擇</option>
                   <option>1 位</option>
                   <option>2 位</option>
@@ -200,6 +200,7 @@
                 class="inputbox"
                 type="text"
                 autocomplete="off"
+                
               />
               <div id="err1" class="err"></div>
             </div>
@@ -215,7 +216,7 @@
                 maxlength="10"
                 autocomplete="off"
                 oninput="value=value.replace(/[^\d]/g,'')"
-                required
+                
               />
               <div id="err2" class="err"></div>
             </div>
@@ -228,9 +229,11 @@
                 class="inputbox"
                 type="email"
                 autocomplete="off"
+                
               />
               <div id="err3" class="err"></div>
             </div>
+            
           </form>
         </div>
 
@@ -257,8 +260,10 @@
     <script src="../js/order.js"></script>
     
     <script>
+
       $(document).ready(function () {
-        $("#myModal").modal("show");
+        $("#myModal222").modal("show");
+        
       });
 
      
@@ -266,8 +271,16 @@
         $('#send').click(function(e) {
             e.preventDefault();
 
+            const email_re = /([\w\-]+\@[\w\-]+\.[\w\-]+)/;
             let ymd = `${years.innerHTML}-${mon.innerHTML}-${dat.innerHTML}`
 
+          if(ymd !=''
+          && weekdays.innerHTML !='' 
+          && time.valu !='' 
+          && persons.value !='' 
+          && name.value !='' 
+          && phonenumber.value !='' 
+          && email_re.test(email.value)){
             $.post('order-api.php',
             { date: ymd,
               weekdays:weekdays.innerHTML,
@@ -279,8 +292,14 @@
               remarks:remarks.val(),
             }, function(response) {
                 console.log(response);
+                if(JSON.parse(response).success){
+                  location.href="./payment.php"
+                }
+                
             })
+          }
         });
+      
     
     </script>
   </body>

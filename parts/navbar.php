@@ -13,8 +13,7 @@
             <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
             <div class="navslogn"><img src="<?= WEB_ROOT ?>img/navslogn.svg" alt=""></div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,14 +25,13 @@
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">我的收藏</a>
+                  <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">我的收藏</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
                   <a class="nav-link" href="#">我的訂單</a>
                 </li>
-                <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4" href="<?= WEB_ROOT ?>J/html/sign.php">
                   <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
                   <a class="nav-link" href="#">登入/註冊</a>
                 </li>
@@ -92,30 +90,37 @@
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script> -->
+<<<<<<< HEAD
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+=======
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+  
+>>>>>>> ef236f1b772f91871133b05a88dbb5d8a4a7880d
 
   <script>
     // tsai
-    $(document).ready(function () {
+    $(document).ready(function() {
       $("body.hero-anime").removeClass("hero-anime");
-      $(".search").click(function () {
+      $(".search").click(function() {
         $(".slide").slideToggle();
       });
     });
 
-    (function ($) {
+    (function($) {
       "use strict";
 
-      $(function () {
+      $(function() {
         var header = $(".start-style");
-        $(window).scroll(function () {
+        $(window).scroll(function() {
           var scroll = $(window).scrollTop();
 
           if (scroll >= 10) {
@@ -127,17 +132,17 @@
       });
       //Animation
 
-      $(document).ready(function () {
+      $(document).ready(function() {
         $("body.hero-anime").removeClass("hero-anime");
       });
 
       //Menu On Hover
 
-      $("body").on("mouseenter mouseleave", ".nav-item", function (e) {
+      $("body").on("mouseenter mouseleave", ".nav-item", function(e) {
         if ($(window).width() > 750) {
           var _d = $(e.target).closest(".nav-item");
           _d.addClass("show");
-          setTimeout(function () {
+          setTimeout(function() {
             _d[_d.is(":hover") ? "addClass" : "removeClass"]("show");
           }, 1);
         }

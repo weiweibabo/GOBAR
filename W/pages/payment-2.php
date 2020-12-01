@@ -153,6 +153,10 @@
       </div>
       
     </div>  
+
+    <script type="text/javascript"> setTimeout("window.location.href='./order-info.php'",10000); </script>
+
+
   </body>
   <?php include __DIR__ . '/../../parts/about.php'; ?>
 </html>

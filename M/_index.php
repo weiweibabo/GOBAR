@@ -265,9 +265,27 @@
                 <img src="./img/blogtitle.svg" alt="">
             </div>
             <h2>文章分享</h2>
-            <div class="wrap d-flex">
+            <div class="blogwrap d-flex">
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc4.jpg" alt="">
+                    </div>
+                    <div class="bligcontain">
+                        <h3 class="titleh3">想試試世界級的台灣之光調酒，鎖定這8家超強酒吧準沒錯！</h3>
+                        <h5 class="ph5">台灣調酒的水準之高，在近年亞洲五十大酒吧頒獎典禮上就能看出端倪，不僅店家接連入榜、數量增加....
+                        </h5>
+                    </div>
+                </div>
+                <div class="blog col-xl-4 col-12">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc5.jpg" alt="">
+                    </div>
+                    <div class="bligcontain">
+                        <h3 class="titleh3">週末就是要白天開喝才放鬆，這11家「白日微醺」酒吧清單必收！</h3>
+                        <h5 class="ph5">週末午後除了貴婦下午茶，近年最流行的其實是來杯「下午酒」。下午就開始微醺....
+                        </h5>
+                    </div>
+                </div>
+                <div class="blog col-xl-4 col-12">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc1.jpg" alt="">
                     </div>
                     <div class="bligcontain">
                         <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
@@ -276,7 +294,7 @@
                     </div>
                 </div>
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc2.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc2.jpg" alt="">
                     </div>
                     <div class="bligcontain">
                         <h3 class="titleh3">偶爾來點高級體驗，台北星級飯店酒吧推薦</h3>
@@ -287,7 +305,7 @@
                 </div>
                 <div class="blog col-xl-4 col-12">
                     <div class="blogpc">
-                        <img src="./img/blogpc/blogpc3.jpg" alt="">
+                        <img src="<?= WEB_ROOT ?>img/blogpc/blogpc3.jpg" alt="">
                     </div>
                     <div class="bligcontain">
                         <h3 class="titleh3">好喝好拍好厲害，11家實力派視覺系酒吧推薦</h3>
@@ -296,44 +314,47 @@
                     </div>
                 </div>
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc6.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">硬派行家不可錯過，6家超強單一基酒主題酒吧</h3>
+                        <h5 class="ph5">在調酒世界裡，有時候只需要一種基礎酒款，厲害的bartender 就能創造出千變萬化的有趣調酒。
                         </h5>
                     </div>
                 </div>
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc7.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">舒服到像在自己家客廳，想徹底紓壓放空就到這幾家慵懶型酒吧！</h3>
+                        <h5 class="ph5">人生需要喝一杯的時刻很多，有時歡樂、有時相聚、有時空氣中瀰漫著戀愛泡泡；有時候....
                         </h5>
                     </div>
                 </div>
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc8.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">和三五好友一起不醉不歸，週末就到這幾家酒吧熱鬧一下吧</h3>
+                        <h5 class="ph5">獨樂樂不如眾樂樂，沒有什麼能比和三五好友一起大喝大聊，愉快度過一晚更療癒的週末提案了！
                         </h5>
                     </div>
                 </div>
                 <div class="blog col-xl-4 col-12">
-                    <div class="blogpc"><img src="./img/blogpc/blogpc1.jpg" alt="">
+                    <div class="blogpc"><img src="<?= WEB_ROOT ?>img/blogpc/blogpc9.jpg" alt="">
                     </div>
                     <div class="bligcontain">
-                        <h3 class="titleh3">今晚我只想一個人耍自閉，10家適合獨處喝一杯的酒吧清單</h3>
-                        <h5 class="ph5">可能傷心、可能失戀；可能今天跟老闆吵架、可能一出門就衰到下班，又可能只是想在忙碌的一天過後，單純一個人安安靜靜地喝一杯。
+                        <h3 class="titleh3">這12家經典老字號酒吧，沒喝過別說你懂台北夜生活！</h3>
+                        <h5 class="ph5">僅管台北的新酒吧們，近年正以一種不可思議的速度拼命冒出頭，嘗起鮮來好不過癮；不過，歷經多年市場考驗，始終屹立不....
                         </h5>
                     </div>
                 </div>
             </div>
-            <button class="blogbtr"><img src="../M/img/blogpc/blogbtl.svg" alt=""></button>
-            <button class="blogbtl"><img src="../M/img/blogpc/blogbtr.svg" alt=""></button>
+            <div class="buttonclop">
+                <button class="blogbtr"></button>
+                <button class="blogbtm"></button>
+                <button class="blogbtl"></button>
+            </div>
         </div>
     </div>
     </div>
@@ -543,25 +564,51 @@
         // 文章分享的輪播
 
         $(".blogbtr").click(function() {
+            $('.blogbtr').css('background-color', '#ff8d00');
+            $('.blogbtm').css('background-color', '#ffb352');
+            $('.blogbtl').css('background-color', '#ffb352');
+            $('.blogwrap').css('left', '-66%');
 
-            $('.wrap').css('left', '+=60%');
+            let windowSize = $(window).width();
+
+            if (windowSize < 767) {
+                $('.blogwrap').css('left', '-5%');
+                console.log('hi', windowSize);
+                console.log('hi2', windowSize < 767);
+            }
+        })
+        $(".blogbtm").click(function() {
+            $('.blogbtm').css('background-color', '#ff8d00');
+            $('.blogbtr').css('background-color', '#ffb352');
+            $('.blogbtl').css('background-color', '#ffb352');
+            $('.blogwrap').css('left', '-166%');
+            let windowSize = $(window).width();
+            if (windowSize < 767) {
+                $('.blogwrap').css('left', '-115%');
+                // console.log('hi');
+            }
         })
         $(".blogbtl").click(function() {
-            console.log('hi');
-            $('.wrap').css('left', '-=60%');
+            // console.log('hi');
+            $('.blogbtl').css('background-color', '#ff8d00');
+            $('.blogbtm').css('background-color', '#ffb352');
+            $('.blogbtr').css('background-color', '#ffb352');
+            $('.blogwrap').css('left', '-233%');
+            let windowSize = $(window).width();
+            if (windowSize < 767) {
+                $('.blogwrap').css('left', '-225%');
+            }
         })
-        // $(".blogbtr").on('click', function () {
-        //   let windowSize = $(this).width();
-        //   if (windowSize < 767) {
-        //     $('.wrap').css('left', '-700px');
-        //     console.log('hi');
-        //   }
+
+
+        // $(".blogbtr").on('click', function() {
+
         // });
-        // $(".blogbtl").on('click', function () {
-        //   let windowSize = $(this).width();
-        //   if (windowSize < 767) {
-        //     $('.wrap').css('left', '50px');
-        //   }
+        // $(".blogbtm").on('click', function() {
+
+        // });
+        // $(".blogbtl").on('click', function() {
+
         // });
     </script>
 
@@ -571,4 +618,5 @@
 
 
 <?php include __DIR__ . '/../parts/about.php'; ?>
-<?php include __DIR__ . '/../parts/html-foot.php'; ?>
+
+</html>
