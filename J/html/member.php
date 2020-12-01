@@ -6,13 +6,8 @@
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../../parts/navbar.php'; ?>
-<?php include __DIR__ . '/../../parts/html-foot.php'; ?>
 
 <body>
-
-    <header>
-        <div class="navbar"></div>
-    </header>
 
     <main>
 
@@ -25,8 +20,8 @@
                 </div>
                 <div class="col-6 col-xl-6">
                     <div class="topname1">
-                        <a href="./Gobar/J/html/history.php">
-                            <p>歷史紀錄</p>
+                        <a href="./GOBAR/J/html/history.php">
+                            <p>收藏文章</p>
                         </a>
                     </div>
                 </div>
@@ -131,10 +126,9 @@
                         <p>我要訂位</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
