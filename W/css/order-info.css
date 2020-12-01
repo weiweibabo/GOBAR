@@ -195,6 +195,10 @@ button.close {
   background-color: #ff5172;
 }
 
+.bgg {
+  background-color: transparent !important;
+}
+
 /* 裝飾點點 */
 .black-bg {
   position: relative;

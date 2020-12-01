@@ -30,7 +30,7 @@
             </div>
             <p class="modaltitle title-30">是否同意GOBAR上述規範?</p>
             <div class="d-flex">
-              <button class="disagree-btn">不同意</button>
+              <a href="<?= WEB_ROOT ?>E/pages/product.html"><button class="disagree-btn">不同意</button></a>
               <button class="agree-btn">同意</button>
             </div>
           </div>

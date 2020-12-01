@@ -4,11 +4,12 @@
 
 <?php 
         
-      $sql = sprintf("SELECT `date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $sql = sprintf("SELECT `sid`,`date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
       $stmt = $pdo->query($sql);
       $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
       // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+      // exit;
 
 ?>
 
@@ -154,7 +155,7 @@
                     </p>
                     <button
                       type="button"
-                      class="close"
+                      class="close bgg"
                       data-dismiss="modal"
                       aria-label="Close"
                     >
@@ -204,8 +205,10 @@
                         <button 
                           id="del" 
                           type="submit" 
-                          onsubmit="delete_it(<?= $order[0]['sid']?> )" 
+                          onsubmit="delete_it(<?= $orders[0]['sid']?> )" 
                           class="m-btn"
+                          data-sid="<?= $orders[0]['sid']?>"
+                          data-type="delete"
                         >
                           確定
                         </button>
@@ -245,11 +248,17 @@
         
 
         $('#del').click((e)=> {
-        $.get('del-order-api.php', {
-          // sid: sid,
-          type: 'delete',
-        }, function(response){
+          e.preventDefault();
+          console.log('hi',$('#del').data("sid"))
+
+
+        $.get('del-order-api.php',{
+          sid: $('#del').data('sid'),
+          type: $('#del').data('type'),
+        },function(response){
            console.log(response);
+           alert('您的訂位已取消')
+           location.href="./order.php"
           }, 'json');
 
         });

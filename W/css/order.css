@@ -17,6 +17,10 @@ button:focus {
 
 /*取消訂位 modal */
 
+.modal-dialog {
+  pointer-events: auto;
+}
+
 .modal-content2 {
   height: 400px;
   width: 500px;
