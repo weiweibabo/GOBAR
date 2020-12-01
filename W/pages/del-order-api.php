@@ -34,7 +34,7 @@ if (isset($_GET['sid'])) {
 } 
 
 $sql = "DELETE FROM `orders` ORDER BY `sid` desc limit 1 ";
-$pdo->query($sql);
+$result = mysql_query($sql);
 
 if (isset($_SERVER['HTTP_REFERER'])) {
     header('Location:' . $_SERVER['HTTP_REFERER']);

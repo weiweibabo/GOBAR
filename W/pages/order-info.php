@@ -201,7 +201,7 @@
                       <p class="modaltitle title-30">是否確定取消訂位?</p>
                       <div class="d-flex">
                         <button class="m-btn">返回</button>
-                        <a href="javascript:delete_it(<?= $order[0]['sid']?> )"><button id="del" type="submit" class="m-btn">確定</button></a>
+                        <a href="javascript:delete_it(<?= $order[0]?> )"><button id="del" type="submit" class="m-btn">確定</button></a>
                         
                       </div>
                     </div>
@@ -238,7 +238,7 @@
       //   });
 
         function delete_it(sid) {
-          location.href = 'del-order-api.php?sid=' + sid;
+          location.href = 'del-order-api.php';
           
         };
 
