@@ -9,6 +9,7 @@
       $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
       // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+
 ?>
 
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
@@ -200,7 +201,8 @@
                       <p class="modaltitle title-30">是否確定取消訂位?</p>
                       <div class="d-flex">
                         <button class="m-btn">返回</button>
-                        <button class="m-btn">確定</button>
+                        <a href="javascript:delete_it(<?= $order[0]['sid']?> )"><button id="del" type="submit" class="m-btn">確定</button></a>
+                        
                       </div>
                     </div>
                   </div>
@@ -223,6 +225,36 @@
         height: 350,
         text: "http://www.google.com",
       });
+
+
+      // $('#del').click(function(e) {
+      //       $.get('del-order-api.php', {
+      //       sid: sid,
+      //   }, function(response) {
+      //       console.log(response);
+           
+      //   }, 'json');
+
+      //   });
+
+        function delete_it(sid) {
+          location.href = 'del-order-api.php?sid=' + sid;
+          
+        };
+
+
+        // $('#del').click((e)=> {
+        // $.get('del-order-api.php', {
+        //   sid: sid,
+        //   type: 'delete',
+        // }, function(response){
+        //    console.log(response);
+        //   }, 'json');
+
+        // });
+
+        
+
     </script>
   </body>
   <?php include __DIR__ . '/../../parts/about.php'; ?>
