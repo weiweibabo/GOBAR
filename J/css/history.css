@@ -2,6 +2,10 @@
   outline: 1px solid red;
 } */
 
+.header {
+  height: 120px;
+}
+
 main {
   background-color: #141f2b;
   background-image: url(../png/我的訂單.png);

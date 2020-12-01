@@ -6,9 +6,10 @@
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../../parts/navbar.php'; ?>
-<?php include __DIR__ . '/../../parts/html-foot.php'; ?>
 
 <body>
+
+  <div class="header"></div>
 
   <div class="goldline">
     <div id="Member-Centre" class="container-fluid position-relative">
