@@ -16,13 +16,11 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <link rel="stylesheet" href="../css/history-noshow2.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
-<<<<<<< HEAD
 <body>
-=======
+
     <header>
         <div class="navbar1"></div>
     </header>
->>>>>>> 97ee0eb73cf6f53576ce8f5cbae797b4b7cd731f
 
     <main>
         <div class="mainblock container-fluid w-75">

@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-xl-12 col-12 ">
           <nav class="navbar navbar-expand-md navbar-light">
-            <li class="nav-item search small pl-4 pl-md-0 ml-0 ml-md-4">
+            <li class="nav-item searchword small pl-4 pl-md-0 ml-0 ml-md-4">
               <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
             </li>
             <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
@@ -18,7 +18,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
-                <li class="nav-item search pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item searchword pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
                   <a class="nav-link" href="#">搜尋酒吧</a>
                 </li>
@@ -104,7 +104,7 @@
     // tsai
     $(document).ready(function() {
       $("body.hero-anime").removeClass("hero-anime");
-      $(".search").click(function() {
+      $(".searchword").click(function() {
         $(".slide").slideToggle();
       });
     });
