@@ -158,6 +158,10 @@ main {
 }
 
 @media screen and (max-width: 414px) {
+  .header {
+    height: 80px;
+  }
+
   main {
     background-image: none !important;
   }
@@ -223,7 +227,7 @@ main {
 
   .name h1 {
     font-size: 20px;
-    width: 200px;
+    width: 300px;
     margin: 10px 0;
   }
 
@@ -259,5 +263,10 @@ main {
 
   .textbox2 {
     margin-left: 125px;
+  }
+
+  .card-area {
+    overflow-y: none;
+    overflow: none;
   }
 }
