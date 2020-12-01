@@ -195,19 +195,13 @@ main {
   }
 
   .topname p {
+    color: white;
     font-size: 20px;
     width: 120px;
   }
 
-  .topname1 {
-    margin-top: 40px;
-  }
-
-  .topname {
-    margin: 40px 0;
-  }
-
   .topname1 p {
+    color: white;
     font-size: 20px;
     width: 120px;
   }
