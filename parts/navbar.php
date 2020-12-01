@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-xl-12 col-12 ">
           <nav class="navbar navbar-expand-md navbar-light">
-            <li class="nav-item search small pl-4 pl-md-0 ml-0 ml-md-4">
+            <li class="nav-item searchword small pl-4 pl-md-0 ml-0 ml-md-4">
               <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
             </li>
             <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
@@ -18,7 +18,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
-                <li class="nav-item search pl-4 pl-md-0 ml-0 ml-md-4">
+                <li class="nav-item searchword pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
                   <a class="nav-link" href="#">搜尋酒吧</a>
                 </li>
@@ -90,12 +90,7 @@
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script> -->
-<<<<<<< HEAD
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-=======
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -103,14 +98,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-  
->>>>>>> ef236f1b772f91871133b05a88dbb5d8a4a7880d
+   -->
 
   <script>
     // tsai
     $(document).ready(function() {
       $("body.hero-anime").removeClass("hero-anime");
-      $(".search").click(function() {
+      $(".searchword").click(function() {
         $(".slide").slideToggle();
       });
     });

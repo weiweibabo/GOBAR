@@ -201,7 +201,14 @@
                       <p class="modaltitle title-30">是否確定取消訂位?</p>
                       <div class="d-flex">
                         <button class="m-btn">返回</button>
-                        <a href="javascript:delete_it(<?= $order[0]['sid']?> )"><button id="del" type="submit" class="m-btn">確定</button></a>
+                        <button 
+                          id="del" 
+                          type="submit" 
+                          onsubmit="delete_it(<?= $order[0]['sid']?> )" 
+                          class="m-btn"
+                        >
+                          確定
+                        </button>
                         
                       </div>
                     </div>
@@ -227,19 +234,13 @@
       });
 
 
-      // $('#del').click(function(e) {
-      //       $.get('del-order-api.php', {
-      //       sid: sid,
-      //   }, function(response) {
-      //       console.log(response);
-           
-      //   }, 'json');
-
-      //   });
+      
 
         function delete_it(sid) {
-          location.href = 'del-order-api.php?sid=' + sid;
-          
+          console.log(sid);
+          if (confirm(`確定要刪除編號為 ${sid} 的資料嗎?`)) {
+            location.href = 'del-order-api.php?sid=' + sid;
+          }
         };
 
 

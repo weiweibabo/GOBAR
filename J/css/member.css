@@ -19,11 +19,6 @@ main {
   height: 1145px;
 }
 
-.navbar {
-  height: 150px;
-  background-color: #002a4c;
-}
-
 .footer {
   height: 205px;
   background-color: #002a4c;
@@ -38,6 +33,11 @@ main {
 
 .topname1 {
   font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 p {
   color: white;
   text-align: center;
   margin-top: 100px;
@@ -115,6 +115,17 @@ main {
   overflow: scroll;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 414px) {
   .container-fluid {
     width: 100% !important;
@@ -140,11 +151,9 @@ main {
 
   .topname {
     font-size: 20px;
-    margin-top: 50px;
   }
 
   .topname1 {
-    margin-top: 50px;
     font-size: 20px;
   }
 
@@ -154,14 +163,16 @@ main {
   }
 
   .topname1 p {
+    color: white;
     width: 150px;
     margin: 0 auto;
+    text-decoration: none;
   }
 
   .card-area {
     padding-top: 50px !important;
-    overflow-y: hidden;
-    overflow: scroll;
+    overflow-y: none !important;
+    overflow: none !important ;
     flex-direction: column;
   }
 }

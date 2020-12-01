@@ -6,12 +6,10 @@
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../../parts/navbar.php'; ?>
-<?php include __DIR__ . '/../../parts/html-foot.php'; ?>
 
 <body>
-  <header>
-    <div class="navbar"></div>
-  </header>
+
+  <div class="header"></div>
 
   <div class="goldline">
     <div id="Member-Centre" class="container-fluid position-relative">
@@ -151,7 +149,7 @@
           </div>
           <div class="black-area d-flex col-12">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
+            <sg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
               <g id="Group_464" data-name="Group 464" transform="translate(-0.307 -0.307)">
                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
@@ -162,7 +160,7 @@
                   <tspan x="0" y="0">FRIDAY</tspan>
                 </text>
               </g>
-            </svg>
+            </sg>
 
             <img src="../img/work-bar.jpg" alt="" width="160" height="140">
 
@@ -179,7 +177,6 @@
             <div class="errorp">
               <p>NO SHOW</p>
             </div>
-
 
           </div>
 

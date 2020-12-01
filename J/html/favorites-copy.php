@@ -6,13 +6,10 @@
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../../parts/navbar.php'; ?>
-<?php include __DIR__ . '/../../parts/html-foot.php'; ?>
-
 
 <body>
-  <header>
-    <div class="navbar"></div>
-  </header>
+
+  <div class="header"></div>
 
   <div class="goldline">
     <div id="Member-Centre" class="container-fluid position-relative">
@@ -59,7 +56,7 @@
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="" alt="">
+            <img src="./GOBAR/J/html/" alt="">
             <p>年度會員</p>
           </div>
           <!--  -->
@@ -71,7 +68,7 @@
               <p class="namebottom">年度累計3筆</p>
             </div>
             <div class="name2 col-7 col-xl-2 px-0 d-flex">
-              <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" />
+              <img src="../htdocs/" alt="">
               <p>年度會員</p>
             </div>
           </div>
@@ -165,6 +162,7 @@
                 <p>西元1990年8月19日</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>

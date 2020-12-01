@@ -25,11 +25,8 @@ body {
   height: 1000px;
 }
 
-/* ----------------------------navbar */
-
-.navbar {
-  height: 150px;
-  background-color: #002a4c;
+.header {
+  height: 120px;
 }
 
 /* ------------------------- top area */
@@ -190,6 +187,10 @@ body {
     height: 1000px;
   } */
 
+  .header {
+    height: 80px;
+  }
+
   .web {
     display: none;
   }
@@ -245,6 +246,11 @@ body {
   }
 
   .aboutme2 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .aboutme2 p {
     font-size: 20px;
     margin-left: 10px;
   }

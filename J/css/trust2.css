@@ -7,6 +7,10 @@ body {
   z-index: 1;
 }
 
+.header {
+  height: 120px;
+}
+
 #Member-Centre {
   background-color: #141f2b;
   width: 100%;
@@ -23,13 +27,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 1000px;
-}
-
-/* ----------------------------navbar */
-
-.navbar {
-  height: 150px;
-  background-color: #002a4c;
 }
 
 /* ------------------------- top area */
@@ -247,6 +244,10 @@ body {
   /* #Member-Centre {
     height: 1100px;
   } */
+
+  .header {
+    height: 80px;
+  }
 
   .web {
     display: none;

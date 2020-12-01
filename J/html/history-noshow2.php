@@ -1,11 +1,20 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php
+
+$sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+$stmt = $pdo->query($sql);
+$orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+?>
+
+<?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
+<?php include __DIR__ . '/../../parts/scripts.php'; ?>
+<?php include __DIR__ . '/../../parts/navbar.php'; ?>
 
 <link rel="stylesheet" href="../css/history-noshow2.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
-
-<?php include __DIR__ . '/../../parts/scripts.php'; ?>
-<?php include __DIR__ . '/../../parts/navbar.php'; ?>
 
 <body>
 
@@ -26,38 +35,41 @@
 
                 <div class="col-6 col-xl-6">
                     <div class="topname1">
-                        <a href="../">
+                        <a href="">
                             <p>歷史紀錄</p>
                         </a>
                     </div>
                 </div>
 
             </div>
+
             <div class="card-area column position-relative pt-5 pb-5">
 
                 <div class="card1 d-flex position-relative">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text">2020/12</p>
+                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
                                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
                                 <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">18</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">FRIDAY</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
                     </div>
+
                     <div class="photo col-xl-2">
                         <img src="../img/work-bar.jpg" alt="" style="width: 250px; height: 212px;">
                     </div>
+
                     <div class="name col-xl-3">
                         <h1>安慰劑 Placebo Taipei</h1>
-                        <p>訂位時段 : 22 : 00</p>
-                        <p>訂位人數 : 3 位</p>
+                        <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+                        <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
                     </div>
 
                     <div class="img-ink">
@@ -82,27 +94,29 @@
 
                 <div class="card2 d-flex position-relative">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text">2020/12</p>
+                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
                                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
                                 <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">18</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">FRIDAY</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
                     </div>
+
                     <div class="photo col-xl-2">
                         <img src="../img/work-bar.jpg" alt="" style="width: 250px; height: 212px;">
                     </div>
+
                     <div class="name col-xl-3">
                         <h1>安慰劑 Placebo Taipei</h1>
-                        <p>訂位時段 : 22 : 00</p>
-                        <p>訂位人數 : 3 位</p>
+                        <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+                        <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
                     </div>
 
                     <div class="col-1 col-xl-1"></div>
@@ -118,27 +132,28 @@
 
                 <div class="card3 d-flex position-relative">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text">2020/12</p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
                                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
                                 <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">18</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">FRIDAY</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
                     </div>
+
                     <div class="photo col-xl-2">
                         <img src="../img/work-bar.jpg" alt="" style="width: 250px; height: 212px;">
                     </div>
                     <div class="name col-xl-3">
                         <h1>安慰劑 Placebo Taipei</h1>
-                        <p>訂位時段 : 22 : 00</p>
-                        <p>訂位人數 : 3 位</p>
+                        <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+                        <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
                     </div>
 
                     <div class="img-ink">
@@ -168,16 +183,16 @@
 
                 <div class="card4 d-flex position-relative">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text">2020/12</p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
                                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
                                 <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">18</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0">FRIDAY</tspan>
+                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
@@ -187,14 +202,14 @@
                     </div>
                     <div class="name col-xl-3">
                         <h1>安慰劑 Placebo Taipei</h1>
-                        <p>訂位時段 : 22 : 00</p>
-                        <p>訂位人數 : 3 位</p>
+                        <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+                        <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
                     </div>
 
                     <div class="col-1 col-xl-1"></div>
                     <div class="answer col-1 col-xl-3">
                         <div class="textbox2">
-                            <a href="">
+                            <a href="#">
                                 <p>查看詳情</p>
                             </a>
                         </div>
@@ -219,5 +234,3 @@
 </body>
 
 <?php include __DIR__ . '/../../parts/about.php'; ?>
-
-</html>
