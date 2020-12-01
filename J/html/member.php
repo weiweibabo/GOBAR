@@ -11,6 +11,8 @@
 
     <main>
 
+        <div class="header"></div>
+
         <div class="container-fluid" style="width:75%">
             <div class="row">
                 <div class="col-6 col-xl-6">

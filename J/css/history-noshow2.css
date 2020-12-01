@@ -2,6 +2,10 @@
   outline: 1px solid red;
 } */
 
+.header {
+  height: 100px;
+}
+
 main {
   background-color: #141f2b;
   background-image: url(../png/我的訂單.png);
@@ -35,8 +39,8 @@ main {
 }
 
 .topname p {
+  color: white;
   width: 350px;
-  border-bottom: 5px solid orange;
   margin: 0 auto;
   font-weight: bold;
 }
@@ -49,8 +53,10 @@ main {
 }
 
 .topname1 p {
+  color: white;
   width: 350px;
   margin: 0 auto;
+  border-bottom: 5px solid orange;
 }
 
 .card1 {
@@ -173,6 +179,10 @@ main {
 }
 
 @media screen and (max-width: 414px) {
+  .header {
+    height: 80px;
+  }
+
   main {
     background-image: none !important;
   }
@@ -232,7 +242,7 @@ main {
 
   .name h1 {
     font-size: 20px;
-    width: 200px;
+    width: 300px;
     margin: 10px 0;
   }
 
