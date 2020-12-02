@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="slide">
+    <div class="navslide">
       <div class="searcharea">
         <div class="navsearchform">
           <div class="navkeywordbox">
@@ -105,7 +105,7 @@
     $(document).ready(function() {
       $("body.hero-anime").removeClass("hero-anime");
       $(".searchword").click(function() {
-        $(".slide").slideToggle();
+        $(".navslide").slideToggle();
       });
     });
 

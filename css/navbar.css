@@ -192,7 +192,7 @@
   max-height: 999px;
   transform: translate3d(0, 0px, 0);
 }
-.slide {
+.navslide {
   height: 100px;
   display: none;
   background-color: #236ca6;
@@ -404,7 +404,7 @@ button {
     display: block;
     width: 21px;
   }
-  .slide {
+  .navslide {
     height: 400px;
   }
   .searcharea {
