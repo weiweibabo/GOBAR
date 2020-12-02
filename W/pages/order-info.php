@@ -201,7 +201,7 @@
                       </div>
                       <p class="modaltitle title-30">是否確定取消訂位?</p>
                       <div class="d-flex">
-                        <button class="m-btn close" type="button" data-dismiss="modal" aria-label="Close">返回</button>
+                        <button class="m-btn" type="button" data-dismiss="modal" aria-label="Close">返回</button>
                         <button 
                           id="del" 
                           type="submit" 
@@ -239,12 +239,7 @@
 
       
 
-        // function delete_it(sid) {
-        //   console.log(sid);
-        //   if (confirm(`確定要刪除編號為 ${sid} 的資料嗎?`)) {
-        //     location.href = 'del-order-api.php?sid=' + sid;
-        //   }
-        // };
+      
         
 
         $('#del').click((e)=> {
