@@ -22,6 +22,7 @@ section {
   overflow-y: hidden;
   overflow: auto;
   height: 880px;
+  margin-left: 25px;
 }
 .dropdown {
   width: 160px;
@@ -67,7 +68,7 @@ section {
 }
 
 .search {
-  height: 120px;
+  height: 130px;
   width: 400px;
   background-color: #fe8d00;
   color: white;
@@ -91,18 +92,19 @@ section {
 .pic {
   display: none;
 }
-/* .search-pic {
-  height: 200px;
-  width: 400px;
-  background-image: url(../img/Attic01.jpg);
-} */
 
 .name {
   margin-left: 10px;
+  margin-top: 10px;
 }
 .address {
   margin-left: 10px;
 }
+.like {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
 .star {
   margin-left: 10px;
 }
@@ -111,10 +113,28 @@ section {
   margin-right: 20px;
 }
 
+.price {
+  margin-right: 10px;
+}
+.price p {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.right {
+  flex: 0 0 60%;
+  max-width: 90%;
+  padding: 0;
+}
+#app {
+  padding: 0;
+}
+
 .google-api {
-  width: 1080px;
+  width: 1401px;
   /* position: fixed; */
-  height: 780px;
+  height: 880px;
+  padding: 0;
 }
 /* .container {
   position: fixed;
@@ -163,11 +183,14 @@ section {
   .search:hover {
     display: none;
   }
+
+  .like {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
   .like svg {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
-    margin-top: 5px;
   }
   .price h2 {
     font-size: 20px;
