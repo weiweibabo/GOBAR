@@ -1,4 +1,14 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php
+
+$sql = sprintf("SELECT `email`,`phone`, `birthday`, `address` FROM `member` ");
+$stmt = $pdo->query($sql);
+$member = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+?>
+
+<?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/favorite-copy.css" />
@@ -56,7 +66,7 @@
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="./GOBAR/J/Gobar-svg-png/svg/黃金.svg" alt="" width="100">
+            <img src="../htdocs/GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
             <p>年度會員</p>
           </div>
           <!--  -->
@@ -68,7 +78,7 @@
               <p class="namebottom">年度累計3筆</p>
             </div>
             <div class="name2 col-7 col-xl-2 px-0 d-flex">
-              <img src="./GOBAR/J/Gobar-svg-png/png/黃金.png" alt="" width="100">
+              <img src="../htdocs/GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
               <p>年度會員</p>
             </div>
           </div>
@@ -127,7 +137,7 @@
                 <p>電子信箱</p>
               </div>
               <div class="text">
-                <p>asd@gmail.com</p>
+                <p><?= $member[0]["email"] ?></p>
               </div>
               <div class="change d-flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23">
@@ -135,6 +145,7 @@
                 </svg>
 
                 <p>修改</p>
+
               </div>
             </div>
             <div class="bottom-text d-flex">
@@ -142,7 +153,7 @@
                 <p>聯絡電話</p>
               </div>
               <div class="text">
-                <p>0934-555666</p>
+                <p><?= $member[0]["phone"] ?></p>
               </div>
             </div>
 
@@ -151,7 +162,7 @@
                 <p>通訊地址</p>
               </div>
               <div class="text">
-                <p>台北市松山區敦化北路122號5樓</p>
+                <p><?= $member[0]["address"] ?></p>
               </div>
             </div>
 
@@ -160,7 +171,7 @@
                 <p>出生日期</p>
               </div>
               <div class="text">
-                <p>西元1990年8月19日</p>
+                <p><?= $member[0]["birthday"] ?></p>
               </div>
             </div>
 

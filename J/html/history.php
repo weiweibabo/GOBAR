@@ -42,7 +42,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="card1 d-flex">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
@@ -51,7 +51,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="25" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
+                                    <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
@@ -77,7 +77,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="card2 d-flex">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
@@ -86,7 +86,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
+                                    <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
@@ -112,7 +112,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="card3 d-flex">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
@@ -121,7 +121,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
+                                    <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>
@@ -153,7 +153,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="card4 d-flex">
                     <div class="date col-1 col-xl-2">
-                        <p class="date-text"></p><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
+                        <p class="date-text"><?= substr($orders[0]["date"], 0, 4), '/', substr($orders[0]["date"], 5, 2) ?></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
                             <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
                                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
@@ -162,7 +162,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                                 </text>
                                 <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="27" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
+                                    <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                                 </text>
                             </g>
                         </svg>

@@ -1,4 +1,14 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php
+
+$sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+$stmt = $pdo->query($sql);
+$orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// echo json_encode($orders, JSON_UNESCAPED_UNICODE);
+?>
+
+<?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/trust2.css">
@@ -147,27 +157,28 @@
           <div class="b-left-text">
             <h2>違規次數-2次</h2>
           </div>
-          <div class="black-area d-flex col-12">
 
-            <sg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
+          <div class="black-area d-flex col-12 position-relative">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
               <g id="Group_464" data-name="Group 464" transform="translate(-0.307 -0.307)">
                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
                 <text id="_18" data-name="18" transform="translate(20.308 80.307)" fill="#ff8d00" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0">18</tspan>
+                  <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                 </text>
                 <text id="FRIDAY" transform="translate(15.308 23.307)" fill="#fff" font-size="16" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0">FRIDAY</tspan>
+                  <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                 </text>
               </g>
-            </sg>
+            </svg>
 
             <img src="../img/work-bar.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
               <h2>安慰劑 Placebo Taipei</h2>
-              <p>訂位時段 : 22 : 00</p>
-              <p>訂位人數 : 3 位</p>
+              <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+              <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
             </div>
 
             <div class="error">
@@ -187,10 +198,10 @@
                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
                 <text id="_18" data-name="18" transform="translate(20.308 80.307)" fill="#ff8d00" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0">18</tspan>
+                  <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
                 </text>
                 <text id="FRIDAY" transform="translate(15.308 23.307)" fill="#fff" font-size="16" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0">FRIDAY</tspan>
+                  <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
                 </text>
               </g>
             </svg>
@@ -199,8 +210,8 @@
 
             <div class="black-text">
               <h2>安慰劑 Placebo Taipei</h2>
-              <p>訂位時段 : 22 : 00</p>
-              <p>訂位人數 : 3 位</p>
+              <p>訂位時段 : <?= $orders[0]["time"] ?></p>
+              <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
             </div>
 
             <div class="error">

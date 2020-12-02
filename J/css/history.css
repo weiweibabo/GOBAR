@@ -93,14 +93,14 @@ main {
 }
 
 .date svg {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .date-text {
   color: white;
   font-size: 30px;
   font-family: "Noto Sans TC", sans-serif;
-  padding-left: 45px;
+  padding-left: 30px;
 }
 
 .name {
@@ -227,7 +227,7 @@ main {
 
   .name h1 {
     font-size: 20px;
-    width: 300px;
+    width: 210px;
     margin: 10px 0;
   }
 

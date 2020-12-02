@@ -241,9 +241,9 @@ body {
 }
 
 @media (max-width: 414px) {
-  /* #Member-Centre {
-    height: 1100px;
-  } */
+  #Member-Centre {
+    height: 1200px;
+  }
 
   .header {
     height: 80px;
