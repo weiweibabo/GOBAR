@@ -10,7 +10,7 @@
                 <ul class="aboutitem">
                     <il class="contact">聯絡我們</il>
                     <il class="abgobar">關於GoBar</il>
-                    <il class="cooper">企業合作</il>
+                    <il class="cooper"><a class="cooperlink" href=""> 企業合作</a></il>
                     <il class="server">服務條款</il>
                     <il class="privacy">隱私權聲明</il>
                 </ul>
