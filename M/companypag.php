@@ -198,9 +198,7 @@
         </div>
     </section>
 
-    <section class="line02 position-relative">
-
-
+    <!-- <section class="line02 position-relative">
         <div class="intro container-fluid">
             <h3>特殊酒品介紹</h3>
             <div class="drinks-intro">
@@ -246,7 +244,7 @@
 
         </div>
 
-    </section>
+    </section> -->
     <!-- <section class="line03">
         <div class="intro container-fluid">
             <h3>特殊餐點推薦</h3>
@@ -307,9 +305,12 @@
         </div>
     </div>
 
+    <h3 class="addedvalue">加值解鎖更多功能⇀</h3>
+    <div class="confirmbtnbox">
+        <button class="confirmbtn" href="#companypagetop">確認送出</button>
+    </div>
 
     <div class="companypagbox">
-        <button class="confirmbtn" href="#companypagetop">確認送出</button>
     </div>
 
     <script>
@@ -431,6 +432,7 @@
             $('.infosection').css('opacity', '0');
             $('.news-content-title').css('opacity', '0');
             $('.confirmbtn').css('opacity', '0');
+            $('.addedvalue').css('opacity', '0');
             $('.intro').css('display', 'none');
             $('html,body').animate({
                 scrollTop: $('#companypagetop')
