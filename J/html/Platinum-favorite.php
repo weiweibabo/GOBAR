@@ -1,17 +1,16 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php
 
-$sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+$sql = sprintf("SELECT `email`,`phone`, `birthday`, `address` FROM `member` ");
 $stmt = $pdo->query($sql);
-$orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$member = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
 ?>
 
-<?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-<link rel="stylesheet" href="../css/trust2.css">
+<link rel="stylesheet" href="../css/favorite-copy.css" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
@@ -67,7 +66,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
           <div class="web name2 col-xl-2 px-0">
             <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" />
-            <p>一般會員</p>
+            <p>白金會員</p>
           </div>
           <!--  -->
           <!-- phone -->
@@ -78,8 +77,8 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <p class="namebottom">年度累計3筆</p>
             </div>
             <div class="name2 col-7 col-xl-2 px-0 d-flex">
-              <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" />
-              <p>年度會員</p>
+              <img src="../htdocs/GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
+              <p></p>
             </div>
           </div>
           <!--  -->
@@ -120,9 +119,8 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <div class="aboutme1">
-          <a href="../html/favorites-copy.php">
-            <p>關於我</p>
-          </a>
+          <a href="../html/favorites-copy.php"></a>
+          <p>關於我</p>
         </div>
 
         <div class="aboutme2">
@@ -131,108 +129,62 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
           </a>
         </div>
 
-      </div>
+        <div class="bottom-area col-12">
+          <div class="left-area">
+            <div class="bottom-text d-flex">
+              <div class="bottom-word">
+                <p>電子信箱</p>
+              </div>
+              <div class="text">
+                <p><?= $member[0]["email"] ?></p>
+              </div>
+              <div class="change d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 23 23">
+                  <path id="Path_110" data-name="Path 110" d="M11.721,4.423l-8.183,8.4L0,23l10.173-3.317L18.356,11.5ZM22.115,3.76,19.24.885a2.681,2.681,0,0,0-3.981,0L12.827,3.317l6.635,6.856,2.654-2.654A2.8,2.8,0,0,0,23,5.529,2.73,2.73,0,0,0,22.115,3.76Z" fill="#fff" />
+                </svg>
 
-      <div class="bottom-area d-flex col-12 col-xl-12 px-0">
-        <div class="b-left-area col-12 col-xl-3">
-          <div class="star">
+                <p>修改</p>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="220" height="26" viewBox="0 0 220 26">
-              <g id="Group_803" data-name="Group 803" transform="translate(-234 -566)">
-                <path id="Polygon_2" data-name="Polygon 2" d="M14,0l4.76,7.976L28,9.931l-6.3,6.885L22.652,26,14,22.279,5.348,26,6.3,16.816,0,9.931,9.24,7.976Z" transform="translate(234 566)" fill="#ffeb00" />
-                <path id="Polygon_2-2" data-name="Polygon 2" d="M14,0l4.76,7.976L28,9.931l-6.3,6.885L22.652,26,14,22.279,5.348,26,6.3,16.816,0,9.931,9.24,7.976Z" transform="translate(282 566)" fill="#ffeb00" />
-                <path id="Polygon_2-3" data-name="Polygon 2" d="M14,0l4.76,7.976L28,9.931l-6.3,6.885L22.652,26,14,22.279,5.348,26,6.3,16.816,0,9.931,9.24,7.976Z" transform="translate(330 566)" fill="#ffeb00" />
-                <path id="Polygon_2-4" data-name="Polygon 2" d="M14,0l4.76,7.976L28,9.931l-6.3,6.885L22.652,26,14,22.279,5.348,26,6.3,16.816,0,9.931,9.24,7.976Z" transform="translate(378 566)" fill="#ffeb00" />
-                <path id="Path_5809" data-name="Path 5809" d="M14,0l4.76,7.976L28,9.931l-6.3,6.885L22.652,26,14,22.279,5.348,26,6.3,16.816,0,9.931,9.24,7.976Z" transform="translate(426 566)" fill="#fff" />
-              </g>
-            </svg>
-
-            <p>您已違規二次</p>
-            <p>違規三次將被停權4週!</p>
-
-          </div>
-        </div>
-
-        <div class="b-left-area col-12 col-xl-7">
-          <div class="b-left-text">
-            <h2>違規次數-2次</h2>
-          </div>
-
-          <div class="black-area d-flex col-12 position-relative">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
-              <g id="Group_464" data-name="Group 464" transform="translate(-0.307 -0.307)">
-                <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
-                <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
-                <text id="_18" data-name="18" transform="translate(20.308 80.307)" fill="#ff8d00" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
-                </text>
-                <text id="FRIDAY" transform="translate(15.308 23.307)" fill="#fff" font-size="16" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
-                </text>
-              </g>
-            </svg>
-
-            <img src="../img/work-bar.jpg" alt="" width="160" height="140">
-
-            <div class="black-text">
-              <h2>安慰劑 Placebo Taipei</h2>
-              <p>訂位時段 : <?= $orders[0]["time"] ?></p>
-              <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
+              </div>
             </div>
 
-            <div class="error">
-              <img src="../Gobar-svg-png/PNG/印章.png" alt="" width="200">
+            <div class="bottom-text d-flex">
+              <div class="bottom-word">
+                <p>聯絡電話</p>
+              </div>
+              <div class="text">
+                <p><?= $member[0]["phone"] ?></p>
+              </div>
             </div>
 
-            <div class="errorp">
-              <p>NO SHOW</p>
+            <div class="bottom-text d-flex">
+              <div class="bottom-word">
+                <p>通訊地址</p>
+              </div>
+              <div class="text">
+                <p><?= $member[0]["address"] ?></p>
+              </div>
             </div>
 
-          </div>
-
-          <div class="black-area d-flex col-12 position-relative">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="93" height="94" viewBox="0 0 93 94">
-              <g id="Group_464" data-name="Group 464" transform="translate(-0.307 -0.307)">
-                <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
-                <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
-                <text id="_18" data-name="18" transform="translate(20.308 80.307)" fill="#ff8d00" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
-                </text>
-                <text id="FRIDAY" transform="translate(15.308 23.307)" fill="#fff" font-size="16" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
-                </text>
-              </g>
-            </svg>
-
-            <img src="../img/work-bar.jpg" alt="" width="160" height="140">
-
-            <div class="black-text">
-              <h2>安慰劑 Placebo Taipei</h2>
-              <p>訂位時段 : <?= $orders[0]["time"] ?></p>
-              <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
-            </div>
-
-            <div class="error">
-              <img src="../Gobar-svg-png/PNG/印章.png" alt="" width="200">
-            </div>
-
-            <div class="errorp">
-              <p>NO SHOW</p>
+            <div class="bottom-text d-flex">
+              <div class="bottom-word">
+                <p>出生日期</p>
+              </div>
+              <div class="text">
+                <p><?= $member[0]["birthday"] ?></p>
+              </div>
             </div>
 
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 </body>
 
 <?php include __DIR__ . '/../../parts/about.php'; ?>
