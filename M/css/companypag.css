@@ -7,7 +7,8 @@ body {
 }
 .companypagbox {
   width: 100%;
-  height: 300px;
+  height: 150px;
+  position: relative;
 }
 section.line01 {
   background-image: url(../img/line01.png), url(../img/line04.png);
@@ -65,6 +66,9 @@ section.line04 {
   font-size: 70px;
   color: white;
   padding-left: 20px;
+}
+.infosection {
+  opacity: 1;
 }
 .inputstore-name {
   background-color: rgba(255, 255, 255, 0);
@@ -130,6 +134,7 @@ section.line04 {
 
 .news {
   border-bottom: rgba(35, 108, 166, 0.6) 2px solid;
+  margin-top: 20px;
 }
 .inputnews-title {
   width: 870px;
@@ -154,6 +159,7 @@ section.line04 {
 }
 .news-content-title {
   width: 100%;
+  opacity: 1;
 }
 .features {
   width: 100%;
@@ -227,12 +233,18 @@ section.line04 {
   left: 995px;
   height: 555px;
 }
+.medpc2 {
+  display: none;
+}
 
 .col-item--weight2 {
   width: 450px;
   height: 300px;
   left: 530px;
   top: 405px;
+}
+.medpc3 {
+  display: none;
 }
 
 .col-item--weight3 {
@@ -241,9 +253,15 @@ section.line04 {
   left: 530px;
   top: 720px;
 }
+.medpc4 {
+  display: none;
+}
 .col-item--height2 {
   height: 500px;
   width: 500px;
+}
+.medpc1 {
+  display: none;
 }
 .col-item--height2 img {
   object-fit: cover;
@@ -440,6 +458,9 @@ Img {
   margin: 0 auto;
   max-width: 80rem;
 }
+.intro {
+  display: block;
+}
 
 .cols {
   display: -webkit-box;
@@ -604,7 +625,7 @@ Img {
 
 .sp {
   position: fixed;
-  bottom: 100px;
+  bottom: 300px;
   right: 0px;
   cursor: pointer;
   width: 60px;
@@ -613,6 +634,8 @@ Img {
   border-radius: 30px 0 0 30px;
   color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
+  opacity: 0;
+  z-index: 10;
 }
 
 .form-wrapper {
@@ -657,4 +680,19 @@ Img {
 
 .sp-up p {
   margin-left: 15px;
+}
+.confirmbtn {
+  width: 132px;
+  height: 35px;
+  background-color: #ff8d00;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  top: 40px;
+  left: 890px;
+  position: absolute;
+}
+button:focus {
+  outline: transparent;
 }
