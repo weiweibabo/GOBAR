@@ -4,35 +4,33 @@
 <?php
 require __DIR__ . '/../../parts/config.php';
 
-if(
-   isset($_REQUEST['type']) === 'delete') 
-{
-    $sql = "DELETE FROM `orders` ORDER BY `sid` desc limit 1 ";
-    $pdo->query($sql);
-}
+
+
+$output = [
+    'success' => false,
+    'code' => 0,
+    'error' => '沒有表單資料',
+];
+
+$output['get'] = $_GET;
+
+
+// echo json_encode($output, JSON_UNESCAPED_UNICODE);
+
+// exit;
+
+
+    $sql = "DELETE FROM `orders` WHERE `sid` = ? ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        $_GET['sid']
+    ]);
+
+    echo json_encode($output, JSON_UNESCAPED_UNICODE);
 
 
 
-// echo $_REQUEST['sid'];
-
-
-// if (isset($_GET['sid'])) {
-//     $sid = intval($_GET['sid']);
-
-    
-// } else {
-//     header('Location:order.php');
-//     exit;
-// }
-
-// $sql = "DELETE FROM `orders` ORDER BY `sid` desc limit 1 ; ";
-// $pdo->query($sql);
-
-// if (isset($_SERVER['HTTP_REFERER'])) {
-//     header('Location:' . $_SERVER['HTTP_REFERER']);
-// } else {
-//     header('Location:order.php');
-// }
 
 
 

@@ -2,12 +2,20 @@
   outline: 1px solid red;
 } */
 
+.header {
+  height: 120px;
+}
+
 main {
   background-color: #141f2b;
   background-image: url(../png/收藏店家-1.png);
   background-image: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.header {
+  height: 120px;
 }
 
 .goldline {
@@ -151,10 +159,12 @@ main {
 
   .topname {
     font-size: 20px;
+    margin-top: 0;
   }
 
   .topname1 {
     font-size: 20px;
+    margin-top: 0;
   }
 
   .topname p {

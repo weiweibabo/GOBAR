@@ -72,18 +72,16 @@ function refreshDate() {
       dateArr.push(i - firstDay + 1);
     }
   }
-
+  console.log('dateArr', dateArr);
   for (let i = 0; i < dateArr.length; i++) {
-    // i+1 是因為日期從1號開始
-    const iplus1 = i + 1;
-
     if (
-      (iplus1 < myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth())
+      (dateArr[i] < myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth())
       || myYear < myDate.getFullYear()
       || (myYear === myDate.getFullYear() && myMonth < myDate.getMonth())
     ) {
       myclass = " class='lightgrey li-init disable-click'"; // 在今天之前的日期，以淺灰色字體顯示
-    } else if (iplus1 === myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth()) {
+    } else if (dateArr[i] === myDay && myYear === myDate.getFullYear() && myMonth === myDate.getMonth()) {
+      console.log('myDay', myDay);
       myclass = " class='white orangebox li-init'"; // 當天日期以橘色背景顯示
     } else {
       myclass = " class='white li-init'"; // 在今天之後的日期，以白色字體顯示

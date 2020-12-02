@@ -56,7 +56,7 @@
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="./GOBAR/J/html/" alt="">
+            <img src="./GOBAR/J/Gobar-svg-png/svg/黃金.svg" alt="" width="100">
             <p>年度會員</p>
           </div>
           <!--  -->
@@ -68,7 +68,7 @@
               <p class="namebottom">年度累計3筆</p>
             </div>
             <div class="name2 col-7 col-xl-2 px-0 d-flex">
-              <img src="../htdocs/" alt="">
+              <img src="./GOBAR/J/Gobar-svg-png/png/黃金.png" alt="" width="100">
               <p>年度會員</p>
             </div>
           </div>
@@ -145,6 +145,7 @@
                 <p>0934-555666</p>
               </div>
             </div>
+
             <div class="bottom-text d-flex">
               <div class="bottom-word">
                 <p>通訊地址</p>

@@ -18,16 +18,14 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 
-    <header>
-        <div class="navbar1"></div>
-    </header>
+    <div class="header"></div>
 
     <main>
         <div class="mainblock container-fluid w-75">
             <div class="row">
                 <div class="col-6 col-xl-6">
                     <div class="topname">
-                        <a href="">
+                        <a href="./GOBAR/J/html/history.php">
                             <p>即將前往</p>
                         </a>
                     </div>
@@ -35,7 +33,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="col-6 col-xl-6">
                     <div class="topname1">
-                        <a href="">
+                        <a href="#">
                             <p>歷史紀錄</p>
                         </a>
                     </div>

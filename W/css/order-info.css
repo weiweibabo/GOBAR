@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  height: 140px;
+  height: 150px;
   background: #002a4c;
   z-index: 20;
 }
@@ -186,13 +186,8 @@ header {
   margin: 10px 15px;
 }
 
-.close {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-button.close {
-  background-color: #ff5172;
+.bgg {
+  background-color: transparent !important;
 }
 
 /* 裝飾點點 */
