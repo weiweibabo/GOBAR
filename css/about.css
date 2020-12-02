@@ -5,7 +5,7 @@ body {
 .about {
   width: 100%;
   height: 135px;
-  background-color: #002a4c;
+  background-color: red;
   padding-top: 10px;
 }
 .aboutbox {
@@ -36,6 +36,7 @@ body {
   justify-content: space-around;
   margin: 20px 0 0;
   padding: 0;
+  background-color: yellowgreen;
 }
 .aboutitem il {
   width: 15%;
@@ -44,13 +45,18 @@ body {
   cursor: pointer;
 }
 .contact {
-  border-right: solid 1px white;
+  border-right: solid 1px red;
 }
 .abgobar {
   border-right: solid 1px white;
 }
 .cooper {
   border-right: solid 1px white;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+  outline: none;
 }
 .server {
   border-right: solid 1px white;
@@ -136,6 +142,7 @@ h3 {
   .cooper {
     text-align: right;
   }
+
   .community {
     margin: 5px auto 0;
   }

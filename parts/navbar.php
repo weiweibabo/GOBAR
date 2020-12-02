@@ -10,7 +10,7 @@
             <li class="nav-item searchword small pl-4 pl-md-0 ml-0 ml-md-4">
               <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
             </li>
-            <a class="navbar-brand" href="" target="_blank"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
+            <a class="navbar-brand" href="<?= WEB_ROOT ?>M/_index.php" target="_self"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
             <div class="navslogn"><img src="<?= WEB_ROOT ?>img/navslogn.svg" alt=""></div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
