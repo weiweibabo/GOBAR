@@ -8,7 +8,6 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
 ?>
 
-
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/favorite-copy.css" />
