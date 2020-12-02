@@ -552,4 +552,3 @@
     </script>
 </body>
 <?php include __DIR__ . '/../../parts/about.php'; ?>
-<?php include __DIR__ . '/../../parts/html-foot.php'; ?>

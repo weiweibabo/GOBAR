@@ -122,12 +122,34 @@
 .input-group input {
   border-bottom: 1px solid white;
 }
+/*  */
+
+.err {
+  color: #ff5172;
+  position: absolute;
+  top: 12.5px;
+  right: 10px;
+}
+.err i {
+  color: #ff5172;
+}
+
+#errormsg {
+  color: #ff5172;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
 
 /* ----------------------RWD */
 
 @media screen and (max-width: 414px) {
   .modal-content {
     width: 400px;
-    height: 740px;
+    height: 770px;
   }
 }

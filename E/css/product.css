@@ -46,6 +46,9 @@ section.line04 {
   top: 850px;
   z-index: 1;
 }
+.store {
+  height: 1080px;
+}
 .store-name {
   top: 800px;
   position: absolute;

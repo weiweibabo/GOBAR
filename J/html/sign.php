@@ -115,17 +115,21 @@
 
         <div class="account">
           <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="輸入手機或電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" id="account" class="form-control" placeholder="輸入手機或電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
+            <div id="err1" class="err"></div>
           </div>
+
         </div>
 
         <div class="password">
           <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="輸入密碼" aria-label="Username" aria-describedby="addon-wrapping">
+            <input id="inputpassword" type="text" class="form-control" placeholder="輸入密碼" aria-label="Username" aria-describedby="addon-wrapping">
+            <div id="err2" class="err"></div>
           </div>
         </div>
 
-        <button type="button" class="btn btn-orange">會員登入</button>
+        <button id="send" type="button" class="btn btn-orange">會員登入</button>
+        <div id="errormsg"></div>
 
         <div class="member-text d-flex">
           <p><input class="w3-check" type="checkbox" checked="checked">
@@ -138,6 +142,8 @@
       </div>
     </div>
   </div>
+
+  <script src="<?= WEB_ROOT ?>/J/js/sign.js"></script>
 
   <script>
     const email = $('#email'),
