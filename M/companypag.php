@@ -61,44 +61,7 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class=" store">
-            <div class="store-name d-flex">
-                <input class="inputstore-name" placeholder="✎輸入店家名稱"></input>
-            </div>
-            <form class="titlepc" action="" method="post" enctype="multipart/form-data" onclick="field2.click()">
-                <input type="file" class="inputbigpc bigpc2" name="avatar" accept="image/*" onchange="previewFile2()"></input>
-                <img id="inputbigimg2" src="<?= WEB_ROOT ?>img/addimg.svg" alt="Image preview...">
 
-            </form>
-            <div class="information-bar position-absolute d-block w-100">
-                <div class="information">
-                    <div class="star">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="295" height="33" viewBox="0 0 295 33">
-                            <g id="Group_804" data-name="Group 804" transform="translate(-317.5 -916.06)">
-                                <path id="Polygon_1" data-name="Polygon 1" d="M16.616,1.674a1,1,0,0,1,1.768,0l4.485,8.49a1,1,0,0,0,.718.519l9.517,1.6a1,1,0,0,1,.546,1.688l-6.738,6.832a1,1,0,0,0-.277.849l1.4,9.462a1,1,0,0,1-1.43,1.044L17.941,27.9a1,1,0,0,0-.882,0L8.394,32.16a1,1,0,0,1-1.43-1.044l1.4-9.462a1,1,0,0,0-.277-.849L1.35,13.974A1,1,0,0,1,1.9,12.286l9.517-1.6a1,1,0,0,0,.718-.519Z" transform="translate(317.5 916.06)" fill="gold" />
-                                <path id="Polygon_1-2" data-name="Polygon 1" d="M16.616,1.674a1,1,0,0,1,1.768,0l4.485,8.49a1,1,0,0,0,.718.519l9.517,1.6a1,1,0,0,1,.546,1.688l-6.738,6.832a1,1,0,0,0-.277.849l1.4,9.462a1,1,0,0,1-1.43,1.044L17.941,27.9a1,1,0,0,0-.882,0L8.394,32.16a1,1,0,0,1-1.43-1.044l1.4-9.462a1,1,0,0,0-.277-.849L1.35,13.974A1,1,0,0,1,1.9,12.286l9.517-1.6a1,1,0,0,0,.718-.519Z" transform="translate(382.5 916.06)" fill="gold" />
-                                <path id="Polygon_1-3" data-name="Polygon 1" d="M16.616,1.674a1,1,0,0,1,1.768,0l4.485,8.49a1,1,0,0,0,.718.519l9.517,1.6a1,1,0,0,1,.546,1.688l-6.738,6.832a1,1,0,0,0-.277.849l1.4,9.462a1,1,0,0,1-1.43,1.044L17.941,27.9a1,1,0,0,0-.882,0L8.394,32.16a1,1,0,0,1-1.43-1.044l1.4-9.462a1,1,0,0,0-.277-.849L1.35,13.974A1,1,0,0,1,1.9,12.286l9.517-1.6a1,1,0,0,0,.718-.519Z" transform="translate(447.5 916.06)" fill="gold" />
-                                <path id="Path_6156" data-name="Path 6156" d="M16.616,1.674a1,1,0,0,1,1.768,0l4.485,8.49a1,1,0,0,0,.718.519l9.517,1.6a1,1,0,0,1,.546,1.688l-6.738,6.832a1,1,0,0,0-.277.849l1.4,9.462a1,1,0,0,1-1.43,1.044L17.941,27.9a1,1,0,0,0-.882,0L8.394,32.16a1,1,0,0,1-1.43-1.044l1.4-9.462a1,1,0,0,0-.277-.849L1.35,13.974A1,1,0,0,1,1.9,12.286l9.517-1.6a1,1,0,0,0,.718-.519Z" transform="translate(512.5 916.06)" fill="gold" />
-                                <path id="Polygon_1-4" data-name="Polygon 1" d="M16.616,1.674a1,1,0,0,1,1.768,0l4.485,8.49a1,1,0,0,0,.718.519l9.517,1.6a1,1,0,0,1,.546,1.688l-6.738,6.832a1,1,0,0,0-.277.849l1.4,9.462a1,1,0,0,1-1.43,1.044L17.941,27.9a1,1,0,0,0-.882,0L8.394,32.16a1,1,0,0,1-1.43-1.044l1.4-9.462a1,1,0,0,0-.277-.849L1.35,13.974A1,1,0,0,1,1.9,12.286l9.517-1.6a1,1,0,0,0,.718-.519Z" transform="translate(577.5 916.06)" fill="gold" />
-                            </g>
-                        </svg>
-
-                    </div>
-                    <div class="d-flex">
-                        <div class="address">
-                            <input class="inputaddress" placeholder="✎輸入店家地址"></input>
-                            <input class="inputphon" placeholder="✎輸入店家電話"></input>
-                        </div>
-                        <div class="business-hour">
-                            <input class="inputhour" placeholder="✎輸入營業時間"></input>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <section>
         <div class="container-fluid">
             <div class="news">
@@ -376,22 +339,6 @@
         function previewFile() {
             const preview = document.querySelector('#inputbigimg');
             const file = document.querySelector('.inputbigpc').files[0];
-            const reader = new FileReader();
-
-
-            reader.addEventListener("load", function() {
-                // convert image file to base64 string
-                preview.src = reader.result;
-            }, false);
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        }
-
-        function previewFile2() {
-            const preview = document.querySelector('#inputbigimg2');
-            const file = document.querySelector('.bigpc2').files[0];
             const reader = new FileReader();
 
 
