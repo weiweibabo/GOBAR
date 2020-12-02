@@ -800,6 +800,9 @@ Img {
   .carousel .d-block {
     height: 300px !important;
   }
+  .store {
+    height: 100%;
+  }
   .store-name p {
     font-size: 20px;
   }
