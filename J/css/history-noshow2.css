@@ -1,7 +1,6 @@
-/* * {
-  outline: 1px solid red;
-} */
-
+a {
+  text-decoration: none;
+}
 .header {
   height: 100px;
 }
@@ -36,6 +35,10 @@ main {
   color: white;
   text-align: center;
   margin-top: 100px;
+}
+.topname a :hover {
+  text-decoration: none;
+  border-bottom: 5px solid orange;
 }
 
 .topname p {
@@ -156,7 +159,7 @@ main {
 
 .card-area {
   overflow-y: hidden;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .img-ink img {

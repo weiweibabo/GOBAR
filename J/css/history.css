@@ -52,6 +52,11 @@ main {
   margin-top: 100px;
 }
 
+.topname1 a :hover {
+  text-decoration: none;
+  border-bottom: 5px solid orange;
+}
+
 .topname1 p {
   width: 350px;
   margin: 0 auto;
@@ -154,7 +159,7 @@ main {
 
 .card-area {
   overflow-y: hidden;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 @media screen and (max-width: 414px) {
