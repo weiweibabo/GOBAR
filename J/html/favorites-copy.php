@@ -8,7 +8,7 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
 ?>
 
-<?php include __DIR__ . '/../../parts/config.php'; ?>
+
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
 <link rel="stylesheet" href="../css/favorite-copy.css" />
@@ -66,7 +66,7 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="../htdocs/GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
+            <img src="./GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
             <p>年度會員</p>
           </div>
           <!--  -->
@@ -148,6 +148,7 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
               </div>
             </div>
+
             <div class="bottom-text d-flex">
               <div class="bottom-word">
                 <p>聯絡電話</p>

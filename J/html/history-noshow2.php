@@ -8,7 +8,6 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // echo json_encode($orders, JSON_UNESCAPED_UNICODE);
 ?>
 
-<?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../../parts/navbar.php'; ?>
