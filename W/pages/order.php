@@ -1,18 +1,7 @@
     
 
     <?php include __DIR__ . '/../../parts/config.php'; ?>
-<!-- 
-    <?php
-      
-    
-    $sid = intval($_GET['sid']);
-    
-    $sql = "SELECT * FROM shop WHERE sid=$sid";
-    $rows = $pdo->query($sql)->fetch();
-    
-  ?> -->
-    ?>
-
+  
     <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
     <link rel="stylesheet" href="../css/order.css" />
@@ -42,7 +31,7 @@
             </div>
             <p class="modaltitle title-30">是否同意GOBAR上述規範?</p>
             <div class="d-flex">
-              <a href="<?= WEB_ROOT ?>E/pages/product.html"><button class="disagree-btn">不同意</button></a>
+              <button class="disagree-btn" onclick="history.back()" value="回到上一頁">不同意</button>
               <button class="agree-btn" type="button" data-dismiss="modal" aria-label="Close">同意</button>
             </div>
           </div>
@@ -84,7 +73,7 @@
       <div class="row conent-area">
         <div class="col-xl-5 col-10">
           <div class="phone-shop title-30">
-            <p>安慰劑 Placebo Taipei</p>
+            <p><?= $_GET['name'] ?></p>
           </div>
 
           <!--    web 日曆    -->
@@ -272,6 +261,11 @@
     <script src="../js/order.js"></script>
     
     <script>
+
+      const str = document.referrer;
+      const barSid = str.substr(54)
+      console.log(barSid);
+      
 
       $(document).ready(function () {
         $("#myModal222").modal("show");

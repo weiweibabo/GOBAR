@@ -534,7 +534,7 @@ if(empty($rows)){
 
         <h2>CLICK</h2>
         <div class="form-wrapper">
-            <a href="<?=WEB_ROOT?>W/pages/order.php">
+            <a href="<?=WEB_ROOT?>W/pages/order.php?name=<?=$rows['name']?>">
                 <div class="sp-time">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">
