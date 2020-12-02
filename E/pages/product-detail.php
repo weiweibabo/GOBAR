@@ -1,14 +1,28 @@
-<?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php
+include __DIR__. '/../../parts/config.php';
+
+if(! isset($_GET['sid'])){
+    header('Location: map2.php'); exit;
+}
+
+$sid = intval($_GET['sid']);
+
+$sql = "SELECT * FROM shop WHERE sid=$sid";
+$rows = $pdo->query($sql)->fetch();
+if(empty($rows)){
+    header('Location: map2.php'); exit;
+}
+?>
 
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script> -->
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
 <link rel="stylesheet" href="../css/product.css">
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
@@ -21,7 +35,7 @@
     <section>
         <div class=" store">
             <div class="store-name d-flex">
-                <p>Attic Trade co.</p>
+                <p><?=$rows['name']?></p>
                 <div class="medal d-flex">
                     <img src="../../J/Gobar-svg-png/PNG/黃金.png" alt="">
                 </div>
@@ -60,13 +74,10 @@
                     </div>
                     <div class="d-flex">
                         <div class="address">
-                            <h2>台北市信義區基隆路二段12號3樓</h2>
-                            <p>(02)2720-1150</p>
+                            <h2><?=$rows['address']?></h2>
+                            <p>&nbsp;連絡電話 : <?=$rows['mobile']?> &nbsp;&nbsp;&nbsp; 營業時間 : <?=$rows['business_hours']?></p>
                         </div>
-                        <div class="business-hour">
-                            <p>每周一公休</p>
-                            <p>20:00-02:00</p>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -523,7 +534,7 @@
 
         <h2>CLICK</h2>
         <div class="form-wrapper">
-            <a href="">
+            <a href="<?=WEB_ROOT?>W/pages/order.php">
                 <div class="sp-time">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">

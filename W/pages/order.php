@@ -1,6 +1,18 @@
     
 
     <?php include __DIR__ . '/../../parts/config.php'; ?>
+<!-- 
+    <?php
+      
+    
+    $sid = intval($_GET['sid']);
+    
+    $sql = "SELECT * FROM shop WHERE sid=$sid";
+    $rows = $pdo->query($sql)->fetch();
+    
+  ?> -->
+    ?>
+
     <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
     <link rel="stylesheet" href="../css/order.css" />

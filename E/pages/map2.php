@@ -57,9 +57,11 @@ $rows = $stmt->fetchAll();
         <div class="search-all">
           <?php foreach ($rows as $r) : ?>
             <div class="search">
+            <a href="product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
               <div class="pic">
                 <img src="<?= WEB_ROOT ?>data/img/<?=$r['sid']?>.jpg" alt="" />
               </div>
+            </a>
               <div class="name-like d-flex justify-content-between">
                 <div class="name">
                   <h2><?=$r['name']?></h2>
@@ -102,8 +104,12 @@ $rows = $stmt->fetchAll();
         </div>
       </div>
     </div>
+
+    
+
   </section>
 
+  
   <script type="text/javascript">
     function initMap() {
       map = new google.maps.Map(document.getElementById("map"), {
@@ -147,6 +153,10 @@ $rows = $stmt->fetchAll();
         });
       }
     };
+
+
+    // 
+    
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWsl0DRqMvWAZzlfqJyoNJYS6AjaFBU8&callback=initMap"></script>
