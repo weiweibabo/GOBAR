@@ -8,7 +8,7 @@
 <body>
     <div class="signathihgbox"></div>
     <div class="signbg">
-        <div class="singcard">
+        <div id="singcardid" class="singcard">
             <div class="singlogo">
                 <img src="../M/img/logowhite.svg" alt="">
             </div>

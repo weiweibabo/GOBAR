@@ -5,6 +5,7 @@ const errormsg = document.getElementById('errormsg');
 const send = document.getElementById('send');
 const err1 = document.getElementById('err1');
 const err2 = document.getElementById('err2');
+const singcardid = document.getElementById('singcardid');
 // const email_re = /([\w\-]+\@[\w\-]+\.[\w\-]+)/;
 send.addEventListener('click', () => {
   if (
@@ -14,9 +15,11 @@ send.addEventListener('click', () => {
   ) {
     errormsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> 資料填寫不完整';
     send.classList.add('send');
+    singcardid.classList.add('singcalong');
   } else {
     errormsg.innerHTML = '';
     send.classList.remove('send');
+    singcardid.classList.remove('singcalong');
   }
 
   if (account.value === '') {
