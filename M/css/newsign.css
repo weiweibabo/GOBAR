@@ -34,16 +34,16 @@ body {
   border-radius: 15px;
   position: absolute;
   top: 50px;
-  right: 200px;
+  right: 280px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   animation: move 1.5s ease-out;
 }
 @keyframes move {
   0% {
-    right: 150px;
+    right: 230px;
   }
   100% {
-    right: 200px;
+    right: 280px;
   }
 }
 .singcalong {
