@@ -10,7 +10,7 @@ button:focus {
   outline: transparent;
   border: transparent;
 }
-.signline {
+.line {
   border-bottom: 0.5px solid white;
   width: 80px;
   margin: 30px auto;
