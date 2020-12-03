@@ -5,7 +5,7 @@ body {
 .about {
   width: 100%;
   height: 135px;
-  background-color: red;
+  background-color: #002a4c;
   padding-top: 10px;
 }
 .aboutbox {
@@ -19,7 +19,6 @@ body {
 }
 .footerlogo {
   width: 8%;
-  /* height: 100px; */
   padding-top: 5px;
 }
 .footerlogo img {
@@ -36,7 +35,6 @@ body {
   justify-content: space-around;
   margin: 20px 0 0;
   padding: 0;
-  background-color: yellowgreen;
 }
 .aboutitem il {
   width: 15%;
@@ -45,7 +43,7 @@ body {
   cursor: pointer;
 }
 .contact {
-  border-right: solid 1px red;
+  border-right: solid 1px white;
 }
 .abgobar {
   border-right: solid 1px white;
@@ -53,7 +51,10 @@ body {
 .cooper {
   border-right: solid 1px white;
 }
-a:link {
+.cooperlink:link,
+.cooperlink:visited,
+.cooperlink:hover,
+.cooperlink:active {
   color: white;
   text-decoration: none;
   outline: none;
@@ -128,8 +129,6 @@ h3 {
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
-    /* justify-content: space-between; */
-    /* align-content: flex-start; */
   }
   .aboutitem il {
     width: 80px;

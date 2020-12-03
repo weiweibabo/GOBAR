@@ -6,8 +6,11 @@
   width: 20px;
   height: 20px;
 }
-
-.line {
+button:focus {
+  outline: transparent;
+  border: transparent;
+}
+.signline {
   border-bottom: 0.5px solid white;
   width: 80px;
   margin: 30px auto;

@@ -1,90 +1,33 @@
-<link rel="stylesheet" href="<?= WEB_ROOT ?>css/navbar.css">
-<link rel="icon" href="<?= WEB_ROOT ?>img/favicon.png">
-<link rel="stylesheet" href="<?= WEB_ROOT ?>J/css/sign.css">
+<?php include __DIR__ . '/../../parts/config.php'; ?>
+<?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-<body class="hero-anime">
-  <div class="navigation-wrap start-header start-style" style="background-color: #002a4c">
-    <div class="navbox">
-      <div class="row">
-        <div class="col-xl-12 col-12 ">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <li class="nav-item searchword small pl-4 pl-md-0 ml-0 ml-md-4">
-              <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
-            </li>
-            <a class="navbar-brand" href="<?= WEB_ROOT ?>M/_index.php" target="_self"><img src="<?= WEB_ROOT ?>img/logowhite.svg" alt="" /></a>
-            <div class="navslogn"><img src="<?= WEB_ROOT ?>img/navslogn.svg" alt=""></div>
+<link rel="stylesheet" href="../css/sign.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto py-4 py-md-0">
-                <li class="nav-item searchword pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
-                  <a class="nav-link" href="#">搜尋酒吧</a>
-                </li>
+<?php include __DIR__ . '/../../parts/scripts.php'; ?>
+<?php include __DIR__ . '/../../parts/navbar.php'; ?>
 
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                  <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">我的收藏</a>
-                </li>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
-                  <a class="nav-link" href="#">我的訂單</a>
-                </li>
-                <button type="button" class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 btn" href="#" data-toggle="modal" data-target="#exampleModal">
-                  <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
-                  <a class="nav-link enter" href="#">登入/註冊</a>
-                </button>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div class="navslide">
-      <div class="searcharea">
-        <div class="navsearchform">
-          <div class="navkeywordbox">
-            <input class="navinput1" type="text" placeholder="輸入關鍵字" />
-          </div>
-          <select class="navselect" name="" id="">
-            <option value="">選擇地區</option>
-            <option value="">萬華區</option>
-            <option value="">中正區</option>
-            <option value="">大安區</option>
-            <option value="">信義區</option>
-            <option value="">南港區</option>
-            <option value="">大同區</option>
-            <option value="">中山區</option>
-            <option value="">松山區</option>
-            <option value="">內湖區</option>
-            <option value="">士林區</option>
-            <option value="">北投區</option>
-            <option value="">文山區</option>
-          </select>
-          <select class="navselect" name="" id="">
-            <option value="">調酒類別</option>
-            <option value="">萬華區</option>
-            <option value="">中正區</option>
-            <option value="">大安區</option>
-            <option value="">信義區</option>
-            <option value="">南港區</option>
-          </select>
-          <select class="navselect" name="" id="">
-            <option value="">酒吧風格</option>
-            <option value="">萬華區</option>
-            <option value="">中正區</option>
-            <option value="">大安區</option>
-            <option value="">信義區</option>
-            <option value="">南港區</option>
-          </select>
-          <button class="navsearchbutton">搜尋酒吧</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<body>
 
+  <!-- Button trigger modal -->
+  <div class="nothingbox" style="width: 100%;height:500px;"></div>
+  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="91" height="78.999" viewBox="0 0 91 78.999">
+      <g id="Group_699" data-name="Group 699" transform="translate(-6210 11879.999)">
+        <g id="Group_392" data-name="Group 392" transform="translate(6242.096 -11880.197)">
+          <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="9.5" cy="9" rx="9.5" ry="9" transform="translate(3.904 0.198)" fill="#000" />
+          <rect id="Rectangle_24" data-name="Rectangle_24" width="27" height="15" rx="7.5" transform="translate(-0.096 22.198)" fill="#000" />
+        </g>
+        <g id="Group_396" data-name="Group 396" transform="translate(6203 -11872)">
+          <text id="登入_註冊" data-name="登入/註冊" transform="translate(7 65)" fill="#000" font-size="20" font-family="NotoSansTC-Regular, Noto Sans TC" letter-spacing="0.03em">
+            <tspan x="0" y="0">登入/註冊</tspan>
+          </text>
+        </g>
+      </g>
+    </svg> -->
+  </button>
+
+  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -117,9 +60,9 @@
         </div>
 
         <div class="sign-text d-flex">
-          <div class="signline"></div>
+          <div class="line"></div>
           <p>用以下用以下帳號登入</p>
-          <div class="signline"></div>
+          <div class="line"></div>
         </div>
 
         <div class="icon d-flex">
@@ -166,9 +109,9 @@
         </div>
 
         <div class="sign-text d-flex">
-          <div class="signline"></div>
+          <div class="line"></div>
           <p>用GoBar帳號登入</p>
-          <div class="signline"></div>
+          <div class="line"></div>
         </div>
 
         <div class="account">
@@ -235,66 +178,10 @@
     }
   </script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-
-
-  <!-- Link to page
-        ================================================== -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script> -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-   -->
-
-  <script>
-    // tsai
-    $(document).ready(function() {
-      $("body.hero-anime").removeClass("hero-anime");
-      $(".searchword").click(function() {
-        $(".navslide").slideToggle();
-      });
-    });
-
-    (function($) {
-      "use strict";
-
-      $(function() {
-        var header = $(".start-style");
-        $(window).scroll(function() {
-          var scroll = $(window).scrollTop();
-
-          if (scroll >= 10) {
-            header.removeClass("start-style").addClass("scroll-on");
-          } else {
-            header.removeClass("scroll-on").addClass("start-style");
-          }
-        });
-      });
-      //Animation
-
-      $(document).ready(function() {
-        $("body.hero-anime").removeClass("hero-anime");
-      });
-
-      //Menu On Hover
-
-      $("body").on("mouseenter mouseleave", ".nav-item", function(e) {
-        if ($(window).width() > 750) {
-          var _d = $(e.target).closest(".nav-item");
-          _d.addClass("show");
-          setTimeout(function() {
-            _d[_d.is(":hover") ? "addClass" : "removeClass"]("show");
-          }, 1);
-        }
-      });
-    });
-  </script>
 </body>
+
+</html>
