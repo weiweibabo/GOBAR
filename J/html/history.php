@@ -1,7 +1,10 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php
 
-$sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `date` ASC ; ");
+$now = date("Y-m-d");
+// $now = date("Y-m-d H:i:s");
+
+$sql = sprintf("SELECT `orders`.* , `shop`.`address`, `shop`.`mobile`FROM `shop` JOIN `orders` ON `shop`.`name`=`orders`.`shop` WHERE `orders`.`date` >= '%s' ORDER BY `date` ASC ; ", $now);
 $stmt = $pdo->query($sql);
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -50,17 +53,17 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
                                         <tspan x="0" y="0"><?= substr($r["date"], 8, 2) ?></tspan>
                                     </text>
-                                    <text id="FRIDAY" transform="translate(22 37.661)" fill="#fff" font-size="25" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
+                                    <text id="FRIDAY" transform="translate(23 39.661)" fill="#fff" font-size="30" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
                                         <tspan x="15" y="0"><?= substr($r["weekdays"], 0, 3) ?></tspan>
                                     </text>
                                 </g>
                             </svg>
                         </div>
                         <div class="photo col-xl-2">
-                            <img src="../img/work-bar.jpg" alt="" style="width: 250px; height: 212px;">
+                            <img src="<?= WEB_ROOT ?>data/img/<?=$r['shop']?>.jpg" alt="" style="width: 250px; height: 212px;">
                         </div>
                         <div class="name col-xl-3">
-                            <h1>安慰劑 Placebo Taipei</h1>
+                            <h1><?= $r["shop"] ?></h1>
                             <p>訂位時段 : <?= $r["time"] ?></p>
                             <p>訂位人數 : <?= $r["people"] ?> 位</p>
                         </div>

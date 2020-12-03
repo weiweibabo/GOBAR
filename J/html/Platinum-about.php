@@ -85,7 +85,7 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <div class="black-area col-12 col-xl-4 px-0">
             <div class="black-text">
               <h1>白金會員最新優惠</h1>
-              <div class="black-text2">
+              <div class="black-text2">ˇ
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
                     <circle id="Ellipse_88" data-name="Ellipse 88" cx="5.5" cy="5.5" r="5.5" fill="#ffd6a2" />

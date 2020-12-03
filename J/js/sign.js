@@ -1,7 +1,6 @@
 // error message
 const account = document.getElementById('account');
 const password = document.getElementById('inputpassword');
-
 const errormsg = document.getElementById('errormsg');
 const send = document.getElementById('send');
 const err1 = document.getElementById('err1');

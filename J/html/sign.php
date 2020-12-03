@@ -5,11 +5,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
-<!-- <?php include __DIR__ . '/../../parts/navbar.php'; ?> -->
+<!-- <?php include __DIR__ . '/../../parts/navbar.php'; ?>   -->
 
 <body>
 
   <!-- Button trigger modal -->
+
   <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
     <svg xmlns="http://www.w3.org/2000/svg" width="91" height="78.999" viewBox="0 0 91 78.999">
       <g id="Group_699" data-name="Group 699" transform="translate(-6210 11879.999)">
@@ -118,7 +119,6 @@
             <input type="text" id="account" class="form-control" placeholder="輸入手機或電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
             <div id="err1" class="err"></div>
           </div>
-
         </div>
 
         <div class="password">
@@ -161,7 +161,7 @@
             .removeClass('alert-danger')
             .addClass('alert-success')
             .text('登入成功');
-          location.href = '<?= $gotoURL ?>';
+          location.href = 'Platinum-favorite.php';
         } else {
           info_bar
             .removeClass('alert-success')
