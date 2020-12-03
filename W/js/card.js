@@ -6,6 +6,7 @@ window.onload = () => {
   const output = document.getElementById('output');
   const ccicon = document.getElementById('ccicon');
   const ccsingle = document.getElementById('ccsingle');
+  const barName = document.getElementById('bar-name');
 
   //  修改訂單
   const editBtn = document.getElementById('edit-btn');
@@ -191,10 +192,10 @@ window.onload = () => {
     document.querySelector('.creditcard').classList.add('flipped');
   });
 
-  // 修改訂單
-  editBtn.addEventListener('click', () => {
-    window.location.replace('./order.php');
-  });
+  // // 修改訂單
+  // editBtn.addEventListener('click', () => {
+  //   window.location.replace('./order.php?name=<?=$_GET['name']?>');
+  // });
 
   // 檢查input是否填寫
   confirmBtn.addEventListener('click', () => {

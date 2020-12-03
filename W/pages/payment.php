@@ -3,7 +3,7 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
     <?php 
         
-      $sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $sql = sprintf("SELECT `shop`,`date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
       $stmt = $pdo->query($sql);
       $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
@@ -123,10 +123,10 @@
               </svg>
             </div>
             <div class="bar-pic col-xl-3 col-11">
-              <img src="../img/安慰劑.jpg" alt="" />
+              <img src="<?= WEB_ROOT ?>data/img/<?=$orders[0]['shop']?>.jpg" alt="" />
             </div>
             <div class="info col-xl-4 col-10">
-              <p class="shop-name text-20">安慰劑 Placebo Taipei</p>
+              <p id="bar-name" class="shop-name text-20"><?= $orders[0]["shop"] ?></p>
               <div class="info-text">
                 <p class="text-20">訂位時段 : <?= $orders[0]["time"] ?></p>
                 <p class="text-20">訂位人數 :  <?= $orders[0]["people"] ?> 位</p>
@@ -135,7 +135,9 @@
             </div>
 
             <div class="edit col-xl-2 col-6">
+            <a href="./order.php?name=<?=$_GET['name']?>">
               <button id="edit-btn" class="edit-btn">修改訂位</button>
+            </a>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
 
 <?php 
         
-      $sql = sprintf("SELECT `date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $sql = sprintf("SELECT `orders`.* , `shop`.`address`, `shop`.`mobile`FROM `shop` JOIN `orders` ON `shop`.`name`=`orders`.`shop` ORDER BY `sid` desc limit 1 ; ");
       $stmt = $pdo->query($sql);
       $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
@@ -104,9 +104,9 @@
       <div class="row leftarea mt-5">
         <div class="info col-xl-5 col-10">
           <div class="shop-info col-12">
-            <p class="shop-name title-40M">安慰劑 Placebo Taipei</p>
-            <p class="address text-20">地址 : 台北市信義區基隆路二段83號</p>
-            <p class="phone-number text-20">電話 : 02 8732 2345</p>
+            <p class="shop-name title-40M"><?= $orders[0]["shop"] ?></p>
+            <p class="address text-20">地址 : <?= $orders[0]["address"] ?></p>
+            <p class="phone-number text-20">電話 : <?= $orders[0]["mobile"] ?></p>
           </div>
           <div class="order-info text-30L">
             <p>訂位日期 :

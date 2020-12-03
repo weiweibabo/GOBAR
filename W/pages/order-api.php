@@ -22,10 +22,11 @@ if (empty($_POST['date'])) {
     exit;
 }
 
-$sql = "INSERT INTO `orders`(`date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email`, `remarks`) VALUES (?,?,?,?,?,?,?,?)";
+$sql = "INSERT INTO `orders`(`shop`,`date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email`, `remarks`) VALUES (?,?,?,?,?,?,?,?,?)";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
+    $_POST['shop'],
     $_POST['date'],
     $_POST['weekdays'],
     $_POST['time'],

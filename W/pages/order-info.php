@@ -4,7 +4,7 @@
 
 <?php 
         
-      $sql = sprintf("SELECT `sid`,`date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+      $sql = sprintf("SELECT `orders`.* , `shop`.`address`, `shop`.`mobile`FROM `shop` JOIN `orders` ON `shop`.`name`=`orders`.`shop` ORDER BY `sid` desc limit 1 ; ");
       $stmt = $pdo->query($sql);
       $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
       
@@ -43,13 +43,13 @@
 
         <div class="info-area row">
           <div class="shop-info col-xl-5 col-12">
-            <img src="../img/安慰劑.jpg" alt="" />
-            <p class="shop-name title-40M mt-5">安慰劑 Placebo Taipei</p>
+            <img src="<?= WEB_ROOT ?>data/img/<?=$orders[0]['shop']?>.jpg" alt="" />
+            <p class="shop-name title-40M mt-5"><?= $orders[0]["shop"] ?></p>
             <div class="phone-text">
               <p class="address text-20 mb-1">
-                地址 : 台北市信義區基隆路二段83號
+                地址 : <?= $orders[0]["address"] ?>
               </p>
-              <p class="phone-number text-20">電話 : 02 8732 2345</p>
+              <p class="phone-number text-20">電話 : <?= $orders[0]["mobile"] ?></p>
             </div>
           </div>
           <div class="col-xl-4 col-10 text-infom">
@@ -253,7 +253,7 @@
         },function(response){
            console.log(response);
            alert('您的訂位已取消')
-           location.href="./order.php"
+           location.href="<?=WEB_ROOT?>M/_index.php."
           }, 'json');
 
         });
