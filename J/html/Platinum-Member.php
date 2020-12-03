@@ -147,7 +147,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </g>
             </svg>
 
-            <p>您已違規二次</p>
+            <p>本月您已違規二次</p>
             <p>違規三次將被停權4週!</p>
 
           </div>
