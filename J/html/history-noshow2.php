@@ -35,7 +35,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </div>
 
                 <div class="col-6 col-xl-6">
-                    <div class="topname1"></div>
+                    <div class="topname1">
                             <p>歷史紀錄</p>
                     </div>
                 </div>

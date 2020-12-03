@@ -73,7 +73,7 @@
       <div class="row conent-area">
         <div class="col-xl-5 col-10">
           <div class="phone-shop title-30">
-            <p><?= $_GET['name'] ?></p>
+            <p id="bar-name"><?= $_GET['name'] ?></p>
           </div>
 
           <!--    web 日曆    -->
@@ -262,9 +262,9 @@
     
     <script>
 
-      const str = document.referrer;
-      const barSid = str.substr(54)
-      console.log(barSid);
+      // const str = document.referrer;
+      // const barSid = str.substr(54)
+      // console.log(barSid);
       
 
       $(document).ready(function () {
@@ -272,7 +272,7 @@
         
       });
 
-     
+     const barName = document.getElementById('bar-name');
      const remarks = $('#remarks');
         $('#send').click(function(e) {
             e.preventDefault();
@@ -288,7 +288,8 @@
           && phonenumber.value !='' 
           && email_re.test(email.value)){
             $.post('order-api.php',
-            { date: ymd,
+            { shop:barName.innerHTML,
+              date: ymd,
               weekdays:weekdays.innerHTML,
               time:time.value,
               people:persons.value,
