@@ -252,7 +252,7 @@
           <p id="errormsg"></p>
 
           
-          <button type="submit" id="sendd" class="next-btn">下一步</button>
+          <button type="submit" id="send" class="next-btn">下一步</button>
           
         </div>
       </div>

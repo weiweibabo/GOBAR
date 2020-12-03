@@ -135,9 +135,9 @@
             </div>
 
             <div class="edit col-xl-2 col-6">
-            <a href="./order.php?name=<?=$_GET['name']?>">
-              <button id="edit-btn" class="edit-btn">修改訂位</button>
-            </a>
+            
+              <button id="edit-btn" class="edit-btn" onclick="history.back()" value="回到上一頁">修改訂位</button>
+            
             </div>
           </div>
         </div>
