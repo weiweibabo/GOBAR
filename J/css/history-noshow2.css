@@ -69,15 +69,7 @@ main {
   background-color: rgb(0, 0, 0);
   -webkit-filter: brightness(0.5);
 }
-
-.card2 {
-  height: 282px;
-  background-color: rgba(10, 10, 10, 0.932);
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.card3 {
+.black {
   height: 282px;
   align-items: center;
   margin-bottom: 30px;
@@ -85,7 +77,7 @@ main {
   -webkit-filter: brightness(0.5);
 }
 
-.card4 {
+.card2 {
   height: 282px;
   background-color: rgba(10, 10, 10, 0.932);
   align-items: center;
@@ -225,16 +217,6 @@ main {
   }
 
   .card2 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card3 {
-    height: 169px;
-    position: relative;
-  }
-
-  .card4 {
     height: 169px;
     position: relative;
   }
