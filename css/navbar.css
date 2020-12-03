@@ -3,7 +3,6 @@
 * {
   font-family: "Noto Sans TC", sans-serif;
 }
-
 .start-header {
   opacity: 1;
   transform: translateY(0);
@@ -116,6 +115,10 @@
 
 .nav-link {
   color: white !important;
+  font-weight: 400;
+}
+.enter {
+  font-size: 19px;
   font-weight: 400;
 }
 

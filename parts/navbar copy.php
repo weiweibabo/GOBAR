@@ -34,7 +34,7 @@
                 </li>
                 <button type="button" class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 btn" href="#" data-toggle="modal" data-target="#exampleModal">
                   <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
-                  <a class="nav-link enter" href="#">登入/註冊</a>
+                  <a class="nav-link">登入/註冊</a>
                 </button>
               </ul>
             </div>
@@ -85,6 +85,10 @@
     </div>
   </div>
 
+
+
+
+
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -117,9 +121,9 @@
         </div>
 
         <div class="sign-text d-flex">
-          <div class="signline"></div>
+          <div class="line"></div>
           <p>用以下用以下帳號登入</p>
-          <div class="signline"></div>
+          <div class="line"></div>
         </div>
 
         <div class="icon d-flex">
@@ -166,9 +170,9 @@
         </div>
 
         <div class="sign-text d-flex">
-          <div class="signline"></div>
+          <div class="line"></div>
           <p>用GoBar帳號登入</p>
-          <div class="signline"></div>
+          <div class="line"></div>
         </div>
 
         <div class="account">
@@ -234,9 +238,6 @@
       }, 'json');
     }
   </script>
-
-
-
 
   <!-- Link to page
         ================================================== -->
