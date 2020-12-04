@@ -22,6 +22,7 @@ $rows = $stmt->fetchAll();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
 <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+<script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script>
 
 <link rel="stylesheet" href="../css/map2.css" />
 <link rel="stylesheet" href="../js/map.js" />
@@ -57,14 +58,14 @@ $rows = $stmt->fetchAll();
         <div class="search-all">
           <?php foreach ($rows as $r) : ?>
             <div class="search">
-            <a href="product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
-              <div class="pic">
-                <img src="<?= WEB_ROOT ?>data/img/<?=$r['sid']?>.jpg" alt="" />
-              </div>
-            </a>
+              <a href="product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
+                <div class="pic">
+                  <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" />
+                </div>
+              </a>
               <div class="name-like d-flex justify-content-between">
                 <div class="name">
-                  <h2><?=$r['name']?></h2>
+                  <h2><?= $r['name'] ?></h2>
                 </div>
                 <div class="like">
                   <svg xmlns="http://www.w3.org/2000/svg" width="41.07" height="37.42" viewBox="0 0 41.07 37.42">
@@ -73,7 +74,7 @@ $rows = $stmt->fetchAll();
                 </div>
               </div>
               <div class="address">
-                <p><?=$r['address']?></p>
+                <p><?= $r['address'] ?></p>
               </div>
               <div class="star-price d-flex justify-content-between">
                 <div class="star d-flex">
@@ -86,17 +87,17 @@ $rows = $stmt->fetchAll();
                   </svg>
                 </div>
                 <div class="star-num">
-                  <p><?=$r['evaluation']?></p>
+                  <p><?= $r['evaluation'] ?></p>
                 </div>
                 <div class="price">
-                  <p>$<?=$r['price']?>起</p>
+                  <p>$<?= $r['price'] ?>起</p>
                 </div>
               </div>
             </div>
-            
+
           <?php endforeach ?>
         </div>
-      </div>      
+      </div>
       <div class="right col-xl-9 col-sm-6">
         <div id="app" class="container">
           <div id="map" class="google-api embed-responsive embed-responsive-16by9">
@@ -105,37 +106,71 @@ $rows = $stmt->fetchAll();
       </div>
     </div>
 
-    
+
 
   </section>
 
-  
+
   <script type="text/javascript">
     function initMap() {
       map = new google.maps.Map(document.getElementById("map"), {
         center: {
-          lat: 25.0332560350277,
-          lng: 121.54363972016898,
+          lat: 25.033107551743626,
+          lng: 121.56274007557415,
         },
-        zoom: 18,
+        zoom: 16,
       });
       eqfeed_callback(jsonData)
     }
     let jsonData = [{
-        "coordinates": [25.03325497600624, 121.54298245152613]
+        "coordinates": [25.02922479310193, 121.55793887523211]
       },
       {
-        "coordinates": [25.033575768393753, 121.54398559766761]
+        "coordinates": [25.03017780646895, 121.55864652468848]
       },
       {
-        "coordinates": [25.033218528659557, 121.54454621428782]
+        "coordinates": [25.032896250497124, 121.56371671294588]
       },
       {
-        "coordinates": [25.034236798873355, 121.54350283501232]
+        "coordinates": [25.0252243115941, 121.56405305950831]
       },
       {
-        "coordinates": [25.03364986243063, 121.54486096965724]
-      }
+        "coordinates": [25.04063288121306, 121.57561525566084]
+      },
+      {
+        "coordinates": [25.03559121545551, 121.56920683229094]
+      },
+      {
+        "coordinates": [25.037577653744, 121.55868281791454]
+      },
+      {
+        "coordinates": [25.03355183560994, 121.55559992119882]
+      },
+      {
+        "coordinates": [25.032458736603246, 121.55954320931441]
+      },
+      {
+        "coordinates": [25.032342075952695, 121.5587600104621]
+      },
+      {
+        "coordinates": [25.032225384609244, 121.55829867477901]
+      },
+      {
+        "coordinates": [25.031109536381724, 121.55789734612104]
+      },
+      {
+        "coordinates": [25.037320928110056, 121.56746572721127]
+      },
+      {
+        "coordinates": [25.031099810937384, 121.55814411092341]
+      },
+      {
+        "coordinates": [25.032964085970015, 121.56301933815787]
+      },
+      {
+        "coordinates": [25.034169501000544, 121.55938225893257]
+      },
+
     ];
 
     const eqfeed_callback = function(results) {
@@ -153,10 +188,66 @@ $rows = $stmt->fetchAll();
         });
       }
     };
+    // 瀏覽器支援 HTML5 定位方法
+    if (navigator.geolocation) {
+      // HTML5 定位抓取
+      navigator.geolocation.getCurrentPosition(function(position) {
+          mapServiceProvider(position.coords.latitude, position.coords.longitude);
+        },
+        function(error) {
+          switch (error.code) {
+            case error.TIMEOUT:
+              alert('連線逾時');
+              break;
 
+            case error.POSITION_UNAVAILABLE:
+              alert('無法取得定位');
+              break;
+
+            case error.PERMISSION_DENIED: // 拒絕
+              alert('請允許手機的GPS定位功能!');
+              break;
+
+            case error.UNKNOWN_ERROR:
+              alert('不明的錯誤，請稍候再試');
+              break;
+          }
+        });
+    } else { // 不支援 HTML5 定位
+      // 若支援 Google Gears
+      if (window.google && google.gears) {
+        try {
+          // 嘗試以 Gears 取得定位
+          var geo = google.gears.factory.create('beta.geolocation');
+          geo.getCurrentPosition(successCallback, errorCallback, {
+            enableHighAccuracy: true,
+            gearsRequestAddress: true
+          });
+        } catch (e) {
+          alert('定位失敗請稍候再試');
+        }
+      } else {
+        alert('請允許手機的GPS定位功能!');
+      }
+    }
+
+    // 取得 Gears 定位發生錯誤
+    function errorCallback(err) {
+      var msg = 'Error retrieving your location: ' + err.message;
+      alert(msg);
+    }
+
+    // 成功取得 Gears 定位
+    function successCallback(p) {
+      mapServiceProvider(p.latitude, p.longitude);
+    }
+
+    // 顯示經緯度
+    function mapServiceProvider(latitude, longitude) {
+      alert('經緯度：' + latitude + ', ' + longitude);
+    }
 
     // 
-    
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWsl0DRqMvWAZzlfqJyoNJYS6AjaFBU8&callback=initMap"></script>
