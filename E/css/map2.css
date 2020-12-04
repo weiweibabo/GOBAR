@@ -12,11 +12,11 @@ section {
 
 a {
   text-decoration: none !important;
-  color: #fff !important;
+  color: #fff;
 }
 a :hover {
   text-decoration: none !important;
-  color: #fff !important;
+  color: #fff;
 }
 .golden-line {
   background: url(../img/line04.png);
@@ -54,6 +54,10 @@ a :hover {
   border-radius: 0 6px 6px 6px;
 }
 
+.dropdown-menu a {
+  color: #000;
+}
+
 .dropdown-item:hover {
   background-color: rgba(255, 179, 82, 0.8);
 }
@@ -86,6 +90,11 @@ a :hover {
 
 .search:hover {
   height: 400px;
+  color: #fff;
+}
+.search a:hover {
+  height: 400px;
+  color: #fff;
 }
 
 .search:hover .pic {
