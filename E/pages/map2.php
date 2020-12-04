@@ -62,7 +62,7 @@ $rows = $stmt->fetchAll();
                 <div class="pic">
                   <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" />
                 </div>
-              </a>
+              
               <div class="name-like d-flex justify-content-between">
                 <div class="name">
                   <h2><?= $r['name'] ?></h2>
@@ -93,6 +93,7 @@ $rows = $stmt->fetchAll();
                   <p>$<?= $r['price'] ?>起</p>
                 </div>
               </div>
+              </a>
             </div>
 
           <?php endforeach ?>
