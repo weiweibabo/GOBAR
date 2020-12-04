@@ -83,7 +83,7 @@
                             <option value="">信義區</option>
                             <option value="">南港區</option>
                         </select>
-                        <button class="searchbutton">搜尋酒吧</button>
+                        <button class="searchbutton"><a class="searchtpmap" href="<?= WEB_ROOT ?>E/pages/map2.php"> 搜尋酒吧</a></button>
                     </div>
                 </div>
                 <div class="scrowdown">

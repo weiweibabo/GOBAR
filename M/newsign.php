@@ -33,7 +33,7 @@
 
             <div class="signaccount">
                 <div class="input-group">
-                    <input type="text" id="account" class="form-control" placeholder="輸入手機或電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="text" id="account" class="form-control" placeholder="電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
                     <div id="err1" class="err"></div>
                 </div>
             </div>

@@ -25,11 +25,11 @@
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                  <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">我的收藏</a>
+                  <a class="nav-link" href="<?= WEB_ROOT ?>J/html/Ordinary-Favorites.php" role="button" aria-haspopup="true" aria-expanded="false">我的收藏</a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
-                  <a class="nav-link" href="#">我的訂單</a>
+                  <a class="nav-link" href="<?= WEB_ROOT ?>J/html/history.php">我的訂單</a>
                 </li>
                 <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 " href="#">
                   <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />

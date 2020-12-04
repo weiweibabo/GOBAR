@@ -313,10 +313,20 @@ option {
   border-radius: 12px;
   border: none;
   background-color: #ff8d00;
-  color: white;
   margin-top: 35px;
+}
+.searchtpmap {
+  color: white;
   font-size: 30px;
   font-weight: 300;
+}
+.searchtpmap:link,
+.searchtpmap:visited,
+.searchtpmap:hover,
+.searchtpmap:active {
+  color: white;
+  text-decoration: none;
+  outline: none;
 }
 button:focus {
   outline: transparent;
@@ -987,6 +997,8 @@ h4 {
   .searchbutton {
     height: 40px;
     margin-top: 30px;
+  }
+  .searchtpmap {
     font-size: 20px;
     font-weight: 400;
   }
