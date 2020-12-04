@@ -33,7 +33,7 @@
                 </li>
                 <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 " href="#">
                   <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
-                  <a class="nav-link" href="#">登入/註冊</a>
+                  <a class="nav-link" href="<?= WEB_ROOT ?>M/newsign.php">登入/註冊</a>
                 </li>
               </ul>
             </div>

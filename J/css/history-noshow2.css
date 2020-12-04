@@ -190,6 +190,14 @@ main {
     height: 75px;
   }
 
+  .topname {
+    margin: 40px 0;
+  }
+
+  .topname1 {
+    margin: 40px 0;
+  }
+
   .date-text {
     font-size: 20px;
     padding-left: 10px;
