@@ -1,6 +1,6 @@
 // error message
-const account = document.getElementById('account');
-const password = document.getElementById('inputpassword');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 const errormsg = document.getElementById('errormsg');
 const send = document.getElementById('send');
 const err1 = document.getElementById('err1');
@@ -9,7 +9,7 @@ const singcardid = document.getElementById('singcardid');
 // const email_re = /([\w\-]+\@[\w\-]+\.[\w\-]+)/;
 send.addEventListener('click', () => {
   if (
-    account.value === ''
+    email.value === ''
         || password.value === ''
 
   ) {
@@ -22,7 +22,7 @@ send.addEventListener('click', () => {
     singcardid.classList.remove('singcalong');
   }
 
-  if (account.value === '') {
+  if (email.value === '') {
     err1.innerHTML = 'Error <i class="fas fa-exclamation-circle"></i>';
   } else {
     err1.innerHTML = '';

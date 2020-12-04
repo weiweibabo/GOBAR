@@ -3,15 +3,17 @@
 
 <?php
 if (isset($_SESSION['gobarUser'])) {
-    header('Location:../../../J/html/Ordinary-about.php');
+    header('Location:../J/html/Ordinary-about.php');
     exit;
 }
 
-if(isset($_SERVER['HTTP_REFERER'])){
-    $gotoURL=$_SERVER['HTTP_REFERER'];
-}else{
-    $gotoURL='../../../W/pages/order.php';
+if (isset($_SERVER['HTTP_REFERER'])) {
+    $gotoURL = $_SERVER['HTTP_REFERER'];
 }
+
+// else {
+//     $gotoURL = '../M/companypag.php';
+// }
 
 ?>
 
@@ -25,20 +27,19 @@ if(isset($_SERVER['HTTP_REFERER'])){
 <body>
     <div class="signathihgbox"></div>
     <div class="signbg">
-        
+
         <div id="singcardid" class="singcard">
             <div id="info_bar" class="alert alert-danger" role="alert" style="display: none">
             </div>
-                <div class="singlogo">
-                    <img src="../M/img/logowhite.svg" alt="">
-                </div>
+            <div class="singlogo">
+                <img src="../M/img/logowhite.svg" alt="">
+            </div>
 
-                <h3 class="singword1">會員登入</h3>
+            <h3 class="singword1">會員登入</h3>
 
-<<<<<<< HEAD
             <div class="signbycommunity">
                 <div class="signline"></div>
-                <p>用以下用以下帳號登入</p>
+                <p>用以下帳號登入</p>
                 <div class="signline"></div>
             </div>
             <div class="signcommunityicon">
@@ -51,39 +52,17 @@ if(isset($_SERVER['HTTP_REFERER'])){
                 <p>用GOBAR帳號登入</p>
                 <div class="signline"></div>
             </div>
-
-            <div class="signaccount">
-                <div class="input-group">
-                    <input type="text" id="account" class="form-control" placeholder="電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
-                    <div id="err1" class="err"></div>
-=======
-                <div class="signbycommunity">
-                    <div class="signline"></div>
-                    <p>用以下帳號登入</p>
-                    <div class="signline"></div>
->>>>>>> 483c310eeef6eddeb592b8b1d834fd1b7486ad9b
-                </div>
-                <div class="signcommunityicon">
-                    <div class="coloricon"><img src="../M/img/colorFB.svg" alt=""></div>
-                    <div class="coloricon"><img src="../M/img/colorIG.svg" alt=""></div>
-                    <div class="coloricon"><img src="../M/img/colorline.svg" alt=""></div>
-                </div>
-                <div class="signbycommunity">
-                    <div class="signline"></div>
-                    <p>用GOBAR帳號登入</p>
-                    <div class="signline"></div>
-                </div>
             <form action="" onsubmit="checkForm(); return false;">
                 <div class="signaccount">
                     <div class="input-group">
-                        <input type="text" id="account" class="form-control" placeholder="輸入電子郵件" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input type="email" id="email" class="form-control" placeholder="輸入電子郵件">
                         <div id="err1" class="err"></div>
                     </div>
                 </div>
 
                 <div class="signpassword">
                     <div class="input-group">
-                        <input id="inputpassword" type="text" class="form-control" placeholder="輸入密碼" aria-label="Username" aria-describedby="addon-wrapping">
+                        <input id="password" type="password" class="form-control" placeholder="輸入密碼" aria-label="Username" aria-describedby="addon-wrapping">
                         <div id="err2" class="err"></div>
                     </div>
                 </div>
@@ -106,22 +85,22 @@ if(isset($_SERVER['HTTP_REFERER'])){
     <script src="<?= WEB_ROOT ?>/J/js/sign.js"></script>
 
     <script>
-        const email = $('#email'),
-            password = $('#password'),
-            info_bar = $('#info_bar')
+        // email = $('#email'),
+        //     password = $('#password'),
+        const info_bar = $('#info_bar')
 
         function checkForm() {
 
-            $.post('login-api.php', {
-                email: email.val(),
-                password: password.val()
+            $.post('<?= WEB_ROOT ?>W/pages/login-api.php', {
+                email: email.value,
+                password: password.value
             }, function(data) {
                 if (data.success) {
                     info_bar
                         .removeClass('alert-danger')
                         .addClass('alert-success')
                         .text('登入成功');
-                    location.href = '<?=$gotoURL?>';
+                    location.href = '<?= $gotoURL ?>';
                 } else {
                     info_bar
                         .removeClass('alert-success')

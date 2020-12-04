@@ -10,7 +10,8 @@ if (empty($_POST['email'])) {
 }
 
 
-$sql = "SELECT * FROM `member` WHERE `email`=? AND `password`=SHA1(?)";
+$sql = "SELECT *
+ FROM `member` WHERE `email`=? AND `password`=SHA1(?)";
 $output['sql'] = $sql;
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
