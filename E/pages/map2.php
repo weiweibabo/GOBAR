@@ -110,13 +110,13 @@ $rows = $stmt->fetchAll();
 
   </section>
 
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWsl0DRqMvWAZzlfqJyoNJYS6AjaFBU8"></script>
   <script type="text/javascript">
-    function initMap() {
+    function initMap(lat, lng) {
       map = new google.maps.Map(document.getElementById("map"), {
         center: {
-          lat: 25.033107551743626,
-          lng: 121.56274007557415,
+          lat: lat, //25.033107551743626,
+          lng: lng, //121.56274007557415,
         },
         zoom: 16,
       });
@@ -245,12 +245,13 @@ $rows = $stmt->fetchAll();
     // 顯示經緯度
     function mapServiceProvider(latitude, longitude) {
       alert('經緯度：' + latitude + ', ' + longitude);
+      initMap(latitude, longitude);
     }
 
     // 
   </script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWsl0DRqMvWAZzlfqJyoNJYS6AjaFBU8&callback=initMap"></script>
+
 </body>
 <?php include __DIR__ . '/../../parts/about.php'; ?>
 
