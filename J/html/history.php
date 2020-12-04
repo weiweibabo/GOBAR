@@ -81,12 +81,12 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                         <div class="modal-content2">
                                             <div class="modal-body2">
                                                 <div class="warning">
-                                                    <img src="../img/警告.png" alt="" />
+                                                    <img src="<?= WEB_ROOT ?>J/Gobar-svg-png/PNG/警告.png" alt="">
                                                 </div>
                                                 <p class="modaltitle title-30">是否確定取消訂位?</p>
                                                 <div class="d-flex">
                                                     <button class="m-btn" type="button" data-dismiss="modal" aria-label="Close">返回</button>
-                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $orders[0]['sid'] ?> )" class="m-btn" data-sid="<?= $orders[0]['sid'] ?>" data-type="delete">
+                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $rows['sid'] ?> )" class="m-btn" data-sid="<?= $rows['sid'] ?>" data-type="delete">
                                                         確定
                                                     </button>
                                                 </div>
@@ -103,7 +103,6 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </main>
 
-
     <script script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -114,7 +113,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             console.log('hi', $('#del').data("sid"))
 
 
-            $.get('history-api.php', {
+            $.get('history-del.php', {
                 sid: $('#del').data('sid'),
                 type: $('#del').data('type'),
             }, function(response) {
@@ -125,7 +124,6 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         });
     </script>
-
 
 </body>
 
