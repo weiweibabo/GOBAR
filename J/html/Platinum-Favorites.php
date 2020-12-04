@@ -1,7 +1,7 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-<link rel="stylesheet" href="../css/member.css">
+<link rel="stylesheet" href="../css/Platinum-Favorites.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>

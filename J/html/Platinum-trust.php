@@ -1,7 +1,7 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 <?php
 
-$sql = sprintf("SELECT `date`,`weekdays`, `people`, `time` FROM `orders` ORDER BY `sid` desc limit 1 ; ");
+$sql = sprintf("SELECT * FROM `orders` WHERE `noshow`='xxx'");
 $stmt = $pdo->query($sql);
 $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -10,7 +10,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
-<link rel="stylesheet" href="../css/trust2.css">
+<link rel="stylesheet" href="../css/Platinum-trust.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
@@ -114,18 +114,20 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <path id="Path_151" data-name="Path 151" d="M2.687,2.687v20.6H15.525v2.687H0V0H15.524V2.687ZM14.629,21.5l-2.09-2.09,4.777-4.777H6.27V11.643H17.614L12.539,6.867l2.09-2.09,8.061,8.061Z" transform="translate(2)" fill="#fff" />
               </g>
             </svg>
-            <p class="web">登出</p>
+            <a href="<?= WEB_ROOT ?>/W/pages/logout.php">
+              <p class="web">登出</p>
+            </a>
           </div>
         </div>
 
         <div class="aboutme1">
-          <a href="../html/favorites-copy.php">
+          <a href="<?= WEB_ROOT ?>/J/html/Platinum-about.php">
             <p>關於我</p>
           </a>
         </div>
 
         <div class="aboutme2">
-          <a href="../html/trust2.php">
+          <a href="#">
             <p>信用評價</p>
           </a>
         </div>
@@ -175,7 +177,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src="../img/work-bar.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
-              <h2>安慰劑 Placebo Taipei</h2>
+              <h2>Odin 信義放感情</h2>
               <p>訂位時段 : <?= $orders[0]["time"] ?></p>
               <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
             </div>
@@ -208,7 +210,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src="../img/work-bar.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
-              <h2>安慰劑 Placebo Taipei</h2>
+              <h2>小後苑Backyard Jr.</h2>
               <p>訂位時段 : <?= $orders[0]["time"] ?></p>
               <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
             </div>
