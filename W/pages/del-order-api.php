@@ -1,10 +1,5 @@
-
-
-
 <?php
 require __DIR__ . '/../../parts/config.php';
-
-
 
 $output = [
     'success' => false,
@@ -14,23 +9,15 @@ $output = [
 
 $output['get'] = $_GET;
 
-
 // echo json_encode($output, JSON_UNESCAPED_UNICODE);
 
 // exit;
 
+$sql = "DELETE FROM `orders` WHERE `sid` = ? ";
 
-    $sql = "DELETE FROM `orders` WHERE `sid` = ? ";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([
+    $_GET['sid']
+]);
 
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([
-        $_GET['sid']
-    ]);
-
-    echo json_encode($output, JSON_UNESCAPED_UNICODE);
-
-
-
-
-
-
+echo json_encode($output, JSON_UNESCAPED_UNICODE);

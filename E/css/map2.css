@@ -140,22 +140,26 @@ section {
   position: fixed;
 } */
 @media screen and (max-width: 420px) {
+  section {
+    height: 1000px;
+  }
   .golden-line {
     background-image: none;
     position: relative;
     flex-direction: column;
+    height: 800px;
   }
   .left {
-    margin-left: 40px;
+    height: 1000px;
+    margin-left: 50px;
   }
   .google-api {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     position: absolute;
   }
   #app {
-    margin-left: 25px;
-    margin-bottom: 25px;
+    margin-left: 8px;
     order: 1;
   }
   .dropdown {
@@ -206,6 +210,6 @@ section {
     order: -1;
     left: 0;
     right: 0;
-    height: 350px;
+    height: 450px !important;
   }
 }
