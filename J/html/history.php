@@ -34,7 +34,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="col-6 col-xl-6">
                     <div class="topname1">
-                        <a href="<?=WEB_ROOT?>/J/html/history-noshow2.php">
+                        <a href="<?= WEB_ROOT ?>/J/html/history-noshow2.php">
                             <p>歷史紀錄</p>
                         </a>
                     </div>
@@ -60,7 +60,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             </svg>
                         </div>
                         <div class="photo col-xl-2">
-                            <img src="<?= WEB_ROOT ?>data/img/<?=$r['shop']?>.jpg" alt="" style="width: 250px; height: 212px;">
+                            <img src="<?= WEB_ROOT ?>data/img/<?= $r['shop'] ?>.jpg" alt="" style="width: 250px; height: 212px;">
                         </div>
                         <div class="name col-xl-3">
                             <h1><?= $r["shop"] ?></h1>
@@ -73,20 +73,59 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <p>查看詳情</p>
                             </div>
                             <div class="textbox1">
-                                <p>取消訂位</p>
+                                <button id="cancel-btn" class="cancel-btn btn" type="button" data-toggle="modal" data-target="#exampleModalCenter-2">
+                                    取消訂位
+                                </button>
+                                <div class="qrcode-modal modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content2">
+                                            <div class="modal-body2">
+                                                <div class="warning">
+                                                    <img src="../img/警告.png" alt="" />
+                                                </div>
+                                                <p class="modaltitle title-30">是否確定取消訂位?</p>
+                                                <div class="d-flex">
+                                                    <button class="m-btn" type="button" data-dismiss="modal" aria-label="Close">返回</button>
+                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $orders[0]['sid'] ?> )" class="m-btn" data-sid="<?= $orders[0]['sid'] ?>" data-type="delete">
+                                                        確定
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    
-                <?php endforeach ?>   
+                <?php endforeach ?>
             </div>
         </div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        $('#del').click((e) => {
+            e.preventDefault();
+            console.log('hi', $('#del').data("sid"))
+
+
+            $.get('history-api.php', {
+                sid: $('#del').data('sid'),
+                type: $('#del').data('type'),
+            }, function(response) {
+                console.log(response);
+                alert('您的訂位已取消')
+                location.href = "<?= WEB_ROOT ?>M/_index.php."
+            }, 'json');
+
+        });
+    </script>
+
 
 </body>
 
