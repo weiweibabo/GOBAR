@@ -21,7 +21,12 @@
             <p>SERCH BAR DRINKS HAVEFUN</p>
         </div>
 
-        <button id="button"></button>
+        <figure>
+            <div>
+                <span>Hover Me</span>
+                <span>Button</span>
+            </div>
+        </figure>
 
         <div class="logo">
             <img src="<?= WEB_ROOT ?>J/Gobar-svg-png/PNG/LOGO.png" alt="" width="120">
@@ -31,7 +36,7 @@
     </div>
 </body>
 
-<script>
+<!-- <script>
     $(function() {
         $("#button").click(function() {
             $("#button").addClass("onclic", 250, validate);
@@ -50,6 +55,6 @@
             }, 1250);
         }
     });
-</script>
+</script> -->
 
 </html>
