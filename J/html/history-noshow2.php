@@ -28,7 +28,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="row">
                 <div class="col-6 col-xl-6">
                     <div class="topname">
-                        <a href="<?=WEB_ROOT?>/J/html/history.php">
+                        <a href="<?= WEB_ROOT ?>/J/html/history.php">
                             <p>即將前往</p>
                         </a>
                     </div>
@@ -36,7 +36,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 <div class="col-6 col-xl-6">
                     <div class="topname1">
-                            <p>歷史紀錄</p>
+                        <p>歷史紀錄</p>
                     </div>
                 </div>
 
@@ -47,65 +47,57 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
                 <?php foreach ($rows as $r) : ?>
-                <div class="card2 d-flex position-relative">
-                    <div class="date col-1 col-xl-2">
-                        <p class="date-text"><?= substr($r["date"], 0, 4), '/', substr($r["date"], 5, 2) ?></p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
-                            <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
-                                <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
-                                <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
-                                <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="0" y="0"><?= substr($r["date"], 8, 2) ?></tspan>
-                                </text>
-                                <text id="FRIDAY" transform="translate(23 39.661)" fill="#fff" font-size="30" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                                    <tspan x="15" y="0"><?= substr($r["weekdays"], 0, 3) ?></tspan>
-                                </text>
-                            </g>
-                        </svg>
-                    </div>
+                    <div class="card2 d-flex position-relative">
+                        <div class="date col-1 col-xl-2">
+                            <p class="date-text"><?= substr($r["date"], 0, 4), '/', substr($r["date"], 5, 2) ?></p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="139" height="141" viewBox="0 0 139 141">
+                                <g id="Group_464" data-name="Group 464" transform="translate(0 0.339)">
+                                    <rect id="Rectangle_1464" data-name="Rectangle 1464" width="139" height="139" rx="15" transform="translate(0 1.661)" fill="#fff" />
+                                    <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H124a15,15,0,0,1,15,15V55a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0 -0.339)" fill="#ff8d00" />
+                                    <text id="_18" data-name="18" transform="translate(31 119.661)" fill="#ff8d00" font-size="64" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
+                                        <tspan x="0" y="0"><?= substr($r["date"], 8, 2) ?></tspan>
+                                    </text>
+                                    <text id="FRIDAY" transform="translate(23 39.661)" fill="#fff" font-size="30" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
+                                        <tspan x="15" y="0"><?= substr($r["weekdays"], 0, 3) ?></tspan>
+                                    </text>
+                                </g>
+                            </svg>
+                        </div>
 
-                    <div class="photo col-xl-2">
-                        <img src="<?= WEB_ROOT ?>data/img/<?=$r['shop']?>.jpg" alt="" style="width: 250px; height: 212px;">
-                    </div>
+                        <div class="photo col-xl-2">
+                            <img src="<?= WEB_ROOT ?>data/img/<?= $r['shop'] ?>.jpg" alt="" style="width: 250px; height: 212px;">
+                        </div>
 
-                    <div class="name col-xl-3">
-                        <h1><?= $r["shop"] ?></h1>
-                        <p>訂位時段 : <?= $r["time"] ?></p>
-                        <p>訂位人數 : <?= $r["people"] ?> 位</p>
-                    </div>
-                    <?php  if($r["noshow"]=='xxx'): ?>
-                        <div class="img-ink">
+                        <div class="name col-xl-3">
+                            <h1><?= $r["shop"] ?></h1>
+                            <p>訂位時段 : <?= $r["time"] ?></p>
+                            <p>訂位人數 : <?= $r["people"] ?> 位</p>
+                        </div>
+                        <?php if ($r["noshow"] == 'xxx') : ?>
+                            <div class="img-ink">
                                 <img src="../Gobar-svg-png/PNG/印章.png" alt="" width="300px" height="300px">
-                        </div>
-                        <div class="noshowtext">
-                            <p>NO SHOW</p>
-                        </div>
-                        <div class="black">
+                            </div>
+                            <div class="noshowtext">
+                                <p>NO SHOW</p>
+                            </div>
+                            <div class="black">
 
-                        </div>
-                    <?php endif; ?>
-                    <div class="col-1 col-xl-1"></div>
-                    <div class="answer col-1 col-xl-3">
-                        <div class="textbox2">
-                            <p>查看詳情</p>
-                        </div>
-                        <div class="textbox1">
-                            <p>給予評價</p>
+                            </div>
+                        <?php endif; ?>
+                        <div class="col-1 col-xl-1"></div>
+                        <div class="answer col-1 col-xl-3">
+                            <div class="textbox2">
+                                <p>查看詳情</p>
+                            </div>
+                            <div class="textbox1">
+                                <p>給予評價</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <?php endforeach ?>
-                
-
-                
-
             </div>
         </div>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </body>
 
