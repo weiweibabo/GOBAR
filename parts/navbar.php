@@ -19,22 +19,40 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto py-4 py-md-0">
                 <li class="nav-item searchword pl-4 pl-md-0 ml-0 ml-md-4">
+                <a href="">
                   <img src="<?= WEB_ROOT ?>img/search.svg" alt="" />
                   <a class="nav-link" href="#">搜尋酒吧</a>
+                  </a>
                 </li>
 
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/Ordinary-Favorites.php">
                   <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                  <a class="nav-link" href="<?= WEB_ROOT ?>J/html/Ordinary-Favorites.php" role="button" aria-haspopup="true" aria-expanded="false">我的收藏</a>
+                  <a class="nav-link" role="button" href="<?= WEB_ROOT ?>J/html/Ordinary-Favorites.php" aria-haspopup="true" aria-expanded="false">我的收藏</a>
+                  </a>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/history.php">
                   <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
                   <a class="nav-link" href="<?= WEB_ROOT ?>J/html/history.php">我的訂單</a>
+                  </a>
                 </li>
+                <?php if (!isset($_SESSION['gobarUser'])):?>
                 <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 " href="#">
+                <a class="navlinkicon" href="<?= WEB_ROOT ?>M/newsign.php">
                   <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
                   <a class="nav-link" href="<?= WEB_ROOT ?>M/newsign.php">登入/註冊</a>
+                  </a>
                 </li>
+                <?php endif?>
+                <?php if (isset($_SESSION['gobarUser'])):?>
+                <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 " href="#">
+                <a class="navlinkicon" href="<?= WEB_ROOT ?>M/newsign.php">
+                  <img src="<?= WEB_ROOT ?>img/member.svg" alt="" />
+                  <a class="nav-link" href="<?= WEB_ROOT ?>M/newsign.php">會員中心</a>
+                  </a>
+                </li>
+                <?php endif?>
               </ul>
             </div>
           </nav>

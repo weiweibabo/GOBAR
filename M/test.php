@@ -1,8 +1,8 @@
 <?php
 require __DIR__. '/../parts/config.php';
 
-$stmt = $pdo->query("SELECT * FROM shop");
+$stmt = $pdo->query("SELECT * FROM shop WHERE name LIKE '%＄_keywordinput%'");
 
-$row = $stmt->fetch();
+$row = $stmt->fetchall();
 
 echo json_encode($row,JSON_UNESCAPED_UNICODE);
