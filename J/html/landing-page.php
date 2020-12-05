@@ -9,7 +9,7 @@
 
 <body>
 
-    <div class="container-fuild px-0 mx-0 position-relative">
+    <div class="container-fuild position-relative">
         <div class="black-box"></div>
 
         <video loop="true" autoplay="autoplay" muted="true">
@@ -21,13 +21,35 @@
             <p>SERCH BAR DRINKS HAVEFUN</p>
         </div>
 
+        <button id="button"></button>
+
         <div class="logo">
             <img src="<?= WEB_ROOT ?>J/Gobar-svg-png/PNG/LOGO.png" alt="" width="120">
         </div>
 
         <div class="black-box"></div>
     </div>
-
 </body>
+
+<script>
+    $(function() {
+        $("#button").click(function() {
+            $("#button").addClass("onclic", 250, validate);
+        });
+
+        function validate() {
+            setTimeout(function() {
+                $("#button").removeClass("onclic");
+                $("#button").addClass("validate", 450, callback);
+            }, 2250);
+        }
+
+        function callback() {
+            setTimeout(function() {
+                $("#button").removeClass("validate");
+            }, 1250);
+        }
+    });
+</script>
 
 </html>
