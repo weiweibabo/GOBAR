@@ -122,17 +122,13 @@ body {
   font-weight: 100;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
-  padding: 25px 0 50px 25px;
+  padding: 25px 0 25px 25px;
 }
 
 .black-text2 p {
   color: white;
   margin-left: 20px;
   font-size: 16px;
-}
-
-.black-text2 {
-  margin-bottom: px;
 }
 
 .aboutme1 {
@@ -146,6 +142,7 @@ body {
 }
 
 .aboutme1 a {
+  color: white;
   text-decoration: none;
 }
 

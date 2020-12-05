@@ -132,7 +132,7 @@ body {
   font-weight: 100;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
-  padding: 25px 0 50px 25px;
+  padding: 25px 0 25px 25px;
 }
 
 .black-text2 p {
@@ -198,7 +198,6 @@ body {
 .black-text p {
   color: white;
   font-size: 16px;
-  opacity: 0.5;
 }
 
 .black-text h2 {
@@ -390,10 +389,6 @@ body {
   }
 
   .black-text h2 {
-    margin-bottom: 10px;
-  }
-
-  .black-text p {
     margin-bottom: 10px;
   }
 
