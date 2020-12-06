@@ -1,16 +1,18 @@
 <?php
-include __DIR__. '/../../parts/config.php';
+include __DIR__ . '/../../parts/config.php';
 
-if(! isset($_GET['sid'])){
-    header('Location: map2.php'); exit;
+if (!isset($_GET['sid'])) {
+    header('Location: map2.php');
+    exit;
 }
 
 $sid = intval($_GET['sid']);
 
 $sql = "SELECT * FROM shop WHERE sid=$sid";
 $rows = $pdo->query($sql)->fetch();
-if(empty($rows)){
-    header('Location: map2.php'); exit;
+if (empty($rows)) {
+    header('Location: map2.php');
+    exit;
 }
 ?>
 
@@ -34,7 +36,7 @@ if(empty($rows)){
     <section>
         <div class=" store">
             <div class="store-name d-flex">
-                <p><?=$rows['name']?></p>
+                <p><?= $rows['name'] ?></p>
                 <div class="medal d-flex">
                     <img src="../../J/Gobar-svg-png/PNG/黃金.png" alt="">
                 </div>
@@ -73,10 +75,10 @@ if(empty($rows)){
                     </div>
                     <div class="d-flex">
                         <div class="address">
-                            <h2><?=$rows['address']?></h2>
-                            <p>&nbsp;連絡電話 : <?=$rows['mobile']?> &nbsp;&nbsp;&nbsp; 營業時間 : <?=$rows['business_hours']?></p>
+                            <h2><?= $rows['address'] ?></h2>
+                            <p>&nbsp;連絡電話 : <?= $rows['mobile'] ?> &nbsp;&nbsp;&nbsp; 營業時間 : <?= $rows['business_hours'] ?></p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -289,6 +291,23 @@ if(empty($rows)){
 
         </div>
 
+    </section>
+    <section class="line06 phone">
+        <div class="intro container-fluid">
+            <h3>特殊酒品介紹</h3>
+            <div class="mobi-drinks">
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink01.jpg" alt="">
+                    <h1>Colonizer's Deal</h1>
+                    <p>一杯經典Tiki調酒，讓想像回到大航海的時代。</p>
+                </div>
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink02.jpg" alt="">
+                    <h1>Flying Gaucho, Yee-Haw! </h1>
+                    <p>急著長大偷喝啤酒的小屁孩，長大後才發現了啤酒苦澀是為了逃避。</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="line03">
         <div class="intro container-fluid">
@@ -533,7 +552,7 @@ if(empty($rows)){
 
         <h2>CLICK</h2>
         <div class="form-wrapper">
-            <a href="<?=WEB_ROOT?>W/pages/order.php?name=<?=$rows['name']?>">
+            <a href="<?= WEB_ROOT ?>W/pages/order.php?name=<?= $rows['name'] ?>">
                 <div class="sp-time">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">
