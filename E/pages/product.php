@@ -280,6 +280,23 @@
         </div>
 
     </section>
+    <section class="line06 phone">
+        <div class="intro container-fluid">
+            <h3>特殊酒品介紹</h3>
+            <div class="mobi-drinks">
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink01.jpg" alt="">
+                    <h1>Colonizer's Deal</h1>
+                    <p>一杯經典Tiki調酒，讓想像回到大航海的時代。</p>
+                </div>
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink02.jpg" alt="">
+                    <h1>Flying Gaucho, Yee-Haw! </h1>
+                    <p>急著長大偷喝啤酒的小屁孩，長大後才發現了啤酒苦澀是為了逃避。</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="line03">
         <div class="intro container-fluid">
             <h3>特殊餐點推薦</h3>

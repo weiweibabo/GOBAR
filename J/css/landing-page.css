@@ -9,14 +9,14 @@ video {
 }
 
 .nav-text p {
-  font-size: 10rem;
+  font-size: 8rem;
   color: white;
   position: absolute;
-  top: 120;
-  left: 100;
+  top: 400;
+  left: 350;
   font-weight: bold;
-  width: 1800px;
-  font-family: "JetBrains Mono", monospace;
+  width: 1600px;
+  font-family: "Dosis", sans-serif;
 }
 
 .nav-text {
@@ -46,8 +46,8 @@ figure {
   perspective: 500px;
   -webkit-perspective: 500px;
   position: absolute;
-  top: 550;
-  left: 830;
+  top: 680;
+  right: 450;
 }
 
 figure div {
@@ -67,7 +67,7 @@ span {
   height: 100%;
   position: absolute;
   box-sizing: border-box;
-  border: 5px solid #fff;
+  border: 5px solid orange;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 50px;
   font-size: 17pt;
@@ -76,14 +76,14 @@ span {
 }
 
 span:nth-child(1) {
-  color: #fff;
+  color: white;
   transform: translate3d(0, 0, 30px);
   -webkit-transform: translate3d(0, 0, 30px);
 }
 
 span:nth-child(2) {
-  color: #719459;
-  background: #fff;
+  color: white;
+  background: orange;
   transform: rotateX(90deg) translate3d(0, 0, 30px);
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
