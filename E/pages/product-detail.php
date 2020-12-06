@@ -580,7 +580,33 @@ if (empty($rows)) {
             </a>
         </div>
     </div>
-
+    <section class="mobi ">
+        <div class="mobi-bottom d-flex">
+            <a href="">
+                <div class="time col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
+                        <g id="Clock" transform="translate(0 28.099) rotate(-60)">
+                            <path id="Path_13" data-name="Path 13" d="M4.867,4.867A14.728,14.728,0,0,1,16.223,0,14.728,14.728,0,0,1,27.579,4.867a14.728,14.728,0,0,1,4.867,11.356,14.728,14.728,0,0,1-4.867,11.356,14.728,14.728,0,0,1-11.356,4.867A14.728,14.728,0,0,1,4.867,27.579C1.893,24.335,0,20.82,0,16.223A14.728,14.728,0,0,1,4.867,4.867ZM23.524,23.524l1.893-1.893-6.76-6.76L16.223,4.056h-2.7V16.223a2.455,2.455,0,0,0,.811,1.893.944.944,0,0,0,.541.27Z" transform="translate(0)" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="like col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.516" height="27.811" viewBox="0 0 31.516 27.811">
+                        <path id="Heart" d="M29.022,2.544a8.468,8.468,0,0,0-12.053,0L15.783,3.73,14.6,2.544A8.523,8.523,0,0,0,2.544,14.6L15.783,27.836,29.022,14.6a8.468,8.468,0,0,0,0-12.053" transform="translate(-0.025 -0.025)" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="up col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27.868" height="27.868" viewBox="0 0 27.868 27.868">
+                        <path id="Path_10" data-name="Path 10" d="M13.934,0,11.4,2.533l9.591,9.591H0v3.619H20.992L11.4,25.335l2.533,2.533L27.868,13.934Z" transform="translate(0 27.868) rotate(-90)" fill="#fff" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <script>
         $(function() {
