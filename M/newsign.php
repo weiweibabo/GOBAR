@@ -3,7 +3,7 @@
 
 <?php
 if (isset($_SESSION['gobarUser'])) {
-    header('Location:../J/html/Ordinary-about.php');
+    header('Location:../J/html/Platinum-about.php');
     exit;
 }
 
