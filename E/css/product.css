@@ -509,31 +509,51 @@ Img {
 
 .sp-time svg {
   margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .sp-time p {
   margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .sp-like svg {
   margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .sp-like p {
   margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .sp-up svg {
   margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .sp-up p {
   margin-left: 15px;
+  margin-bottom: 10px;
 }
 .mobi {
   display: none;
 }
-@media screen and (max-width: 414px) {
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+.phone {
+  display: none;
+}
+@media screen and (max-width: 420px) {
   section {
     background-image: none;
   }
@@ -624,6 +644,9 @@ Img {
   .go-news p {
     font-size: 8px;
   }
+  .col-itme p {
+    letter-spacing: 1px;
+  }
   .water-fall-word {
     display: none;
   }
@@ -633,17 +656,19 @@ Img {
     margin-left: 70px;
   }
   .col-item--height2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
+    margin-bottom: 20px;
   }
   .col-item--height3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 250px;
+    margin-top: 310px;
     font-size: 10px;
+    margin-bottom: 20px;
   }
   .col-item--height3 p {
     padding: 5px;
@@ -653,35 +678,39 @@ Img {
   }
   .col-item--height3 h4 {
     font-size: 20px;
-    padding-left: 80px;
+    padding-left: 90px;
   }
   .col-item--weight1 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 500px;
+    margin-top: 560px;
+    margin-bottom: 20px;
   }
   .col-item--weight2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 750px;
+    margin-bottom: 20px;
   }
   .col-item--weight3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 1000px;
+    margin-bottom: 20px;
   }
   .col-item--height4 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 1250px;
+    margin-bottom: 20px;
   }
   .col-item--height4 p {
     padding: 5px;
@@ -732,12 +761,12 @@ Img {
     font-size: 10px;
   }
   .food-intro-pic03 img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
   .food-intro-pic03 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     font-size: 10px;
     top: 0;
     left: 0;
@@ -908,6 +937,9 @@ Img {
   .go-news p {
     font-size: 8px;
   }
+  .col-itme p {
+    letter-spacing: 1px;
+  }
   .water-fall-word {
     display: none;
   }
@@ -917,17 +949,19 @@ Img {
     margin-left: 70px;
   }
   .col-item--height2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
+    margin-bottom: 20px;
   }
   .col-item--height3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 250px;
+    margin-top: 310px;
     font-size: 10px;
+    margin-bottom: 20px;
   }
   .col-item--height3 p {
     padding: 5px;
@@ -940,32 +974,36 @@ Img {
     padding-left: 80px;
   }
   .col-item--weight1 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 500px;
+    margin-top: 610px;
+    margin-bottom: 20px;
   }
   .col-item--weight2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 750px;
+    margin-bottom: 20px;
   }
   .col-item--weight3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 1000px;
+    margin-bottom: 20px;
   }
   .col-item--height4 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
     margin-top: 1250px;
+    margin-bottom: 20px;
   }
   .col-item--height4 p {
     padding: 5px;
@@ -1011,6 +1049,10 @@ Img {
   }
   .food-intro-pic02 {
     font-size: 10px;
+  }
+  .food-intro-pic03 img {
+    width: 300px;
+    height: 300px;
   }
   .comment-pic {
     height: 250px;
@@ -1139,7 +1181,6 @@ Img {
   .d-flex {
     flex-direction: column;
     margin: 0 auto;
-    top: 0;
   }
   .business-hour p {
     font-size: 10px;
@@ -1175,6 +1216,9 @@ Img {
   .go-news p {
     font-size: 8px;
   }
+  . .col-itme p {
+    letter-spacing: 1px;
+  }
   .water-fall-word {
     display: none;
   }
@@ -1184,72 +1228,87 @@ Img {
     margin-left: 70px;
   }
   .col-item--height2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
+    margin-bottom: 20px;
   }
   .col-item--height3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 250px;
+    margin-top: 310px;
     font-size: 10px;
+    margin-bottom: 20px;
   }
   .col-item--height3 p {
-    padding: 5px;
+    padding: 15px;
   }
   .col-item--height3 h3 {
     font-size: 20px;
+    padding-left: 20px;
   }
   .col-item--height3 h4 {
     font-size: 20px;
-    padding-left: 80px;
+    padding-left: 110px;
   }
   .col-item--weight1 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 500px;
+    margin-top: 620px;
+    margin-bottom: 20px;
   }
   .col-item--weight2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 750px;
+    margin-top: 930px;
+    margin-bottom: 20px;
   }
   .col-item--weight3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 1000px;
+    margin-top: 1240px;
+    margin-bottom: 20px;
   }
   .col-item--height4 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 1250px;
+    margin-top: 1550px;
+    margin-bottom: 20px;
   }
   .col-item--height4 p {
-    padding: 5px;
+    padding: 15px;
     font-size: 10px;
   }
   .col-item--height4 h3 {
     font-size: 20px;
+    padding-left: 20px;
   }
   .col-item--height4 h4 {
     font-size: 20px;
-    padding-left: 80px;
+    padding-left: 100px;
   }
   .line01 {
     background-image: none;
     margin-bottom: 500px;
+    height: 1500px;
   }
-  .front {
+  .drinks-intro {
+    display: none;
+  }
+  .line02 {
+    display: none;
+  }
+  .container.front {
     width: 250px;
     height: 250px;
     top: 0;
@@ -1268,16 +1327,27 @@ Img {
     margin-bottom: 50px;
   }
   .food-intro-pic01 {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 300px;
     font-size: 10px;
+    margin-bottom: 10px;
   }
   .food-intro-pic02 img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 300px;
+  }
+  .food-intro-pic03 img {
+    width: 100%;
+    height: 100%;
+  }
+  .food-intro-pic03 {
+    width: 280px;
+    height: 300px;
+    margin-bottom: 10px !important;
   }
   .food-intro-pic02 {
     font-size: 10px;
+    margin-bottom: 10px !important;
   }
   .comment-pic {
     height: 250px;
@@ -1329,7 +1399,6 @@ Img {
     background-color: #141f2b;
     flex-direction: row;
   }
-
   .mobi-bottom {
     flex-direction: row;
     justify-content: space-between;
@@ -1344,6 +1413,25 @@ Img {
   .time svg {
     width: 40px;
     height: 40px;
+  }
+  .line06 {
+    display: block;
+    height: 950px;
+  }
+  .mobi-drinks-pic {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    color: white;
+  }
+  .mobi-drinks-pic img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .mobi-drinks-pic h1 {
+    font-size: 20px;
   }
 }
 
@@ -1443,6 +1531,9 @@ Img {
   .go-news p {
     font-size: 8px;
   }
+  . .col-itme p {
+    letter-spacing: 1px;
+  }
   .water-fall-word {
     display: none;
   }
@@ -1452,72 +1543,87 @@ Img {
     margin-left: 70px;
   }
   .col-item--height2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
+    margin-bottom: 20px;
   }
   .col-item--height3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 250px;
+    margin-top: 310px;
     font-size: 10px;
+    margin-bottom: 20px;
   }
   .col-item--height3 p {
-    padding: 5px;
+    padding: 15px;
   }
   .col-item--height3 h3 {
     font-size: 20px;
+    padding-left: 20px;
   }
   .col-item--height3 h4 {
     font-size: 20px;
-    padding-left: 80px;
+    padding-left: 110px;
   }
   .col-item--weight1 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     left: 0;
     top: 0;
-    margin-top: 500px;
+    margin-top: 620px;
+    margin-bottom: 20px;
   }
   .col-item--weight2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 750px;
+    margin-top: 930px;
+    margin-bottom: 20px;
   }
   .col-item--weight3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 1000px;
+    margin-top: 1240px;
+    margin-bottom: 20px;
   }
   .col-item--height4 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     top: 0;
     left: 0;
-    margin-top: 1250px;
+    margin-top: 1550px;
+    margin-bottom: 20px;
   }
   .col-item--height4 p {
-    padding: 5px;
+    padding: 15px;
     font-size: 10px;
   }
   .col-item--height4 h3 {
     font-size: 20px;
+    padding-left: 20px;
   }
   .col-item--height4 h4 {
     font-size: 20px;
-    padding-left: 80px;
+    padding-left: 100px;
   }
   .line01 {
     background-image: none;
     margin-bottom: 500px;
+    height: 1500px;
   }
-  .front {
+  .drinks-intro {
+    display: none;
+  }
+  .line02 {
+    display: none;
+  }
+  .container.front {
     width: 250px;
     height: 250px;
     top: 0;
@@ -1536,16 +1642,27 @@ Img {
     margin-bottom: 50px;
   }
   .food-intro-pic01 {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 300px;
     font-size: 10px;
+    margin-bottom: 10px;
   }
   .food-intro-pic02 img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 300px;
+  }
+  .food-intro-pic03 img {
+    width: 100%;
+    height: 100%;
+  }
+  .food-intro-pic03 {
+    width: 280px;
+    height: 300px;
+    margin-bottom: 10px !important;
   }
   .food-intro-pic02 {
     font-size: 10px;
+    margin-bottom: 10px !important;
   }
   .comment-pic {
     height: 250px;
@@ -1611,5 +1728,24 @@ Img {
   .time svg {
     width: 40px;
     height: 40px;
+  }
+  .line06 {
+    display: block;
+    height: 950px;
+  }
+  .mobi-drinks-pic {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    color: white;
+  }
+  .mobi-drinks-pic img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .mobi-drinks-pic h1 {
+    font-size: 20px;
   }
 }
