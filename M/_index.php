@@ -44,14 +44,13 @@
                 </div>
 
                 <div class="searchbox col-xl-4 col-12">
-                    <div class="searchform">
-                        <form id="keywordform" class="keywordbox" method="get" action="test.php">
+                    <form id="keywordform"  class="searchform" method="get" action="test.php">
+                        <div class="keywordbox">
                             <div class="magnifier">
                                 <img src="./img/searcho.svg" alt="">
                             </div>
-                            <input class="input1" name="keywordinput" type="text" placeholder="輸入關鍵字">
-
-                        </form>
+                            <input class="input1" name="keywordinput" id="keywordinput" type="text" placeholder="輸入關鍵字">
+                      </div>
                         <select class="area" name="" id="">
                             <option value="">請選擇地區</option>
                             <option value="">萬華區</option>
@@ -84,7 +83,7 @@
                             <option value="">南港區</option>
                         </select>
                         <button class="searchbutton" type="submit">搜尋酒吧</button>
-                    </div>
+                    </form>
                 </div>
                 <div class="scrowdown">
                     <img src="./img/down.svg" alt="">
@@ -363,8 +362,10 @@
 
 
 
-    <!-- 這裡是top10bar的carousel -->
+
     <script>
+
+    //    <!-- 這裡是top10bar的carousel -->     
         function moveToSelected(element) {
             if (element == "next") {
                 var selected = $(".selected").next();
@@ -514,7 +515,7 @@
                     $('.cupcontain').css('opacity', '1');
                 } else {
                     $('.cupcontain').css('opacity', '0');
-                }
+           ㄋ     }
 
                 if (scrollNow > 2100) {
                     $('.by1 img').css('transform', 'scale(1.2)');
@@ -605,6 +606,42 @@
         // $(".blogbtl").on('click', function() {
 
         // });
+
+// 這裡是模糊搜尋
+const keywordform = $('#keywordform')
+              keywordinput = $('#keywordinput')
+
+        function checkForm() {
+
+            $.post('<?= WEB_ROOT ?>W/pages/search-result.php', {
+                keywordinput: keywordinput.value,
+            }, function(data) {
+                if (keywordinput.value!='') {
+                    info_bar
+                        .removeClass('alert-danger')
+                        .addClass('alert-success')
+                        .text('登入成功');
+                    location.href = '<?= $gotoURL ?>';
+                } else {
+                    info_bar
+                        .removeClass('alert-success')
+                        .addClass('alert-danger')
+                        .text('登入失敗');
+                }
+                info_bar.slideDown();
+
+                setTimeout(function() {
+                    info_bar.slideUp();
+                }, 2000);
+            }, 'json');
+        }
+
+
+
+
+
+
+
     </script>
 
 </body>

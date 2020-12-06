@@ -5,7 +5,7 @@ session_start();
 
 unset($_SESSION['gobarUser']);
 //跳回上一頁
-echo "<script>history.back(-1)</script>"
+// echo "<script>history.back(-1)</script>"
 
-// header('Location:product-list.php');
+header('Location:../M/_index.php');
 ?>
