@@ -13,18 +13,18 @@
         <div class="black-box"></div>
 
         <video loop="true" autoplay="autoplay" muted="true">
-            <source type="video/mp4" src="<?= WEB_ROOT ?>J/video/production.mp4">
+            <source type="video/mp4" src="<?= WEB_ROOT ?>J/video/newbartender.mp4">
             </source>
         </video>
 
         <div class="nav-text">
-            <p>SERCH BAR DRINKS HAVEFUN</p>
+            <p>SERCH BAR & HAVE FUN</p>
         </div>
 
         <figure>
             <div>
-                <span>Hover Me</span>
-                <span>Button</span>
+                <span>Touchme</span>
+                <span>Home</span>
             </div>
         </figure>
 
