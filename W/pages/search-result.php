@@ -1,13 +1,14 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 
 <?php
-$sql = sprintf("SELECT * FROM `shop` ORDER BY `sid` ASC");
 
+// get keyword
+$keyword = $_GET['keyword'];
+
+$sql = "SELECT * FROM `shop` WHERE `name` LIKE '%$keyword%'";
 $stmt = $pdo->query($sql);
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$rows = $stmt->fetchAll();
-
-// echo json_encode($rows, JSON_UNESCAPED_UNICODE);
 ?>
 
 
@@ -62,6 +63,7 @@ $rows = $stmt->fetchAll();
         
             <div class="card-area d-flex col-xl-12" ">
                 <?php foreach ($rows as $r) : ?>
+                    <span>$rows</span>
                     <div class="card2 col-xl-3 col-12 px-0">
                     <a href="<?= WEB_ROOT ?>E/pages/product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
                             <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" width="378" height="365">

@@ -44,7 +44,12 @@
                 </div>
 
                 <div class="searchbox col-xl-4 col-12">
-                    <form id="keywordform"  class="searchform" method="get" action="<?= WEB_ROOT ?>W/pages/search-result.php">
+                    <form 
+                        id="keywordform" 
+                        name="ketwordform" 
+                        class="searchform" 
+                        onsubmit="checkForm(); return false;"
+                    >
                         <div class="keywordbox">
                             <div class="magnifier">
                                 <img src="./img/searcho.svg" alt="">
@@ -82,7 +87,12 @@
                             <option value="">信義區</option>
                             <option value="">南港區</option>
                         </select>
-                        <button id="searchbuttonid" class="searchbutton" type="submit">搜尋酒吧</button>
+                        <button 
+                            id="searchbuttonid" 
+                            class="searchbutton" 
+                            type="submit" >
+                            搜尋酒吧
+                        </button>
                     </form>
                 </div>
                 <div class="scrowdown">
@@ -491,7 +501,7 @@
         $(window).scroll(function() {
             let scrollNow = $(this).scrollTop();
             let windowSize = $(this).width();
-            console.log('scrollnow', scrollNow)
+            // console.log('scrollnow', scrollNow)
             if (windowSize < 767) {
                 if (scrollNow > 1200) {
                     $('.drink1 img').css('transform', 'scale(1.2)');
@@ -515,7 +525,7 @@
                     $('.cupcontain').css('opacity', '1');
                 } else {
                     $('.cupcontain').css('opacity', '0');
-           ㄋ     }
+                 }
 
                 if (scrollNow > 2100) {
                     $('.by1 img').css('transform', 'scale(1.2)');
@@ -569,8 +579,8 @@
 
             if (windowSize < 767) {
                 $('.blogwrap').css('left', '-5%');
-                console.log('hi', windowSize);
-                console.log('hi2', windowSize < 767);
+                // console.log('hi', windowSize);
+                // console.log('hi2', windowSize < 767);
             }
         })
         $(".blogbtm").click(function() {
@@ -607,31 +617,27 @@
 
         // });
 
-// 這裡是模糊搜尋
+    // 這裡是模糊搜尋
         const keywordform = $('#keywordform')
-              keywordinput = $('#keywordinput')
+        const keywordinput = $('#keywordinput')
 
         function checkForm() {
 
-            $.post('<?= WEB_ROOT ?>W/pages/search-result.php', {
-                keywordinput: keywordinput.value,
-            }, function(data) {
-                if (keywordinput.value!='') {
-                    
-                    location.href = '<?= WEB_ROOT ?>W/pages/search-result.php';
-                } else {
-                    info_bar
-                        .removeClass('alert-success')
-                        .addClass('alert-danger')
-                        .text('登入失敗');
+            $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', 
+                {
+                    keyword: keywordinput.val(),
+                }, 
+                function(data) {
+                // success: true
+                if(data.success) {
+                    if (data.keyword) {
+                        location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+                    }
                 }
-                info_bar.slideDown();
-
-                setTimeout(function() {
-                    info_bar.slideUp();
-                }, 2000);
             }, 'json');
         }
+
+        
 
 
 
