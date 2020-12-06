@@ -1,16 +1,18 @@
 <?php
-include __DIR__. '/../../parts/config.php';
+include __DIR__ . '/../../parts/config.php';
 
-if(! isset($_GET['sid'])){
-    header('Location: map2.php'); exit;
+if (!isset($_GET['sid'])) {
+    header('Location: map2.php');
+    exit;
 }
 
 $sid = intval($_GET['sid']);
 
 $sql = "SELECT * FROM shop WHERE sid=$sid";
 $rows = $pdo->query($sql)->fetch();
-if(empty($rows)){
-    header('Location: map2.php'); exit;
+if (empty($rows)) {
+    header('Location: map2.php');
+    exit;
 }
 ?>
 
@@ -34,7 +36,7 @@ if(empty($rows)){
     <section>
         <div class=" store">
             <div class="store-name d-flex">
-                <p><?=$rows['name']?></p>
+                <p><?= $rows['name'] ?></p>
                 <div class="medal d-flex">
                     <img src="../../J/Gobar-svg-png/PNG/黃金.png" alt="">
                 </div>
@@ -73,10 +75,10 @@ if(empty($rows)){
                     </div>
                     <div class="d-flex">
                         <div class="address">
-                            <h2><?=$rows['address']?></h2>
-                            <p>&nbsp;連絡電話 : <?=$rows['mobile']?> &nbsp;&nbsp;&nbsp; 營業時間 : <?=$rows['business_hours']?></p>
+                            <h2><?= $rows['address'] ?></h2>
+                            <p>&nbsp;連絡電話 : <?= $rows['mobile'] ?> &nbsp;&nbsp;&nbsp; 營業時間 : <?= $rows['business_hours'] ?></p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -289,6 +291,23 @@ if(empty($rows)){
 
         </div>
 
+    </section>
+    <section class="line06 phone">
+        <div class="intro container-fluid">
+            <h3>特殊酒品介紹</h3>
+            <div class="mobi-drinks">
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink01.jpg" alt="">
+                    <h1>Colonizer's Deal</h1>
+                    <p>一杯經典Tiki調酒，讓想像回到大航海的時代。</p>
+                </div>
+                <div class="mobi-drinks-pic col-12 px-0">
+                    <img src="../img/attic-drink02.jpg" alt="">
+                    <h1>Flying Gaucho, Yee-Haw! </h1>
+                    <p>急著長大偷喝啤酒的小屁孩，長大後才發現了啤酒苦澀是為了逃避。</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="line03">
         <div class="intro container-fluid">
@@ -533,7 +552,7 @@ if(empty($rows)){
 
         <h2>CLICK</h2>
         <div class="form-wrapper">
-            <a href="<?=WEB_ROOT?>W/pages/order.php?name=<?=$rows['name']?>">
+            <a href="<?= WEB_ROOT ?>W/pages/order.php?name=<?= $rows['name'] ?>">
                 <div class="sp-time">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">
@@ -561,7 +580,33 @@ if(empty($rows)){
             </a>
         </div>
     </div>
-
+    <section class="mobi ">
+        <div class="mobi-bottom d-flex">
+            <a href="">
+                <div class="time col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
+                        <g id="Clock" transform="translate(0 28.099) rotate(-60)">
+                            <path id="Path_13" data-name="Path 13" d="M4.867,4.867A14.728,14.728,0,0,1,16.223,0,14.728,14.728,0,0,1,27.579,4.867a14.728,14.728,0,0,1,4.867,11.356,14.728,14.728,0,0,1-4.867,11.356,14.728,14.728,0,0,1-11.356,4.867A14.728,14.728,0,0,1,4.867,27.579C1.893,24.335,0,20.82,0,16.223A14.728,14.728,0,0,1,4.867,4.867ZM23.524,23.524l1.893-1.893-6.76-6.76L16.223,4.056h-2.7V16.223a2.455,2.455,0,0,0,.811,1.893.944.944,0,0,0,.541.27Z" transform="translate(0)" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="like col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.516" height="27.811" viewBox="0 0 31.516 27.811">
+                        <path id="Heart" d="M29.022,2.544a8.468,8.468,0,0,0-12.053,0L15.783,3.73,14.6,2.544A8.523,8.523,0,0,0,2.544,14.6L15.783,27.836,29.022,14.6a8.468,8.468,0,0,0,0-12.053" transform="translate(-0.025 -0.025)" fill="#fff" fill-rule="evenodd" />
+                    </svg>
+                </div>
+            </a>
+            <a href="">
+                <div class="up col-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27.868" height="27.868" viewBox="0 0 27.868 27.868">
+                        <path id="Path_10" data-name="Path 10" d="M13.934,0,11.4,2.533l9.591,9.591H0v3.619H20.992L11.4,25.335l2.533,2.533L27.868,13.934Z" transform="translate(0 27.868) rotate(-90)" fill="#fff" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <script>
         $(function() {
