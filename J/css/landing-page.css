@@ -13,10 +13,10 @@ video {
   color: white;
   position: absolute;
   top: 400;
-  left: 180;
+  left: 350;
   font-weight: bold;
   width: 1600px;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Dosis", sans-serif;
 }
 
 .nav-text {
@@ -46,8 +46,8 @@ figure {
   perspective: 500px;
   -webkit-perspective: 500px;
   position: absolute;
-  top: 710;
-  right: 340;
+  top: 680;
+  right: 450;
 }
 
 figure div {

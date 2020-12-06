@@ -1,9 +1,9 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 
 <link rel="stylesheet" href="../css/landing-page.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet" />
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 
@@ -23,8 +23,8 @@
 
         <figure>
             <div>
-                <span>Touchme</span>
-                <span>Home</span>
+                <span>TOUCHME</span>
+                <span>HOME</span>
             </div>
         </figure>
 
