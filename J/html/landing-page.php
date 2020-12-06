@@ -4,6 +4,8 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 
@@ -18,7 +20,9 @@
         </video>
 
         <div class="nav-text">
-            <p>SERCH BAR & HAVE FUN</p>
+            <p class="nav-text1">SERCH BAR &</p>
+            <p class="nav-text2">HAVE FUN</p>
+            <p class="nav-text3">2020 LET'S ENJOY</p>
         </div>
 
         <figure>
