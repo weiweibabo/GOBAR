@@ -65,7 +65,7 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" />
+            <img src="<?= WEB_ROOT ?>/J/Gobar-svg-png/PNG/白金.png" alt="" width="100" height="100" />
             <p>白金會員</p>
           </div>
           <!--  -->
@@ -77,8 +77,8 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <p class="namebottom">年度累計3筆</p>
             </div>
             <div class="name2 col-7 col-xl-2 px-0 d-flex">
-              <img src="../htdocs/GOBAR/J/Gobar-svg-png/SVG/黃金.svg" alt="" width="100" height="100">
-              <p></p>
+              <img src="<?= WEB_ROOT ?>/J/Gobar-svg-png/PNG/白金.png" alt="" width="100" height="100" />
+              <p>白金會員</p>
             </div>
           </div>
           <!--  -->

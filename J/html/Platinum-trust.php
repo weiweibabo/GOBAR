@@ -65,7 +65,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
           </div>
 
           <div class="web name2 col-xl-2 px-0">
-            <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" />
+            <img src="../Gobar-svg-png/SVG/白金.svg" alt="" width="100" height="100" />
             <p>白金會員</p>
           </div>
           <!--  -->

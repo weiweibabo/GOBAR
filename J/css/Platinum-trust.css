@@ -240,6 +240,10 @@ body {
 }
 
 @media (max-width: 414px) {
+  .about {
+    margin-top: 350px;
+  }
+
   #Member-Centre {
     height: 1200px;
   }
