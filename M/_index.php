@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="searchbox col-xl-4 col-12">
-                    <form id="keywordform"  class="searchform" method="get" action="test.php">
+                    <form id="keywordform"  class="searchform" method="get" action="<?= WEB_ROOT ?>W/pages/search-result.php">
                         <div class="keywordbox">
                             <div class="magnifier">
                                 <img src="./img/searcho.svg" alt="">
@@ -608,7 +608,7 @@
         // });
 
 // 這裡是模糊搜尋
-const keywordform = $('#keywordform')
+        const keywordform = $('#keywordform')
               keywordinput = $('#keywordinput')
 
         function checkForm() {
@@ -617,11 +617,8 @@ const keywordform = $('#keywordform')
                 keywordinput: keywordinput.value,
             }, function(data) {
                 if (keywordinput.value!='') {
-                    info_bar
-                        .removeClass('alert-danger')
-                        .addClass('alert-success')
-                        .text('登入成功');
-                    location.href = '<?= $gotoURL ?>';
+                    
+                    location.href = '<?= WEB_ROOT ?>W/pages/search-result.php';
                 } else {
                     info_bar
                         .removeClass('alert-success')
