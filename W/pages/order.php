@@ -1,6 +1,15 @@
     
 
     <?php include __DIR__ . '/../../parts/config.php'; ?>
+
+    <?php
+
+    //判斷是否有登入會員 如未登入會導到登入頁
+      if (!isset($_SESSION['gobarUser'])) {
+          header('Location:../../M/newsign.php');
+          exit;
+      }
+    ?>
   
     <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
@@ -277,6 +286,7 @@
       });
 
      const barName = document.getElementById('bar-name');
+     const phone = document.getElementById('phonenumber');
      const remarks = $('#remarks');
         $('#send').click(function(e) {
             e.preventDefault();
@@ -298,7 +308,7 @@
               time:time.value,
               people:persons.value,
               name:name.value,
-              mobile:phonenumber.value,
+              phone:phonenumber.value,
               email:email.value,
               remarks:remarks.val(),
             }, function(response) {

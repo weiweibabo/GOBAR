@@ -119,7 +119,7 @@
                 <p>訂位時段 : <?= $orders[0]["time"] ?></p>
                 <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
                 <p>訂位姓名 : <?= $orders[0]["name"] ?> 先生/小姐</p>
-                <p>連絡電話 : <?= $orders[0]["mobile"] ?></p>
+                <p>連絡電話 : <?= $orders[0]["phone"] ?></p>
                 <p>電子信箱 : <?= $orders[0]["email"] ?></p>
               </div>
             </div>

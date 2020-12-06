@@ -143,8 +143,8 @@ window.onload = () => {
   // On Input Change Events
   name.addEventListener('input', function () {
     if (name.value.length === 0) {
-      document.getElementById('svgname').innerHTML = 'Joanna Chen';
-      document.getElementById('svgnameback').innerHTML = 'Joanna Chen';
+      document.getElementById('svgname').innerHTML = 'Kevin Chou';
+      document.getElementById('svgnameback').innerHTML = 'Kevin Chou';
     } else {
       document.getElementById('svgname').innerHTML = this.value;
       document.getElementById('svgnameback').innerHTML = this.value;
