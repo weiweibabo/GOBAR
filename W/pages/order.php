@@ -314,7 +314,7 @@
             }, function(response) {
                 console.log(response);
                 if(JSON.parse(response).success){
-                  location.href="<?=WEB_ROOT?>W/pages/payment.php"
+                  location.href="<?= WEB_ROOT?>W/pages/payment.php"
                 }
                 
             })
