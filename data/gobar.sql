@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2020-12-03 07:57:50
+-- 產生時間： 2020-12-07 08:26:12
 -- 伺服器版本： 10.4.14-MariaDB
 -- PHP 版本： 7.3.23
 
@@ -81,7 +81,7 @@ CREATE TABLE `orders` (
   `time` varchar(255) NOT NULL,
   `people` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `mobile` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `remarks` varchar(255) NOT NULL,
   `noshow` varchar(255) NOT NULL
@@ -91,7 +91,7 @@ CREATE TABLE `orders` (
 -- 傾印資料表的資料 `orders`
 --
 
-INSERT INTO `orders` (`sid`, `shop`, `date`, `weekdays`, `time`, `people`, `name`, `mobile`, `email`, `remarks`, `noshow`) VALUES
+INSERT INTO `orders` (`sid`, `shop`, `date`, `weekdays`, `time`, `people`, `name`, `phone`, `email`, `remarks`, `noshow`) VALUES
 (1, 'Odin信義放感情', '2020-12-01', 'TUESDAY', '22:30:00', 2, 'wei', '0988888888', 'asass@com', 'noooo', 'xxx'),
 (2, '小後苑Backyard Jr.', '2020-11-24', 'THURSDAY', '21:30', 2, 'wei', '0911111111', 'aaa@com', 'hi', 'xxx'),
 (3, 'Alchemy Bar', '2020-11-30', 'MONDAY', '23:00', 2, 'boo', '0912222222', 'aa@com', 'aaaa', ''),
@@ -102,8 +102,9 @@ INSERT INTO `orders` (`sid`, `shop`, `date`, `weekdays`, `time`, `people`, `name
 (20, '安慰劑 Placebo Taipei', '2020-12-04', 'FRIDAY', '21:00', 3, '汪哈吉', '0917777777', 'shiba@dog.com', 'cute', ''),
 (21, 'Attic Trade co.', '2020-12-05', 'SATURDAY', '20:00', 1, '汪汪', '0986666666', 'dog@dd.com', '', ''),
 (22, 'FRANK Taipei', '2020-12-03', 'THURSDAY', '23:00', 1, 'abc', '0988888888', 'abc@c.com', '', ''),
-(28, 'BARCODE Taipei', '2020-12-18', 'FRIDAY', '21:30', 5, '1', '1', '1@1.com', '', ''),
-(29, 'BARCODE Taipei', '2020-12-03', 'THURSDAY', '21:30', 5, 'ee', '123', '123@c.com', '', '');
+(39, 'A Light', '2020-12-06', 'SUNDAY', '21:30', 5, '小小兵', '0911111123', 'abc@a.com', '', ''),
+(40, 'A Light', '2020-12-06', 'SUNDAY', '21:30', 6, '6', '6', '6@6.com', '', ''),
+(41, '小後苑Backyard Jr.', '2020-12-07', 'MONDAY', '20:30', 2, 'a', '1', '1@a.com', '', '');
 
 -- --------------------------------------------------------
 
@@ -161,7 +162,7 @@ INSERT INTO `shop` (`sid`, `name`, `evaluation`, `address`, `mobile`, `business_
 (32, 'R&D Cocktail Lab', '4.4', '台北市大安區安和路二段23巷4號', '02-2704-7818', '19:00-03:00', '300', 2),
 (33, 'ABV Bar&Kitchen', '4.4', '台北市大安區敦化南路一段233巷61號', '02-8732-2345', '12:00-01:30', '200', 2),
 (34, 'GINZA SAKOH Taipei ', '4.5', '台北市中山區中山北路二段39巷10號', '02-2567-8433', '19:00-01:00', '400', 3),
-(35, 'SoShow Bar ', '4.4', ' 台北市中山區中山北路一段47號2f', '02-2541-8787', '18:00-02:00', '250', 3),
+(35, 'SoShow Bar', '4.4', ' 台北市中山區中山北路一段47號2f', '02-2541-8787', '18:00-02:00', '250', 3),
 (36, '傻瓜屋咖啡廳小酒館', '4.0', '台北市中山區中山北路一段62號', '02-8786-7652', '20:00–02:00', '250', 3),
 (37, '發琴吧 Ginspiration', '4.7', '台北市大同區迪化街一段76號3樓', '02-2556-2526', '18:30-00:00', '250', 4),
 (38, '小城外Bar CityNorth', '4.5', '台北市中山區中山北路一段62號', '02-8786-7652', '20:00–02:00', '140', 4),
@@ -215,7 +216,7 @@ ALTER TABLE `member`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `shop`
