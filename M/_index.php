@@ -44,19 +44,14 @@
                 </div>
 
                 <div class="searchbox col-xl-4 col-12">
-                    <form 
-                        id="keywordform" 
-                        name="ketwordform" 
-                        class="searchform" 
-                        onsubmit="checkForm(); return false;"
-                    >
+                    <form id="keywordform" name="ketwordform" class="searchform" onsubmit="checkForm(); return false;">
                         <div class="keywordbox">
                             <div class="magnifier">
                                 <img src="./img/searcho.svg" alt="">
                             </div>
                             <input class="input1" name="keywordinput" id="keywordinput" type="text" placeholder="輸入關鍵字">
-                      </div>
-                        <select class="area" name="" id="">
+                        </div>
+                        <select class="area" name="" id="selectareaid">
                             <option value="">請選擇地區</option>
                             <option value="">萬華區</option>
                             <option value="">中正區</option>
@@ -87,10 +82,7 @@
                             <option value="">信義區</option>
                             <option value="">南港區</option>
                         </select>
-                        <button 
-                            id="searchbuttonid" 
-                            class="searchbutton" 
-                            type="submit" >
+                        <button id="searchbuttonid" class="searchbutton" type="submit">
                             搜尋酒吧
                         </button>
                     </form>
@@ -372,10 +364,9 @@
 
 
 
-
+    <!-- <script src="<?= WEB_ROOT ?>/M/js/searchbtn.js"></script> -->
     <script>
-
-    //    <!-- 這裡是top10bar的carousel -->     
+        //    <!-- 這裡是top10bar的carousel -->     
         function moveToSelected(element) {
             if (element == "next") {
                 var selected = $(".selected").next();
@@ -525,7 +516,7 @@
                     $('.cupcontain').css('opacity', '1');
                 } else {
                     $('.cupcontain').css('opacity', '0');
-                 }
+                }
 
                 if (scrollNow > 2100) {
                     $('.by1 img').css('transform', 'scale(1.2)');
@@ -617,34 +608,24 @@
 
         // });
 
-    // 這裡是模糊搜尋
+        // 這裡是模糊搜尋
         const keywordform = $('#keywordform')
         const keywordinput = $('#keywordinput')
 
         function checkForm() {
 
-            $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', 
-                {
+            $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', {
                     keyword: keywordinput.val(),
-                }, 
+                },
                 function(data) {
-                // success: true
-                if(data.success) {
-                    if (data.keyword) {
-                        location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+                    // success: true
+                    if (data.success) {
+                        if (data.keyword) {
+                            location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+                        }
                     }
-                }
-            }, 'json');
+                }, 'json');
         }
-
-        
-
-
-
-
-
-
-
     </script>
 
 </body>

@@ -164,6 +164,7 @@
 }
 
 .nav-item img {
+  width: auto;
   height: 30px;
   margin: 0 auto;
 }
@@ -325,6 +326,17 @@ button {
   font-size: 20px;
   font-weight: 100;
 }
+.navselect option {
+  color: black;
+}
+.navsearchbuttonlink:link,
+.navsearchbuttonlink:visited,
+.navsearchbuttonlink:hover,
+.navsearchbuttonlink:active {
+  text-decoration: none;
+  outline: none;
+}
+
 .navsearchbutton {
   border-radius: 12px;
   border: none;
