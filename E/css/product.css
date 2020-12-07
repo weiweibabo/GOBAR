@@ -474,8 +474,9 @@ Img {
 }
 
 .sp {
+  z-index: 3;
   position: fixed;
-  top: 200px;
+  top: 300px;
   right: 0px;
   cursor: pointer;
   width: 60px;
@@ -1101,7 +1102,7 @@ a:active {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: #141f2b;
+    background-color: #002a4c;
     flex-direction: row;
   }
   .mobi-bottom {
@@ -1396,7 +1397,7 @@ a:active {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: #141f2b;
+    background-color: #002a4c;
     flex-direction: row;
   }
   .mobi-bottom {
@@ -1711,7 +1712,7 @@ a:active {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: #141f2b;
+    background-color: #002a4c;
     flex-direction: row;
   }
   .mobi-bottom {
