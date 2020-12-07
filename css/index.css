@@ -996,6 +996,8 @@ h4 {
   .searchbutton {
     height: 40px;
     margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
   }
   .searchtpmap {
     font-size: 20px;
