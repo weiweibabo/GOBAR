@@ -564,7 +564,7 @@
             $('.blogbtr').css('background-color', '#ff8d00');
             $('.blogbtm').css('background-color', '#ffb352');
             $('.blogbtl').css('background-color', '#ffb352');
-            $('.blogwrap').css('left', '-66%');
+            $('.blogwrap').css('left', '-1%');
 
             let windowSize = $(window).width();
 
@@ -578,7 +578,7 @@
             $('.blogbtm').css('background-color', '#ff8d00');
             $('.blogbtr').css('background-color', '#ffb352');
             $('.blogbtl').css('background-color', '#ffb352');
-            $('.blogwrap').css('left', '-166%');
+            $('.blogwrap').css('left', '-100%');
             let windowSize = $(window).width();
             if (windowSize < 767) {
                 $('.blogwrap').css('left', '-115%');
@@ -590,7 +590,7 @@
             $('.blogbtl').css('background-color', '#ff8d00');
             $('.blogbtm').css('background-color', '#ffb352');
             $('.blogbtr').css('background-color', '#ffb352');
-            $('.blogwrap').css('left', '-233%');
+            $('.blogwrap').css('left', '-200%');
             let windowSize = $(window).width();
             if (windowSize < 767) {
                 $('.blogwrap').css('left', '-225%');
