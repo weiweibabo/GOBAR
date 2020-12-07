@@ -277,7 +277,7 @@
             }, function(response) {
               console.log(response);
               if (JSON.parse(response).success) {
-                location.href = "./payment.php"
+                location.href = "<?= WEB_ROOT ?>W/pages/payment.php"
               }
 
             })

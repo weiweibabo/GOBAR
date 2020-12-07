@@ -79,8 +79,8 @@
                             <option value="">工業風</option>
                             <option value="">英倫風</option>
                             <option value="">奢華風</option>
-                            <option value="">信義區</option>
-                            <option value="">南港區</option>
+                            <option value="">和風</option>
+                            <option value="">同志酒吧</option>
                         </select>
                         <button id="searchbuttonid" class="searchbutton" type="submit">
                             搜尋酒吧
