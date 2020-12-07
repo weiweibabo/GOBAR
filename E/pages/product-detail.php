@@ -571,7 +571,7 @@ if (empty($rows)) {
                 </div>
             </a>
             <a href="">
-                <div class="sp-up">
+                <div class="sp-up up">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27.868" height="27.868" viewBox="0 0 27.868 27.868">
                         <path id="Path_10" data-name="Path 10" d="M13.934,0,11.4,2.533l9.591,9.591H0v3.619H20.992L11.4,25.335l2.533,2.533L27.868,13.934Z" transform="translate(0 27.868) rotate(-90)" fill="#fff" />
                     </svg>
@@ -613,6 +613,12 @@ if (empty($rows)) {
             $('.sp').click(function() {
                 $('.form-wrapper').slideToggle("slow");
             });
+        });
+
+        // 返回最上面
+        $('.up').click(function() {
+            $('html, body').animate({ scrollTop: 0}, 'slow');
+            return false;
         });
     </script>
 </body>
