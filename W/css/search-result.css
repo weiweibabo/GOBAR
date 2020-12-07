@@ -13,11 +13,10 @@ body {
   background-color: #141f2b;
 }
 main {
-  background-image: cover;
-  background-position: 3px 250px;
+  background-position: 3px 240px;
   background-repeat: no-repeat;
   background-image: url(../img/golden-line3.png);
-  background-size: 70%;
+  background-size: 100%;
   background-attachment: fixed;
 }
 
@@ -145,6 +144,10 @@ main {
 
 .card2 {
   margin-left: 5rem;
+}
+
+.card2 img {
+  object-fit: cover;
 }
 
 .svg {
