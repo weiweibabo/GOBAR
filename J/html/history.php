@@ -73,10 +73,10 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <p>查看詳情</p>
                             </div>
                             <div class="textbox1">
-                                <button id="cancel-btn" class="cancel-btn btn" type="button" data-toggle="modal" data-target="#exampleModalCenter-2">
+                                <button id="cancel-btn" class="cancel-btn btn" type="button" data-toggle="modal" data-target="#exampleModalCenter-<?= $r['sid'] ?>">
                                     取消訂位
                                 </button>
-                                <div class="qrcode-modal modal fade" id="exampleModalCenter-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="qrcode-modal modal fade" id="exampleModalCenter-<?= $r['sid'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content2">
                                             <div class="modal-body2">
@@ -86,7 +86,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <p class="modaltitle title-30">是否確定取消訂位?</p>
                                                 <div class="d-flex">
                                                     <button class="m-btn" type="button" data-dismiss="modal" aria-label="Close">返回</button>
-                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $rows['sid'] ?> )" class="m-btn" data-sid="<?= $rows['sid'] ?>" data-type="delete">
+                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $r['sid'] ?>); return false;" class="m-btn" data-sid="<?= $r['sid'] ?>" data-type="delete">
                                                         確定
                                                     </button>
                                                 </div>
