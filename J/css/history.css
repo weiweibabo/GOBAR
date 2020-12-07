@@ -175,6 +175,10 @@ main {
 
 /*取消訂位 modal */
 
+.modal-body2 p {
+  font-size: 30px;
+}
+
 .modal-content2 {
   height: 400px;
   width: 500px;

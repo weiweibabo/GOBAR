@@ -68,19 +68,19 @@
                         </select>
                         <select class="area" name="" id="">
                             <option value="">選擇調酒類別</option>
-                            <option value="">萬華區</option>
-                            <option value="">中正區</option>
-                            <option value="">大安區</option>
-                            <option value="">信義區</option>
-                            <option value="">南港區</option>
+                            <option value="">威士忌</option>
+                            <option value="">琴酒</option>
+                            <option value="">啤酒</option>
+                            <option value="">綜合調酒</option>
+                            <option value="">無菜單調酒</option>
                         </select>
                         <select class="area" name="" id="">
                             <option value="">選擇酒吧風格</option>
-                            <option value="">萬華區</option>
-                            <option value="">中正區</option>
-                            <option value="">大安區</option>
-                            <option value="">信義區</option>
-                            <option value="">南港區</option>
+                            <option value="">工業風</option>
+                            <option value="">英倫風</option>
+                            <option value="">奢華風</option>
+                            <option value="">和風</option>
+                            <option value="">同志酒吧</option>
                         </select>
                         <button id="searchbuttonid" class="searchbutton" type="submit">
                             搜尋酒吧

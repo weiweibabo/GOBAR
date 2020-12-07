@@ -27,8 +27,10 @@
 
         <figure>
             <div>
-                <span>TOUCHME</span>
-                <span>HOME</span>
+                <a href="index_.php">
+                    <span>TOUCHME</span>
+                    <span>HOME</span>
+                </a>
             </div>
         </figure>
 
