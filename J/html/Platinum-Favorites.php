@@ -31,7 +31,7 @@
 
             <div class="card-area d-flex" style="padding: 5rem 0;">
 
-                <div class="card2 col-xl-4 col-sm-12 px-0">
+                <div class="card2 col-xl-4 col-sm-12 px-0 position-relative">
                     <img src="<?= WEB_ROOT ?>data/img/Odin信義放感情.jpg" alt="" width="378" height="360">
                     <div class="card1">
                         <h2>Odin信義放感情</h2>
@@ -49,6 +49,15 @@
                             <p>我要訂位</p>
                         </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card2 col-xl-4 col-sm-12 px-0">
@@ -62,18 +71,20 @@
                             <h1>$200起</h1>
                         </div>
                     </div>
-                    <div class="text-box d-flex">
-                        <div class="bottom-text">
-                            <a href="#">
-                                <p>我要訂位</p>
-                            </a>
-                        </div>
-                        <div class="bottom-text1">
-                            <a href="#">
-                                <p>我要取消</p>
-                            </a>
-                        </div>
+                    <div class="bottom-text">
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card2 col-xl-4 col-sm-12 px-0">
@@ -92,6 +103,15 @@
                             <p>我要訂位</p>
                         </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card2 col-xl-4 col-sm-12 px-0">
@@ -110,6 +130,15 @@
                             <p>我要訂位</p>
                         </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card2 col-xl-4 col-sm-12 px-0">
@@ -128,6 +157,15 @@
                             <p>我要訂位</p>
                         </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card2 col-xl-4 col-sm-12 px-0">
@@ -146,6 +184,15 @@
                             <p>我要訂位</p>
                         </a>
                     </div>
+                    <a href="">
+                        <div class="error">
+                            <svg id="remove" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                                <path id="Path_5812" data-name="Path 5812" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1.25A8.75,8.75,0,1,0,18.75,10,8.76,8.76,0,0,0,10,1.25Zm0,0" fill="white" />
+                                <path id="Path_5813" data-name="Path 5813" d="M161.352,167.138a.535.535,0,0,1-.378-.913l5.294-5.294a.535.535,0,1,1,.757.757l-5.294,5.294A.535.535,0,0,1,161.352,167.138Zm0,0" transform="translate(-153.998 -153.957)" fill="white" />
+                                <path id="Path_5814" data-name="Path 5814" d="M166.623,167.158a.53.53,0,0,1-.378-.157l-5.294-5.293a.535.535,0,0,1,.756-.756L167,166.245a.534.534,0,0,1-.379.913Zm0,0" transform="translate(-153.977 -153.976)" fill="white" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

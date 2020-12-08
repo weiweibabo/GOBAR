@@ -14,6 +14,16 @@ main {
   background-repeat: no-repeat;
 }
 
+.error {
+  position: absolute;
+  top: 20px;
+  left: 320px;
+}
+
+.error svg {
+  fill: white;
+}
+
 .header {
   height: 120px;
 }
@@ -184,7 +194,12 @@ main {
   }
 
   .bottom-text {
-    margin-left: 250px;
+    margin-left: 265px;
+  }
+
+  .bottom-text1 {
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   .container-fluid {
