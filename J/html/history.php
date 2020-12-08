@@ -117,7 +117,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             }, function(response) {
                 console.log(response);
                 alert('您的訂位已取消')
-                location.href = "<?= WEB_ROOT ?>M/_index.php."
+                location.href = "../../J/html/history.php."
             }, 'json');
 
         });
