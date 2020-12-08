@@ -27,7 +27,7 @@
 
         <figure>
             <div>
-                <a href="index_.php">
+                <a href="_index.php">
                     <span>TOUCHME</span>
                     <span>HOME</span>
                 </a>
