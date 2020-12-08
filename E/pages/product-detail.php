@@ -582,7 +582,7 @@ $rows = $pdo->query($sql)->fetch();
     </div>
     <section class="mobi ">
         <div class="mobi-bottom d-flex">
-            <a href="<?= WEB_ROOT ?>W/pages/order.php">
+            <a href="<?= WEB_ROOT ?>W/pages/order.php?name=<?= $rows['name'] ?>">
                 <div class="time col-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">
