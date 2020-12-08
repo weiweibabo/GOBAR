@@ -1,20 +1,20 @@
 <?php
 include __DIR__ . '/../../parts/config.php';
 
-if (!isset($_GET['sid'])) {
-    header('Location: map2.php');
-    exit;
-}
+// if (!isset($_GET['sid'])) {
+//     header('Location: map2.php');
+//     exit;
+// }
 
 $sid = intval($_GET['sid']);
 
 $sql = "SELECT * FROM shop WHERE sid=$sid";
 $rows = $pdo->query($sql)->fetch();
-if (empty($rows)) {
-    header('Location: map2.php');
-    exit;
-}
-?>
+// if (empty($rows)) {
+//     header('Location: map2.php');
+//     exit;
+// }
+// ?>
 
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
