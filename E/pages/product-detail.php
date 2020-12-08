@@ -1,20 +1,20 @@
 <?php
 include __DIR__ . '/../../parts/config.php';
 
-if (!isset($_GET['sid'])) {
-    header('Location: map2.php');
-    exit;
-}
+// if (!isset($_GET['sid'])) {
+//     header('Location: map2.php');
+//     exit;
+// }
 
 $sid = intval($_GET['sid']);
 
 $sql = "SELECT * FROM shop WHERE sid=$sid";
 $rows = $pdo->query($sql)->fetch();
-if (empty($rows)) {
-    header('Location: map2.php');
-    exit;
-}
-?>
+// if (empty($rows)) {
+//     header('Location: map2.php');
+//     exit;
+// }
+// ?>
 
 <?php include __DIR__ . '/../../parts/html-head.php'; ?>
 
@@ -582,7 +582,7 @@ if (empty($rows)) {
     </div>
     <section class="mobi ">
         <div class="mobi-bottom d-flex">
-            <a href="<?= WEB_ROOT ?>W/pages/order.php">
+            <a href="<?= WEB_ROOT ?>W/pages/order.php?name=<?= $rows['name'] ?>">
                 <div class="time col-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="44.322" height="44.322" viewBox="0 0 44.322 44.322">
                         <g id="Clock" transform="translate(0 28.099) rotate(-60)">
