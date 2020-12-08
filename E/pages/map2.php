@@ -59,37 +59,37 @@ $rows = $stmt->fetchAll();
                 <div class="pic">
                   <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" />
                 </div>
-              
-              <div class="name-like d-flex justify-content-between">
-                <div class="name">
-                  <h2><?= $r['name'] ?></h2>
+
+                <div class="name-like d-flex justify-content-between">
+                  <div class="name">
+                    <h2><?= $r['name'] ?></h2>
+                  </div>
+                  <div class="like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41.07" height="37.42" viewBox="0 0 41.07 37.42">
+                      <path id="Path_848" data-name="Path 848" d="M20.535,37.42C9.494,29.948,3.7,23.151,1.328,17.463-5.035,2.217,13.138-5.073,20.535,3.926c7.4-9,25.57-1.709,19.208,13.536C37.368,23.151,31.577,29.948,20.535,37.42Z" fill="#fff" />
+                    </svg>
+                  </div>
                 </div>
-                <div class="like">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="41.07" height="37.42" viewBox="0 0 41.07 37.42">
-                    <path id="Path_848" data-name="Path 848" d="M20.535,37.42C9.494,29.948,3.7,23.151,1.328,17.463-5.035,2.217,13.138-5.073,20.535,3.926c7.4-9,25.57-1.709,19.208,13.536C37.368,23.151,31.577,29.948,20.535,37.42Z" fill="#fff" />
-                  </svg>
+                <div class="address">
+                  <p><?= $r['address'] ?></p>
                 </div>
-              </div>
-              <div class="address">
-                <p><?= $r['address'] ?></p>
-              </div>
-              <div class="star-price d-flex justify-content-between">
-                <div class="star d-flex">
-                  <svg id="Rating" xmlns="http://www.w3.org/2000/svg" width="105.368" height="16.683" viewBox="0 0 105.368 16.683">
-                    <path id="_5" data-name="5" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(87.807 0)" fill="#fff" />
-                    <path id="_4" data-name="4" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(65.855 0)" fill="#fff" />
-                    <path id="_3" data-name="3" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(43.904 0)" fill="#fff" />
-                    <path id="_2" data-name="2" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(21.952 0)" fill="#fff" />
-                    <path id="_1" data-name="1" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(0 0)" fill="#fff" />
-                  </svg>
+                <div class="star-price d-flex justify-content-between">
+                  <div class="star d-flex">
+                    <svg id="Rating" xmlns="http://www.w3.org/2000/svg" width="105.368" height="16.683" viewBox="0 0 105.368 16.683">
+                      <path id="_5" data-name="5" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(87.807 0)" fill="#fff" />
+                      <path id="_4" data-name="4" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(65.855 0)" fill="#fff" />
+                      <path id="_3" data-name="3" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(43.904 0)" fill="#fff" />
+                      <path id="_2" data-name="2" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(21.952 0)" fill="#fff" />
+                      <path id="_1" data-name="1" d="M8.781,13.408l5.426,3.275-1.44-6.173,4.794-4.153-6.313-.536L8.781,0,6.313,5.822,0,6.357,4.794,10.51l-1.44,6.173Z" transform="translate(0 0)" fill="#fff" />
+                    </svg>
+                  </div>
+                  <div class="star-num">
+                    <p><?= $r['evaluation'] ?></p>
+                  </div>
+                  <div class="price">
+                    <p>$<?= $r['price'] ?>起</p>
+                  </div>
                 </div>
-                <div class="star-num">
-                  <p><?= $r['evaluation'] ?></p>
-                </div>
-                <div class="price">
-                  <p>$<?= $r['price'] ?>起</p>
-                </div>
-              </div>
               </a>
             </div>
 
@@ -113,8 +113,8 @@ $rows = $stmt->fetchAll();
     function initMap(lat, lng) {
       map = new google.maps.Map(document.getElementById("map"), {
         center: {
-          lat: lat, //25.033107551743626,
-          lng: lng, //121.56274007557415,
+          lat: 25.033107551743626,
+          lng: 121.56274007557415,
         },
         zoom: 16,
       });
@@ -242,8 +242,8 @@ $rows = $stmt->fetchAll();
 
     // 顯示經緯度
     function mapServiceProvider(latitude, longitude) {
-      alert('經緯度：' + latitude + ', ' + longitude);
-      initMap(latitude, longitude);
+      // alert('經緯度：' + latitude + ', ' + longitude);
+      initMap();
     }
 
     // 

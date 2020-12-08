@@ -192,80 +192,6 @@
         </div>
     </section>
 
-    <!-- <section class="line02 position-relative">
-        <div class="intro container-fluid">
-            <h3>特殊酒品介紹</h3>
-            <div class="drinks-intro">
-                <div class="wrapper">
-
-                    <div class="cols">
-                        <div class="cc" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(<?= WEB_ROOT ?>img/addimg.svg)">
-                                    <div class="inner">
-                                        <h1></h1>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p><span>加值服務</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cc" ontouchstart="this.classList.toggle('hover');">
-                            <div class="container">
-                                <div class="front" style="background-image: url(<?= WEB_ROOT ?>img/addimg.svg)">
-                                    <div class="inner">
-
-                                        <h2></h2>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="inner">
-                                        <p> <span>加值服務</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> -->
-    <!-- <section class="line03">
-        <div class="intro container-fluid">
-            <h3>特殊餐點推薦</h3>
-            <div class="food-intro d-flex ">
-                <div class="col-6 px-0">
-                    <div class="food-item food-intro-pic01 position-relative">
-                        <img src="../img/attic-food01.jpg" alt="">
-                        <div class="food-item food-intro-word position-absolute">特製起司盤</div>
-                    </div>
-                </div>
-
-                <div class="food-item food-intro-pic02 col-3 px-0 m-0">
-                    <img src="../img/attic-food02.jpg" alt="">
-                    <div class="food-item food-intro-word position-absolute">煙燻肉片佐威士忌</div>
-                </div>
-                <div class="food-item food-intro-pic02 col-3 px-0 m-0">
-                    <img src="../img/attic-food03.jpg" alt="">
-                    <div class="food-item food-intro-word position-absolute">提拉米蘇</div>
-                </div>
-                <div class="food-item food-intro-pic03 col-6 px-0 m-0">
-                    <img src="../img/attic-food04.jpg" alt="">
-                    <div class="food-item food-intro-word position-absolute">古巴手捲雪茄</div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <div class="sp">
         <div class="sp-click"><svg xmlns="http://www.w3.org/2000/svg" width="29.941" height="46.647" viewBox="0 0 29.941 46.647">
                 <g id="タッチアイコン" transform="translate(121.623 46.647) rotate(180)">
@@ -315,23 +241,6 @@
         });
 
 
-
-
-
-
-
-        // field.addEventListener('change', function() {
-        //     const fd = new FormData(document.titlepc);
-        //     fetch('upload-single-avatar.php', {
-        //             method: 'POST',
-        //             body: fd
-        //         })
-        //         .then(r => r.json())
-        //         .then(obj => {
-        //             console.log(obj);
-        //             document.querySelector('#inputbigimg').src = obj.img;
-        //         })
-        // });
         // 換照片的功能
         const field = document.querySelector('input[name=avatar]');
 

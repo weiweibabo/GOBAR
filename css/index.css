@@ -6,7 +6,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 .searchword {
-  display: none;
+  opacity: 0;
 }
 .boost {
   width: 100%;
@@ -494,7 +494,11 @@ main {
 #carousel div.nextRightSecond img {
   width: 200px;
 }
-
+.hideLeft,
+.prevLeftSecond,
+.prev,
+.selected,
+.next,
 .liftbutton {
   width: 50px;
   height: 118.8px;

@@ -612,20 +612,37 @@
         const keywordform = $('#keywordform')
         const keywordinput = $('#keywordinput')
 
+        const searchbuttonid = document.getElementById('searchbuttonid');
+        const selectareaid = $('#selectareaid');
+
         function checkForm() {
 
-            $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', {
-                    keyword: keywordinput.val(),
-                },
-                function(data) {
-                    // success: true
-                    if (data.success) {
-                        if (data.keyword) {
-                            location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+            if (
+                keywordinput.val() != ''
+            ) {
+                console.log('hi1')
+
+                $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', {
+                        keyword: keywordinput.val(),
+                    },
+                    function(data) {
+                        // success: true
+                        if (data.success) {
+                            if (data.keyword) {
+                                location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+                            }
                         }
-                    }
-                }, 'json');
+                    }, 'json');
+
+            } else {
+                console.log('hi2')
+                window.location.href = '../../GOBAR/E/pages/map2.php';
+            }
         }
+    </script>
+
+    <script>
+
     </script>
 
 </body>

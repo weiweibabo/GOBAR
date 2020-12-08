@@ -9,33 +9,6 @@ body {
   width: 100%;
   height: 150px;
 }
-section.line01 {
-  background-image: url(../img/line01.png), url(../img/line04.png);
-  background-position: right, top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-section.line02 {
-  background-image: url("../img/line01.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-section.line03 {
-  background-image: url("../img/line03.png");
-  background-position: top 40% left 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-section.line04 {
-  background-image: url("../img/line04.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 .container-fluid {
   width: 75% !important;
@@ -624,7 +597,7 @@ Img {
 
 .sp {
   position: fixed;
-  bottom: 300px;
+  bottom: 400px;
   right: 0px;
   cursor: pointer;
   width: 60px;
@@ -639,16 +612,16 @@ Img {
 
 .form-wrapper {
   display: none;
-  height: 300px;
+  height: 240px;
   padding-top: 10px;
   background-color: #ff8d00;
-  border-radius: 10px 0 0 30px;
+  border-radius: 0px 0 0 30px;
 }
 
 .sp h2 {
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
-  margin-top: 10px;
+  margin: 10px 0 0 17px;
 }
 
 .sp-click svg {
