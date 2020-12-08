@@ -26,6 +26,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <main>
         <div class="mainblock container-fluid w-75">
             <div class="row">
+
                 <div class="col-6 col-xl-6">
                     <div class="topname">
                         <a href="<?= WEB_ROOT ?>/J/html/history.php">
@@ -43,8 +44,6 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
 
             <div class="card-area column position-relative pt-5 pb-5">
-
-
 
                 <?php foreach ($rows as $r) : ?>
                     <div class="card2 d-flex position-relative">
@@ -87,10 +86,14 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <div class="col-1 col-xl-1"></div>
                         <div class="answer col-1 col-xl-3">
                             <div class="textbox2">
-                                <p>查看詳情</p>
+                                <a href="">
+                                    <p>查看詳情</p>
+                                </a>
                             </div>
                             <div class="textbox1">
-                                <p>給予評價</p>
+                                <a href="">
+                                    <p>給予評價</p>
+                                </a>
                             </div>
                         </div>
                     </div>

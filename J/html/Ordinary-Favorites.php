@@ -45,7 +45,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -61,7 +63,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -77,7 +81,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -93,7 +99,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -109,7 +117,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -125,7 +135,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
             </div>

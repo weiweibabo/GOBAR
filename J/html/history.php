@@ -70,7 +70,9 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <div class="col-1 col-xl-1"></div>
                         <div class="answer col-1 col-xl-3">
                             <div class="textbox2">
-                                <p>查看詳情</p>
+                                <a href="">
+                                    <p>查看詳情</p>
+                                </a>
                             </div>
                             <div class="textbox1">
                                 <button id="cancel-btn" class="cancel-btn btn" type="button" data-toggle="modal" data-target="#exampleModalCenter-<?= $r['sid'] ?>">

@@ -195,7 +195,7 @@
 .navslide {
   height: 100px;
   display: none;
-  background-color: #236ca6;
+  background-color: #002a4c;
 }
 .dropdown-menu {
   padding: 10px !important;
@@ -308,9 +308,10 @@ button {
 }
 .navinput1 {
   background-color: rgba(47, 28, 28, 0);
-  border: 2px solid orange;
+  border: 1px solid orange;
   padding-left: 15px;
   color: white;
+  height: 34px;
 }
 .navinput1::placeholder {
   color: white;
@@ -390,7 +391,7 @@ button {
   }
 
   .navbar-collapse {
-    background-color: #236ca6;
+    background-color: #002a4c;
     align-items: left;
   }
   .nav-item {

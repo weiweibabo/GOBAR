@@ -54,7 +54,9 @@ $member = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <path id="Path_151" data-name="Path 151" d="M2.687,2.687v20.6H15.525v2.687H0V0H15.524V2.687ZM14.629,21.5l-2.09-2.09,4.777-4.777H6.27V11.643H17.614L12.539,6.867l2.09-2.09,8.061,8.061Z" transform="translate(2)" fill="#fff" />
               </g>
             </svg>
-            <p class="phone">登出</p>
+            <a href="<?= WEB_ROOT ?>/W/pages/logout.php">
+              <p class="phone">登出</p>
+            </a>
           </div>
           <!--  -->
           <!-- web -->

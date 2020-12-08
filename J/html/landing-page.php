@@ -6,6 +6,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 <?php include __DIR__ . '/../../parts/scripts.php'; ?>
 
@@ -27,7 +29,7 @@
 
         <figure>
             <div>
-                <a href="index_.php">
+                <a href="_index.php">
                     <span>TOUCHME</span>
                     <span>HOME</span>
                 </a>
