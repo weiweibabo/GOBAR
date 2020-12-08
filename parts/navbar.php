@@ -25,39 +25,39 @@
                   </a>
                 </li>
                 <?php if (!isset($_SESSION['gobarUser'])) : ?>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="navlinkicon" href="#">
-                    <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                    <a class="nav-link" role="button" href="#" aria-haspopup="true" aria-expanded="false">我的收藏</a>
-                  </a>
-                </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="navlinkicon" href="#">
+                      <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
+                      <a class="nav-link" role="button" href="#" aria-haspopup="true" aria-expanded="false">我的收藏</a>
+                    </a>
+                  </li>
                 <?php endif ?>
                 <?php if (isset($_SESSION['gobarUser'])) : ?>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/Platinum-Favorites.php">
-                    <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
-                    <a class="nav-link" role="button" href="<?= WEB_ROOT ?>J/html/Platinum-Favorites.php" aria-haspopup="true" aria-expanded="false">我的收藏</a>
-                  </a>
-                </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/Platinum-Favorites.php">
+                      <img src="<?= WEB_ROOT ?>img/favorites.svg" alt="" />
+                      <a class="nav-link" role="button" href="<?= WEB_ROOT ?>J/html/Platinum-Favorites.php" aria-haspopup="true" aria-expanded="false">我的收藏</a>
+                    </a>
+                  </li>
                 <?php endif ?>
 
                 <?php if (!isset($_SESSION['gobarUser'])) : ?>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="navlinkicon" href="#">
-                    <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
-                    <a class="nav-link" href="#">我的訂單</a>
-                  </a>
-                </li>
+                    <a class="navlinkicon" href="#">
+                      <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
+                      <a class="nav-link" href="#">我的訂單</a>
+                    </a>
+                  </li>
                 <?php endif ?>
                 <?php if (isset($_SESSION['gobarUser'])) : ?>
-                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                  <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/history.php">
-                    <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
-                    <a class="nav-link" href="<?= WEB_ROOT ?>J/html/history.php">我的訂單</a>
-                  </a>
-                </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="navlinkicon" href="<?= WEB_ROOT ?>J/html/history.php">
+                      <img src="<?= WEB_ROOT ?>img/Clock-right.svg" alt="" />
+                      <a class="nav-link" href="<?= WEB_ROOT ?>J/html/history.php">我的訂單</a>
+                    </a>
+                  </li>
                 <?php endif ?>
-                
+
                 <?php if (!isset($_SESSION['gobarUser'])) : ?>
                   <li class="nav-item member pl-4 pl-md-0 ml-0 ml-md-4 " href="#">
                     <a class="navlinkicon" href="<?= WEB_ROOT ?>M/newsign.php">

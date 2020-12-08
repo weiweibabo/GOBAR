@@ -5,6 +5,9 @@ body {
 * {
   font-family: "Noto Sans TC", sans-serif;
 }
+.searchword {
+  display: none;
+}
 .boost {
   width: 100%;
   height: 150px;
