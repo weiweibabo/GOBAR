@@ -29,7 +29,7 @@
 
         <figure>
             <div>
-                <a href="_index.php">
+                <a href="<?= WEB_ROOT ?>M/bubble.php">
                     <span>TOUCHME</span>
                     <span>HOME</span>
                 </a>

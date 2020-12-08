@@ -641,9 +641,6 @@
         }
     </script>
 
-    <script>
-
-    </script>
 
 </body>
 
