@@ -499,6 +499,11 @@ main {
 .prev,
 .selected,
 .next,
+.nextRightSecond,
+.hideRight {
+  cursor: pointer;
+}
+
 .liftbutton {
   width: 50px;
   height: 118.8px;
