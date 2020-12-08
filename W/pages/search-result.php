@@ -64,7 +64,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="card-area d-flex col-xl-12" ">
                 <?php foreach ($rows as $r) : ?>
                     <div class="card2 col-xl-3 col-12 px-0">
-                    <a href="<?= WEB_ROOT ?>E/pages/product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
+                    <a href="<?= WEB_ROOT ?>E/pages/product-detail.php?sid=<?= $r['sid'] ?>">
                             <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" width="378" height="365">
                             <div class="card1">
                                 <h2><?= $r['name'] ?></h2>

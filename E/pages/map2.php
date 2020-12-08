@@ -55,7 +55,7 @@ $rows = $stmt->fetchAll();
         <div class="search-all">
           <?php foreach ($rows as $r) : ?>
             <div class="search">
-              <a href="product-detail.php?sid=<?= $r['sid'] ?>" target="_blank">
+              <a href="product-detail.php?sid=<?= $r['sid'] ?>" >
                 <div class="pic">
                   <img src="<?= WEB_ROOT ?>data/img/<?= $r['sid'] ?>.jpg" alt="" />
                 </div>
