@@ -45,7 +45,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -60,8 +62,17 @@
                             <h1>$200起</h1>
                         </div>
                     </div>
-                    <div class="bottom-text">
-                        <p>我要訂位</p>
+                    <div class="text-box d-flex">
+                        <div class="bottom-text">
+                            <a href="#">
+                                <p>我要訂位</p>
+                            </a>
+                        </div>
+                        <div class="bottom-text1">
+                            <a href="#">
+                                <p>我要取消</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -77,7 +88,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -93,7 +106,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -109,7 +124,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
 
@@ -125,7 +142,9 @@
                         </div>
                     </div>
                     <div class="bottom-text">
-                        <p>我要訂位</p>
+                        <a href="#">
+                            <p>我要訂位</p>
+                        </a>
                     </div>
                 </div>
             </div>

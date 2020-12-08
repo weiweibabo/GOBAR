@@ -108,6 +108,7 @@ main {
   padding-top: 30px;
   width: 100px;
   margin-left: 270px;
+  text-decoration: none;
 }
 
 .bottom-text p {
@@ -116,6 +117,40 @@ main {
   border-radius: 10px;
   text-align: center;
   font-size: 20px;
+  text-decoration: none;
+  color: #e58c21;
+}
+
+.bottom-text1 p:hover,
+.bottom-text1 p:visited,
+.bottom-text1 p:active,
+.bottom-text1 p:link {
+  text-decoration: none;
+}
+
+.bottom-text p:hover,
+.bottom-text p:visited,
+.bottom-text p:active,
+.bottom-text p:link {
+  text-decoration: none;
+}
+
+.bottom-text1 {
+  color: #e58c21;
+  padding-top: 30px;
+  width: 100px;
+  margin-left: 270px;
+  text-decoration: none;
+}
+
+.bottom-text1 p {
+  width: 100px;
+  border: 1px solid #e58c21;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: #e58c21;
 }
 
 .card-area {
