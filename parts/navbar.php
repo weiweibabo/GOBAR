@@ -117,7 +117,7 @@
             <option value="">和風</option>
             <option value="">同志酒吧</option>
           </select>
-          <a class="navsearchbuttonlink" href="<?= WEB_ROOT ?>E/pages/product-detail.php">
+          <a class="navsearchbuttonlink" href="<?= WEB_ROOT ?>E/pages/map2.php">
             <button class="navsearchbutton"> 搜尋酒吧 </button></a>
         </div>
       </div>
