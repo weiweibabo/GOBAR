@@ -17,7 +17,7 @@
 </body>
 
 <script language=javascript>
-    setTimeout('window.location="../M/_index.php"', 2000)
+    setTimeout('window.location="../M/firstpage.php"', 2000)
 </script>
 
 </html>
