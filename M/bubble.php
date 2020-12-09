@@ -20,7 +20,7 @@
 </body>
 
 <script language=javascript>
-    setTimeout('window.location="../M/firstpage.php"', 3500)
+    setTimeout('window.location="../M/firstpage.php"', 3500);
 </script>
 
 </html>
