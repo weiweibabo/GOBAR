@@ -233,6 +233,7 @@ a :hover {
     position: static;
   }
   .right {
+    flex: 0 0 55%;
     order: -1;
     left: 0;
     right: 0;

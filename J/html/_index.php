@@ -14,12 +14,13 @@
 <body>
 
     <div class="container-fuild position-relative">
-        <div class="black-box"></div>
-
-        <video loop="true" autoplay="autoplay" muted="true">
-            <source type="video/mp4" src="<?= WEB_ROOT ?>J/video/newbartender.mp4">
-            </source>
-        </video>
+        <!-- <div class="black-box"></div> -->
+       <div class="videobox">
+            <video loop="true" autoplay="autoplay" muted="true">
+                <source type="video/mp4" src="<?= WEB_ROOT ?>J/video/newbartender.mp4">
+                </source>
+            </video>
+        </div>
 
         <div class="nav-text">
             <p class="nav-text1">SERCH BAR &</p>
@@ -40,7 +41,7 @@
             <img src="<?= WEB_ROOT ?>J/Gobar-svg-png/PNG/LOGO.png" alt="" width="120">
         </div>
 
-        <div class="black-box"></div>
+        <!-- <div class="black-box"></div> -->
     </div>
 </body>
 
