@@ -73,7 +73,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <div class="barphoto">
                                         <img src="<?= WEB_ROOT ?>J/Gobar-svg-png/SVG/star.svg" alt="" width="160">
                                     </div>
-                                    <p><?= $r['evaluation'] ?></p>
+                                    <p class="stars"><?= $r['evaluation'] ?></p>
                                     <h2>$<?= $r['price'] ?>起</h2>
                                 </div>
                             </div>

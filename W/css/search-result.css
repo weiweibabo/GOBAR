@@ -273,4 +273,11 @@ main {
   .card-area {
     padding: 2rem 0;
   }
+
+  .barphoto {
+    margin-left: 11px;
+  }
+
+  .cardmoney p {
+    margin-top: 5px;
 }

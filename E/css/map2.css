@@ -160,7 +160,8 @@ a :hover {
 } */
 @media screen and (max-width: 420px) {
   section {
-    height: 1000px;
+    height: auto;
+    margin-bottom: 55px;
   }
   .golden-line {
     background-image: none;
@@ -170,7 +171,10 @@ a :hover {
   }
   .left {
     height: 1000px;
-    margin-left: 50px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .google-api {
     width: 400px;
@@ -180,6 +184,9 @@ a :hover {
   #app {
     margin-left: 8px;
     order: 1;
+  }
+  .dropdown-all {
+    margin-left: 105px;
   }
   .dropdown {
     width: 80px;
@@ -192,12 +199,12 @@ a :hover {
   }
   .dropdown-btn {
     width: 100px;
-    height: 25px;
+    height: 35px;
     font-size: 10px;
   }
   .search {
     width: 300px;
-    height: 100px;
+    height: 110px;
     font-size: 10px;
   }
   .search h2 {

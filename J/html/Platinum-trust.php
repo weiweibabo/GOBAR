@@ -174,10 +174,10 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </g>
             </svg>
 
-            <img src="../img/work-bar.jpg" alt="" width="160" height="140">
+            <img src="<?=WEB_ROOT?>data/img/<?= $orders[0]["sid"] ?>.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
-              <h2>Odin 信義放感情</h2>
+              <h2><?= $orders[0]["shop"] ?></h2>
               <p>訂位時段 : <?= $orders[0]["time"] ?></p>
               <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
             </div>
@@ -199,20 +199,20 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <rect id="Rectangle_1464" data-name="Rectangle 1464" width="93" height="93" rx="15" transform="translate(0.307 1.307)" fill="#fff" />
                 <path id="Rectangle_1463" data-name="Rectangle 1463" d="M15,0H78A15,15,0,0,1,93,15V37a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V15A15,15,0,0,1,15,0Z" transform="translate(0.307 0.307)" fill="#ff8d00" />
                 <text id="_18" data-name="18" transform="translate(20.308 80.307)" fill="#ff8d00" font-size="42" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="0" y="0"><?= substr($orders[0]["date"], 8, 2) ?></tspan>
+                  <tspan x="0" y="0"><?= substr($orders[1]["date"], 8, 2) ?></tspan>
                 </text>
                 <text id="FRIDAY" transform="translate(15.308 23.307)" fill="#fff" font-size="16" font-family="NotoSansTC-Bold, Noto Sans TC" font-weight="700">
-                  <tspan x="15" y="0"><?= substr($orders[0]["weekdays"], 0, 3) ?></tspan>
+                  <tspan x="15" y="0"><?= substr($orders[1]["weekdays"], 0, 3) ?></tspan>
                 </text>
               </g>
             </svg>
 
-            <img src="../img/work-bar.jpg" alt="" width="160" height="140">
+            <img src="<?=WEB_ROOT?>data/img/<?= $orders[1]["sid"] ?>.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
-              <h2>小後苑Backyard Jr.</h2>
-              <p>訂位時段 : <?= $orders[0]["time"] ?></p>
-              <p>訂位人數 : <?= $orders[0]["people"] ?> 位</p>
+              <h2><?= $orders[1]["shop"] ?></h2>
+              <p>訂位時段 : <?= $orders[1]["time"] ?></p>
+              <p>訂位人數 : <?= $orders[1]["people"] ?> 位</p>
             </div>
 
             <div class="error">
