@@ -1,6 +1,6 @@
 <?php include __DIR__ . '/../../parts/config.php'; ?>
 
-<link rel="stylesheet" href="../css/landing-page.css">
+<link rel="stylesheet" href="../css/_index.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">

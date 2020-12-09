@@ -1,12 +1,39 @@
 body {
   background-color: #141f2b;
 }
+.bubblelogo {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 185px;
+  z-index: -1;
+  animation: op 3.2s;
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bubblelogo img {
+  object-fit: contain;
+  width: 100%;
+}
 
 .glass {
   width: 100px;
   height: 200px;
   position: relative;
-
   margin: 20px auto 0;
 }
 
@@ -25,8 +52,8 @@ body {
 
 .glass .water .bubble {
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-color: #fff;
   position: absolute;
   opacity: 0;
@@ -35,31 +62,31 @@ body {
 .glass .water .bubble:nth-child(1) {
   top: 80%;
   left: 20%;
-  animation: bubble 2s ease-in-out 1.6s infinite;
+  animation: bubble 1s ease-in-out 1.6s infinite;
 }
 
 .glass .water .bubble:nth-child(2) {
   top: 80%;
   left: 30%;
-  animation: bubble 2s ease-in-out 0.4s infinite;
+  animation: bubble 1s ease-in-out 0.4s infinite;
 }
 
 .glass .water .bubble:nth-child(3) {
   top: 80%;
   left: 40%;
-  animation: bubble 2s ease-in-out 0s infinite;
+  animation: bubble 1s ease-in-out 0s infinite;
 }
 
 .glass .water .bubble:nth-child(4) {
   top: 80%;
   left: 50%;
-  animation: bubble 2s ease-in-out 0.8s infinite;
+  animation: bubble 1s ease-in-out 0.8s infinite;
 }
 
 .glass .water .bubble:nth-child(5) {
   top: 80%;
   left: 60%;
-  animation: bubble 2s ease-in-out 1.2s infinite;
+  animation: bubble 1s ease-in-out 1.2s infinite;
 }
 
 @keyframes bubble {
