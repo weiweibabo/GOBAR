@@ -3,7 +3,7 @@
 <?php include __DIR__ . '/../parts/scripts.php'; ?>
 <?php include __DIR__ . '/../parts/navbar.php'; ?>
 
-<link rel="stylesheet" href="<?= WEB_ROOT ?>css/index.css">
+<link rel="stylesheet" href="<?= WEB_ROOT ?>css/firstpage.css">
 
 <body>
     <div class="boost"></div>

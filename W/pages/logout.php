@@ -5,6 +5,6 @@ session_start();
 
 unset($_SESSION['gobarUser']);
 
-header('Location:../../M/_index.php');
+header('Location:../../M/firstpage.php');
 //跳回上一頁
 // echo "<script>history.back(-1)</script>"
