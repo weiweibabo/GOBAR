@@ -15,7 +15,7 @@
 
     <div class="container-fuild position-relative">
         <!-- <div class="black-box"></div> -->
-       <div class="videobox">
+        <div class="videobox">
             <video loop="true" autoplay="autoplay" muted="true">
                 <source type="video/mp4" src="<?= WEB_ROOT ?>J/video/newbartender.mp4">
                 </source>
