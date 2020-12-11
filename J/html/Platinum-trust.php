@@ -174,7 +174,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </g>
             </svg>
 
-            <img src="<?=WEB_ROOT?>data/img/<?= $orders[0]["sid"] ?>.jpg" alt="" width="160" height="140">
+            <img src="<?= WEB_ROOT ?>data/img/<?= $orders[0]["sid"] ?>.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
               <h2><?= $orders[0]["shop"] ?></h2>
@@ -207,7 +207,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
               </g>
             </svg>
 
-            <img src="<?=WEB_ROOT?>data/img/<?= $orders[1]["sid"] ?>.jpg" alt="" width="160" height="140">
+            <img src="<?= WEB_ROOT ?>data/img/<?= $orders[1]["sid"] ?>.jpg" alt="" width="160" height="140">
 
             <div class="black-text">
               <h2><?= $orders[1]["shop"] ?></h2>
