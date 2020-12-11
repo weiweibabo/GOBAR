@@ -82,11 +82,11 @@
     </div>
     <div class="navslide">
       <div class="searcharea">
-        <div class="navsearchform">
+        <form class="navsearchform" id="navkeywordform" name="navkeyformname" onsubmit="checkForm2();return false;">
           <div class="navkeywordbox">
-            <input class="navinput1" type="text" placeholder="輸入關鍵字" />
+            <input class="navinput1" name="navkeywordinput" id="navkeywordinput" type="text" placeholder="輸入關鍵字" />
           </div>
-          <select class="navselect" name="" id="">
+          <select class="navselect" name="" id="navselectareaid">
             <option value="">選擇地區</option>
             <option value="">萬華區</option>
             <option value="">中正區</option>
@@ -117,9 +117,8 @@
             <option value="">和風</option>
             <option value="">同志酒吧</option>
           </select>
-          <a class="navsearchbuttonlink" href="<?= WEB_ROOT ?>E/pages/map2.php">
-            <button class="navsearchbutton"> 搜尋酒吧 </button></a>
-        </div>
+            <button id="navsearchbuttonid" class="navsearchbutton" type="submit"> 搜尋酒吧 </button>
+        </form>
       </div>
     </div>
   </div>
@@ -182,5 +181,38 @@
         }
       });
     });
+
+ // 這裡是模糊搜尋
+ const navkeywordform = $('#navkeywordform')
+        const navkeywordinput = $('#navkeywordinput')
+
+        const navsearchbuttonid = document.getElementById('navsearchbuttonid');
+        const navselectareaid = $('#navselectareaid');
+
+        function checkForm2() {
+
+            if (
+                navkeywordinput.val() != ''
+            ) {
+                console.log('hi1')
+
+                $.post('<?= WEB_ROOT ?>/W/pages/search-api.php', {
+                        keyword: navkeywordinput.val(),
+                    },
+                    function(data) {
+                        // success: true
+                        if (data.success) {
+                            if (data.keyword) {
+                                location.href = `<?= WEB_ROOT ?>W/pages/search-result.php?keyword=${data.keyword}`
+                            }
+                        }
+                    }, 'json');
+
+            } else {
+                console.log('hi2')
+                window.location.href = '<?= WEB_ROOT ?>E/pages/map2.php';
+            }
+        }
+
   </script>
 </body>
