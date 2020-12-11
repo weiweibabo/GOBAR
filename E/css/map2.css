@@ -159,6 +159,9 @@ a :hover {
   position: fixed;
 } */
 @media screen and (max-width: 420px) {
+  .web {
+    display: none;
+  }
   section {
     height: auto;
     margin-bottom: 55px;
