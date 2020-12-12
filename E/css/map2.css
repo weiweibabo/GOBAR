@@ -98,7 +98,7 @@ a :hover {
 }
 
 .search:hover .pic {
-  display: block !important;
+  display: block;
   width: 400px;
 }
 
@@ -213,7 +213,17 @@ a :hover {
   .search h2 {
     font-size: 20px;
   }
+  /* .search:hover {
+    display: none;
+  } */
+
   .search:hover {
+    height: 110px;
+  }
+  .search a:hover {
+    height: 110px;
+  }
+  .search:hover .pic {
     display: none;
   }
 
