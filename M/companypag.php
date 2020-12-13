@@ -114,12 +114,12 @@
                     </form>
                     <form class="col-item col-item--weight2 position-absolute" method="post" enctype="multipart/form-data" onclick="field4.click()">
                         <input type="file" class="medpc3" accept="image/*" onchange="previewFile4()">
-                        <img id="mdepc3img" src="<?= WEB_ROOT ?>img/addimg.svg" alt="">
+                        <img id="mdepc3img" src="<?= WEB_ROOT ?>img/addimg2.jpg" alt="">
 
                     </form>
                     <form class="col-item col-item--weight3 position-absolute" method="post" enctype="multipart/form-data" onclick="field5.click()">
                         <input type="file" class="medpc4" accept="image/*" onchange="previewFile5()">
-                        <img id="mdepc4img" src="<?= WEB_ROOT ?>img/addimg.svg" alt="">
+                        <img id="mdepc4img" src="<?= WEB_ROOT ?>img/addimg2.jpg" alt="">
 
                     </form>
                     <div class="col-item col-item--height4 position-absolute">
@@ -131,7 +131,7 @@
 
                     </div>
                 </div>
-                <div class="water-fall-word position-relative">
+                <!-- <div class="water-fall-word position-relative">
                     <div class="eat position-absolute">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="345" height="221" viewBox="0 0 345 221">
                             <defs>
@@ -187,7 +187,7 @@
                         </svg>
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
