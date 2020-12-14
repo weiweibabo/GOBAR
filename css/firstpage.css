@@ -806,6 +806,7 @@ h4 {
   position: relative;
   height: 1000px;
   overflow: hidden;
+  cursor: pointer;
 }
 .blog {
   margin: 50px 0;

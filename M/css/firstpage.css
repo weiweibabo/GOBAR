@@ -781,6 +781,7 @@ h4 {
 }
 .blog {
   margin: 50px 0;
+  cursor: pointer;
 }
 .blogtitle {
   width: 25%;
