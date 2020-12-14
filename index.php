@@ -1,6 +1,6 @@
-<?php include __DIR__ . '../parts/config.php'; ?>
+<?php include __DIR__ . '/parts/config.php'; ?>
 
-<link rel="stylesheet" href="<?=WEB_ROOT?>J/css/_index.css">
+<link rel="stylesheet" href="<?= WEB_ROOT ?>J/css/_index.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-<?php include __DIR__ . '../parts/scripts.php'; ?>
+<?php include __DIR__ . '/parts/scripts.php'; ?>
 
 <body>
 

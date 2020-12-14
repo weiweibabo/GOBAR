@@ -88,7 +88,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 <p class="modaltitle title-30">是否確定取消訂位?</p>
                                                 <div class="d-flex">
                                                     <button class="m-btn" type="button" data-dismiss="modal" aria-label="Close">返回</button>
-                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $r['sid'] ?>); return false;" class="m-btn" data-sid="<?= $r['sid'] ?>" data-type="delete">
+                                                    <button id="del" type="submit" onsubmit="delete_it(<?= $r['sid'] ?>); return false;" class="m-btn del-btn" data-sid="<?= $r['sid'] ?>" data-type="delete">
                                                         確定
                                                     </button>
                                                 </div>
@@ -106,7 +106,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </main>
 
     <script>
-        $('#del').click((e) => {
+        $('.del-btn').click((e) => {
             e.preventDefault();
             console.log('hi', $('#del').data("sid"))
 
