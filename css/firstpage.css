@@ -806,7 +806,6 @@ h4 {
   position: relative;
   height: 1000px;
   overflow: hidden;
-  cursor: pointer;
 }
 .blog {
   margin: 50px 0;
@@ -835,6 +834,7 @@ h4 {
   object-fit: cover;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  cursor: pointer;
 }
 .bligcontain {
   width: 449px;
@@ -842,6 +842,7 @@ h4 {
   height: 200px;
   background-color: white;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+  cursor: pointer;
 }
 .titleh3 {
   font-size: 30px;
