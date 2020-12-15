@@ -348,6 +348,9 @@ button {
   font-weight: 400;
   padding-bottom: 3px;
 }
+.navsearchbutton:focus {
+  outline: transparent;
+}
 .small {
   display: none;
 }

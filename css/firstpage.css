@@ -617,6 +617,7 @@ main {
   padding: 8px 0;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 .readmore::after {
   display: inline-block;
@@ -787,7 +788,7 @@ h4 {
   left: -10%;
   top: 5%;
   transform: rotate(30deg);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 0.5s;
 }
 .handleft img {
@@ -799,7 +800,7 @@ h4 {
   right: -2%;
   top: 5%;
   transform: rotate(-30deg);
-  transition: 2s;
+  transition: 1s;
   transition-delay: 0.5s;
 }
 .blogg {
@@ -1102,7 +1103,7 @@ h4 {
     padding-right: 0px;
     opacity: 0;
     transition: 1s;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     line-height: 45px;
   }
   .cupcontain {
@@ -1110,6 +1111,7 @@ h4 {
     font-weight: 100;
     padding: 0 20px;
     line-height: 35px;
+    transition-delay: 0.2s;
   }
   .readmore {
     width: 150px;
@@ -1175,6 +1177,7 @@ h4 {
   .handleft {
     width: 45%;
     top: 3%;
+    transition-delay: 0s;
   }
   .handright {
     width: 35%;
@@ -1182,8 +1185,8 @@ h4 {
     right: -2%;
     top: 3%;
     transform: rotate(-30deg);
-    transition: 2s;
-    transition-delay: 0.5s;
+    transition: 1s;
+    transition-delay: 0s;
   }
   .blogtitle {
     width: 65%;

@@ -506,13 +506,13 @@
                     $('.drink1contain').css('width', '0%');
                 }
 
-                if (scrollNow > 1500) {
+                if (scrollNow > 1450) {
                     $('.cupname').css('opacity', '1');
                 } else {
                     $('.cupname').css('opacity', '0');
                 }
 
-                if (scrollNow > 1550) {
+                if (scrollNow > 1500) {
                     $('.cupcontain').css('opacity', '1');
                 } else {
                     $('.cupcontain').css('opacity', '0');
@@ -530,13 +530,13 @@
                     $('.copy').css('width', '0%');
                 }
 
-                if (scrollNow > 2400) {
+                if (scrollNow > 2350) {
                     $('.cupname2').css('opacity', '100 % ');
                 } else {
                     $('.cupname2').css('opacity', '0%');
                 }
 
-                if (scrollNow > 2450) {
+                if (scrollNow > 2400) {
                     $('.cupcontain2').css('opacity', '1');
                 } else {
                     $('.cupcontain2').css('opacity', '0');
