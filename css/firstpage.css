@@ -605,7 +605,7 @@ main {
   line-height: 35px;
   opacity: 0;
   transition: 1s;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 .readmore {
   width: 250px;

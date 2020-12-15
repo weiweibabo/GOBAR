@@ -477,7 +477,7 @@
 
 
 
-            if (scrollNow > 4500) {
+            if (scrollNow > 4800) {
                 $('.handleft').css('transform', 'rotate(0deg)'),
                     $('.handright').css('transform', 'rotate(0deg)');
             } else {
